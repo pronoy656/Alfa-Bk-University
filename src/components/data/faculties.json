@@ -1,0 +1,412 @@
+{
+  "finance-trade-accounting": {
+    "slug": "finance-trade-accounting",
+    "title": "Faculty of Finance, Trade and Accounting",
+    "subtitle": "Educating economists, finance professionals, accountants, and business leaders for the modern economy.",
+    "bgImage": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2000&q=80",
+    "badges": {
+      "programCount": "7 programs",
+      "hasBSc": true,
+      "hasMSc": true,
+      "hasPhD": true
+    },
+    "about": "The Faculty of Finance, Trade and Accounting is one of the founding faculties of Alfa BK University, established in 1993. It offers programs at Basic Higher Education, Master, and Doctoral levels in economics, finance, marketing, trade, and accounting. The faculty combines strong theoretical foundations with practical, industry-oriented education and active connections to the Serbian and regional financial sectors.",
+    "whyStudyHere": [
+      "Experienced faculty with active backgrounds in banking, finance, and business consulting",
+      "Modern curriculum aligned with EU standards and Serbian regulatory framework",
+      "Strong alumni network across Serbian, regional, and international financial sectors",
+      "Practical workshops, internships, and career placement support with 200+ partner employers"
+    ],
+    "contact": {
+      "email": "finance@alfabk.edu",
+      "phone": "+381 11 260 7901",
+      "address": "Palmira Toljatija 3, Belgrade"
+    },
+    "bscPrograms": [
+      {
+        "id": "economics-and-finance",
+        "title": "Economics and Finance",
+        "description": "Explore economic systems, financial markets and data-driven decision making for a sustainable future.",
+        "icon": "TrendingUp",
+        "iconBg": "bg-[#2563EB]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-blue-50 text-blue-700 border-blue-200",
+        "href": "/programs/economics-and-finance"
+      },
+      {
+        "id": "marketing-management-trade",
+        "title": "Marketing Management and Trade",
+        "description": "Build skills in marketing strategy, global trade and business management in a digital era.",
+        "icon": "Megaphone",
+        "iconBg": "bg-[#7C3AED]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-purple-50 text-purple-700 border-purple-200",
+        "href": "/programs/marketing-management-and-trade"
+      },
+      {
+        "id": "trade",
+        "title": "Trade",
+        "description": "Focused on domestic and international trade operations, logistics, customs, and commercial law.",
+        "icon": "Briefcase",
+        "iconBg": "bg-[#0D9488]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-teal-50 text-teal-700 border-teal-200",
+        "href": "/programs/trade"
+      },
+      {
+        "id": "accounting-auditing",
+        "title": "Accounting and Auditing",
+        "description": "Trains accounting and auditing professionals with deep knowledge of financial reporting, taxation, and audit.",
+        "icon": "Calculator",
+        "iconBg": "bg-[#DB2777]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-pink-50 text-pink-700 border-pink-200",
+        "href": "/programs/accounting-and-auditing"
+      },
+      {
+        "id": "economics",
+        "title": "Economics",
+        "description": "Broad economics program covering micro and macroeconomic theory, economic policy, and quantitative analysis.",
+        "icon": "PieChart",
+        "iconBg": "bg-[#EA580C]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-orange-50 text-orange-700 border-orange-200",
+        "href": "/programs/economics"
+      }
+    ],
+    "mscProgram": {
+      "title": "Finance",
+      "description": "Advanced study in financial analysis, investment, and corporate finance.",
+      "duration": "2 years • 120 ECTS",
+      "badge": "MSc",
+      "href": "/programs/master-finance"
+    },
+    "phdProgram": {
+      "title": "Economy and Business",
+      "description": "Doctoral research program in economics and business for academic and applied research careers.",
+      "duration": "3 years • 180 ECTS",
+      "badge": "PhD",
+      "href": "/programs/doctoral-economy-business"
+    }
+  },
+  "foreign-languages": {
+    "slug": "foreign-languages",
+    "title": "Faculty of Foreign Languages",
+    "subtitle": "Anglistics at BSc and MSc level — preparing graduates for careers in linguistics, translation, teaching, and communication.",
+    "bgImage": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=2000&q=80",
+    "badges": {
+      "programCount": "2 programs",
+      "hasBSc": true,
+      "hasMSc": true,
+      "hasPhD": false
+    },
+    "about": "The Faculty of Foreign Languages prepares specialists in contemporary linguistics, translation, applied philology, and cross-cultural communication. The curriculum emphasizes active language mastery, modern literature analysis, computer-assisted translation technologies, and pedagogical methodology.",
+    "whyStudyHere": [
+      "Native speaker guest lecturers and internationally certified language instructors",
+      "Curriculum aligned with CEFR C2 European language proficiency standards",
+      "Modern multimedia translation laboratories equipped with CAT software",
+      "Exchange semesters through Erasmus+ with renowned European universities"
+    ],
+    "contact": {
+      "email": "languages@alfabk.edu",
+      "phone": "+381 11 260 7902",
+      "address": "Palmira Toljatija 3, Belgrade"
+    },
+    "bscPrograms": [
+      {
+        "id": "english-language-literature",
+        "title": "English Language and Literature (Anglistics)",
+        "description": "Comprehensive program covering modern English linguistics, literature, culture, and teaching methodologies.",
+        "icon": "BookOpen",
+        "iconBg": "bg-[#2563EB]",
+        "duration": "4 years • 240 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-blue-50 text-blue-700 border-blue-200",
+        "href": "/programs/english-language-literature"
+      },
+      {
+        "id": "translation-interpretation",
+        "title": "Applied Translation and Intercultural Communication",
+        "description": "Specialized training in written translation, consecutive interpreting, and terminology management.",
+        "icon": "Globe",
+        "iconBg": "bg-[#7C3AED]",
+        "duration": "4 years • 240 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-purple-50 text-purple-700 border-purple-200",
+        "href": "/programs/applied-translation"
+      }
+    ],
+    "mscProgram": {
+      "title": "English Philology and Cultural Studies",
+      "description": "Master program exploring contemporary discourse analysis, literary theories, and specialized translation.",
+      "duration": "1 year • 60 ECTS",
+      "badge": "MSc",
+      "href": "/programs/master-english-philology"
+    },
+    "phdProgram": null
+  },
+  "management-sports": {
+    "slug": "management-sports",
+    "title": "Faculty of Management in Sports",
+    "subtitle": "Leading academic institution for sports leadership, club administration, athletic marketing, and recreation management.",
+    "bgImage": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=2000&q=80",
+    "badges": {
+      "programCount": "4 programs",
+      "hasBSc": true,
+      "hasMSc": true,
+      "hasPhD": true
+    },
+    "about": "The Faculty of Management in Sports is a pioneer in sports education in the region. Combining sports science, organizational management, finance, and marketing, the faculty equips future sport managers, club executives, and fitness leaders with real-world skills.",
+    "whyStudyHere": [
+      "Partnerships with national athletic federations, Olympic committees, and professional sports clubs",
+      "Curriculum taught by seasoned sports managers, former Olympians, and sports law experts",
+      "Hands-on event management experience at major international competitions",
+      "Modern athletic performance tracking and biomechanics facilities"
+    ],
+    "contact": {
+      "email": "sports@alfabk.edu",
+      "phone": "+381 11 260 7903",
+      "address": "Palmira Toljatija 3, Belgrade"
+    },
+    "bscPrograms": [
+      {
+        "id": "sports-management",
+        "title": "Sports Management",
+        "description": "Strategic leadership of sports clubs, athletic federations, sport complexes, and international sporting events.",
+        "icon": "Trophy",
+        "iconBg": "bg-[#D97706]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-amber-50 text-amber-700 border-amber-200",
+        "href": "/programs/sports-management"
+      },
+      {
+        "id": "coaching-sports-science",
+        "title": "Sports Coaching and Athletic Training",
+        "description": "Scientific conditioning, physical education, tactical preparation, and youth athlete development.",
+        "icon": "Activity",
+        "iconBg": "bg-[#0D9488]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-teal-50 text-teal-700 border-teal-200",
+        "href": "/programs/sports-coaching"
+      }
+    ],
+    "mscProgram": {
+      "title": "Strategic Sports Management and Marketing",
+      "description": "Advanced executive study covering sports rights, athlete representation, sponsorship, and global federation governance.",
+      "duration": "2 years • 120 ECTS",
+      "badge": "MSc",
+      "href": "/programs/master-sports-management"
+    },
+    "phdProgram": {
+      "title": "Sports Management and Kinesiology",
+      "description": "Doctoral research program advancing research in athletic performance systems and sport sociology.",
+      "duration": "3 years • 180 ECTS",
+      "badge": "PhD",
+      "href": "/programs/doctoral-sports-management"
+    }
+  },
+  "information-technologies": {
+    "slug": "information-technologies",
+    "title": "Faculty of Information Technologies",
+    "subtitle": "Software engineering, artificial intelligence, cybersecurity, and cloud computing for next-generation tech leaders.",
+    "bgImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=80",
+    "badges": {
+      "programCount": "5 programs",
+      "hasBSc": true,
+      "hasMSc": true,
+      "hasPhD": true
+    },
+    "about": "The Faculty of Information Technologies prepares versatile developers, software architects, data scientists, and cybersecurity specialists. In collaboration with leading IT enterprises, students work on production-level projects, modern stacks, and open-source ecosystems.",
+    "whyStudyHere": [
+      "Project-centric labs with Git workflows, Docker, cloud deployments, and CI/CD pipelines",
+      "Curriculum updated annually with industry partners in AI, web development, and cloud",
+      "Mentorship and internship programs with over 150 local and international tech firms",
+      "High graduate employment rate with 92% securing jobs within 6 months of graduation"
+    ],
+    "contact": {
+      "email": "it@alfabk.edu",
+      "phone": "+381 11 260 7904",
+      "address": "Palmira Toljatija 3, Belgrade"
+    },
+    "bscPrograms": [
+      {
+        "id": "software-engineering",
+        "title": "Software Engineering",
+        "description": "Full-stack development, modern frameworks, system design, databases, and enterprise software architecture.",
+        "icon": "Code",
+        "iconBg": "bg-[#2563EB]",
+        "duration": "4 years • 240 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-blue-50 text-blue-700 border-blue-200",
+        "href": "/programs/software-engineering"
+      },
+      {
+        "id": "information-systems",
+        "title": "Information Systems & Cloud Technologies",
+        "description": "Enterprise cloud platforms, system administration, database management, and network infrastructure.",
+        "icon": "Server",
+        "iconBg": "bg-[#7C3AED]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-purple-50 text-purple-700 border-purple-200",
+        "href": "/programs/information-systems"
+      },
+      {
+        "id": "cybersecurity",
+        "title": "Cybersecurity & Network Defense",
+        "description": "Network security, cryptography, penetration testing, threat intelligence, and security compliance.",
+        "icon": "Shield",
+        "iconBg": "bg-[#DC2626]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-red-50 text-red-700 border-red-200",
+        "href": "/programs/cybersecurity"
+      }
+    ],
+    "mscProgram": {
+      "title": "Artificial Intelligence & Data Analytics",
+      "description": "Graduate specialization in deep learning, machine learning pipelines, NLP, and big data architectures.",
+      "duration": "2 years • 120 ECTS",
+      "badge": "MSc",
+      "href": "/programs/master-ai-data"
+    },
+    "phdProgram": {
+      "title": "Computer Science and Informatics",
+      "description": "Doctoral research covering algorithmic optimizations, distributed systems, and neural computing.",
+      "duration": "3 years • 180 ECTS",
+      "badge": "PhD",
+      "href": "/programs/doctoral-computer-science"
+    }
+  },
+  "mathematics-computer-science": {
+    "slug": "mathematics-computer-science",
+    "title": "Faculty of Mathematics and Computer Science",
+    "subtitle": "Rigorous foundation in pure mathematics, applied algorithms, mathematical modeling, and computational theory.",
+    "bgImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=2000&q=80",
+    "badges": {
+      "programCount": "4 programs",
+      "hasBSc": true,
+      "hasMSc": true,
+      "hasPhD": true
+    },
+    "about": "The Faculty of Mathematics and Computer Science fosters deep analytical thinking, theoretical precision, and computational problem-solving. Graduating mathematicians and algorithmic scientists build foundational systems for cryptography, quantitative finance, and high-performance computing.",
+    "whyStudyHere": [
+      "Rigorous mathematical foundation combined with contemporary algorithmic computer science",
+      "Small seminar classes with personalized supervision from leading research mathematicians",
+      "Opportunities to participate in international mathematics and algorithmic Olympiads",
+      "Strong placement in financial quant roles, cryptographic engineering, and scientific research"
+    ],
+    "contact": {
+      "email": "math@alfabk.edu",
+      "phone": "+381 11 260 7905",
+      "address": "Palmira Toljatija 3, Belgrade"
+    },
+    "bscPrograms": [
+      {
+        "id": "applied-mathematics",
+        "title": "Applied Mathematics & Mathematical Modeling",
+        "description": "Differential equations, numerical analysis, stochastic processes, and mathematical optimization.",
+        "icon": "Binary",
+        "iconBg": "bg-[#059669]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-emerald-50 text-emerald-700 border-emerald-200",
+        "href": "/programs/applied-mathematics"
+      },
+      {
+        "id": "computational-science",
+        "title": "Theoretical Computer Science & Cryptography",
+        "description": "Complexity theory, formal methods, graph algorithms, and cryptographic protocol design.",
+        "icon": "Cpu",
+        "iconBg": "bg-[#6366F1]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-indigo-50 text-indigo-700 border-indigo-200",
+        "href": "/programs/computational-science"
+      }
+    ],
+    "mscProgram": {
+      "title": "Financial Mathematics & Actuarial Science",
+      "description": "Advanced risk modeling, quantitative finance, pricing derivatives, and actuarial computations.",
+      "duration": "2 years • 120 ECTS",
+      "badge": "MSc",
+      "href": "/programs/master-financial-mathematics"
+    },
+    "phdProgram": {
+      "title": "Mathematical Sciences",
+      "description": "Doctoral research program focused on topology, algebra, analysis, and applied computational mathematics.",
+      "duration": "3 years • 180 ECTS",
+      "badge": "PhD",
+      "href": "/programs/doctoral-mathematics"
+    }
+  },
+  "psychology": {
+    "slug": "psychology",
+    "title": "Faculty of Psychology",
+    "subtitle": "Clinical, cognitive, developmental, and organizational psychology for the understanding of human behavior.",
+    "bgImage": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=2000&q=80",
+    "badges": {
+      "programCount": "3 programs",
+      "hasBSc": true,
+      "hasMSc": true,
+      "hasPhD": true
+    },
+    "about": "The Faculty of Psychology provides a balanced education encompassing experimental psychology, psychotherapy, clinical assessment, and HR organizational psychology. Students develop strong empathy, diagnostic acumen, and empirical research competencies.",
+    "whyStudyHere": [
+      "Supervised clinical practicum in accredited hospitals, mental health clinics, and schools",
+      "Dedicated psychological research laboratory equipped with psychophysiological measurement tools",
+      "Focus on evidence-based cognitive behavioral therapy (CBT) and systemic modalities",
+      "Active student counseling center providing real-life supervised training"
+    ],
+    "contact": {
+      "email": "psychology@alfabk.edu",
+      "phone": "+381 11 260 7906",
+      "address": "Palmira Toljatija 3, Belgrade"
+    },
+    "bscPrograms": [
+      {
+        "id": "general-psychology",
+        "title": "Psychology (General & Applied)",
+        "description": "Foundation in developmental, cognitive, social, and physiological psychology, testing, and research design.",
+        "icon": "HeartHandshake",
+        "iconBg": "bg-[#E11D48]",
+        "duration": "4 years • 240 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-rose-50 text-rose-700 border-rose-200",
+        "href": "/programs/general-psychology"
+      },
+      {
+        "id": "organizational-psychology",
+        "title": "Organizational & HR Psychology",
+        "description": "Workplace behavior, talent development, employee wellbeing, leadership assessment, and organizational culture.",
+        "icon": "Users2",
+        "iconBg": "bg-[#0D9488]",
+        "duration": "3 years • 180 ECTS",
+        "badge": "BSc",
+        "badgeStyle": "bg-teal-50 text-teal-700 border-teal-200",
+        "href": "/programs/organizational-psychology"
+      }
+    ],
+    "mscProgram": {
+      "title": "Clinical Psychology and Psychotherapy",
+      "description": "Advanced training in psychological diagnostics, clinical intervention, and counseling psychology.",
+      "duration": "1 year • 60 ECTS",
+      "badge": "MSc",
+      "href": "/programs/master-clinical-psychology"
+    },
+    "phdProgram": {
+      "title": "Doctoral Studies in Psychology",
+      "description": "Doctoral dissertation research in neuropsychology, health psychology, and behavioral science.",
+      "duration": "3 years • 180 ECTS",
+      "badge": "PhD",
+      "href": "/programs/doctoral-psychology"
+    }
+  }
+}

@@ -1,21 +1,17 @@
-import PageShell from "@/components/shared/PageShell";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import FacultyPageTemplate from "@/components/faculties/FacultyPageTemplate";
+import { facultiesData } from "@/components/data";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Faculty of Mathematics and Computer Science | Alfa BK University",
-  description: "Advanced theoretical and applied mathematics, algorithmic foundations, and data science.",
+  description:
+    "Rigorous foundation in pure mathematics, applied algorithms, mathematical modeling, and computational theory.",
 };
 
 export default function MathematicsComputerSciencePage() {
-  return (
-    <PageShell
-      title="Faculty of Mathematics and Computer Science"
-      category="Faculties"
-      description="The Faculty of Mathematics and Computer Science provides intensive training in rigorous mathematical analysis, statistical computing, optimization algorithms, and modern data science."
-      relatedLinks={[
-        { label: "Faculty of IT", href: "/faculties/information-technologies" },
-        { label: "Programs", href: "/programs" },
-        { label: "Apply Now", href: "/apply-now" },
-      ]}
-    />
-  );
+  const faculty = facultiesData["mathematics-computer-science"];
+  if (!faculty) return notFound();
+
+  return <FacultyPageTemplate faculty={faculty} />;
 }

@@ -1,21 +1,17 @@
-import PageShell from "@/components/shared/PageShell";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import FacultyPageTemplate from "@/components/faculties/FacultyPageTemplate";
+import { facultiesData } from "@/components/data";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Faculty of Information Technologies | Alfa BK University",
-  description: "Degrees in computer science, software engineering, cloud computing, and cybersecurity.",
+  description:
+    "Software engineering, artificial intelligence, cybersecurity, and cloud computing for next-generation tech leaders.",
 };
 
 export default function InformationTechnologiesPage() {
-  return (
-    <PageShell
-      title="Faculty of Information Technologies"
-      category="Faculties"
-      description="The Faculty of Information Technologies educates future tech leaders, software architects, AI specialists, and network security experts through hands-on lab work."
-      relatedLinks={[
-        { label: "Faculty of Math & CS", href: "/faculties/mathematics-computer-science" },
-        { label: "Programs", href: "/programs" },
-        { label: "Apply Now", href: "/apply-now" },
-      ]}
-    />
-  );
+  const faculty = facultiesData["information-technologies"];
+  if (!faculty) return notFound();
+
+  return <FacultyPageTemplate faculty={faculty} />;
 }

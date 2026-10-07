@@ -1,0 +1,631 @@
+{
+  "history": {
+    "title": "Our History",
+    "subtitle": "From a bold founding vision in 1993 to one of Serbia's leading private universities — three decades of academic excellence, growth, and innovation.",
+    "milestones": [
+      {
+        "year": "1993",
+        "title": "Foundation",
+        "description": "Alfa BK University — officially known as Karić Brothers University — was founded in Belgrade by the Karić family as one of the very first private universities in the Federal Republic of Yugoslavia. Its founding mission was to offer high-quality, practically oriented higher education as an alternative to the state university system.",
+        "image": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "1995",
+        "title": "First Graduating Class",
+        "description": "The university welcomed its first class of graduates, primarily from the Faculty of Economics. The success of these early students established Alfa BK's reputation for producing practice-ready graduates who quickly integrated into Serbia's emerging private sector.",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2000",
+        "title": "Expansion of Faculties",
+        "description": "The turn of the millennium marked a major expansion: new faculties were established across business, languages, and sports management — transforming the institution from a single-faculty university into a full multi-disciplinary academic body. International cooperation agreements were signed with partner universities across Europe.",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2006",
+        "title": "Bologna Process Integration",
+        "description": "Alfa BK fully adopted the Bologna Process — restructuring all programs into the European three-cycle system: Basic Higher Education (BSc, 3 years, 180 ECTS), Master Programs (2 years, 120 ECTS), and Doctoral Studies (3 years, 180 ECTS). This aligned Alfa BK degrees with European standards and opened new pathways for student mobility.",
+        "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2010",
+        "title": "National Accreditation",
+        "description": "Following the adoption of the Law on Higher Education in Serbia, Alfa BK completed the national accreditation process for all its faculties and programs under the Commission for Accreditation and Quality Assurance (KAPK). This milestone cemented the university's legal standing and academic credibility.",
+        "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2014",
+        "title": "Erasmus+ Partnership",
+        "description": "Alfa BK was formally admitted to the Erasmus+ program, enabling student and staff exchanges with partner universities across the European Union. Within two years, over 100 students had participated in exchange semesters abroad, and the university hosted international students from 12 countries.",
+        "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2018",
+        "title": "Faculty of Information Technologies",
+        "description": "In response to growing demand for technology professionals in Serbia and the region, the Faculty of Information Technologies was officially established and accredited. It quickly became one of the most popular faculties, attracting students interested in software engineering, networks, and computer engineering.",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2020",
+        "title": "Digital Transformation",
+        "description": "In response to the global pandemic, Alfa BK rapidly deployed its E-Learning platform (Moodle-based), enabling uninterrupted online lectures, digital assignments, and remote examinations. This investment in digital infrastructure accelerated the university's long-term digital strategy and remains in active use as a hybrid learning model.",
+        "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2022",
+        "title": "Re-Accreditation & Growth",
+        "description": "All faculties successfully completed the national re-accreditation cycle. The university simultaneously expanded its doctoral studies offer, launched new research partnerships with industry, and signed cooperation agreements with universities in Russia, China, and the Gulf region.",
+        "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2024",
+        "title": "Today — 30+ Years of Excellence",
+        "description": "Alfa BK University enters its fourth decade with 6 accredited faculties, 15 academic programs, 2,400 enrolled students, 110 teaching staff, and graduates working in 34 countries. The university's continued focus on employability, research, and international cooperation keeps it at the forefront of Serbian higher education.",
+        "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "leadership": {
+    "title": "Rector & Leadership",
+    "subtitle": "Meet the academic and administrative leaders who guide Alfa BK University's vision, strategy, and day-to-day operations.",
+    "rector": {
+      "name": "Prof. dr Rade Milošević",
+      "title": "Rector",
+      "bio": "Professor Milošević has led Alfa BK University since 2018, driving the university's digital transformation, international expansion, and research strategy. He holds a PhD in Economic Sciences from the University of Belgrade and has published over 40 peer-reviewed articles on macroeconomics and higher education policy.",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+      "email": "rector@alfabk.edu"
+    },
+    "proRectors": [
+      {
+        "title": "Pro-Rector for Academic Affairs",
+        "name": "Prof. dr Nataša Jovanović",
+        "description": "Curriculum, accreditation, and quality assurance across all six faculties.",
+        "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "title": "Pro-Rector for Research",
+        "name": "Prof. dr Bojan Đorđević",
+        "description": "Research strategy, innovation center, and industry partnerships.",
+        "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "title": "Pro-Rector for International Relations",
+        "name": "Prof. dr Ivana Marković",
+        "description": "Erasmus+ coordination, bilateral agreements, and international student mobility.",
+        "photo": "https://images.unsplash.com/photo-1580894732484-934d40232efd?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    "deans": [
+      {
+        "initials": "AS",
+        "name": "Prof. dr Aleksandar Simić",
+        "faculty": "Faculty of Finance, Trade and Accounting",
+        "email": "dean.finance@alfabk.edu"
+      },
+      {
+        "initials": "VP",
+        "name": "Prof. dr Vesna Petrović",
+        "faculty": "Faculty of Foreign Languages",
+        "email": "dean.languages@alfabk.edu"
+      },
+      {
+        "initials": "MS",
+        "name": "Prof. dr Miloš Stanković",
+        "faculty": "Faculty of Management in Sports",
+        "email": "dean.sports@alfabk.edu"
+      },
+      {
+        "initials": "ZK",
+        "name": "Prof. dr Zoran Kovač",
+        "faculty": "Faculty of Information Technologies",
+        "email": "dean.it@alfabk.edu"
+      },
+      {
+        "initials": "LD",
+        "name": "Prof. dr Ljiljana Đorđević",
+        "faculty": "Faculty of Mathematics and Computer Sciences",
+        "email": "dean.math@alfabk.edu"
+      },
+      {
+        "initials": "DN",
+        "name": "Prof. dr Dragana Nikolić",
+        "faculty": "Faculty of Psychology",
+        "email": "dean.psychology@alfabk.edu"
+      }
+    ],
+    "administration": [
+      {
+        "role": "General Secretary",
+        "name": "Marija Stojanović, LL.M.",
+        "department": "Legal & Institutional Affairs",
+        "email": "sekretar@alfabk.edu"
+      },
+      {
+        "role": "Head of Student Affairs",
+        "name": "Bojan Petrović, M.Sc.",
+        "department": "Student Records & Examinations",
+        "email": "studentska@alfabk.edu"
+      },
+      {
+        "role": "Head of Finance & Procurement",
+        "name": "Jelena Marković",
+        "department": "Financial Services",
+        "email": "racunovodstvo@alfabk.edu"
+      },
+      {
+        "role": "Head of IT & Digital Services",
+        "name": "Stefan Lazarević, M.Sc.",
+        "department": "IT Infrastructure & E-Learning",
+        "email": "it.podrska@alfabk.edu"
+      }
+    ]
+  },
+  "international": {
+    "title": "International Cooperation",
+    "subtitle": "Alfa BK University maintains active academic partnerships with 60+ universities across 40+ countries — enabling student exchanges, joint research, and dual-degree programs.",
+    "stats": [
+      { "value": "60+", "label": "Partner Universities" },
+      { "value": "40+", "label": "Countries" },
+      { "value": "25+", "label": "Mobility Programs" },
+      { "value": "150+", "label": "Exchange Students / Year" }
+    ],
+    "mobilityPrograms": [
+      {
+        "id": "erasmus",
+        "title": "Erasmus+ Student Exchange",
+        "description": "Alfa BK students can spend one or two semesters in any of our 60+ Erasmus+ partner universities in Europe. Courses completed abroad are fully recognized towards your degree. Grants are available to eligible students to cover travel and living costs.",
+        "icon": "Repeat",
+        "tag": "Study Mobility"
+      },
+      {
+        "id": "staff",
+        "title": "Staff Mobility",
+        "description": "Academic and administrative staff can participate in Erasmus+ teaching and training mobility. Tenured professors visit guest lectures at partner universities and staff train in annual professional development programs abroad.",
+        "icon": "Users",
+        "tag": "Teaching & Training"
+      },
+      {
+        "id": "research",
+        "title": "Joint Research Projects",
+        "description": "Alfa BK participates in EU-funded and bilateral research projects with partner universities and industry. Research teams collaborate on projects in AI, economics, applied mathematics, and sports science.",
+        "icon": "FlaskConical",
+        "tag": "Research Collaboration"
+      },
+      {
+        "id": "dual-degree",
+        "title": "Dual Degree Programs",
+        "description": "Selected partner universities offer dual-degree pathways where students earn qualifications from both Alfa BK and the partner institution. Currently active with universities in Germany, France, and Poland.",
+        "icon": "GraduationCap",
+        "tag": "Degree Pathways"
+      }
+    ],
+    "europeanPartners": [
+      { "name": "TU München", "country": "Germany", "flag": "🇩🇪", "areas": "Engineering, IT, Business", "status": "Active Exchange" },
+      { "name": "Sorbonne Université", "country": "France", "flag": "🇫🇷", "areas": "Humanities, Social Sc., Law", "status": "Active Exchange" },
+      { "name": "University of Bologna", "country": "Italy", "flag": "🇮🇹", "areas": "Economics, Political Science", "status": "Active Exchange" },
+      { "name": "KU Leuven", "country": "Belgium", "flag": "🇧🇪", "areas": "Engineering, Life Sciences", "status": "Active Exchange" },
+      { "name": "Uppsala University", "country": "Sweden", "flag": "🇸🇪", "areas": "All disciplines", "status": "Active Exchange" },
+      { "name": "University of Warsaw", "country": "Poland", "flag": "🇵🇱", "areas": "Economics, CS, Languages", "status": "Active Exchange" },
+      { "name": "Charles University", "country": "Czech Republic", "flag": "🇨🇿", "areas": "Law, Medicine, Humanities", "status": "Active Exchange" },
+      { "name": "University of Vienna", "country": "Austria", "flag": "🇦🇹", "areas": "Business, Psychology, Arts", "status": "Active Exchange" }
+    ],
+    "globalPartners": [
+      { "name": "National University of Singapore", "country": "Singapore", "flag": "🇸🇬", "type": "Research Partnership" },
+      { "name": "University of Toronto", "country": "Canada", "flag": "🇨🇦", "type": "Academic Cooperation" },
+      { "name": "Seoul National University", "country": "South Korea", "flag": "🇰🇷", "type": "Student exchange" },
+      { "name": "Lomonosov Moscow State University", "country": "Russia", "flag": "🇷🇺", "type": "Academic cooperation" },
+      { "name": "Peking University", "country": "China", "flag": "🇨🇳", "type": "Research partnership" },
+      { "name": "American University in Dubai", "country": "UAE", "flag": "🇦🇪", "type": "Student exchange" }
+    ],
+    "office": {
+      "email": "international@alfabk.edu",
+      "phone": "+381 11 260 7900",
+      "location": "Main Building, Room 104"
+    }
+  },
+  "alumni": {
+    "title": "Alumni Association",
+    "subtitle": "Join thousands of Alfa BK graduates who stay connected, give back, and grow together through the Alumni Association.",
+    "stats": [
+      { "value": "30+", "label": "Years of graduates" },
+      { "value": "74", "label": "Countries represented" },
+      { "value": "97%", "label": "Employment rate" }
+    ],
+    "benefits": [
+      {
+        "title": "Professional Network",
+        "description": "Connect with thousands of Alfa BK graduates working across Serbia, the region, and internationally."
+      },
+      {
+        "title": "Career Support",
+        "description": "Access alumni-exclusive job postings, mentorship programs, and career coaching sessions."
+      },
+      {
+        "title": "Lifelong Learning",
+        "description": "Discounts on master's, doctoral, and executive training programs at Alfa BK."
+      },
+      {
+        "title": "Alumni Events",
+        "description": "Annual alumni reunions, faculty-specific meetups, industry networking dinners, and the Spring Gala."
+      },
+      {
+        "title": "Institute Petar Karić",
+        "description": "Engage with the university's research and cultural institute, named after the founding family."
+      },
+      {
+        "title": "University Library Access",
+        "description": "Continued digital access to academic journals, databases, and university publications."
+      }
+    ]
+  },
+  "instituteKaric": {
+    "title": "Institute Petar Karic",
+    "subtitle": "The scientific, cultural, and social institute of Alfa BK University — dedicated to advancing knowledge, fostering dialogue, and honoring the legacy of Petar Karić.",
+    "kicker": "ABOUT INSTITUTE",
+    "heading": "About the Institute",
+    "paragraphs": [
+      "The Institute Petar Karic was established in memory of Petar Karic, one of the founding members of the Karic family who played a defining role in building the university from its earliest days. The Institute carries forward his values: dedication to learning, commitment to public good, and belief in the transformative power of education.",
+      "The Institute operates as the scientific and cultural arm of Alfa BK University. It organizes academic conferences, public lectures, student award programs, and cultural events that enrich intellectual life at the university and in the wider community.",
+      "It makes managing the scientific publications, practical activities, and institutional relations, centered about the sales of discoveries and tailored transboundary opportunities for a success social platforms."
+    ],
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+    "stats": [
+      { "value": "10+", "label": "Years Active" },
+      { "value": "60+", "label": "Events/yr" },
+      { "value": "200+", "label": "Publications" }
+    ],
+    "activities": [
+      {
+        "title": "Scientific Research",
+        "description": "The Institute publishes peer-reviewed research in economics, law, technology, social sciences, and humanities. It maintains active research groups in applied economics and digital transformation.",
+        "icon": "Microscope"
+      },
+      {
+        "title": "Cultural Programs",
+        "description": "Annual conferences, public lectures, film screenings, and art exhibitions are organized to foster dialogue between academic knowledge and broader cultural life in Belgrade and Serbia.",
+        "icon": "Film"
+      },
+      {
+        "title": "Alumni Engagement",
+        "description": "The Institute acts as a bridge between the university and its graduates — hosting alumni lectures, mentoring circles, and professional development seminars throughout the academic year.",
+        "icon": "GraduationCap"
+      },
+      {
+        "title": "Publications",
+        "description": "The Institute publishes the annual Alfa BK Academic Journal, conference proceedings, and topical monographs. All publications are available through the university library and selected open-access platforms.",
+        "icon": "BookOpen"
+      },
+      {
+        "title": "International Exchange",
+        "description": "Through bilateral agreements and participation in European networks, the Institute hosts visiting scholars, co-organizes international symposia, and supports collaborative research projects.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Student Awards",
+        "description": "The Institute awards annual scholarships and prizes in memory of Petar Karic to students who demonstrate outstanding academic achievement, civic engagement, and leadership potential.",
+        "icon": "Award"
+      }
+    ],
+    "researchProjects": [
+      {
+        "title": "Strategic Management & Operations Research",
+        "description": "Developing innovative models for corporate strategy, process optimization, competitive advantage analysis.",
+        "color": "#EAB308",
+        "icon": "Settings"
+      },
+      {
+        "title": "Advanced Corporate Finance & Modeling",
+        "description": "Quantifying financial risk, valuing complex assets, and optimizing investment portfolios for sustainable growth.",
+        "color": "#3B82F6",
+        "icon": "TrendingUp"
+      },
+      {
+        "title": "Global Marketing & Consumer Analytics",
+        "description": "Analyzing international market trends, consumer psychology, and digital marketing effectiveness.",
+        "color": "#F97316",
+        "icon": "Megaphone"
+      },
+      {
+        "title": "Digital Transformation & Applied AI Initiatives",
+        "description": "Developing AI-driven decision tools, data platforms, and cybersecurity frameworks for businesses.",
+        "color": "#06B6D4",
+        "icon": "Cpu"
+      },
+      {
+        "title": "Human Resource Development & Talent Strategies",
+        "description": "Optimizing workforce skills, talent acquisition, and performance management in changing economic landscapes.",
+        "color": "#10B981",
+        "icon": "Users"
+      },
+      {
+        "title": "Legal & Ethical Frameworks in Business",
+        "description": "Navigating international trade laws, intellectual property rights, and corporate social responsibility (CSR) programs.",
+        "color": "#EF4444",
+        "icon": "Scale"
+      }
+    ]
+  },
+  "documents": {
+    "title": "Document Library",
+    "subtitle": "University statutes, accreditation certificates, program documents, enrollment guides, and legally required publications.",
+    "categories": [
+      { "id": "All Categories", "name": "All Categories" },
+      { "id": "University Documents", "name": "University Documents", "color": "#0B1E36" },
+      { "id": "Accreditation", "name": "Accreditation", "color": "#8B1D2C" },
+      { "id": "Program Documents", "name": "Program Documents", "color": "#EAB308" },
+      { "id": "Student Documents", "name": "Student Documents", "color": "#10B981" },
+      { "id": "Faculty Documents", "name": "Faculty Documents", "color": "#8B5CF6" },
+      { "id": "Admin Documents", "name": "Admin Documents", "color": "#64748B" },
+      { "id": "Legal Documents", "name": "Legal Documents", "color": "#2563EB" }
+    ],
+    "items": [
+      {
+        "id": "doc-1",
+        "title": "University Statute",
+        "category": "University Documents",
+        "date": "Jan 2026",
+        "lang": "SR/EN",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-2",
+        "title": "Academic Calendar 2026/2027",
+        "category": "University Documents",
+        "date": "Aug 2026",
+        "lang": "SR",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-3",
+        "title": "University Development Strategy 2024-2030",
+        "category": "University Documents",
+        "date": "Mar 2024",
+        "lang": "SR",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-4",
+        "title": "Quality Assurance Policy",
+        "category": "University Documents",
+        "date": "Sep 2025",
+        "lang": "SR/EN",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-5",
+        "title": "Accreditation Certificate — Alfa BK University",
+        "category": "Accreditation",
+        "date": "2022",
+        "lang": "SR",
+        "badgeColor": "#8B1D2C",
+        "btnColor": "bg-[#8B1D2C]"
+      },
+      {
+        "id": "doc-6",
+        "title": "Accreditation Report — Faculty of Finance, Trade and Accounting",
+        "category": "Accreditation",
+        "date": "2022",
+        "lang": "SR",
+        "badgeColor": "#8B1D2C",
+        "btnColor": "bg-[#8B1D2C]"
+      },
+      {
+        "id": "doc-7",
+        "title": "Accreditation Report — Faculty of Information Technologies",
+        "category": "Accreditation",
+        "date": "2022",
+        "lang": "SR",
+        "badgeColor": "#8B1D2C",
+        "btnColor": "bg-[#8B1D2C]"
+      },
+      {
+        "id": "doc-8",
+        "title": "Accreditation Report — Faculty of Mathematics and Computer Sciences",
+        "category": "Accreditation",
+        "date": "2022",
+        "lang": "SR",
+        "badgeColor": "#8B1D2C",
+        "btnColor": "bg-[#8B1D2C]"
+      },
+      {
+        "id": "doc-9",
+        "title": "Enrollment Requirements 2026/2027",
+        "category": "Enrollment Documents",
+        "filterCategory": "Student Documents",
+        "date": "Jul 2026",
+        "lang": "SR/EN/RU",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-10",
+        "title": "Required Documents for Enrollment — Checklist",
+        "category": "Enrollment Documents",
+        "filterCategory": "Student Documents",
+        "date": "Jul 2026",
+        "lang": "SR/EN",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-11",
+        "title": "Tuition Payment Information",
+        "category": "Enrollment Documents",
+        "filterCategory": "Student Documents",
+        "date": "Aug 2026",
+        "lang": "SR",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-12",
+        "title": "Faculty Guide — Finance, Trade and Accounting",
+        "category": "Faculty Documents",
+        "subCategory": "Finance, Trade & Accounting",
+        "date": "Sep 2026",
+        "lang": "SR",
+        "badgeColor": "#15803D",
+        "btnColor": "bg-[#15803D]"
+      },
+      {
+        "id": "doc-13",
+        "title": "Faculty Guide — Information Technologies",
+        "category": "Faculty Documents",
+        "subCategory": "Information Technologies",
+        "date": "Sep 2026",
+        "lang": "SR",
+        "badgeColor": "#15803D",
+        "btnColor": "bg-[#15803D]"
+      },
+      {
+        "id": "doc-14",
+        "title": "Faculty Guide — Mathematics and Computer Sciences",
+        "category": "Faculty Documents",
+        "subCategory": "Mathematics & CS",
+        "date": "Sep 2026",
+        "lang": "SR",
+        "badgeColor": "#15803D",
+        "btnColor": "bg-[#15803D]"
+      },
+      {
+        "id": "doc-15",
+        "title": "Book of Subjects — Economics and Finance (BSc)",
+        "category": "Program Documents",
+        "subCategory": "Finance, Trade & Accounting",
+        "date": "Sep 2026",
+        "lang": "SR",
+        "badgeColor": "#047857",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-16",
+        "title": "Study Plan — Information Technologies (BSc)",
+        "category": "Program Documents",
+        "subCategory": "Information Technologies",
+        "date": "Sep 2026",
+        "lang": "SR",
+        "badgeColor": "#047857",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-17",
+        "title": "Study Plan — Computer Sciences (BSc)",
+        "category": "Program Documents",
+        "subCategory": "Mathematics & CS",
+        "date": "Sep 2026",
+        "lang": "SR",
+        "badgeColor": "#047857",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-18",
+        "title": "Tutor's Book — Anglistics (BSc)",
+        "category": "Program Documents",
+        "subCategory": "Foreign Languages",
+        "date": "Sep 2026",
+        "lang": "SR",
+        "badgeColor": "#047857",
+        "btnColor": "bg-[#047857]"
+      },
+      {
+        "id": "doc-19",
+        "title": "Student Rights and Obligations",
+        "category": "Student Documents",
+        "date": "Sep 2025",
+        "lang": "SR",
+        "badgeColor": "#047857",
+        "btnColor": "bg-[#047857]"
+      },
+      {
+        "id": "doc-20",
+        "title": "Code of Student Conduct",
+        "category": "Student Documents",
+        "date": "Sep 2025",
+        "lang": "SR",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-21",
+        "title": "Student Complaint Procedure",
+        "category": "Student Documents",
+        "date": "Jan 2024",
+        "lang": "SR/EN",
+        "badgeColor": "#0B1E36",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-22",
+        "title": "Higher Education Law of the Republic of Serbia",
+        "category": "Legal Documents",
+        "date": "2023",
+        "lang": "SR",
+        "badgeColor": "#2563EB",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-23",
+        "title": "Privacy Policy",
+        "category": "Legal Documents",
+        "date": "Jan 2026",
+        "lang": "SR/EN",
+        "badgeColor": "#2563EB",
+        "btnColor": "bg-[#0B1E36]"
+      },
+      {
+        "id": "doc-24",
+        "title": "Anti-Corruption Policy",
+        "category": "Legal Documents",
+        "date": "Mar 2025",
+        "lang": "SR",
+        "badgeColor": "#2563EB",
+        "btnColor": "bg-[#2563EB]"
+      }
+    ]
+  },
+  "contact": {
+    "title": "We're Here to Help",
+    "subtitle": "Get in touch with admissions, student affairs, academic departments, or visit our central campus in New Belgrade.",
+    "offices": [
+      {
+        "title": "Admissions & Enrollment Office",
+        "description": "Questions regarding enrollment requirements, entrance consultations, and application status.",
+        "email": "upis@alfabk.edu",
+        "phone": "+381 11 260 7901",
+        "room": "Room 101, Ground Floor"
+      },
+      {
+        "title": "Student Affairs Office",
+        "description": "Certificates of study, exam registrations, student records, and graduation procedures.",
+        "email": "studentska@alfabk.edu",
+        "phone": "+381 11 260 7902",
+        "room": "Room 102, Ground Floor"
+      },
+      {
+        "title": "International Relations & Erasmus+",
+        "description": "Exchange opportunities, bilateral university agreements, and visa support.",
+        "email": "international@alfabk.edu",
+        "phone": "+381 11 260 7903",
+        "room": "Room 104, 1st Floor"
+      },
+      {
+        "title": "Accounting & Tuition Payments",
+        "description": "Tuition installments, payment validation, bank details, and financial clearance.",
+        "email": "racunovodstvo@alfabk.edu",
+        "phone": "+381 11 260 7904",
+        "room": "Room 205, 2nd Floor"
+      }
+    ],
+    "campus": {
+      "address": "Palmira Toljatija 3",
+      "city": "11070 Novi Beograd, Serbia",
+      "workingHours": "Monday – Friday: 08:00 – 17:00 | Saturday: 09:00 – 14:00",
+      "phone": "+381 11 260 7900",
+      "email": "info@alfabk.edu"
+    }
+  }
+}

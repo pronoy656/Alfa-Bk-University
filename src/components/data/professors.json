@@ -1,0 +1,155 @@
+{
+  "spotlight": {
+    "name": "Dr. Aleksandar Petrović",
+    "role": "Professor of Economics",
+    "faculty": "Faculty of Finance, Trade and Accounting",
+    "department": "Department of Economics",
+    "degree": "PhD in Economics, University of Belgrade",
+    "bio": "Specializes in international economics, financial markets, and economic policy. With over 15 years of teaching and research experience, Dr. Petrović has published extensively in leading academic journals.",
+    "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+    "alsoTeachesIn": [
+      "Faculty of Business Administration",
+      "Faculty of International Relations"
+    ],
+    "courses": [
+      "International Economics",
+      "Macroeconomics",
+      "Global Financial Markets",
+      "Economic Policy Analysis"
+    ]
+  },
+  "categories": [
+    { "id": "all", "label": "All Faculty" },
+    { "id": "finance", "label": "Finance, Trade & Accounting" },
+    { "id": "business", "label": "Business Administration" },
+    { "id": "international", "label": "International Relations" },
+    { "id": "engineering", "label": "Engineering" },
+    { "id": "computer-science", "label": "Computer Science" },
+    { "id": "law", "label": "Law" }
+  ],
+  "departments": [
+    "All Departments",
+    "Department of Finance",
+    "Department of Economics",
+    "Department of Management",
+    "Department of Global Politics",
+    "Department of Software Engineering",
+    "Department of Public Law",
+    "Department of Mechanical Engineering",
+    "Department of Accounting",
+    "Department of Diplomacy"
+  ],
+  "positions": [
+    "All Positions",
+    "Professor",
+    "Associate Professor",
+    "Senior Lecturer",
+    "Teaching Assistant"
+  ],
+  "professors": [
+    {
+      "id": "ana-markovic",
+      "name": "Prof. Ana Marković",
+      "role": "Associate Professor",
+      "faculty": "Finance, Trade and Accounting",
+      "facultyId": "finance",
+      "department": "Department of Finance",
+      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Finance", "Financial Markets"],
+      "type": "Faculty",
+      "icon": "TrendingUp",
+      "iconBg": "bg-blue-50 text-blue-600"
+    },
+    {
+      "id": "marko-jovanovic",
+      "name": "Dr. Marko Jovanović",
+      "role": "Senior Lecturer",
+      "faculty": "Business Administration",
+      "facultyId": "business",
+      "department": "Department of Management",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Management", "Strategy"],
+      "type": "Faculty",
+      "icon": "Briefcase",
+      "iconBg": "bg-amber-50 text-amber-600"
+    },
+    {
+      "id": "jelena-stojanovic",
+      "name": "Prof. Jelena Stojanović",
+      "role": "Professor",
+      "faculty": "International Relations",
+      "facultyId": "international",
+      "department": "Department of Global Politics",
+      "photo": "https://images.unsplash.com/photo-1580894732484-934d40232efd?auto=format&fit=crop&w=400&q=80",
+      "tags": ["International Relations", "Diplomacy"],
+      "type": "Faculty",
+      "icon": "Globe",
+      "iconBg": "bg-sky-50 text-sky-600"
+    },
+    {
+      "id": "nikola-petrovic",
+      "name": "Dr. Nikola Petrović",
+      "role": "Teaching Assistant",
+      "faculty": "Computer Science",
+      "facultyId": "computer-science",
+      "department": "Department of Software Engineering",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Programming", "Web Development"],
+      "type": "Faculty",
+      "icon": "Code",
+      "iconBg": "bg-emerald-50 text-emerald-600"
+    },
+    {
+      "id": "ivana-kovac",
+      "name": "Dr. Ivana Kovač",
+      "role": "Associate Professor",
+      "faculty": "Law",
+      "facultyId": "law",
+      "department": "Department of Public Law",
+      "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Law", "Human Rights"],
+      "type": "Faculty",
+      "icon": "Scale",
+      "iconBg": "bg-rose-50 text-rose-600"
+    },
+    {
+      "id": "stefan-ristic",
+      "name": "Dr. Stefan Ristić",
+      "role": "Professor",
+      "faculty": "Engineering",
+      "facultyId": "engineering",
+      "department": "Department of Mechanical Engineering",
+      "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Mechanical Eng.", "Innovation"],
+      "type": "Faculty",
+      "icon": "Settings",
+      "iconBg": "bg-teal-50 text-teal-600"
+    },
+    {
+      "id": "milica-dordevic",
+      "name": "Prof. Milica Đorđević",
+      "role": "Associate Professor",
+      "faculty": "Finance, Trade and Accounting",
+      "facultyId": "finance",
+      "department": "Department of Accounting",
+      "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Accounting", "Auditing"],
+      "type": "Faculty",
+      "icon": "Calculator",
+      "iconBg": "bg-indigo-50 text-indigo-600"
+    },
+    {
+      "id": "petar-lazarevic",
+      "name": "Dr. Petar Lazarević",
+      "role": "Teaching Assistant",
+      "faculty": "International Relations",
+      "facultyId": "international",
+      "department": "Department of Diplomacy",
+      "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Diplomacy", "Politics"],
+      "type": "Faculty",
+      "icon": "Landmark",
+      "iconBg": "bg-slate-100 text-slate-700"
+    }
+  ]
+}

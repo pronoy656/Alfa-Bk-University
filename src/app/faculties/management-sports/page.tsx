@@ -1,21 +1,17 @@
-import PageShell from "@/components/shared/PageShell";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import FacultyPageTemplate from "@/components/faculties/FacultyPageTemplate";
+import { facultiesData } from "@/components/data";
 
-export const metadata = {
-  title: "Faculty of Management and Sports | Alfa BK University",
-  description: "Sports management, athletic organization, coaching and sports business administration.",
+export const metadata: Metadata = {
+  title: "Faculty of Management in Sports | Alfa BK University",
+  description:
+    "Leading academic institution for sports leadership, club administration, athletic marketing, and recreation management.",
 };
 
 export default function ManagementSportsPage() {
-  return (
-    <PageShell
-      title="Faculty of Management and Sports"
-      category="Faculties"
-      description="The Faculty of Management and Sports combines modern leadership and business methodologies with specialized sports industry training and performance administration."
-      relatedLinks={[
-        { label: "Programs", href: "/programs" },
-        { label: "Apply Now", href: "/apply-now" },
-        { label: "Students", href: "/students" },
-      ]}
-    />
-  );
+  const faculty = facultiesData["management-sports"];
+  if (!faculty) return notFound();
+
+  return <FacultyPageTemplate faculty={faculty} />;
 }
