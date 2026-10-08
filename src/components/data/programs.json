@@ -1,0 +1,433 @@
+{
+  "title": "15 Accredited Programs Across 6 Faculties",
+  "subtitle": "Three levels of study — Basic Higher Education, Master Program, and Doctoral Studies — taught in Belgrade since 1993.",
+  "kicker": "ACADEMIC PROGRAMS",
+  "levels": [
+    "All Levels",
+    "Basic Studies",
+    "Master Studies",
+    "Doctoral Studies (PhD)"
+  ],
+  "faculties": [
+    "All Faculties",
+    "Finance, Trade and Accounting",
+    "Foreign Languages",
+    "Management in Sports",
+    "Information Technologies",
+    "Mathematics and Computer Sciences",
+    "Psychology"
+  ],
+  "programs": [
+    {
+      "id": "economics-finance",
+      "slug": "economics-finance",
+      "title": "Economics and Finance",
+      "faculty": "Faculty of Finance, Trade and Accounting",
+      "facultySlug": "finance-trade-accounting",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "A comprehensive program combining economic theory with financial practice, preparing graduates for careers in banking, finance, and business consulting.",
+      "details": {
+        "studyLevel": "Basic Higher Education",
+        "duration": "3 years",
+        "ectsCredits": 180,
+        "language": "Serbian",
+        "mode": "Full-time",
+        "faculty": "Finance, Trade & Accounting",
+        "accreditation": "Accredited"
+      },
+      "lecturers": [
+        {
+          "name": "Prof. Sarah Chen",
+          "role": "Professor of International Finance",
+          "bio": "Prof. Sarah Chen is combining economic theory with finance, preparing graduates for careers in banking, finance, and business consulting.",
+          "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "name": "Dr. David Miller",
+          "role": "Professor of International Finance",
+          "bio": "Dr. David Miller is a comprehensive professor of international finance preparing graduates for careers in banking, finance, and business consulting.",
+          "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "name": "Dr. Sarai Dinso",
+          "role": "Professor of International Finance",
+          "bio": "Dr. David Miller is conducting economic theory with financial practice, preparing graduates for careers in banking, finance, and best consulting.",
+          "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "name": "Prof. John Coe",
+          "role": "Professor of International Finance",
+          "bio": "Dr. David Miller is a marketing economic economic financial practice, preparing graduates for careers in banking, finance, and best consulting.",
+          "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "name": "Dr. David Miller",
+          "role": "Professor of International Finance",
+          "bio": "Dr. David Miller is a comprehensive professor of international finance graduates for career in finance, banking and business consulting.",
+          "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "name": "Dr. Dara Miller",
+          "role": "Professor of International Finance",
+          "bio": "Prof. Sarah Chen is combining economic economic theory with mechanics, preparing graduates for careers in in banking, finance, and business consulting.",
+          "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "studyStructure": [
+        {
+          "yearNumber": 1,
+          "yearTitle": "YEAR 1 – FOUNDATIONAL PRINCIPLES",
+          "semesters": [
+            {
+              "number": 1,
+              "title": "Semester 1 • Winter",
+              "courses": [
+                "Introduction to Economics",
+                "Mathematics I",
+                "Informatics in Economics",
+                "Business Communication",
+                "Foreign Language II"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Semester 2 • Winter",
+              "courses": [
+                "Microeconomics",
+                "Mathematics II",
+                "Business Law",
+                "Fundamentals of Accounting",
+                "Foreign Language II"
+              ]
+            }
+          ]
+        },
+        {
+          "yearNumber": 2,
+          "yearTitle": "YEAR 2 – CORE DISCIPLINE",
+          "semesters": [
+            {
+              "number": 3,
+              "title": "Semester 3 • Winter",
+              "courses": [
+                "Macroeconomics",
+                "Statistics",
+                "Financial Accounting",
+                "Business Finance",
+                "Marketing"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Semester 4 • Summer",
+              "courses": [
+                "Corporate Finance",
+                "Banking and Banking Operations",
+                "Tax Law and Fiscal System",
+                "Management",
+                "Research Methodology"
+              ]
+            }
+          ]
+        },
+        {
+          "yearNumber": 3,
+          "yearTitle": "YEAR 3 – ADVANCED SPECIALIZATION",
+          "semesters": [
+            {
+              "number": 5,
+              "title": "Semester 5 • Winter",
+              "courses": [
+                "Financial Analysis",
+                "International Finance",
+                "Investment and Portfolio Management",
+                "Audit Fundamentals"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Semester 6 • Summer",
+              "courses": [
+                "Bachelor Thesis",
+                "Professional Practice",
+                "Elective II",
+                "Elective III"
+              ]
+            }
+          ]
+        }
+      ],
+      "documents": [
+        {
+          "id": "book-of-subjects",
+          "title": "Book of Subjects",
+          "subtitle": "Economics and Finance — Basic Higher Education",
+          "fileUrl": "/docs/book-of-subjects-economics.pdf"
+        },
+        {
+          "id": "study-subjects",
+          "title": "Study Subjects by Semesters and Training Courses",
+          "subtitle": "Economics and Finance — Basic Higher Education",
+          "fileUrl": "/docs/study-subjects-economics.pdf"
+        },
+        {
+          "id": "tutors-book",
+          "title": "Tutor's Book",
+          "subtitle": "Economics and Finance — Basic Higher Education",
+          "fileUrl": "/docs/tutors-book-economics.pdf"
+        }
+      ],
+      "careerOpportunities": [
+        { "title": "Financial Analyst", "icon": "Briefcase" },
+        { "title": "Bank Officer", "icon": "Landmark" },
+        { "title": "Investment Advisor", "icon": "TrendingUp" },
+        { "title": "Business Consultant", "icon": "Briefcase" },
+        { "title": "Tax Advisor", "icon": "Scale" },
+        { "title": "Accountant", "icon": "Calculator" }
+      ],
+      "employmentRate": {
+        "percentage": "97%",
+        "label": "Graduate Employment Rate",
+        "description": "of Alfa BK graduates find employment within 12 months of graduation"
+      }
+    },
+    {
+      "id": "marketing-management-trade",
+      "slug": "marketing-management-trade",
+      "title": "Marketing Management and Trade",
+      "faculty": "Faculty of Finance, Trade and Accounting",
+      "facultySlug": "finance-trade-accounting",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Prepares future brand managers, sales strategists, and marketing directors for dynamic international commercial environments."
+    },
+    {
+      "id": "trade",
+      "slug": "trade",
+      "title": "Trade",
+      "faculty": "Faculty of Finance, Trade and Accounting",
+      "facultySlug": "finance-trade-accounting",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Focuses on wholesale and retail operations, international trade agreements, supply chains, and commercial commodity logistics."
+    },
+    {
+      "id": "accounting-auditing",
+      "slug": "accounting-auditing",
+      "title": "Accounting and Auditing",
+      "faculty": "Faculty of Finance, Trade and Accounting",
+      "facultySlug": "finance-trade-accounting",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Comprehensive grounding in International Financial Reporting Standards (IFRS), forensic accounting, and statutory audit certification."
+    },
+    {
+      "id": "economics",
+      "slug": "economics",
+      "title": "Economics",
+      "faculty": "Faculty of Finance, Trade and Accounting",
+      "facultySlug": "finance-trade-accounting",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Fundamental economic modeling, macroeconomic policy analysis, monetary theory, and quantitative econometric evaluations."
+    },
+    {
+      "id": "finance-master",
+      "slug": "finance-master",
+      "title": "Finance",
+      "faculty": "Faculty of Finance, Trade and Accounting",
+      "facultySlug": "finance-trade-accounting",
+      "level": "Master Program",
+      "levelCategory": "Master Studies",
+      "duration": "2 years",
+      "ects": "120 ECTS",
+      "status": "Accredited",
+      "overview": "Advanced master-level studies in quantitative portfolio management, derivative instruments, and cross-border corporate finance."
+    },
+    {
+      "id": "economy-business-phd",
+      "slug": "economy-business-phd",
+      "title": "Economy and Business",
+      "faculty": "Faculty of Finance, Trade and Accounting",
+      "facultySlug": "finance-trade-accounting",
+      "level": "Doctoral Studies",
+      "levelCategory": "Doctoral Studies (PhD)",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Terminal research degree producing scholars and senior researchers through publishable empirical research in applied economics."
+    },
+    {
+      "id": "anglistics-bsc",
+      "slug": "anglistics-bsc",
+      "title": "Anglistics",
+      "faculty": "Faculty of Foreign Languages",
+      "facultySlug": "foreign-languages",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Rigorous undergraduate training in English language, theoretical linguistics, British and American literature, and translation pedagogy."
+    },
+    {
+      "id": "anglistics-msc",
+      "slug": "anglistics-msc",
+      "title": "Anglistics",
+      "faculty": "Faculty of Foreign Languages",
+      "facultySlug": "foreign-languages",
+      "level": "Master Program",
+      "levelCategory": "Master Studies",
+      "duration": "2 years",
+      "ects": "120 ECTS",
+      "status": "Accredited",
+      "overview": "Advanced literary criticism, applied translation studies, simultaneous interpreting, and secondary English language curriculum design."
+    },
+    {
+      "id": "management-sports-bsc",
+      "slug": "management-sports-bsc",
+      "title": "Management in Sports",
+      "faculty": "Faculty of Management in Sports",
+      "facultySlug": "management-sports",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Combines sports marketing, athlete representation, sports governance, and modern facility administration."
+    },
+    {
+      "id": "management-sports-msc",
+      "slug": "management-sports-msc",
+      "title": "Management in Sports",
+      "faculty": "Faculty of Management in Sports",
+      "facultySlug": "management-sports",
+      "level": "Master Program",
+      "levelCategory": "Master Studies",
+      "duration": "2 years",
+      "ects": "120 ECTS",
+      "status": "Accredited",
+      "overview": "Strategic leadership in professional leagues, international Olympic federations, and major athletic tournament rights."
+    },
+    {
+      "id": "information-technologies-bsc",
+      "slug": "information-technologies-bsc",
+      "title": "Information Technologies",
+      "faculty": "Faculty of Information Technologies",
+      "facultySlug": "information-technologies",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Full-stack software engineering, relational and distributed databases, enterprise cloud architecture, and modern DevOps."
+    },
+    {
+      "id": "information-technologies-msc",
+      "slug": "information-technologies-msc",
+      "title": "Information Technologies",
+      "faculty": "Faculty of Information Technologies",
+      "facultySlug": "information-technologies",
+      "level": "Master Program",
+      "levelCategory": "Master Studies",
+      "duration": "2 years",
+      "ects": "120 ECTS",
+      "status": "Accredited",
+      "overview": "Advanced software system design, distributed consensus systems, modern cybersecurity standards, and cloud microservices."
+    },
+    {
+      "id": "electrical-computer-engineering-phd",
+      "slug": "electrical-computer-engineering-phd",
+      "title": "Electrical and Computer Engineering",
+      "faculty": "Faculty of Information Technologies",
+      "facultySlug": "information-technologies",
+      "level": "Doctoral Studies",
+      "levelCategory": "Doctoral Studies (PhD)",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Advanced PhD research in intelligent computing, embedded architectures, edge inference, and high-performance networks."
+    },
+    {
+      "id": "computer-sciences-bsc",
+      "slug": "computer-sciences-bsc",
+      "title": "Computer Sciences",
+      "faculty": "Faculty of Mathematics and Computer Sciences",
+      "facultySlug": "mathematics-computer-science",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Deep mathematical foundations, algorithmic complexity, artificial intelligence, and operating systems."
+    },
+    {
+      "id": "computer-sciences-msc",
+      "slug": "computer-sciences-msc",
+      "title": "Computer Sciences",
+      "faculty": "Faculty of Mathematics and Computer Sciences",
+      "facultySlug": "mathematics-computer-science",
+      "level": "Master Program",
+      "levelCategory": "Master Studies",
+      "duration": "2 years",
+      "ects": "120 ECTS",
+      "status": "Accredited",
+      "overview": "Machine learning, neural architectures, distributed computing, and advanced computational optimization."
+    },
+    {
+      "id": "computer-sciences-phd",
+      "slug": "computer-sciences-phd",
+      "title": "Computer Sciences",
+      "faculty": "Faculty of Mathematics and Computer Sciences",
+      "facultySlug": "mathematics-computer-science",
+      "level": "Doctoral Studies",
+      "levelCategory": "Doctoral Studies (PhD)",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "Accredited",
+      "overview": "Highest academic research degree focusing on novel theoretical computer science and frontier artificial intelligence."
+    },
+    {
+      "id": "psychology-bsc",
+      "slug": "psychology-bsc",
+      "title": "Psychology",
+      "faculty": "Faculty of Psychology",
+      "facultySlug": "psychology",
+      "level": "Basic Higher Education",
+      "levelCategory": "Basic Studies",
+      "duration": "3 years",
+      "ects": "180 ECTS",
+      "status": "In process of accreditation",
+      "overview": "Foundations of cognitive neuroscience, developmental psychology, psychopathology, and qualitative psychometric diagnostics."
+    },
+    {
+      "id": "psychology-msc",
+      "slug": "psychology-msc",
+      "title": "Psychology",
+      "faculty": "Faculty of Psychology",
+      "facultySlug": "psychology",
+      "level": "Master Program",
+      "levelCategory": "Master Studies",
+      "duration": "2 years",
+      "ects": "120 ECTS",
+      "status": "In process of accreditation",
+      "overview": "Clinical interventions, psychotherapy modalities, organizational consulting, and neuropsychological assessment."
+    }
+  ]
+}

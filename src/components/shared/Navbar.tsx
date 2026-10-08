@@ -24,6 +24,7 @@ export default function Navbar() {
     { label: "Alumni Association", href: "/university/alumni" },
     { label: "Institute Petar Karić", href: "/university/institute-karic" },
     { label: "Document Library", href: "/university/documents" },
+    { label: "University Library", href: "/library" },
     { label: "Contact Us", href: "/university/contact" },
   ];
 
@@ -272,7 +273,7 @@ export default function Navbar() {
 
             {/* Login Link */}
             <Link
-              href="/e-student"
+              href="/login"
               className="px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-slate-900 border border-slate-200 hover:bg-slate-50 rounded-lg transition"
             >
               Login
@@ -441,7 +442,7 @@ export default function Navbar() {
 
           <div className="pt-2">
             <Link
-              href="/e-student"
+              href="/login"
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full py-2.5 text-center text-xs font-semibold text-slate-800 border border-slate-300 rounded-lg hover:bg-slate-50"
             >

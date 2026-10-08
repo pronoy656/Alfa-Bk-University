@@ -1,0 +1,207 @@
+{
+  "newsroom": {
+    "kicker": "NEWSROOM",
+    "title": "News & Events",
+    "subtitle": "Achievements, announcements, media, and what's happening on campus.",
+    "heroImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+  },
+  "featuredNews": {
+    "id": "top-100-young-universities",
+    "badge": "Achievements",
+    "date": "Jul 2, 2026",
+    "title": "Alfa BK ranked among Top 100 Young Universities worldwide",
+    "excerpt": "The 2026 global rankings recognize Alfa BK University's rapid rise in research output and graduate employability.",
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    "readTime": "4 min read",
+    "featured": true
+  },
+  "latestNews": [
+    {
+      "id": "new-ai-research-center",
+      "badge": "Research",
+      "date": "Jun 24, 2026",
+      "title": "New AI Research Center opens with €12M in funding",
+      "excerpt": "The Center for Applied Artificial Intelligence will host 60 researchers across 8...",
+      "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "record-international-applications",
+      "badge": "Admissions",
+      "date": "Jun 18, 2026",
+      "title": "Record 3,200 international applications for Fall 2026",
+      "excerpt": "Applications from 74 countries mark a 28% year-on-year increase for the upcoming..",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "partnership-european-universities",
+      "badge": "Announcements",
+      "date": "Jun 9, 2026",
+      "title": "Alfa BK signs partnership with 5 European universities",
+      "excerpt": "New Erasmus+ agreements expand exchange opportunities for over 800 students annually.",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "upcomingEvents": [
+    {
+      "id": "international-open-day",
+      "month": "JUL",
+      "day": "20",
+      "dateStr": "July 20, 2026",
+      "title": "International Open Day 2026",
+      "time": "10:00 - 16:00",
+      "location": "Main Campus Auditorium",
+      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
+      "category": "Events"
+    },
+    {
+      "id": "ai-society-conference",
+      "month": "AUG",
+      "day": "4",
+      "dateStr": "August 4, 2026",
+      "title": "AI & Society Summer Conference",
+      "time": "09:00 - 18:00",
+      "location": "Innovation Hub",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80",
+      "category": "Events"
+    },
+    {
+      "id": "freshers-orientation-week",
+      "month": "SEP",
+      "day": "14",
+      "dateStr": "September 14, 2026",
+      "title": "Freshers Orientation Week",
+      "time": "All day",
+      "location": "Campus-wide",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80",
+      "category": "Sports"
+    },
+    {
+      "id": "career-fair-120-employers",
+      "month": "OCT",
+      "day": "2",
+      "dateStr": "October 2, 2026",
+      "title": "Career Fair — 120+ Employers",
+      "time": "11:00 - 16:00",
+      "location": "Sports & Events Arena",
+      "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80",
+      "category": "Career Fair"
+    }
+  ],
+  "allEvents": [
+    {
+      "id": "all-top-100",
+      "featured": true,
+      "badge": "Achievements",
+      "date": "Jul 2, 2026",
+      "title": "Alfa BK ranked among Top 100 Young Universities worldwide",
+      "description": "The 2026 global rankings recognize Alfa BK University's rapid rise in research output and graduate employability.",
+      "location": "Main Campus Auditorium",
+      "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-ai-research",
+      "badge": "Research",
+      "date": "Jun 24, 2026",
+      "title": "New AI Research Center opens with €12M in funding",
+      "description": "The Center for Applied Artificial Intelligence will host 60 researchers across 8 laboratories.",
+      "location": "Innovation Hub",
+      "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-record-admissions",
+      "badge": "Admissions",
+      "date": "Jun 18, 2026",
+      "title": "Record 3,200 international applications for Fall 2026",
+      "description": "Applications from 74 countries mark a 28% year-on-year increase for the upcoming academic year.",
+      "location": "Admissions Office",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-partnership-europe",
+      "badge": "Announcements",
+      "date": "Jun 9, 2026",
+      "title": "Alfa BK signs partnership with 5 European universities",
+      "description": "New Erasmus+ agreements expand exchange opportunities for over 800 students annually.",
+      "location": "International Relations Office",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-career-fair",
+      "badge": "Career Fair",
+      "date": "Oct 2, 2026",
+      "title": "Career Fair — 120+ Employers",
+      "description": "Connect with top companies, explore job opportunities, and attend career workshops.",
+      "location": "Sports & Events Arena",
+      "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-open-day",
+      "badge": "Events",
+      "date": "Sep 14, 2026",
+      "title": "International Open Day 2026",
+      "description": "Discover our programs, meet faculty, and experience campus life first hand.",
+      "location": "Main Campus Auditorium",
+      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-ai-society",
+      "badge": "Events",
+      "date": "Aug 4, 2026",
+      "title": "AI & Society Summer Conference",
+      "description": "Explore how AI is shaping a better, more inclusive future for all.",
+      "location": "Innovation Hub",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-freshers-orientation",
+      "badge": "Sports",
+      "date": "Sep 14, 2026",
+      "title": "Freshers Orientation Week",
+      "description": "Welcome to Alfa BK! Meet your peers, explore campus, and get ready for an amazing journey.",
+      "location": "Campus-wide",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "all-entrepreneurship-workshop",
+      "badge": "Workshops",
+      "date": "Oct 12, 2026",
+      "title": "Innovation & Entrepreneurship Workshop",
+      "description": "Learn from industry experts and turn your ideas into impactful solutions.",
+      "location": "Business Incubation Center",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "library": {
+    "kicker": "LIBRARY",
+    "title": "Knowledge Without Limits",
+    "subtitle": "184,200 volumes, world-leading digital databases, silent study halls, and 24/7 online access for every student.",
+    "searchPlaceholder": "Search the catalog — books, journals, theses...",
+    "features": [
+      {
+        "id": "volumes",
+        "title": "184,200 Volumes",
+        "description": "Physical collection across all disciplines with daily inter-library loans.",
+        "icon": "BookOpen"
+      },
+      {
+        "id": "databases",
+        "title": "Digital Databases",
+        "description": "IEEE Xplore, SpringerLink, JSTOR, Scopus, Westlaw — full-text access.",
+        "icon": "Database"
+      },
+      {
+        "id": "hours",
+        "title": "Open 07–23",
+        "description": "Extended hours during exam periods, weekend study halls open until 20:00.",
+        "icon": "Clock"
+      },
+      {
+        "id": "online",
+        "title": "24/7 Online",
+        "description": "E-books, journals, and thesis repository from anywhere in the world.",
+        "icon": "Globe"
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1600&q=80"
+  }
+}

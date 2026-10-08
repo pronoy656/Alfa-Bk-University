@@ -1,0 +1,10 @@
+export { default as TeacherOverview } from "./TeacherOverview";
+export { default as TeacherCoursesList } from "./TeacherCoursesList";
+export { default as CourseDetailModules } from "./CourseDetailModules";
+export { default as UploadLectureForm } from "./UploadLectureForm";
+export { default as CreateAssignmentForm } from "./CreateAssignmentForm";
+export { default as CreateAssignmentModal } from "./CreateAssignmentModal";
+export { default as UploadLectureModal } from "./UploadLectureModal";
+export { default as CreateQuizModal } from "./CreateQuizModal";
+export { default as TeacherAssignmentsList } from "./TeacherAssignmentsList";
+export * from "./navItems";

@@ -12,6 +12,8 @@ export default function EStudentPage() {
       category="Electronic Services"
       description="The official student e-service portal. Log in to register for upcoming exam terms, review academic transcripts and ECTS credits, view class schedules, and check tuition statements."
       relatedLinks={[
+        { label: "Student Dashboard (Active)", href: "/dashboard/student" },
+        { label: "Student Portal Login", href: "/login" },
         { label: "e-Learning (Moodle)", href: "/e-learning" },
         { label: "Students Information", href: "/students" },
         { label: "Contact Student Service", href: "/university/contact" },

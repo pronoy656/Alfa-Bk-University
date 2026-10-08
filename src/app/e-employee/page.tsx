@@ -12,8 +12,9 @@ export default function EEmployeePage() {
       category="Electronic Services"
       description="The internal administrative portal for professors, teaching assistants, and administrative staff to enter grades, manage coursework, and handle university documentation."
       relatedLinks={[
-        { label: "e-Student Portal", href: "/e-student" },
-        { label: "e-Learning Platform", href: "/e-learning" },
+        { label: "Launch Teacher Dashboard", href: "/dashboard/teacher" },
+        { label: "e-Learning Platform", href: "/dashboard/teacher" },
+        { label: "Faculty Documents", href: "/university/documents" },
         { label: "Contact Administration", href: "/university/contact" },
       ]}
     />

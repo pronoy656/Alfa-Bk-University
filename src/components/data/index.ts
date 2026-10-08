@@ -83,6 +83,8 @@ export interface ProfessorsData {
 }
 
 import universityRaw from "./university.json";
+import programsRaw from "./programs.json";
+import newsEventsRaw from "./newsEvents.json";
 
 export const facultiesData: Record<string, FacultyDetail> =
   facultiesRaw as Record<string, FacultyDetail>;
@@ -91,7 +93,17 @@ export const professorsData: ProfessorsData =
   professorsRaw as ProfessorsData;
 
 export const universityData = universityRaw;
+export const programsData = programsRaw;
+export const newsEventsData = newsEventsRaw;
 
 export function getFacultyBySlug(slug: string): FacultyDetail | undefined {
   return facultiesData[slug];
 }
+
+export function getProgramBySlug(slug: string) {
+  return (
+    programsData.programs.find((p) => p.slug === slug || p.id === slug) ||
+    programsData.programs[0]
+  );
+}
+

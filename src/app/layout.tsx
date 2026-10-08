@@ -17,8 +17,7 @@ export const metadata: Metadata = {
   description: "Alfa BK University - Higher education, accredited study programs, faculties, and research.",
 };
 
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
+import AppLayout from "@/components/shared/AppLayout";
 
 export default function RootLayout({
   children,
@@ -31,9 +30,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
-        <Navbar />
-        <div className="flex-1">{children}</div>
-        <Footer />
+        <AppLayout>{children}</AppLayout>
       </body>
     </html>
   );
