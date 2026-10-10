@@ -32,11 +32,11 @@ export default function FaqSection() {
   return (
     <section className="py-20 bg-[#FAFCFF] border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] text-center mb-12 tracking-tight">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] text-center mb-12 tracking-tight fade-up-scroll">
           Frequently Asked Questions
         </h2>
 
-        <div className="divide-y divide-slate-200 border-y border-slate-200 bg-white rounded-2xl shadow-xs overflow-hidden">
+        <div className="divide-y divide-slate-200 border-y border-slate-200 bg-white rounded-2xl shadow-xs overflow-hidden fade-up-scroll delay-150">
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (

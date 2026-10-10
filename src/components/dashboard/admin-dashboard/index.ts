@@ -1,2 +1,16 @@
 export { default as AdminPagePlaceholder } from "./AdminPagePlaceholder";
+export { default as AdminOverviewView } from "./AdminOverviewView";
+export { default as AdminStudentsView } from "./AdminStudentsView";
+export { default as AdminTeachersView } from "./AdminTeachersView";
+export { default as AdminFacultyView } from "./AdminFacultyView";
+export { default as AdminRoutineView } from "./AdminRoutineView";
+export { default as AdminDepartmentsView } from "./AdminDepartmentsView";
+export { default as AdminCoursesView } from "./AdminCoursesView";
+export { default as AdminProgramsView } from "./AdminProgramsView";
+export { default as AdminSemestersView } from "./AdminSemestersView";
+export { default as AdminResultsView } from "./AdminResultsView";
+export { default as AdminExamsView } from "./AdminExamsView";
+export { default as AdminAttendanceView } from "./AdminAttendanceView";
+export { default as AdminAnnouncementsDocumentsView } from "./AdminAnnouncementsDocumentsView";
+export { default as AdminReportsView } from "./AdminReportsView";
 export * from "./navItems";

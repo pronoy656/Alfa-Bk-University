@@ -1,4 +1,4 @@
-import AdminStudentsView from "@/components/admin-dashboard/AdminStudentsView";
+import AdminStudentsView from "@/components/dashboard/admin-dashboard/AdminStudentsView";
 
 export default function StudentsPage() {
   return <AdminStudentsView />;

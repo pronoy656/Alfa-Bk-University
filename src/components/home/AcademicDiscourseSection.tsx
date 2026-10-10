@@ -30,7 +30,7 @@ export default function AcademicDiscourseSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column Content */}
-          <div>
+          <div className="fade-up-scroll">
             <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
               ACADEMIC EXCELLENCE
             </p>
@@ -48,7 +48,7 @@ export default function AcademicDiscourseSection() {
                 return (
                   <div
                     key={idx}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.04] border border-white/10 backdrop-blur-xs hover:bg-white/[0.08] transition"
+                    className={`flex items-center gap-4 p-4 rounded-xl bg-white/[0.04] border border-white/10 backdrop-blur-xs hover:bg-white/[0.08] transition fade-up-scroll delay-${(idx + 1) * 100}`}
                   >
                     <div
                       className={`w-11 h-11 rounded-lg border flex items-center justify-center shrink-0 ${item.iconColor}`}
@@ -75,7 +75,7 @@ export default function AcademicDiscourseSection() {
           </div>
 
           {/* Right Column Editorial Image */}
-          <div className="relative">
+          <div className="relative fade-up-scroll delay-200">
             <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900 aspect-4/3">
               <img
                 src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80"

@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
     <section className="py-20 bg-white border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-xl mx-auto mb-14">
+        <div className="text-center max-w-xl mx-auto mb-14 fade-up-scroll">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
             STUDENT VOICES
           </p>
@@ -68,7 +68,7 @@ export default function TestimonialsSection() {
           {testimonials.map((t, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs flex flex-col justify-between hover:shadow-md transition"
+              className={`bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs flex flex-col justify-between hover:shadow-md transition fade-up-scroll delay-${(idx + 1) * 150}`}
             >
               <div>
                 <span className="text-[#D5A754] text-4xl font-serif font-bold leading-none block mb-4">
@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* 4 Image Gallery Strip */}
-        <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 fade-up-scroll delay-200">
           {galleryImages.map((img, idx) => (
             <div
               key={idx}

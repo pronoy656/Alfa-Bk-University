@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Search, ArrowRight } from "lucide-react";
+import { Search, ArrowRight, Sparkles } from "lucide-react";
 
 export default function HeroSection() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -34,20 +34,22 @@ export default function HeroSection() {
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-3xl">
             {/* Tag Badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#D5A754]/40 bg-[#D5A754]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#D5A754]">
+            <div className="hero-animate-fade-up hero-delay-100 mb-6 inline-flex items-center gap-2 rounded-full border border-[#D5A754]/40 bg-[#D5A754]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#D5A754] backdrop-blur-xs">
               <span className="h-2 w-2 rounded-full bg-[#D5A754] animate-pulse" />
-              Fall 2026 Applications Open
+              <span>Fall 2026 Applications Open</span>
+              <Sparkles className="w-3.5 h-3.5 text-[#D5A754] ml-0.5" />
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15]">
-              Inspiring Knowledge,
-              <br />
-              <span className="text-[#D5A754]">Shaping the Future</span>
+            {/* Main Headline with Silky Staggered Entrance & Luminous Gold Sheen */}
+            <h1 className="hero-animate-fade-up hero-delay-200 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.18]">
+              <span className="block text-white">Inspiring Knowledge,</span>
+              <span className="block mt-1 text-gold-animated">
+                Shaping the Future
+              </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="mt-6 text-base sm:text-lg leading-relaxed text-slate-300 max-w-2xl">
+            <p className="hero-animate-fade-up hero-delay-350 mt-6 text-base sm:text-lg leading-relaxed text-slate-300 max-w-2xl">
               Alfa BK University is a modern international university committed to academic excellence, innovation, research, entrepreneurship, technology, and global collaboration.
             </p>
 
@@ -59,7 +61,7 @@ export default function HeroSection() {
                   window.location.href = `/programs?q=${encodeURIComponent(searchQuery)}`;
                 }
               }}
-              className="mt-8 max-w-xl flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-1.5 focus-within:border-[#D5A754] transition shadow-lg"
+              className="hero-animate-fade-up hero-delay-500 mt-8 max-w-xl flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-1.5 focus-within:border-[#D5A754] transition shadow-lg"
             >
               <div className="pl-3.5 pr-2 text-slate-400">
                 <Search className="w-5 h-5 text-slate-300" />
@@ -80,7 +82,7 @@ export default function HeroSection() {
             </form>
 
             {/* CTA Buttons */}
-            <div className="mt-6 flex flex-wrap items-center gap-4">
+            <div className="hero-animate-fade-up hero-delay-650 mt-6 flex flex-wrap items-center gap-4">
               <Link
                 href="/apply-now"
                 className="inline-flex items-center gap-2 bg-[#D5A754] hover:bg-[#c29645] text-slate-950 font-bold text-sm px-6 py-3 rounded-lg shadow-lg shadow-[#D5A754]/20 transition"
@@ -104,7 +106,10 @@ export default function HeroSection() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 text-center divide-y md:divide-y-0 divide-slate-100">
             {stats.map((stat, idx) => (
-              <div key={idx} className="pt-4 md:pt-0">
+              <div
+                key={idx}
+                className={`pt-4 md:pt-0 fade-up-scroll delay-${(idx % 6 + 1) * 100}`}
+              >
                 <div className="text-3xl lg:text-4xl font-extrabold text-[#0B1E36] tracking-tight">
                   {stat.value}
                 </div>

@@ -39,7 +39,7 @@ export default function BrowseStudyLevelsSection() {
     <section className="py-20 bg-[#FAFCFF] border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-12">
+        <div className="mb-12 fade-up-scroll">
           <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
             PROGRAMS
           </p>
@@ -56,7 +56,7 @@ export default function BrowseStudyLevelsSection() {
           {levels.map((level, idx) => (
             <div
               key={idx}
-              className="group bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-amber-300/60 transition-all duration-300 flex flex-col"
+              className={`group bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-amber-300/60 transition-all duration-300 flex flex-col fade-up-scroll delay-${(idx + 1) * 150}`}
             >
               {/* Card Image */}
               <div className="relative h-48 overflow-hidden bg-slate-100">

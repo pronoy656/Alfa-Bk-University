@@ -66,7 +66,7 @@ export default function NewsEventsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
           {/* Left Column: Latest News (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center justify-between mb-8 fade-up-scroll">
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B1E36]">
                 Latest News
               </h2>
@@ -84,7 +84,7 @@ export default function NewsEventsSection() {
                 <Link
                   key={idx}
                   href={item.href}
-                  className="group bg-white rounded-xl border border-slate-200/80 p-5 hover:shadow-md hover:border-amber-300/50 transition-all flex flex-col justify-between"
+                  className={`group bg-white rounded-xl border border-slate-200/80 p-5 hover:shadow-md hover:border-amber-300/50 transition-all flex flex-col justify-between fade-up-scroll delay-${(idx % 2 + 1) * 150}`}
                 >
                   <div>
                     <div className="flex items-center justify-between text-xs text-slate-500 mb-3">
@@ -107,7 +107,7 @@ export default function NewsEventsSection() {
 
           {/* Right Column: Upcoming Events (5 cols) */}
           <div className="lg:col-span-5">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center justify-between mb-8 fade-up-scroll">
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B1E36]">
                 Upcoming Events
               </h2>
@@ -125,7 +125,7 @@ export default function NewsEventsSection() {
                 <Link
                   key={idx}
                   href={evt.href}
-                  className="group flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200/80 hover:shadow-md hover:border-amber-300/50 transition-all"
+                  className={`group flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200/80 hover:shadow-md hover:border-amber-300/50 transition-all fade-up-scroll delay-${(idx + 1) * 100}`}
                 >
                   <div className="w-11 h-11 rounded-xl bg-[#0B1E36] text-[#D5A754] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                     <Calendar className="w-5 h-5" />

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { TeacherCoursesList } from "@/components/teacher-dashboard";
+import { TeacherCoursesList } from "@/components/dashboard/teacher-dashboard";
 
 export default function TeacherCoursesPage() {
   const router = useRouter();

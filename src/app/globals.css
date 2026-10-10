@@ -75,3 +75,174 @@ body {
   }
 }
 
+/* =========================================================================
+   Global Smooth Scrolling & Scroll-Triggered Fade-Up Animations
+   ========================================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base fade-up on scroll: silky-smooth transition */
+.fade-up-scroll,
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(3px);
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 1s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform, filter;
+}
+
+/* When in view on scroll */
+.fade-up-scroll.in-view,
+.reveal-on-scroll.in-view,
+.reveal-on-scroll.is-revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  filter: blur(0px) !important;
+}
+
+/* Scale Fade-Up Variant */
+.fade-scale-scroll,
+.reveal-scale {
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  filter: blur(2px);
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 1s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform, filter;
+}
+
+.fade-scale-scroll.in-view,
+.reveal-scale.in-view,
+.reveal-scale.is-revealed {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  filter: blur(0px) !important;
+}
+
+/* Clear transform & filter once animation is complete so hover styles work freely */
+.fade-up-scroll.reveal-complete,
+.reveal-on-scroll.reveal-complete,
+.fade-scale-scroll.reveal-complete,
+.reveal-scale.reveal-complete {
+  transform: none;
+  filter: none;
+  will-change: auto;
+}
+
+/* Stagger delay classes */
+.delay-100, .reveal-delay-100 { transition-delay: 100ms !important; }
+.delay-150, .reveal-delay-150 { transition-delay: 150ms !important; }
+.delay-200, .reveal-delay-200 { transition-delay: 200ms !important; }
+.delay-300, .reveal-delay-300 { transition-delay: 300ms !important; }
+.delay-400, .reveal-delay-400 { transition-delay: 400ms !important; }
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fade-up-scroll,
+  .reveal-on-scroll,
+  .fade-scale-scroll,
+  .reveal-scale,
+  .hero-animate-fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* =========================================================================
+   Hero Section Text & Headline Animations - Silky Smooth
+   ========================================================================= */
+@keyframes heroTextFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+.hero-animate-fade-up {
+  opacity: 0;
+  animation: heroTextFadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: opacity, transform, filter;
+}
+
+/* Stagger delay classes for hero elements */
+.hero-delay-100 { animation-delay: 120ms; }
+.hero-delay-200 { animation-delay: 260ms; }
+.hero-delay-350 { animation-delay: 420ms; }
+.hero-delay-500 { animation-delay: 580ms; }
+.hero-delay-650 { animation-delay: 740ms; }
+.hero-delay-800 { animation-delay: 900ms; }
+
+/* Dynamic Animated Golden Shimmer Gradient for Hero Headline */
+@keyframes goldGradientShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-gold-animated {
+  background: linear-gradient(
+    90deg,
+    #C69234 0%,
+    #FFF1B8 25%,
+    #D5A754 50%,
+    #FCE7A2 75%,
+    #C69234 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: goldGradientShimmer 6s ease-in-out infinite;
+}
+
+/* =========================================================================
+   Dashboard Performance: Snappy & Clean (Zero Lag, Zero Table Bounce)
+   ========================================================================= */
+@keyframes dashboardTitleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-title-animate {
+  animation: dashboardTitleFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Tables, filters, modals, and data grids always render instantly */
+table,
+table *,
+.dashboard-table,
+main[class*="overflow-y-auto"] table,
+main[class*="overflow-y-auto"] .grid,
+[role="dialog"],
+[role="dialog"] * {
+  opacity: 1 !important;
+  filter: none !important;
+}

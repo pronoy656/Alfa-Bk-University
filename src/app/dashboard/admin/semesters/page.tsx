@@ -1,4 +1,4 @@
-import AdminSemestersView from "@/components/admin-dashboard/AdminSemestersView";
+import AdminSemestersView from "@/components/dashboard/admin-dashboard/AdminSemestersView";
 
 export default function SemestersPage() {
   return <AdminSemestersView />;

@@ -39,7 +39,7 @@ export default function ApplyNowSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Info & Requirements */}
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 fade-up-scroll">
             <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
               ENROLMENT 2026/2027
             </p>
@@ -76,7 +76,7 @@ export default function ApplyNowSection() {
           </div>
 
           {/* Right Column: Application Form */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 fade-up-scroll delay-200">
             <div className="bg-[#10243E] border border-white/10 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur-md">
               {submitted ? (
                 <div className="text-center py-10">

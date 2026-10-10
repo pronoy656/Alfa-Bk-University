@@ -51,7 +51,7 @@ export default function FacultiesSection() {
     <section className="py-20 bg-white border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 fade-up-scroll">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
               ACADEMICS
@@ -79,7 +79,7 @@ export default function FacultiesSection() {
             <Link
               key={idx}
               href={fac.href}
-              className="group bg-white rounded-xl border border-slate-200/80 p-6 hover:shadow-lg hover:border-amber-300/60 transition-all duration-300 flex flex-col justify-between"
+              className={`group bg-white rounded-xl border border-slate-200/80 p-6 hover:shadow-lg hover:border-amber-300/60 transition-all duration-300 flex flex-col justify-between fade-up-scroll delay-${(idx % 3 + 1) * 100}`}
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-4">

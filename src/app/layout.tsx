@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 };
 
 import AppLayout from "@/components/shared/AppLayout";
+import ScrollAnimationProvider from "@/components/shared/ScrollAnimationProvider";
 
 export default function RootLayout({
   children,
@@ -30,6 +31,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
+        <ScrollAnimationProvider />
         <AppLayout>{children}</AppLayout>
       </body>
     </html>

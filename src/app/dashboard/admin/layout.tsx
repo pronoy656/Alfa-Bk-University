@@ -3,7 +3,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import DashboardLayout from "@/components/dashboard/DashboardLayout";
-import { adminUser, adminNavItems } from "@/components/admin-dashboard/navItems";
+import { adminUser, adminNavItems } from "@/components/dashboard/admin-dashboard/navItems";
 
 export default function AdminDashboardLayout({
   children,

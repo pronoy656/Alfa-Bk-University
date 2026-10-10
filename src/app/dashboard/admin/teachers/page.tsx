@@ -1,4 +1,4 @@
-import AdminTeachersView from "@/components/admin-dashboard/AdminTeachersView";
+import AdminTeachersView from "@/components/dashboard/admin-dashboard/AdminTeachersView";
 
 export default function TeachersPage() {
   return <AdminTeachersView />;

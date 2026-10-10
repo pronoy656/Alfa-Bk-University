@@ -1,4 +1,4 @@
-import AdminFacultyView from "@/components/admin-dashboard/AdminFacultyView";
+import AdminFacultyView from "@/components/dashboard/admin-dashboard/AdminFacultyView";
 
 export default function FacultyPage() {
   return <AdminFacultyView />;

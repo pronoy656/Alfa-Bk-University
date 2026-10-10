@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { HelpCircle, Plus, Calendar, Clock, Award, FileQuestion } from "lucide-react";
-import CreateQuizModal from "@/components/teacher-dashboard/CreateQuizModal";
+import CreateQuizModal from "@/components/dashboard/teacher-dashboard/CreateQuizModal";
 import { TeacherQuiz } from "@/components/dashboard/types";
 
 export default function TeacherQuizzesPage() {

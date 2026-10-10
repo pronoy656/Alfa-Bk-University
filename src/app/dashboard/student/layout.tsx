@@ -3,7 +3,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import DashboardLayout from "@/components/dashboard/DashboardLayout";
-import { studentUser, studentNavItems } from "@/components/student-dashboard/navItems";
+import { studentUser, studentNavItems } from "@/components/dashboard/student-dashboard/navItems";
 
 export default function StudentDashboardLayout({
   children,

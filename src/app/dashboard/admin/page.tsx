@@ -1,4 +1,4 @@
-import AdminOverviewView from "@/components/admin-dashboard/AdminOverviewView";
+import AdminOverviewView from "@/components/dashboard/admin-dashboard/AdminOverviewView";
 
 export default function AdminDashboardPage() {
   return <AdminOverviewView />;

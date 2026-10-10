@@ -16,7 +16,7 @@ export default function CampusLifeSection() {
         {/* Top Split: Photo & Community Copy */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Student Group Photo */}
-          <div className="relative">
+          <div className="relative fade-up-scroll">
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-4/3 bg-slate-100">
               <img
                 src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
@@ -27,7 +27,7 @@ export default function CampusLifeSection() {
           </div>
 
           {/* Right: Copy & Checklist */}
-          <div>
+          <div className="fade-up-scroll delay-200">
             <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
               CAMPUS LIFE
             </p>
@@ -55,7 +55,7 @@ export default function CampusLifeSection() {
         </div>
 
         {/* Bottom Banner: Watch the Campus Tour */}
-        <div className="mt-14 relative rounded-3xl overflow-hidden shadow-2xl h-56 sm:h-64 lg:h-72">
+        <div className="mt-14 relative rounded-3xl overflow-hidden shadow-2xl h-56 sm:h-64 lg:h-72 fade-up-scroll delay-150">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center"

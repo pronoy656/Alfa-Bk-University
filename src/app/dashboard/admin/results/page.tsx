@@ -1,4 +1,4 @@
-import AdminResultsView from "@/components/admin-dashboard/AdminResultsView";
+import AdminResultsView from "@/components/dashboard/admin-dashboard/AdminResultsView";
 
 export default function ResultsPage() {
   return <AdminResultsView />;

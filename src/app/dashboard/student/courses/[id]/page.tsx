@@ -1,4 +1,4 @@
-import StudentCourseDetailView from "@/components/student-dashboard/StudentCourseDetailView";
+import StudentCourseDetailView from "@/components/dashboard/student-dashboard/StudentCourseDetailView";
 
 export default async function StudentCourseDetailPage({
   params,

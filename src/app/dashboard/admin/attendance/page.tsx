@@ -1,4 +1,4 @@
-import AdminAttendanceView from "@/components/admin-dashboard/AdminAttendanceView";
+import AdminAttendanceView from "@/components/dashboard/admin-dashboard/AdminAttendanceView";
 
 export default function AttendancePage() {
   return <AdminAttendanceView />;

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { UploadLectureForm } from "@/components/teacher-dashboard";
+import { UploadLectureForm } from "@/components/dashboard/teacher-dashboard";
 
 export default function UploadLecturePage() {
   const router = useRouter();
