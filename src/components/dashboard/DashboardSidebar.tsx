@@ -24,7 +24,7 @@ export default function DashboardSidebar({
   return (
     <>
       <aside
-        className={`fixed md:sticky top-16 left-0 z-30 w-64 lg:w-[270px] bg-[#0B1E36] text-white flex flex-col justify-between p-4 shrink-0 overflow-y-auto max-h-[calc(100vh-64px)] transition-transform duration-200 ease-in-out ${
+        className={`fixed md:static inset-y-0 top-16 md:top-0 left-0 z-30 w-64 lg:w-[270px] bg-[#0B1E36] text-white flex flex-col justify-between p-4 shrink-0 overflow-y-auto h-[calc(100vh-64px)] md:h-full transition-transform duration-200 ease-in-out ${
           mobileSidebarOpen
             ? "translate-x-0"
             : "-translate-x-full md:translate-x-0"

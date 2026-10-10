@@ -35,7 +35,7 @@ export default function DashboardLayout({
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen w-full bg-[#F4F6F9] flex flex-col font-sans">
+    <div className="h-screen w-full bg-[#F4F6F9] flex flex-col font-sans overflow-hidden">
       {/* 1. Header (Full Width) */}
       <DashboardHeader
         portalTitle={portalTitle}
@@ -49,7 +49,7 @@ export default function DashboardLayout({
       />
 
       {/* 2. Body Container with Left Sidebar & Full-Width Main Area */}
-      <div className="flex-1 w-full flex overflow-hidden">
+      <div className="flex-1 w-full flex overflow-hidden min-h-0">
         {/* Sidebar */}
         <DashboardSidebar
           items={navItems}
@@ -61,7 +61,7 @@ export default function DashboardLayout({
         />
 
         {/* Full Width Main Content (No max-w restriction) */}
-        <main className="flex-1 w-full overflow-y-auto p-4 sm:p-6 lg:p-8">
+        <main className="flex-1 w-full h-full overflow-y-auto p-4 sm:p-6 lg:p-8">
           <div className="w-full space-y-6">
             {children}
           </div>

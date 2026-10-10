@@ -19,12 +19,12 @@ import {
 import { DashboardNavItem, DashboardUser } from "@/components/dashboard/types";
 
 export const adminUser: DashboardUser = {
-  name: "Registrar Admin",
+  name: "Dr. Alim Al Razi",
   id: "ADM-MAIN-001",
-  role: "System Administrator",
+  role: "Super Admin",
   avatarUrl:
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80",
-  email: "admin@alfa.edu.rs",
+  email: "alim.razi@alfa.edu.rs",
 };
 
 export const adminNavItems: DashboardNavItem[] = [

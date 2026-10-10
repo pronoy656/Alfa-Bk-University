@@ -50,7 +50,7 @@ export default function DashboardHeader({
   };
 
   return (
-    <header className="h-16 w-full bg-white border-b border-slate-200 px-4 sm:px-6 lg:px-8 flex items-center justify-between sticky top-0 z-40">
+    <header className="h-16 w-full bg-white border-b border-slate-200 px-4 sm:px-6 lg:px-8 flex items-center justify-between sticky top-0 z-40 shrink-0">
       {/* Left: Mobile Toggle & Brand Badge */}
       <div className="flex items-center gap-3">
         <button

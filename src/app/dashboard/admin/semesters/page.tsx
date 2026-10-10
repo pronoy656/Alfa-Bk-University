@@ -1,13 +1,5 @@
-import { CalendarRange } from "lucide-react";
-import AdminPagePlaceholder from "@/components/admin-dashboard/AdminPagePlaceholder";
+import AdminSemestersView from "@/components/admin-dashboard/AdminSemestersView";
 
 export default function SemestersPage() {
-  return (
-    <AdminPagePlaceholder
-      title="Semesters"
-      routePath="/dashboard/admin/semesters"
-      icon={CalendarRange}
-      description="Manage academic calendar, terms, fall/spring semester schedules, registration windows, and term dates."
-    />
-  );
+  return <AdminSemestersView />;
 }

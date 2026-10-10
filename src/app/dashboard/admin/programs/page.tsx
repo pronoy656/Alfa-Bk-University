@@ -1,13 +1,5 @@
-import { BookOpen } from "lucide-react";
-import AdminPagePlaceholder from "@/components/admin-dashboard/AdminPagePlaceholder";
+import AdminProgramsView from "@/components/admin-dashboard/AdminProgramsView";
 
 export default function ProgramsPage() {
-  return (
-    <AdminPagePlaceholder
-      title="Programs"
-      routePath="/dashboard/admin/programs"
-      icon={BookOpen}
-      description="Manage undergraduate, master's, and doctoral degree programs, accreditation, and syllabus tracks."
-    />
-  );
+  return <AdminProgramsView />;
 }

@@ -1,13 +1,5 @@
-import { Settings } from "lucide-react";
-import AdminPagePlaceholder from "@/components/admin-dashboard/AdminPagePlaceholder";
+import { AdminReportsView } from "@/components/admin-dashboard";
 
 export default function SettingsPage() {
-  return (
-    <AdminPagePlaceholder
-      title="Settings"
-      routePath="/dashboard/admin/settings"
-      icon={Settings}
-      description="Configure university portal preferences, security protocols, roles & permissions, and API integrations."
-    />
-  );
+  return <AdminReportsView />;
 }

@@ -1,13 +1,5 @@
-import { Award } from "lucide-react";
-import AdminPagePlaceholder from "@/components/admin-dashboard/AdminPagePlaceholder";
+import AdminResultsView from "@/components/admin-dashboard/AdminResultsView";
 
 export default function ResultsPage() {
-  return (
-    <AdminPagePlaceholder
-      title="Results"
-      routePath="/dashboard/admin/results"
-      icon={Award}
-      description="Manage grade approvals, transcript generation, CGPA calculations, and result publications."
-    />
-  );
+  return <AdminResultsView />;
 }

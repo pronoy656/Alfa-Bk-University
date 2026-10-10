@@ -1,13 +1,5 @@
-import { ClipboardCheck } from "lucide-react";
-import AdminPagePlaceholder from "@/components/admin-dashboard/AdminPagePlaceholder";
+import AdminExamsView from "@/components/admin-dashboard/AdminExamsView";
 
 export default function ExamsPage() {
-  return (
-    <AdminPagePlaceholder
-      title="Exams"
-      routePath="/dashboard/admin/exams"
-      icon={ClipboardCheck}
-      description="Manage midterm and final examination schedules, invigilators, venues, and exam guidelines."
-    />
-  );
+  return <AdminExamsView />;
 }

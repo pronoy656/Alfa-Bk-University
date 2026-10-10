@@ -1,13 +1,5 @@
-import { Megaphone } from "lucide-react";
-import AdminPagePlaceholder from "@/components/admin-dashboard/AdminPagePlaceholder";
+import AdminAnnouncementsDocumentsView from "@/components/admin-dashboard/AdminAnnouncementsDocumentsView";
 
 export default function AnnouncementsPage() {
-  return (
-    <AdminPagePlaceholder
-      title="Announcements"
-      routePath="/dashboard/admin/announcements"
-      icon={Megaphone}
-      description="Publish campus-wide notices, circulars, urgent administrative alerts, and event bulletins."
-    />
-  );
+  return <AdminAnnouncementsDocumentsView />;
 }

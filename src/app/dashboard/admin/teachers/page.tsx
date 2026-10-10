@@ -1,13 +1,6 @@
-import { Users } from "lucide-react";
-import AdminPagePlaceholder from "@/components/admin-dashboard/AdminPagePlaceholder";
+import AdminTeachersView from "@/components/admin-dashboard/AdminTeachersView";
 
 export default function TeachersPage() {
-  return (
-    <AdminPagePlaceholder
-      title="Teachers"
-      routePath="/dashboard/admin/teachers"
-      icon={Users}
-      description="Manage professors, instructors, teaching assistants, and departmental assignments."
-    />
-  );
+  return <AdminTeachersView />;
 }
+

@@ -9,19 +9,37 @@ export interface DashboardModalProps {
   title: string;
   subtitle?: string;
   badge?: string;
-  badgeColor?: "gold" | "navy" | "emerald" | "amber";
-  maxWidth?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
+  badgeColor?: "gold" | "navy" | "emerald" | "amber" | "red";
+  maxWidth?:
+    | "sm"
+    | "md"
+    | "lg"
+    | "xl"
+    | "2xl"
+    | "3xl"
+    | "max-w-sm"
+    | "max-w-md"
+    | "max-w-lg"
+    | "max-w-xl"
+    | "max-w-2xl"
+    | "max-w-3xl";
   children: React.ReactNode;
   footerActions?: React.ReactNode;
 }
 
-const maxWidthMap = {
+const maxWidthMap: Record<string, string> = {
   sm: "max-w-sm",
   md: "max-w-md",
   lg: "max-w-lg",
   xl: "max-w-xl",
   "2xl": "max-w-2xl",
   "3xl": "max-w-3xl",
+  "max-w-sm": "max-w-sm",
+  "max-w-md": "max-w-md",
+  "max-w-lg": "max-w-lg",
+  "max-w-xl": "max-w-xl",
+  "max-w-2xl": "max-w-2xl",
+  "max-w-3xl": "max-w-3xl",
 };
 
 export default function DashboardModal({
@@ -62,6 +80,8 @@ export default function DashboardModal({
       ? "text-emerald-400"
       : badgeColor === "amber"
       ? "text-amber-400"
+      : badgeColor === "red"
+      ? "text-red-400"
       : "text-slate-300";
 
   return (
@@ -75,7 +95,7 @@ export default function DashboardModal({
     >
       <div
         ref={modalRef}
-        className={`relative w-full ${maxWidthMap[maxWidth]} rounded-3xl bg-white shadow-2xl border border-slate-100 overflow-hidden flex flex-col max-h-[90vh]`}
+        className={`relative w-full ${maxWidthMap[maxWidth]} rounded-3xl bg-[#0B1E36] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]`}
       >
         {/* University Navy Modal Header */}
         <div className="bg-[#0B1E36] p-6 text-white relative shrink-0">
@@ -108,11 +128,11 @@ export default function DashboardModal({
         </div>
 
         {/* Modal Body with Scrollable Area */}
-        <div className="p-6 sm:p-8 overflow-y-auto space-y-4">{children}</div>
+        <div className="p-6 sm:p-8 overflow-y-auto space-y-4 bg-white flex-1">{children}</div>
 
         {/* Optional Footer */}
         {footerActions && (
-          <div className="p-4 sm:px-8 border-t border-slate-100 bg-slate-50/50 flex items-center justify-end gap-3 shrink-0">
+          <div className="p-4 sm:px-8 border-t border-slate-100 bg-white flex items-center justify-end gap-3 shrink-0">
             {footerActions}
           </div>
         )}

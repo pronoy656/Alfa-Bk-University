@@ -18,7 +18,7 @@ export default function AppLayout({
     pathname?.startsWith("/portal");
 
   if (isDedicatedPortal) {
-    return <main className="min-h-screen bg-slate-50">{children}</main>;
+    return <div className="h-full min-h-screen bg-slate-50">{children}</div>;
   }
 
   return (
