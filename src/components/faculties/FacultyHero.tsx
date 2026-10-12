@@ -20,12 +20,12 @@ export default function FacultyHero({
     <section className="relative overflow-hidden bg-[#0B1E36] text-white">
       {/* Background Graphic Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-screen"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url('${bgImage}')`,
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36] via-[#0B1E36]/95 to-[#0B1E36]/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/85 via-[#0B1E36]/65 to-[#0B1E36]/40" />
 
       <div className="container relative mx-auto px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
         <Link

@@ -55,13 +55,13 @@ export default function ProgramsPage() {
       {/* 1. HERO BANNER */}
       <section className="relative overflow-hidden bg-gradient-to-r from-[#0B1E36] via-[#102444] to-[#B87A1E] text-white">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-luminosity"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/95 via-[#0B1E36]/90 to-[#102444]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/85 via-[#0B1E36]/65 to-[#102444]/40" />
 
         <div className="container relative mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <div className="max-w-3xl">

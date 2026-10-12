@@ -1,111 +1,107 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function FacultiesSection() {
   const faculties = [
     {
-      name: "Faculty of Finance, Trade and Accounting",
+      name: "Finance, Trade &\nAccounting",
       href: "/faculties/finance-trade-accounting",
-      levels: "BSc · MSc · PhD",
-      programsCount: "7 programs",
-      desc: "Economics, finance, marketing, trade, accounting, and auditing — shaping tomorrow's business leaders.",
+      bg: "bg-[#998472]",
+      hoverBg: "hover:bg-[#8d7967]",
     },
     {
-      name: "Faculty of Foreign Languages",
-      href: "/faculties/foreign-languages",
-      levels: "BSc · MSc",
-      programsCount: "2 programs",
-      desc: "English language and literature — linguistics, translation, and language teaching.",
-    },
-    {
-      name: "Faculty of Management in Sports",
-      href: "/faculties/management-sports",
-      levels: "BSc · MSc",
-      programsCount: "2 programs",
-      desc: "Sports management, marketing, and organization of sports events and institutions.",
-    },
-    {
-      name: "Faculty of Information Technologies",
+      name: "Information\nTechnologies",
       href: "/faculties/information-technologies",
-      levels: "BSc · MSc · PhD",
-      programsCount: "3 programs",
-      desc: "Information systems, software engineering, computer networks, and computer engineering.",
+      bg: "bg-[#257DD4]",
+      hoverBg: "hover:bg-[#1f6ebc]",
     },
     {
-      name: "Faculty of Mathematics and Computer Sciences",
+      name: "Management in Sport",
+      href: "/faculties/management-sports",
+      bg: "bg-[#708090]",
+      hoverBg: "hover:bg-[#627180]",
+    },
+    {
+      name: "Foreign Languages",
+      href: "/faculties/foreign-languages",
+      bg: "bg-[#DF5C55]",
+      hoverBg: "hover:bg-[#cb4f48]",
+    },
+    {
+      name: "Economics & Political\nSciences",
+      href: "/programs",
+      bg: "bg-[#BE9F5A]",
+      hoverBg: "hover:bg-[#ab8e4e]",
+    },
+    {
+      name: "Arts",
+      href: "/programs",
+      bg: "bg-[#BC3B7B]",
+      hoverBg: "hover:bg-[#a6306a]",
+    },
+    {
+      name: "Mathematics &\nComputer Science",
       href: "/faculties/mathematics-computer-science",
-      levels: "BSc · MSc · PhD",
-      programsCount: "3 programs",
-      desc: "Mathematics, algorithms, data structures, and applied computer sciences.",
+      bg: "bg-[#6F52B2]",
+      hoverBg: "hover:bg-[#60449e]",
     },
     {
-      name: "Faculty of Psychology",
-      href: "/faculties/psychology",
-      levels: "BSc · MSc",
-      programsCount: "2 programs",
-      desc: "General psychology, clinical psychology, organizational psychology, and counseling.",
+      name: "Entrepreneurship",
+      href: "/programs",
+      bg: "bg-[#96B837]",
+      hoverBg: "hover:bg-[#84a32e]",
+    },
+    {
+      name: "Creative Industries",
+      href: "/programs",
+      bg: "bg-[#E27429]",
+      hoverBg: "hover:bg-[#cb651f]",
+    },
+    {
+      name: "Law",
+      href: "/programs",
+      bg: "bg-[#8B2929]",
+      hoverBg: "hover:bg-[#772121]",
     },
   ];
 
   return (
-    <section className="py-20 bg-white border-b border-slate-100">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 fade-up-scroll">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
-              ACADEMICS
-            </p>
-            <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight">
-              Our 6 Faculties
-            </h2>
-            <p className="mt-2 text-base text-slate-600">
-              19 accredited programs across Basic Higher Education, Master, and Doctoral levels.
-            </p>
-          </div>
-
-          <Link
-            href="/programs"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#0B1E36] hover:text-[#D5A754] transition shrink-0"
-          >
-            <span>View all programs</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+        <div className="mb-10 fade-up-scroll">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#DF5C55]">
+            02 · ACADEMIC COMMUNITY
+          </p>
+          <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1E36] tracking-tight uppercase">
+            OUR FACULTIES
+          </h2>
         </div>
 
-        {/* 6 Faculty Cards (3 columns x 2 rows or 2 columns on tablet) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 10 Colorful Faculty Cards Grid (5 columns x 2 rows) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {faculties.map((fac, idx) => (
             <Link
               key={idx}
               href={fac.href}
-              className={`group bg-white rounded-xl border border-slate-200/80 p-6 hover:shadow-lg hover:border-amber-300/60 transition-all duration-300 flex flex-col justify-between fade-up-scroll delay-${(idx % 3 + 1) * 100}`}
+              className={`group ${fac.bg} ${fac.hoverBg} text-white rounded-xl p-5 h-36 sm:h-40 flex flex-col justify-between transition-colors duration-200 fade-up-scroll`}
             >
-              <div>
-                <div className="flex items-center justify-between gap-2 mb-4">
-                  <span className="inline-block text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded">
-                    {fac.levels}
-                  </span>
-                  <BookOpen className="w-4 h-4 text-slate-400 group-hover:text-[#D5A754] transition-colors" />
-                </div>
+              <h3 className="font-bold text-base sm:text-lg leading-snug whitespace-pre-line text-white">
+                {fac.name}
+              </h3>
 
-                <h3 className="text-lg font-bold text-[#0B1E36] group-hover:text-blue-700 transition-colors leading-snug">
-                  {fac.name}
-                </h3>
-                <p className="mt-2.5 text-sm text-slate-600 leading-relaxed line-clamp-3">
-                  {fac.desc}
-                </p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
-                <span className="text-slate-400">{fac.programsCount}</span>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#0B1E36] group-hover:text-[#D5A754] transition-colors">
-                  Explore <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-                </span>
+              <div className="inline-flex items-center gap-1 text-[11px] font-bold tracking-wider uppercase text-white/85 group-hover:text-white transition-colors">
+                <span className="group-hover:underline underline-offset-2">VIEW FACULTY</span>
+                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200" />
               </div>
             </Link>
           ))}
         </div>
+
+        {/* Small sample disclaimer */}
+        <p className="mt-6 text-[11px] text-slate-400 tracking-wide fade-up-scroll">
+          Faculty names and academic details shown as sample / unverified content.
+        </p>
       </div>
     </section>
   );

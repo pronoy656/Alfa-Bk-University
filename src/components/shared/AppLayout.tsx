@@ -12,13 +12,14 @@ export default function AppLayout({
   const pathname = usePathname();
   const isDedicatedPortal =
     pathname === "/login" ||
+    pathname === "/register" ||
     pathname?.endsWith("-dashboard") ||
     pathname?.includes("-dashboard") ||
     pathname?.startsWith("/dashboard") ||
     pathname?.startsWith("/portal");
 
   if (isDedicatedPortal) {
-    return <div className="h-full min-h-screen bg-slate-50">{children}</div>;
+    return <div className="h-full min-h-screen">{children}</div>;
   }
 
   return (

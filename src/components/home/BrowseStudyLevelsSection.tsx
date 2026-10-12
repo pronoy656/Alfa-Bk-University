@@ -31,16 +31,16 @@ export default function BrowseStudyLevelsSection() {
         "Research-intensive doctoral programs for those who want to advance knowledge and contribute to academic and scientific communities.",
       href: "/programs?level=doctoral",
       image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
     },
   ];
 
   return (
-    <section className="py-20 bg-[#FAFCFF] border-b border-slate-100">
+    <section className="py-20 bg-[#FAF8F5]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-12 fade-up-scroll">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#BE9F5A]">
             PROGRAMS
           </p>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight">
@@ -56,10 +56,10 @@ export default function BrowseStudyLevelsSection() {
           {levels.map((level, idx) => (
             <div
               key={idx}
-              className={`group bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-amber-300/60 transition-all duration-300 flex flex-col fade-up-scroll delay-${(idx + 1) * 150}`}
+              className="group bg-white rounded-2xl overflow-hidden border border-slate-200/70 shadow-sm hover:shadow-xl hover:border-[#BE9F5A]/40 transition-all duration-300 flex flex-col fade-up-scroll"
             >
               {/* Card Image */}
-              <div className="relative h-48 overflow-hidden bg-slate-100">
+              <div className="relative h-52 overflow-hidden bg-slate-100">
                 <img
                   src={level.image}
                   alt={level.title}
@@ -68,27 +68,27 @@ export default function BrowseStudyLevelsSection() {
               </div>
 
               {/* Card Body */}
-              <div className="p-6 flex-1 flex flex-col justify-between">
+              <div className="p-7 flex-1 flex flex-col justify-between">
                 <div>
-                  <span className="inline-block text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md mb-3">
+                  <span className="block text-xs font-semibold text-[#BE9F5A] tracking-wide mb-2.5">
                     {level.duration}
                   </span>
-                  <h3 className="text-xl font-bold text-[#0B1E36] group-hover:text-blue-700 transition-colors">
+                  <h3 className="text-2xl font-bold text-[#0B1E36] group-hover:text-blue-700 transition-colors">
                     {level.title}
                   </h3>
-                  <p className="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">
                     {level.description}
                   </p>
                 </div>
 
                 {/* Card Footer */}
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
+                <div className="mt-8 pt-5 border-t border-slate-100 flex items-center justify-between text-sm">
                   <span className="text-xs font-medium text-slate-500">
                     {level.programsCount}
                   </span>
                   <Link
                     href={level.href}
-                    className="inline-flex items-center gap-1 font-semibold text-[#0B1E36] group-hover:text-[#D5A754] transition-colors"
+                    className="inline-flex items-center gap-1.5 font-bold text-xs tracking-wider uppercase text-[#0B1E36] group-hover:text-[#BE9F5A] transition-colors"
                   >
                     <span>Browse</span>
                     <ArrowRight className="w-3.5 h-3.5" />

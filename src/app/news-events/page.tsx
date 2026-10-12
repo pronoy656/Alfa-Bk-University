@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import React, { useState, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import NewsHero from "@/components/news-events/NewsHero";
 import LatestNewsSection from "@/components/news-events/LatestNewsSection";
 import UpcomingEventsSection from "@/components/news-events/UpcomingEventsSection";
@@ -13,32 +13,19 @@ import { NewsArticle, UpcomingEvent, AllEventItem } from "@/components/news-even
 
 function NewsEventsContent() {
   const searchParams = useSearchParams();
-  const router = useRouter();
 
-  const initialView =
-    searchParams.get("view") === "events" ||
-    searchParams.get("tab") === "events" ||
-    searchParams.get("tab") === "all-events"
-      ? "events"
-      : "overview";
+  const viewParam = searchParams.get("view") || searchParams.get("tab");
+  const computedView: "overview" | "events" =
+    viewParam === "events" || viewParam === "all-events" ? "events" : "overview";
 
-  const [activeView, setActiveView] = useState<"overview" | "events">(
-    initialView
-  );
+  const [activeViewOverride, setActiveViewOverride] = useState<"overview" | "events" | null>(null);
+  const activeView = activeViewOverride ?? computedView;
+
   const [selectedEvent, setSelectedEvent] = useState<UpcomingEvent | AllEventItem | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<NewsArticle | AllEventItem | null>(null);
 
-  useEffect(() => {
-    const viewParam = searchParams.get("view") || searchParams.get("tab");
-    if (viewParam === "events" || viewParam === "all-events") {
-      setActiveView("events");
-    } else if (viewParam === "overview" || viewParam === "news") {
-      setActiveView("overview");
-    }
-  }, [searchParams]);
-
   const handleViewChange = (view: "overview" | "events") => {
-    setActiveView(view);
+    setActiveViewOverride(view);
     const newUrl =
       view === "events" ? "/news-events?view=events" : "/news-events";
     window.history.replaceState(null, "", newUrl);

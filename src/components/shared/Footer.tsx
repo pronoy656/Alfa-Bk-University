@@ -5,35 +5,35 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#08172B] text-slate-300 border-t border-slate-800/80 mt-auto">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
+    <footer className="bg-[#0C213B] text-slate-300 border-t border-slate-800/80 mt-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
-          {/* Brand Info (4 cols) */}
-          <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#D5A754] text-slate-950 flex items-center justify-center font-black text-sm shadow-md">
-                ABK
-              </div>
-              <div>
-                <span className="font-extrabold text-lg text-white block leading-tight">
-                  Alfa BK University
-                </span>
-                <span className="text-[11px] text-[#D5A754] font-medium tracking-wide">
-                  Inspiring Knowledge, Shaping the Future
-                </span>
-              </div>
+          {/* Column 1: Brand & Contact & Socials (4 cols) */}
+          <div className="lg:col-span-4 space-y-5">
+            {/* Alfa BK University Official Logo */}
+            <div>
+              <Link href="/" className="inline-block focus:outline-none">
+                <img
+                  src="/University-logo.png"
+                  alt="Alfa BK University"
+                  className="h-14 sm:h-16 w-auto object-contain hover:opacity-95 transition-opacity"
+                />
+              </Link>
             </div>
 
-            <p className="text-xs leading-relaxed text-slate-400 max-w-sm">
-              Founded in 1993, Alfa BK University (Karić Brothers University) is one of the oldest private universities in Serbia — 6 faculties, 30+ years of excellence.
-            </p>
+            {/* Address & Phone */}
+            <div className="text-xs text-slate-300 space-y-1">
+              <p>Palmira Toljatija 3, Belgrade · Serbia</p>
+              <p>+381 11 260 60 55 · info@alfa.edu.rs</p>
+            </div>
 
-            <div className="flex items-center gap-2.5 pt-2">
+            {/* Social Icons in rounded white boxes */}
+            <div className="flex items-center gap-2.5 pt-1">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/10 transition"
+                className="w-8 h-8 rounded-lg bg-white text-[#0B1E36] flex items-center justify-center hover:bg-[#D5A754] transition shadow-xs"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/10 transition"
+                className="w-8 h-8 rounded-lg bg-white text-[#0B1E36] flex items-center justify-center hover:bg-[#D5A754] transition shadow-xs"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -55,7 +55,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/10 transition"
+                className="w-8 h-8 rounded-lg bg-white text-[#0B1E36] flex items-center justify-center hover:bg-[#D5A754] transition shadow-xs"
                 aria-label="LinkedIn"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ export default function Footer() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/10 transition"
+                className="w-8 h-8 rounded-lg bg-white text-[#0B1E36] flex items-center justify-center hover:bg-[#D5A754] transition shadow-xs"
                 aria-label="YouTube"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -76,12 +76,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigate (2 cols) */}
+          {/* Column 2: Navigate (2 cols) */}
           <div className="lg:col-span-2">
             <h4 className="text-white text-xs font-bold uppercase tracking-wider mb-4">
-              NAVIGATE
+              Navigate
             </h4>
-            <ul className="space-y-2.5 text-xs text-slate-400">
+            <ul className="space-y-2 text-xs text-slate-300">
               <li>
                 <Link href="/university/about" className="hover:text-white transition">
                   About University
@@ -113,11 +113,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/professors" className="hover:text-white transition">
-                  Faculty & Staff
-                </Link>
-              </li>
-              <li>
                 <Link href="/university/documents" className="hover:text-white transition">
                   Documents
                 </Link>
@@ -125,59 +120,62 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Portals (3 cols) */}
+          {/* Column 3: Portals (3 cols) */}
           <div className="lg:col-span-3">
             <h4 className="text-white text-xs font-bold uppercase tracking-wider mb-4">
-              PORTALS
+              Portals
             </h4>
-            <ul className="space-y-3 text-xs text-slate-400">
-              <li>
-                <Link href="/e-student" className="block group">
-                  <span className="text-white group-hover:text-[#D5A754] transition font-medium">
-                    Student Information System
-                  </span>
-                  <span className="block text-[11px] text-slate-500">
-                    Financial status · Exam registration
-                  </span>
+            <div className="space-y-3.5 text-xs text-slate-300">
+              <div>
+                <Link href="/e-student" className="block text-white font-medium hover:text-[#D5A754] transition">
+                  Student Information System
                 </Link>
-              </li>
-              <li>
-                <Link href="/e-learning" className="block text-white hover:text-[#D5A754] transition font-medium">
-                  E-CLASSROOM (MOODLE)
-                </Link>
-              </li>
-              <li>
-                <Link href="/e-student" className="hover:text-white transition">
-                  Student Access
-                </Link>
-              </li>
-              <li>
-                <Link href="/e-employee" className="hover:text-white transition">
-                  Teacher Access
-                </Link>
-              </li>
-              <li>
-                <Link href="/e-employee" className="hover:text-white transition">
-                  Administration
-                </Link>
-              </li>
-              <li>
-                <Link href="/apply-now" className="hover:text-white transition">
+                <p className="text-[11px] text-slate-400">
+                  Financial status · Exam registration
+                </p>
+              </div>
+
+              <div>
+                <span className="block text-white font-medium">
+                  E-Classroom (Moodle)
+                </span>
+                <div className="mt-1 space-y-1 text-slate-400 pl-2">
+                  <div>
+                    <Link href="/e-student" className="hover:text-white transition">
+                      Student Access
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/e-employee" className="hover:text-white transition">
+                      Teacher Access
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/e-employee" className="hover:text-white transition">
+                      Administration
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <Link href="/apply-now" className="block text-white font-medium hover:text-[#D5A754] transition">
                   Online Application
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
-          {/* Stay Informed & Contact (3 cols) */}
+          {/* Column 4: Stay Informed (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-white text-xs font-bold uppercase tracking-wider">
-              STAY INFORMED
+              Stay Informed
             </h4>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-300">
               Subscribe for admissions updates and campus news.
             </p>
 
+            {/* Email Subscription Form */}
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -189,17 +187,17 @@ export default function Footer() {
                 type="email"
                 required
                 placeholder="Email address"
-                className="w-full bg-[#0A192F] border border-white/15 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#D5A754] transition"
+                className="w-full bg-white text-slate-900 border border-transparent rounded-lg px-3 py-2 text-xs placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#D5A754] transition"
               />
               <button
                 type="submit"
-                className="bg-[#D5A754] hover:bg-[#c29645] text-slate-950 font-bold text-xs px-3.5 py-2 rounded-lg transition whitespace-nowrap cursor-pointer"
+                className="bg-[#D5A754] hover:bg-[#c29645] text-slate-950 font-bold text-xs px-4 py-2 rounded-lg transition whitespace-nowrap cursor-pointer shadow-sm"
               >
                 Subscribe
               </button>
             </form>
 
-            <div className="pt-2 space-y-2 text-xs text-slate-400">
+            <div className="pt-2 space-y-2 text-xs text-slate-300">
               <div className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#D5A754] shrink-0" />
                 <span>Palmira Toljatija 3, Belgrade</span>
@@ -221,9 +219,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-14 pt-6 border-t border-slate-700/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© 2026 Alfa BK University. All rights reserved.</p>
-          <p className="text-slate-400">
+          <p className="text-slate-300">
             Accredited · EQAR · ENQA · Erasmus+ Partner
           </p>
         </div>

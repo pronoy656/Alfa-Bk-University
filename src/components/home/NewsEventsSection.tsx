@@ -1,147 +1,77 @@
 import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
 
 export default function NewsEventsSection() {
-  const news = [
+  const articles = [
     {
-      category: "Achievements",
-      date: "Jul 2, 2026",
-      title: "Alfa BK ranked among Top 100 Young Universities worldwide",
-      excerpt:
-        "The 2026 global rankings recognize Alfa BK University's rapid rise in research output and international academic standing.",
+      category: "TECHNOLOGY",
+      date: "14 OCT",
+      type: "SAMPLE",
+      title: "AI Lab Open Week",
+      image:
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
       href: "/news-events",
     },
     {
-      category: "Research",
-      date: "Jun 24, 2026",
-      title: "New AI Research Center opens with €12M in funding",
-      excerpt:
-        "The Center for Applied Artificial Intelligence will host 60 researchers across 8 laboratories.",
+      category: "COMMUNITY",
+      date: "02 NOV",
+      type: "SAMPLE",
+      title: "Graduation Day 2026",
+      image:
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
       href: "/news-events",
     },
     {
-      category: "Admissions",
-      date: "Jun 18, 2026",
-      title: "Record 3,200 international applications for Fall 2026",
-      excerpt:
-        "Applications from 74 countries mark a 28% year-on-year increase for the upcoming academic cycle.",
-      href: "/news-events",
-    },
-    {
-      category: "Announcements",
-      date: "Jun 9, 2026",
-      title: "Alfa BK signs partnership with 5 European universities",
-      excerpt:
-        "New Erasmus+ agreements expand exchange opportunities for over 800 students annually.",
-      href: "/news-events",
-    },
-  ];
-
-  const events = [
-    {
-      title: "International Open Day 2026",
-      dateInfo: "Jul 20, 2026 · 10:00 · Main Campus Auditorium",
-      href: "/news-events",
-    },
-    {
-      title: "AI & Society Summer Conference",
-      dateInfo: "Aug 4, 2026 · 09:00 · Innovation Hub",
-      href: "/news-events",
-    },
-    {
-      title: "Freshers Orientation Week",
-      dateInfo: "Sep 14, 2026 · All day · Campus-wide",
-      href: "/news-events",
-    },
-    {
-      title: "Career Fair — 120+ Employers",
-      dateInfo: "Oct 2, 2026 · 11:00 · Sports & Events Arena",
+      category: "ARTS",
+      date: "19 NOV",
+      type: "SAMPLE",
+      title: "Creative Futures Forum",
+      image:
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
       href: "/news-events",
     },
   ];
 
   return (
-    <section className="py-20 bg-[#FAFCFF] border-b border-slate-100">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-          {/* Left Column: Latest News (7 cols) */}
-          <div className="lg:col-span-7">
-            <div className="flex items-center justify-between mb-8 fade-up-scroll">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B1E36]">
-                Latest News
-              </h2>
-              <Link
-                href="/news-events"
-                className="inline-flex items-center gap-1 text-sm font-semibold text-[#0B1E36] hover:text-[#D5A754] transition"
-              >
-                <span>All news</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+        {/* Section Header */}
+        <div className="mb-10 fade-up-scroll">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#BE9F5A]">
+            THE LATEST
+          </p>
+          <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1E36] tracking-tight uppercase">
+            NEWS & EVENTS
+          </h2>
+        </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {news.map((item, idx) => (
-                <Link
-                  key={idx}
-                  href={item.href}
-                  className={`group bg-white rounded-xl border border-slate-200/80 p-5 hover:shadow-md hover:border-amber-300/50 transition-all flex flex-col justify-between fade-up-scroll delay-${(idx % 2 + 1) * 150}`}
-                >
-                  <div>
-                    <div className="flex items-center justify-between text-xs text-slate-500 mb-3">
-                      <span className="font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-700">
-                        {item.category}
-                      </span>
-                      <span>{item.date}</span>
-                    </div>
-                    <h3 className="font-bold text-base text-[#0B1E36] group-hover:text-blue-700 transition-colors leading-snug">
-                      {item.title}
-                    </h3>
-                    <p className="mt-2 text-xs text-slate-600 leading-relaxed line-clamp-3">
-                      {item.excerpt}
-                    </p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
+        {/* 3 Articles Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {articles.map((item, idx) => (
+            <Link
+              key={idx}
+              href={item.href}
+              className="group flex flex-col fade-up-scroll"
+            >
+              {/* Rounded Image */}
+              <div className="relative rounded-2xl overflow-hidden aspect-[16/10] bg-slate-100 shadow-sm mb-4">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
 
-          {/* Right Column: Upcoming Events (5 cols) */}
-          <div className="lg:col-span-5">
-            <div className="flex items-center justify-between mb-8 fade-up-scroll">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B1E36]">
-                Upcoming Events
-              </h2>
-              <Link
-                href="/news-events"
-                className="inline-flex items-center gap-1 text-sm font-semibold text-[#0B1E36] hover:text-[#D5A754] transition"
-              >
-                <span>All events</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+              {/* Tag metadata */}
+              <div className="text-[11px] font-bold tracking-wider uppercase text-slate-400 mb-1.5">
+                {item.category} · {item.date} · {item.type}
+              </div>
 
-            <div className="space-y-4">
-              {events.map((evt, idx) => (
-                <Link
-                  key={idx}
-                  href={evt.href}
-                  className={`group flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200/80 hover:shadow-md hover:border-amber-300/50 transition-all fade-up-scroll delay-${(idx + 1) * 100}`}
-                >
-                  <div className="w-11 h-11 rounded-xl bg-[#0B1E36] text-[#D5A754] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                    <Calendar className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-sm sm:text-base text-[#0B1E36] group-hover:text-blue-700 transition-colors">
-                      {evt.title}
-                    </h3>
-                    <p className="text-xs text-slate-500 mt-1">
-                      {evt.dateInfo}
-                    </p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
+              {/* Title */}
+              <h3 className="text-xl font-bold text-[#0B1E36] group-hover:text-blue-700 transition-colors">
+                {item.title}
+              </h3>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

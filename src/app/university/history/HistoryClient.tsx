@@ -18,16 +18,16 @@ export default function HistoryClient() {
       {/* 1. HERO SECTION - COMPACT HALF-SCREEN HEIGHT              */}
       {/* ========================================================= */}
       <section className="relative min-h-[48vh] sm:min-h-[52vh] flex flex-col justify-center overflow-hidden bg-[#07172C] text-white py-12 sm:py-16 lg:py-20">
-        {/* Background Image with Dark Navy Moody Overlay */}
+        {/* Background Image with Clear Visibility */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=2400&q=80')",
           }}
         />
         {/* Navy Gradient layers for depth and focus */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07172C]/80 via-[#07172C]/90 to-[#07172C]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#07172C]/75 via-[#07172C]/55 to-[#07172C]/80" />
 
         {/* Center Hero Content */}
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 text-center my-auto">
@@ -512,9 +512,8 @@ export default function HistoryClient() {
                 "url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=2200&q=80')",
             }}
           />
-          {/* Deep Navy/Blue Atmospheric Overlay tint matching screenshot */}
-          <div className="absolute inset-0 bg-[#0A264A]/80 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#071F3D]/95 via-[#0A264A]/85 to-[#0A264A]/70" />
+          {/* Atmospheric Overlay with Clear Image Visibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#071F3D]/80 via-[#0A264A]/60 to-[#0A264A]/45" />
 
           <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">

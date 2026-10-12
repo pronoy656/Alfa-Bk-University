@@ -124,15 +124,15 @@ export default function AboutUniversityPage() {
     <div className="bg-white">
       {/* 1. HERO BANNER */}
       <section className="relative overflow-hidden bg-[#0A192F] text-white">
-        {/* Student studying backdrop with deep overlay */}
+        {/* Student studying backdrop with clear visible overlay */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2000&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0A192F] via-[#0A192F]/90 to-[#0A192F]/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A192F]/85 via-[#0A192F]/65 to-[#0A192F]/40" />
 
         <div className="container relative mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div className="max-w-2xl">

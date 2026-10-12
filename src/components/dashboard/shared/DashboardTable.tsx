@@ -22,7 +22,7 @@ export interface DashboardTableProps<T> {
   className?: string;
 }
 
-export default function DashboardTable<T extends Record<string, any>>({
+export default function DashboardTable<T extends Record<string, unknown>>({
   columns,
   data,
   keyField = "id",

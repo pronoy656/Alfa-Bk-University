@@ -158,18 +158,20 @@ export default function UploadLectureModal({
               Delivery Format
             </label>
             <div className="grid grid-cols-3 gap-3">
-              {[
-                { id: "video", label: "Video Recording", icon: Video },
-                { id: "pdf", label: "Lecture Notes (PDF)", icon: FileText },
-                { id: "slides", label: "Slide Deck (PPT)", icon: FileText },
-              ].map((item) => {
+              {(
+                [
+                  { id: "video", label: "Video Recording", icon: Video },
+                  { id: "pdf", label: "Lecture Notes (PDF)", icon: FileText },
+                  { id: "slides", label: "Slide Deck (PPT)", icon: FileText },
+                ] as const
+              ).map((item) => {
                 const Icon = item.icon;
                 const isSelected = contentType === item.id;
                 return (
                   <button
                     key={item.id}
                     type="button"
-                    onClick={() => setContentType(item.id as any)}
+                    onClick={() => setContentType(item.id)}
                     className={`flex flex-col items-center gap-2 p-3 rounded-2xl border text-center transition cursor-pointer ${
                       isSelected
                         ? "border-[#C69234] bg-[#FFF8ED] text-[#C69234] font-bold shadow-2xs"

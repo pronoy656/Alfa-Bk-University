@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Search, ArrowRight, Sparkles } from "lucide-react";
 
 export default function HeroSection() {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
 
   const stats = [
@@ -28,13 +30,13 @@ export default function HeroSection() {
               "url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=2000&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/95 via-[#0B1E36]/85 to-[#0B1E36]/70" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/80 via-[#0B1E36]/60 to-[#0B1E36]/35" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="max-w-3xl">
             {/* Tag Badge */}
-            <div className="hero-animate-fade-up hero-delay-100 mb-6 inline-flex items-center gap-2 rounded-full border border-[#D5A754]/40 bg-[#D5A754]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#D5A754] backdrop-blur-xs">
+            <div className="hero-animate-fade-up hero-delay-100 mb-6 inline-flex items-center gap-2 rounded-full border border-[#D5A754]/40 bg-[#0B1E36]/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#D5A754]">
               <span className="h-2 w-2 rounded-full bg-[#D5A754] animate-pulse" />
               <span>Fall 2026 Applications Open</span>
               <Sparkles className="w-3.5 h-3.5 text-[#D5A754] ml-0.5" />
@@ -58,10 +60,10 @@ export default function HeroSection() {
               onSubmit={(e) => {
                 e.preventDefault();
                 if (searchQuery.trim()) {
-                  window.location.href = `/programs?q=${encodeURIComponent(searchQuery)}`;
+                  router.push(`/programs?q=${encodeURIComponent(searchQuery)}`);
                 }
               }}
-              className="hero-animate-fade-up hero-delay-500 mt-8 max-w-xl flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-1.5 focus-within:border-[#D5A754] transition shadow-lg"
+              className="hero-animate-fade-up hero-delay-500 mt-8 max-w-xl flex items-center bg-[#0B1E36]/90 border border-white/20 rounded-xl p-1.5 focus-within:border-[#D5A754] transition shadow-lg"
             >
               <div className="pl-3.5 pr-2 text-slate-400">
                 <Search className="w-5 h-5 text-slate-300" />
@@ -92,7 +94,7 @@ export default function HeroSection() {
               </Link>
               <Link
                 href="/programs"
-                className="inline-flex items-center gap-2 border border-white/30 bg-white/5 hover:bg-white/15 text-white font-medium text-sm px-6 py-3 rounded-lg backdrop-blur-sm transition"
+                className="inline-flex items-center gap-2 border border-white/30 bg-[#0B1E36]/80 hover:bg-white/15 text-white font-medium text-sm px-6 py-3 rounded-lg transition"
               >
                 Explore Programs
               </Link>
@@ -102,18 +104,18 @@ export default function HeroSection() {
       </section>
 
       {/* Stats Bar */}
-      <section className="bg-white border-b border-slate-100 py-10 shadow-xs">
+      <section className="bg-[#BE9F5A] py-10 shadow-xs">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 text-center divide-y md:divide-y-0 divide-slate-100">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 text-center">
             {stats.map((stat, idx) => (
               <div
                 key={idx}
-                className={`pt-4 md:pt-0 fade-up-scroll delay-${(idx % 6 + 1) * 100}`}
+                className="flex flex-col items-center justify-center fade-up-scroll"
               >
                 <div className="text-3xl lg:text-4xl font-extrabold text-[#0B1E36] tracking-tight">
                   {stat.value}
                 </div>
-                <div className="text-[11px] font-bold tracking-wider text-slate-500 uppercase mt-1.5">
+                <div className="text-[11px] font-bold tracking-wider text-[#0B1E36]/90 uppercase mt-1.5">
                   {stat.label}
                 </div>
               </div>
