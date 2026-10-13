@@ -11,6 +11,7 @@ import {
   Download,
   Info,
 } from "lucide-react";
+import { dashboardRoutineData } from "@/data";
 
 interface RoutineSlot {
   day: "Sunday" | "Monday" | "Tuesday" | "Wednesday" | "Thursday";
@@ -24,144 +25,11 @@ interface RoutineSlot {
   type?: string;
 }
 
-const routineSchedule: RoutineSlot[] = [
-  // Sunday
-  {
-    day: "Sunday",
-    time: "09:00 AM",
-    subject: "DBMS",
-    code: "CSE-305",
-    instructor: "Dr. Rahman",
-    room: "Room 302",
-    bgColor: "bg-[#131F33] hover:bg-[#1a2b47]",
-    roomColor: "text-[#D5A754]",
-    type: "Theory Lecture",
-  },
-  {
-    day: "Sunday",
-    time: "11:00 AM",
-    subject: "Software Eng.",
-    code: "CSE-310",
-    instructor: "Dr. Hasan",
-    room: "Room 204",
-    bgColor: "bg-[#1B4D3E] hover:bg-[#236350]",
-    roomColor: "text-emerald-300",
-    type: "Theory Lecture",
-  },
-  {
-    day: "Sunday",
-    time: "02:00 PM",
-    subject: "AI Class",
-    code: "CSE-401",
-    instructor: "Dr. Farah",
-    room: "Room 312",
-    bgColor: "bg-[#2D4F50] hover:bg-[#386263]",
-    roomColor: "text-teal-300",
-    type: "Interactive Workshop",
-  },
-
-  // Monday
-  {
-    day: "Monday",
-    time: "10:00 AM",
-    subject: "OS",
-    code: "CSE-322",
-    instructor: "Dr. Arif",
-    room: "Room 101",
-    bgColor: "bg-[#2E5E8A] hover:bg-[#3974aa]",
-    roomColor: "text-sky-300",
-    type: "Theory Lecture",
-  },
-  {
-    day: "Monday",
-    time: "02:00 PM",
-    subject: "Networking",
-    code: "CSE-320",
-    instructor: "Ms. Nusrat",
-    room: "Lab 3",
-    bgColor: "bg-[#8C5326] hover:bg-[#a6622d]",
-    roomColor: "text-amber-300",
-    type: "Practical Lab",
-  },
-
-  // Tuesday
-  {
-    day: "Tuesday",
-    time: "09:00 AM",
-    subject: "DBMS",
-    code: "CSE-305",
-    instructor: "Dr. Rahman",
-    room: "Room 302",
-    bgColor: "bg-[#131F33] hover:bg-[#1a2b47]",
-    roomColor: "text-[#D5A754]",
-    type: "Theory Lecture",
-  },
-  {
-    day: "Tuesday",
-    time: "11:00 AM",
-    subject: "Software Eng.",
-    code: "CSE-310",
-    instructor: "Dr. Hasan",
-    room: "Room 204",
-    bgColor: "bg-[#1B4D3E] hover:bg-[#236350]",
-    roomColor: "text-emerald-300",
-    type: "Project Discussion",
-  },
-
-  // Wednesday
-  {
-    day: "Wednesday",
-    time: "10:00 AM",
-    subject: "OS",
-    code: "CSE-322",
-    instructor: "Dr. Arif",
-    room: "Room 101",
-    bgColor: "bg-[#2E5E8A] hover:bg-[#3974aa]",
-    roomColor: "text-sky-300",
-    type: "Theory Lecture",
-  },
-  {
-    day: "Wednesday",
-    time: "02:00 PM",
-    subject: "Networking",
-    code: "CSE-320",
-    instructor: "Ms. Nusrat",
-    room: "Lab 3",
-    bgColor: "bg-[#8C5326] hover:bg-[#a6622d]",
-    roomColor: "text-amber-300",
-    type: "Practical Lab",
-  },
-
-  // Thursday
-  {
-    day: "Thursday",
-    time: "12:00 PM",
-    subject: "Tech Writing",
-    code: "GED-201",
-    instructor: "Ms. Tania",
-    room: "Room 405",
-    bgColor: "bg-[#5E358A] hover:bg-[#7342a8]",
-    roomColor: "text-purple-300",
-    type: "Seminar",
-  },
-];
-
-const timeSlots = [
-  "09:00 AM",
-  "10:00 AM",
-  "11:00 AM",
-  "12:00 PM",
-  "01:00 PM",
-  "02:00 PM",
-];
-
-const days: Array<"Sunday" | "Monday" | "Tuesday" | "Wednesday" | "Thursday"> = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-];
+const { routineSchedule, timeSlots, days } = dashboardRoutineData as {
+  routineSchedule: RoutineSlot[];
+  timeSlots: string[];
+  days: Array<"Sunday" | "Monday" | "Tuesday" | "Wednesday" | "Thursday">;
+};
 
 export default function ClassRoutineView() {
   const [viewMode, setViewMode] = useState<"daily" | "weekly" | "monthly">(

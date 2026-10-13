@@ -1,14 +1,9 @@
 import Link from "next/link";
 import { Compass, ArrowRight } from "lucide-react";
+import { homeData } from "@/data";
 
 export default function CareersDegreeSection() {
-  const industries = [
-    "Technology & AI",
-    "Business & Finance",
-    "Creative Economy",
-    "Sport & Wellbeing",
-    "Public Affairs",
-  ];
+  const industries = homeData.careersIndustries;
 
   return (
     <section className="py-24 bg-[#FAF8F5]">

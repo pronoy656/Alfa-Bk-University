@@ -4,15 +4,37 @@ export { default as DashboardHeader } from "./DashboardHeader";
 export { default as DashboardSidebar } from "./DashboardSidebar";
 export { default as DashboardBanner } from "./DashboardBanner";
 export { DashboardStatCard, DashboardStatsGrid } from "./DashboardStatCard";
-export { default as DashboardCard } from "./DashboardCard";
 export { default as TodayClassesList } from "./TodayClassesList";
 export { default as UpcomingAssignmentsList } from "./UpcomingAssignmentsList";
 export { default as ClassRoutineView } from "./ClassRoutineView";
 export { default as ExamRoutineView } from "./ExamRoutineView";
 export { default as AttendanceTrackerView } from "./AttendanceTrackerView";
 
-// Shared Reusable Components
-export * from "./shared";
+// Shared Reusable UI Components from unified @/components/shared
+export {
+  DashboardModal,
+  DashboardButton,
+  DashboardTable,
+  DashboardPagination,
+  DashboardCard,
+  DashboardBadge,
+  Modal,
+  Button,
+  Table,
+  Pagination,
+  Card,
+  Badge,
+} from "@/components/shared";
+
+export type {
+  DashboardModalProps,
+  DashboardButtonProps,
+  DashboardTableProps,
+  DashboardTableColumn,
+  DashboardPaginationProps,
+  DashboardCardProps,
+  DashboardBadgeProps,
+} from "@/components/shared";
 
 // Role-specific Dashboards
 export * as AdminDashboard from "./admin-dashboard";

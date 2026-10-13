@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Check, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
-import { FacultyContact } from "@/components/data";
+import { FacultyContact } from "@/data";
 
 interface FacultyOverviewProps {
   about: string;

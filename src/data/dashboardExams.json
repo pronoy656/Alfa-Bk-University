@@ -1,0 +1,153 @@
+{
+  "midtermExams": [
+    {
+      "id": "ex-1",
+      "course": "Database Management System",
+      "code": "CSE-305",
+      "date": "Oct 12, 2026",
+      "time": "10:00 AM - 12:00 PM",
+      "room": "Exam Hall A",
+      "seatRange": "STU-0400 to STU-0480",
+      "building": "Academic Block 1, 2nd Floor",
+      "totalSeats": 80
+    },
+    {
+      "id": "ex-2",
+      "course": "Software Engineering",
+      "code": "CSE-311",
+      "date": "Oct 14, 2026",
+      "time": "10:00 AM - 12:00 PM",
+      "room": "Room 302",
+      "seatRange": "STU-0420 to STU-0465",
+      "building": "Academic Block 2, 3rd Floor",
+      "totalSeats": 45
+    },
+    {
+      "id": "ex-3",
+      "course": "Computer Networking",
+      "code": "CSE-318",
+      "date": "Oct 16, 2026",
+      "time": "02:00 PM - 04:00 PM",
+      "room": "Exam Hall B",
+      "seatRange": "STU-0380 to STU-0470",
+      "building": "Academic Block 1, 1st Floor",
+      "totalSeats": 90
+    },
+    {
+      "id": "ex-4",
+      "course": "Operating Systems",
+      "code": "CSE-322",
+      "date": "Oct 19, 2026",
+      "time": "10:00 AM - 12:00 PM",
+      "room": "Exam Hall A",
+      "seatRange": "STU-0410 to STU-0490",
+      "building": "Academic Block 1, 2nd Floor",
+      "totalSeats": 80
+    },
+    {
+      "id": "ex-5",
+      "course": "Artificial Intelligence",
+      "code": "CSE-330",
+      "date": "Oct 21, 2026",
+      "time": "02:00 PM - 04:00 PM",
+      "room": "Room 204",
+      "seatRange": "STU-0430 to STU-0460",
+      "building": "Academic Block 2, 2nd Floor",
+      "totalSeats": 30
+    },
+    {
+      "id": "ex-6",
+      "course": "Technical Writing",
+      "code": "GED-201",
+      "date": "Oct 23, 2026",
+      "time": "10:00 AM - 12:00 PM",
+      "room": "Room 101",
+      "seatRange": "STU-0400 to STU-0500",
+      "building": "Main Administration Block, Ground Floor",
+      "totalSeats": 100
+    }
+  ],
+  "finalExams": [
+    {
+      "id": "fn-1",
+      "course": "Database Management System",
+      "code": "CSE-305",
+      "date": "Dec 14, 2026",
+      "time": "09:00 AM - 12:00 PM",
+      "room": "Auditorium Main",
+      "seatRange": "STU-0400 to STU-0490",
+      "building": "Central Hall",
+      "totalSeats": 90
+    },
+    {
+      "id": "fn-2",
+      "course": "Software Engineering",
+      "code": "CSE-311",
+      "date": "Dec 16, 2026",
+      "time": "09:00 AM - 12:00 PM",
+      "room": "Exam Hall A",
+      "seatRange": "STU-0410 to STU-0480",
+      "building": "Academic Block 1",
+      "totalSeats": 70
+    },
+    {
+      "id": "fn-3",
+      "course": "Computer Networking",
+      "code": "CSE-318",
+      "date": "Dec 18, 2026",
+      "time": "01:30 PM - 04:30 PM",
+      "room": "Exam Hall B",
+      "seatRange": "STU-0390 to STU-0470",
+      "building": "Academic Block 1",
+      "totalSeats": 80
+    },
+    {
+      "id": "fn-4",
+      "course": "Operating Systems",
+      "code": "CSE-322",
+      "date": "Dec 21, 2026",
+      "time": "09:00 AM - 12:00 PM",
+      "room": "Auditorium Main",
+      "seatRange": "STU-0400 to STU-0485",
+      "building": "Central Hall",
+      "totalSeats": 85
+    }
+  ],
+  "labExams": [
+    {
+      "id": "lb-1",
+      "course": "Database Management Lab",
+      "code": "CSE-306",
+      "date": "Nov 02, 2026",
+      "time": "10:00 AM - 01:00 PM",
+      "room": "Computer Lab 4",
+      "seatRange": "Batch A (STU-0400 - 0430)",
+      "building": "IT Building, 2nd Floor",
+      "totalSeats": 30
+    },
+    {
+      "id": "lb-2",
+      "course": "Computer Networking Lab",
+      "code": "CSE-319",
+      "date": "Nov 04, 2026",
+      "time": "02:00 PM - 05:00 PM",
+      "room": "Hardware Lab 2",
+      "seatRange": "Batch A (STU-0400 - 0430)",
+      "building": "IT Building, 1st Floor",
+      "totalSeats": 30
+    }
+  ],
+  "vivaExams": [
+    {
+      "id": "vv-1",
+      "course": "Software Engineering Defense",
+      "code": "CSE-311V",
+      "date": "Nov 09, 2026",
+      "time": "09:00 AM - 03:00 PM",
+      "room": "Conference Hall 1",
+      "seatRange": "Individual slots",
+      "building": "Faculty Wing, 4th Floor",
+      "totalSeats": 45
+    }
+  ]
+}

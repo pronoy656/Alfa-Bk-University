@@ -11,6 +11,7 @@ import {
   Check,
   X,
 } from "lucide-react";
+import { dashboardAttendanceData } from "@/data";
 
 interface CourseAttendance {
   id: string;
@@ -34,111 +35,9 @@ export default function AttendanceTrackerView() {
     null
   );
 
-  // Exact 6 Courses matching Figma Node 463-7156
-  const coursesAttendance: CourseAttendance[] = [
-    {
-      id: "att-1",
-      course: "Database Management System",
-      code: "CSE-305",
-      present: 22,
-      absent: 2,
-      late: 0,
-      percentage: 91,
-      barColor: "green",
-      instructor: "Dr. Mohammad Rahman",
-      history: [
-        { date: "Oct 05, 2026", topic: "Relational Algebra", status: "Present" },
-        { date: "Oct 03, 2026", topic: "SQL Subqueries & Joins", status: "Present" },
-        { date: "Sep 28, 2026", topic: "ER Model Mapping", status: "Absent" },
-        { date: "Sep 26, 2026", topic: "Schema Design", status: "Present" },
-      ],
-    },
-    {
-      id: "att-2",
-      course: "Software Engineering",
-      code: "CSE-311",
-      present: 18,
-      absent: 4,
-      late: 2,
-      percentage: 75,
-      barColor: "orange",
-      instructor: "Dr. Hasan Mahmud",
-      history: [
-        { date: "Oct 04, 2026", topic: "Scrum & Sprint Planning", status: "Late" },
-        { date: "Oct 02, 2026", topic: "Software Architecture Patterns", status: "Present" },
-        { date: "Sep 27, 2026", topic: "Requirement Analysis", status: "Absent" },
-        { date: "Sep 25, 2026", topic: "Agile Estimation", status: "Present" },
-      ],
-    },
-    {
-      id: "att-3",
-      course: "Computer Networking",
-      code: "CSE-318",
-      present: 24,
-      absent: 0,
-      late: 0,
-      percentage: 100,
-      barColor: "green",
-      instructor: "Ms. Farhana Sultana",
-      history: [
-        { date: "Oct 06, 2026", topic: "TCP/IP Protocol Suite", status: "Present" },
-        { date: "Oct 01, 2026", topic: "Subnetting Class C", status: "Present" },
-        { date: "Sep 29, 2026", topic: "IP Routing Algorithms", status: "Present" },
-        { date: "Sep 24, 2026", topic: "OSI Model Review", status: "Present" },
-      ],
-    },
-    {
-      id: "att-4",
-      course: "Operating Systems",
-      code: "CSE-322",
-      present: 19,
-      absent: 5,
-      late: 1,
-      percentage: 76,
-      barColor: "orange",
-      instructor: "Dr. Arif Chowdhury",
-      history: [
-        { date: "Oct 05, 2026", topic: "Virtual Memory & Paging", status: "Present" },
-        { date: "Oct 03, 2026", topic: "Deadlock Detection", status: "Absent" },
-        { date: "Sep 28, 2026", topic: "Process Synchronization", status: "Present" },
-        { date: "Sep 26, 2026", topic: "CPU Scheduling Algorithms", status: "Late" },
-      ],
-    },
-    {
-      id: "att-5",
-      course: "Artificial Intelligence",
-      code: "CSE-330",
-      present: 23,
-      absent: 1,
-      late: 0,
-      percentage: 95,
-      barColor: "green",
-      instructor: "Prof. Dr. Milan Stanković",
-      history: [
-        { date: "Oct 04, 2026", topic: "A* Search & Heuristics", status: "Present" },
-        { date: "Oct 02, 2026", topic: "State Space Representation", status: "Present" },
-        { date: "Sep 27, 2026", topic: "Informed Search Strategies", status: "Present" },
-        { date: "Sep 25, 2026", topic: "Uninformed Search (BFS/DFS)", status: "Absent" },
-      ],
-    },
-    {
-      id: "att-6",
-      course: "Technical Writing",
-      code: "GED-201",
-      present: 16,
-      absent: 4,
-      late: 1,
-      percentage: 80,
-      barColor: "green",
-      instructor: "Ms. Tania Ahmed",
-      history: [
-        { date: "Oct 06, 2026", topic: "IEEE Citation Style", status: "Present" },
-        { date: "Sep 29, 2026", topic: "Research Paper Structuring", status: "Present" },
-        { date: "Sep 22, 2026", topic: "Abstract Drafting", status: "Late" },
-        { date: "Sep 15, 2026", topic: "Literature Review Techniques", status: "Absent" },
-      ],
-    },
-  ];
+  const { coursesAttendance } = dashboardAttendanceData as {
+    coursesAttendance: CourseAttendance[];
+  };
 
   return (
     <div className="w-full space-y-6">

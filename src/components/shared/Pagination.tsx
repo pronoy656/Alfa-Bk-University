@@ -3,7 +3,7 @@
 import React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export interface DashboardPaginationProps {
+export interface PaginationProps {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
@@ -12,14 +12,14 @@ export interface DashboardPaginationProps {
   className?: string;
 }
 
-export default function DashboardPagination({
+export default function Pagination({
   currentPage,
   totalPages,
   onPageChange,
   pageSize,
   totalItems,
   className = "",
-}: DashboardPaginationProps) {
+}: PaginationProps) {
   if (totalPages <= 1) return null;
 
   // Calculate start & end record items
@@ -124,3 +124,7 @@ export default function DashboardPagination({
     </div>
   );
 }
+
+// Alias for dashboard compatibility
+export { Pagination as DashboardPagination };
+export type DashboardPaginationProps = PaginationProps;

@@ -18,7 +18,8 @@ import {
   Calendar,
   CheckCircle2,
 } from "lucide-react";
-import { programsData, getProgramBySlug } from "@/components/data";
+import { programsData, getProgramBySlug } from "@/data";
+import { PageHero } from "@/components/shared";
 
 export default function ProgramDetailPage() {
   const params = useParams();
@@ -209,59 +210,45 @@ export default function ProgramDetailPage() {
   return (
     <div className="bg-[#FAF9F6] min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="bg-[#0B1E36] text-white py-12 lg:py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl">
-            {/* Back to Faculty link */}
-            <Link
-              href={`/faculties/${program.facultySlug}`}
-              className="inline-flex items-center gap-1 text-xs text-slate-400 hover:text-white transition"
-            >
-              <ChevronLeft className="h-3.5 w-3.5" />
-              {program.faculty}
-            </Link>
-
-            {/* Study Level Pill */}
-            <div className="mt-4">
-              <span className="inline-block rounded-full bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-300 border border-blue-400/30">
-                {program.level}
-              </span>
-            </div>
-
-            {/* Program Title */}
-            <h1 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl text-white">
-              {program.title}
-            </h1>
-
-            {/* Faculty Name */}
-            <p className="mt-1.5 text-xs font-medium text-[#E5A83B]">
+      <PageHero
+        backLink={{
+          label: program.faculty,
+          href: `/faculties/${program.facultySlug}`,
+        }}
+        kicker={
+          <span className="inline-block rounded-full bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-300 border border-blue-400/30">
+            {program.level}
+          </span>
+        }
+        title={program.title}
+        subtitle={
+          <div>
+            <p className="text-xs font-medium text-[#E5A83B] mb-2">
               {program.faculty}
             </p>
-
-            {/* Program Subtitle/Description */}
-            <p className="mt-4 text-xs sm:text-sm leading-relaxed text-slate-300 max-w-2xl">
+            <p className="text-xs sm:text-sm leading-relaxed text-slate-300 max-w-2xl">
               {program.overview}
             </p>
-
-            {/* CTA Buttons */}
-            <div className="mt-6 flex flex-wrap items-center gap-3">
-              <Link
-                href="/apply-now"
-                className="inline-flex items-center gap-2 rounded-lg bg-[#E5A83B] px-5 py-2.5 text-xs font-bold text-slate-950 transition hover:bg-[#d4992f]"
-              >
-                Apply Now
-                <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-              <Link
-                href="/admissions"
-                className="inline-flex items-center rounded-lg border border-slate-700 bg-slate-800/80 px-5 py-2.5 text-xs font-medium text-white transition hover:bg-slate-800"
-              >
-                Admission Requirements
-              </Link>
-            </div>
           </div>
-        </div>
-      </section>
+        }
+        actions={
+          <>
+            <Link
+              href="/apply-now"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#E5A83B] px-5 py-2.5 text-xs font-bold text-slate-950 transition hover:bg-[#d4992f]"
+            >
+              Apply Now
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+            <Link
+              href="/admissions"
+              className="inline-flex items-center rounded-lg border border-slate-700 bg-slate-800/80 px-5 py-2.5 text-xs font-medium text-white transition hover:bg-slate-800"
+            >
+              Admission Requirements
+            </Link>
+          </>
+        }
+      />
 
       {/* 2. TAB NAVIGATION */}
       <section className="sticky top-20 z-20 border-b border-slate-200 bg-white">

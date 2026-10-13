@@ -1,0 +1,146 @@
+{
+  "stats": [
+    {
+      "label": "Total Courses",
+      "value": "4",
+      "subtext": "All semesters"
+    },
+    {
+      "label": "Total Students",
+      "value": "156",
+      "subtext": "Across 4 batches"
+    },
+    {
+      "label": "Pending Assignments",
+      "value": "12",
+      "subtext": "Unsubmitted by students"
+    },
+    {
+      "label": "Pending Grading",
+      "value": "8",
+      "subtext": "Needs evaluation"
+    }
+  ],
+  "todayClasses": [
+    {
+      "id": "cls-1",
+      "title": "Database Management",
+      "codeRoom": "CSE-305 · Room 302",
+      "time": "09:00 AM"
+    },
+    {
+      "id": "cls-2",
+      "title": "Software Engineering",
+      "codeRoom": "CSE-311 · Room 204",
+      "time": "11:00 AM"
+    },
+    {
+      "id": "cls-3",
+      "title": "Advanced Relational Algebra Lab",
+      "codeRoom": "CSE-305L · Computer Lab 2",
+      "time": "02:00 PM"
+    }
+  ],
+  "courses": [
+    {
+      "id": "cse-305",
+      "code": "CSE-305",
+      "credits": 3,
+      "title": "Database Management System",
+      "enrolled": 45,
+      "progress": 62,
+      "lastActive": "Today, 09:00 AM"
+    },
+    {
+      "id": "cse-311",
+      "code": "CSE-311",
+      "credits": 3,
+      "title": "Software Engineering",
+      "enrolled": 38,
+      "progress": 45,
+      "lastActive": "Yesterday"
+    },
+    {
+      "id": "cse-201",
+      "code": "CSE-201",
+      "credits": 4,
+      "title": "Data Structures",
+      "enrolled": 52,
+      "progress": 85,
+      "lastActive": "2 days ago"
+    },
+    {
+      "id": "cse-315",
+      "code": "CSE-315",
+      "credits": 3,
+      "title": "Computer Architecture",
+      "enrolled": 41,
+      "progress": 30,
+      "lastActive": "1 week ago"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "asg-1",
+      "title": "Assignment 04: Normalization and BCNF Decomposition",
+      "course": "Database Management System",
+      "courseCode": "CSE-305",
+      "dueDate": "Oct 25, 2026",
+      "totalMarks": 20,
+      "submittedCount": 41,
+      "totalStudents": 45,
+      "status": "active",
+      "allowedFormats": [".PDF", ".ZIP"],
+      "instructions": "Please solve the 5 normalization problems attached. Your solution must include functional dependency step tracing, minimal keys proof, and step-by-step 3NF synthesis."
+    },
+    {
+      "id": "asg-2",
+      "title": "Assignment 03: UML Class Diagram & Architecture Specs",
+      "course": "Software Engineering",
+      "courseCode": "CSE-311",
+      "dueDate": "Oct 18, 2026",
+      "totalMarks": 25,
+      "submittedCount": 35,
+      "totalStudents": 38,
+      "status": "urgent",
+      "allowedFormats": [".PDF"],
+      "instructions": "Develop high-fidelity class and sequence diagrams for the university library automated cataloging subsystem."
+    },
+    {
+      "id": "asg-3",
+      "title": "Programming Task: Red-Black Tree Balancing Implementation",
+      "course": "Data Structures & Algorithms",
+      "courseCode": "CSE-201",
+      "dueDate": "Nov 02, 2026",
+      "totalMarks": 30,
+      "submittedCount": 20,
+      "totalStudents": 52,
+      "status": "active",
+      "allowedFormats": [".ZIP", ".TAR.GZ"],
+      "instructions": "Implement left-rotate, right-rotate and node color recoloring rules in C++ or Java."
+    }
+  ],
+  "recentActivities": [
+    {
+      "id": "act-1",
+      "type": "submission",
+      "title": "41 students submitted Assignment 04",
+      "course": "Database Management System (CSE-305)",
+      "time": "15 minutes ago"
+    },
+    {
+      "id": "act-2",
+      "type": "quiz",
+      "title": "Quiz 02: Relational Calculus finished",
+      "course": "Database Management System (CSE-305)",
+      "time": "2 hours ago"
+    },
+    {
+      "id": "act-3",
+      "type": "lecture",
+      "title": "Uploaded Lecture 08 Slides: Agile Scrum Sprint Cycles",
+      "course": "Software Engineering (CSE-311)",
+      "time": "Yesterday, 04:30 PM"
+    }
+  ]
+}

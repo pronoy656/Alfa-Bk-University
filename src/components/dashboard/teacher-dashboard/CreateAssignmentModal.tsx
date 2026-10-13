@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { CheckCircle2, UploadCloud, Calendar } from "lucide-react";
 import { TeacherAssignment } from "@/components/dashboard/types";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 interface CreateAssignmentModalProps {
   isOpen: boolean;

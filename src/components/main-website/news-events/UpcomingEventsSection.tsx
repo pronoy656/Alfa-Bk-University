@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Clock, MapPin, ArrowRight } from "lucide-react";
-import { newsEventsData } from "@/components/data";
+import { newsEventsData } from "@/data";
 import { UpcomingEvent } from "./types";
 
 interface UpcomingEventsSectionProps {

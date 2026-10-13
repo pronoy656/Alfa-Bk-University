@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Calendar, ArrowRight } from "lucide-react";
-import { newsEventsData } from "@/components/data";
+import { newsEventsData } from "@/data";
 import { NewsArticle, getBadgeColorClass } from "./types";
 
 interface LatestNewsSectionProps {

@@ -10,7 +10,7 @@ import {
   Calendar,
   X,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 interface RoutineSlot {
   code?: string;

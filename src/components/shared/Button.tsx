@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Loader2 } from "lucide-react";
 
-export interface DashboardButtonProps
+export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "gold" | "secondary" | "outline" | "danger" | "ghost";
   size?: "sm" | "md" | "lg";
@@ -11,6 +12,7 @@ export interface DashboardButtonProps
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
   fullWidth?: boolean;
+  href?: string;
 }
 
 const variantStyles = {
@@ -34,28 +36,27 @@ const sizeStyles = {
   lg: "px-6 py-3 text-sm sm:text-base rounded-2xl gap-2.5 font-bold",
 };
 
-export default function DashboardButton({
+export default function Button({
   variant = "primary",
   size = "md",
   loading = false,
   iconLeft,
   iconRight,
   fullWidth = false,
+  href,
   children,
   className = "",
   disabled,
   ...props
-}: DashboardButtonProps) {
+}: ButtonProps) {
   const isDisabled = disabled || loading;
 
-  return (
-    <button
-      {...props}
-      disabled={isDisabled}
-      className={`inline-flex items-center justify-center transition active:scale-95 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed select-none ${
-        variantStyles[variant]
-      } ${sizeStyles[size]} ${fullWidth ? "w-full" : ""} ${className}`}
-    >
+  const baseClassName = `inline-flex items-center justify-center transition active:scale-95 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed select-none ${
+    variantStyles[variant]
+  } ${sizeStyles[size]} ${fullWidth ? "w-full" : ""} ${className}`;
+
+  const content = (
+    <>
       {loading ? (
         <Loader2 className="w-4 h-4 animate-spin shrink-0" />
       ) : (
@@ -63,6 +64,24 @@ export default function DashboardButton({
       )}
       <span>{children}</span>
       {!loading && iconRight && <span className="shrink-0">{iconRight}</span>}
+    </>
+  );
+
+  if (href && !isDisabled) {
+    return (
+      <Link href={href} className={baseClassName}>
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <button {...props} disabled={isDisabled} className={baseClassName}>
+      {content}
     </button>
   );
 }
+
+// Alias for dashboard compatibility
+export { Button as DashboardButton };
+export type DashboardButtonProps = ButtonProps;

@@ -1,14 +1,10 @@
 "use client";
 
 import { ChevronRight, Play } from "lucide-react";
+import { homeData } from "@/data";
 
 export default function CampusLifeSection() {
-  const points = [
-    "80+ student clubs and societies",
-    "Modern on-campus accommodation",
-    "Dedicated international student office",
-    "Career services with 97% graduate employment",
-  ];
+  const points = homeData.campusLifePoints;
 
   return (
     <section className="py-20 bg-white">

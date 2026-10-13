@@ -1,35 +1,8 @@
 import Link from "next/link";
+import { homeData } from "@/data";
 
 export default function NewsEventsSection() {
-  const articles = [
-    {
-      category: "TECHNOLOGY",
-      date: "14 OCT",
-      type: "SAMPLE",
-      title: "AI Lab Open Week",
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-      href: "/news-events",
-    },
-    {
-      category: "COMMUNITY",
-      date: "02 NOV",
-      type: "SAMPLE",
-      title: "Graduation Day 2026",
-      image:
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
-      href: "/news-events",
-    },
-    {
-      category: "ARTS",
-      date: "19 NOV",
-      type: "SAMPLE",
-      title: "Creative Futures Forum",
-      image:
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
-      href: "/news-events",
-    },
-  ];
+  const articles = homeData.newsArticles;
 
   return (
     <section className="py-20 bg-white">

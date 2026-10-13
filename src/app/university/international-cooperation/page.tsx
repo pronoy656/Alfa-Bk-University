@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import InternationalCooperationContent from "./InternationalCooperationContent";
+import InternationalCooperationContent from "@/components/main-website/university/InternationalCooperationContent";
 
 export const metadata: Metadata = {
   title: "International Cooperation | Alfa BK University",

@@ -1,0 +1,9 @@
+export { default as AboutView } from "./AboutView";
+export { default as AlumniContent } from "./AlumniContent";
+export { default as ContactView } from "./ContactView";
+export { default as DocumentLibraryContent } from "./DocumentLibraryContent";
+export { default as HistoryClient } from "./HistoryClient";
+export { default as InstituteKaricContent } from "./InstituteKaricContent";
+export { default as InternationalCooperationContent } from "./InternationalCooperationContent";
+export { default as LibraryView } from "./LibraryView";
+export { default as RectorLeadershipView } from "./RectorLeadershipView";

@@ -2,32 +2,11 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { homeData } from "@/data";
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const faqs = [
-    {
-      question: "When do Fall 2026 applications close?",
-      answer:
-        "The general application deadline for the Fall 2026 academic term is September 15, 2026. Early admissions and priority scholarship considerations close on July 31, 2026. International students requiring visa assistance are encouraged to submit their documents by June 30, 2026.",
-    },
-    {
-      question: "Are scholarships available for international students?",
-      answer:
-        "Yes, Alfa BK University provides merit-based academic scholarships covering up to 50% of annual tuition, as well as talent and athletic awards. All international applicants with a high GPA are automatically considered during admissions review.",
-    },
-    {
-      question: "Can I study fully online?",
-      answer:
-        "Several undergraduate and graduate programs offer a distance learning option through our accredited e-classroom (Moodle) platform. Students can follow live lectures, access recorded materials, and coordinate with academic advisors online.",
-    },
-    {
-      question: "Is the university internationally accredited?",
-      answer:
-        "Yes. Alfa BK University is accredited by the National Entity for Accreditation and Quality Assurance (NEAQA) in Serbia. All diplomas and ECTS credits conform to the Bologna declaration and are recognized throughout the European Higher Education Area (EQAR and ENQA frameworks).",
-    },
-  ];
+  const { faqs } = homeData;
 
   return (
     <section className="py-24 bg-[#FAF8F5]">

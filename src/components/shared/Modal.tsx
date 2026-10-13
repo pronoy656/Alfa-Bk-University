@@ -3,13 +3,14 @@
 import React, { useEffect, useRef } from "react";
 import { X } from "lucide-react";
 
-export interface DashboardModalProps {
+export interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
   subtitle?: string;
   badge?: string;
   badgeColor?: "gold" | "navy" | "emerald" | "amber" | "red";
+  headerTheme?: "navy" | "light";
   maxWidth?:
     | "sm"
     | "md"
@@ -42,17 +43,18 @@ const maxWidthMap: Record<string, string> = {
   "max-w-3xl": "max-w-3xl",
 };
 
-export default function DashboardModal({
+export default function Modal({
   isOpen,
   onClose,
   title,
   subtitle,
   badge,
   badgeColor = "gold",
+  headerTheme = "navy",
   maxWidth = "lg",
   children,
   footerActions,
-}: DashboardModalProps) {
+}: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -73,6 +75,8 @@ export default function DashboardModal({
 
   if (!isOpen) return null;
 
+  const isNavy = headerTheme === "navy";
+
   const badgeColorClass =
     badgeColor === "gold"
       ? "text-[#D5A754]"
@@ -82,7 +86,9 @@ export default function DashboardModal({
       ? "text-amber-400"
       : badgeColor === "red"
       ? "text-red-400"
-      : "text-slate-300";
+      : isNavy
+      ? "text-slate-300"
+      : "text-slate-600";
 
   return (
     <div
@@ -95,14 +101,26 @@ export default function DashboardModal({
     >
       <div
         ref={modalRef}
-        className={`relative w-full ${maxWidthMap[maxWidth]} rounded-3xl bg-[#0B1E36] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]`}
+        className={`relative w-full ${maxWidthMap[maxWidth] || "max-w-lg"} rounded-3xl ${
+          isNavy ? "bg-[#0B1E36]" : "bg-white"
+        } shadow-2xl overflow-hidden flex flex-col max-h-[90vh]`}
       >
-        {/* University Navy Modal Header */}
-        <div className="bg-[#0B1E36] p-6 text-white relative shrink-0">
+        {/* Modal Header */}
+        <div
+          className={`p-6 relative shrink-0 ${
+            isNavy
+              ? "bg-[#0B1E36] text-white"
+              : "bg-slate-50 border-b border-slate-100 text-slate-900"
+          }`}
+        >
           <button
             type="button"
             onClick={onClose}
-            className="absolute top-5 right-5 flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-slate-300 hover:bg-white/20 hover:text-white transition cursor-pointer"
+            className={`absolute top-5 right-5 flex h-8 w-8 items-center justify-center rounded-full transition cursor-pointer ${
+              isNavy
+                ? "bg-white/10 text-slate-300 hover:bg-white/20 hover:text-white"
+                : "bg-slate-200 text-slate-600 hover:bg-slate-300 hover:text-slate-900"
+            }`}
             aria-label="Close modal"
           >
             <X className="w-4 h-4" />
@@ -116,19 +134,29 @@ export default function DashboardModal({
             </span>
           )}
 
-          <h3 className="mt-1 text-lg font-bold leading-snug text-white pr-8">
+          <h3
+            className={`mt-1 text-lg font-bold leading-snug pr-8 ${
+              isNavy ? "text-white" : "text-slate-900"
+            }`}
+          >
             {title}
           </h3>
 
           {subtitle && (
-            <p className="mt-1 text-xs text-slate-300 leading-relaxed font-normal">
+            <p
+              className={`mt-1 text-xs leading-relaxed font-normal ${
+                isNavy ? "text-slate-300" : "text-slate-600"
+              }`}
+            >
               {subtitle}
             </p>
           )}
         </div>
 
         {/* Modal Body with Scrollable Area */}
-        <div className="p-6 sm:p-8 overflow-y-auto space-y-4 bg-white flex-1">{children}</div>
+        <div className="p-6 sm:p-8 overflow-y-auto space-y-4 bg-white flex-1">
+          {children}
+        </div>
 
         {/* Optional Footer */}
         {footerActions && (
@@ -140,3 +168,7 @@ export default function DashboardModal({
     </div>
   );
 }
+
+// Alias for dashboard compatibility
+export { Modal as DashboardModal };
+export type DashboardModalProps = ModalProps;

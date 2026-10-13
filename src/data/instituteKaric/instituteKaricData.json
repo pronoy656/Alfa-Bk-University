@@ -1,0 +1,121 @@
+{
+  "stats": [
+    { "value": "30+", "label": "YEARS OF EXCELLENCE" },
+    { "value": "10+", "label": "YEARS ACTIVE" },
+    { "value": "60+", "label": "EVENTS PER YEAR" },
+    { "value": "200+", "label": "PUBLICATIONS" }
+  ],
+  "pillars": [
+    {
+      "icon": "BookOpen",
+      "title": "SCIENTIFIC RESEARCH",
+      "desc": "Peer-reviewed journals, working papers and applied research groups."
+    },
+    {
+      "icon": "Film",
+      "title": "CULTURAL PROGRAMS",
+      "desc": "Conferences, public lectures, film screenings and art exhibitions."
+    },
+    {
+      "icon": "Users",
+      "title": "ALUMNI ENGAGEMENT",
+      "desc": "Mentoring circles, alumni lectures and professional development."
+    },
+    {
+      "icon": "Award",
+      "title": "STUDENT AWARDS",
+      "desc": "Annual scholarships for outstanding academic and civic achievement."
+    },
+    {
+      "icon": "Globe",
+      "title": "INTERNATIONAL EXCHANGE",
+      "desc": "Visiting scholars, joint symposia and collaborative research projects."
+    },
+    {
+      "icon": "GraduationCap",
+      "title": "PUBLICATIONS",
+      "desc": "Annual academic journal, conference proceedings and monographs."
+    }
+  ],
+  "researchProjects": [
+    {
+      "icon": "Briefcase",
+      "title": "Strategic Management & Operations",
+      "desc": "Developing innovative models for corporate strategy, process optimisation, and competitive advantage analysis across emerging markets."
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Advanced Corporate Finance & Modelling",
+      "desc": "Quantifying financial risk, valuing complex assets, and optimising investment portfolios for sustainable and responsible growth."
+    },
+    {
+      "icon": "Globe",
+      "title": "Global Marketing & Consumer Analytics",
+      "desc": "Analysing international market trends, consumer psychology, and digital marketing effectiveness across the Western Balkans."
+    },
+    {
+      "icon": "Cpu",
+      "title": "Digital Transformation & Applied AI",
+      "desc": "Developing AI-driven decision tools, data platforms, and cybersecurity frameworks for businesses and public institutions."
+    },
+    {
+      "icon": "Users",
+      "title": "Human Resource Development & Talent Strategy",
+      "desc": "Optimising workforce skills, talent acquisition, and performance management in rapidly changing economic landscapes."
+    },
+    {
+      "icon": "Scale",
+      "title": "Legal & Ethical Frameworks in Business",
+      "desc": "Navigating international trade laws, intellectual property rights, and corporate social responsibility in global contexts."
+    }
+  ],
+  "publications": [
+    {
+      "tag": "JOURNAL · VOL. 1(2)",
+      "title": "Alfa BK Academic Journal",
+      "desc": "Annual peer-reviewed journal covering economics, law, technology and social sciences. Current volume in preparation.",
+      "status": "Forthcoming · Details Pending",
+      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "tag": "PROCEEDINGS · 2025",
+      "title": "Annual Conference Proceedings",
+      "desc": "Selected papers from the Institute's annual academic conference. Submission guidelines published each autumn.",
+      "status": "Forthcoming · Details Pending",
+      "image": "https://images.unsplash.com/photo-1532012164546-f432f2e3edd4?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "tag": "MONOGRAPHS · 2025",
+      "title": "Topical Research Monographs",
+      "desc": "Deep-dive monographs on applied economics, digital transformation and legal frameworks. Catalogue updated annually.",
+      "status": "Forthcoming · Details Pending",
+      "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "events": [
+    {
+      "badge": "CONFERENCE",
+      "badgeBg": "bg-[#113565] text-white",
+      "title": "ANNUAL ACADEMIC CONFERENCE 2025",
+      "desc": "The Institute's flagship annual gathering of researchers, faculty, students and invited speakers. Theme and date to be announced.",
+      "footerInfo": "Date · Venue · Programme Pending",
+      "buttonText": "Register Interest"
+    },
+    {
+      "badge": "PUBLIC LECTURE",
+      "badgeBg": "bg-[#C49B55] text-slate-950",
+      "title": "PUBLIC LECTURE SERIES · AUTUMN 2025",
+      "desc": "Monthly lectures open to the public on topics spanning economics, culture, technology and civic life. Speakers and dates forthcoming.",
+      "footerInfo": "Speakers · Dates Pending",
+      "buttonText": "Register Interest"
+    },
+    {
+      "badge": "AWARDS CEREMONY",
+      "badgeBg": "bg-[#A2302F] text-white",
+      "title": "PETAR KARIĆ STUDENT AWARDS 2025",
+      "desc": "Annual awards honouring outstanding student achievement in academics, civic engagement, and leadership. Nomination details published in spring.",
+      "footerInfo": "Nominations Open · Spring 2026",
+      "buttonText": "Nominate a Student"
+    }
+  ]
+}

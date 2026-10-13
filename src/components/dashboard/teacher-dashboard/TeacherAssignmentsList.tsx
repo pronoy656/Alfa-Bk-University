@@ -15,6 +15,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { TeacherAssignment } from "@/components/dashboard/types";
+import { dashboardTeacherData } from "@/data";
 import CreateAssignmentModal from "./CreateAssignmentModal";
 
 export default function TeacherAssignmentsList() {
@@ -23,64 +24,9 @@ export default function TeacherAssignmentsList() {
   const [selectedCourse, setSelectedCourse] = useState("all");
   const [statusFilter, setStatusFilter] = useState<string>("all");
 
-  const [assignments, setAssignments] = useState<TeacherAssignment[]>([
-    {
-      id: "asg-1",
-      title: "Assignment 04: Normalization and BCNF Decomposition",
-      course: "Database Management System",
-      courseCode: "CSE-305",
-      dueDate: "Oct 25, 2026",
-      totalMarks: 20,
-      submittedCount: 41,
-      totalStudents: 45,
-      status: "active",
-      allowedFormats: [".PDF", ".ZIP"],
-      instructions:
-        "Please solve the 5 normalization problems attached. Your solution must include functional dependency step tracing, minimal keys proof, and step-by-step 3NF synthesis.",
-    },
-    {
-      id: "asg-2",
-      title: "Assignment 03: UML Class Diagram & Architecture Specs",
-      course: "Software Engineering",
-      courseCode: "CSE-311",
-      dueDate: "Oct 18, 2026",
-      totalMarks: 25,
-      submittedCount: 35,
-      totalStudents: 38,
-      status: "urgent",
-      allowedFormats: [".PDF"],
-      instructions:
-        "Develop high-fidelity class and sequence diagrams for the university library automated cataloging subsystem.",
-    },
-    {
-      id: "asg-3",
-      title: "Programming Task: Red-Black Tree Balancing Implementation",
-      course: "Data Structures & Algorithms",
-      courseCode: "CSE-201",
-      dueDate: "Nov 02, 2026",
-      totalMarks: 30,
-      submittedCount: 18,
-      totalStudents: 52,
-      status: "active",
-      allowedFormats: [".ZIP", ".CPP"],
-      instructions:
-        "Complete node left-rotate and right-rotate procedures with full unit test coverage.",
-    },
-    {
-      id: "asg-4",
-      title: "Assignment 02: Relational Algebra Query Optimization",
-      course: "Database Management System",
-      courseCode: "CSE-305",
-      dueDate: "Oct 05, 2026",
-      totalMarks: 15,
-      submittedCount: 45,
-      totalStudents: 45,
-      status: "graded",
-      allowedFormats: [".PDF"],
-      instructions:
-        "Evaluated query trees and cost projections. All papers have been scored and published.",
-    },
-  ]);
+  const [assignments, setAssignments] = useState<TeacherAssignment[]>(
+    dashboardTeacherData.assignments as TeacherAssignment[]
+  );
 
   const handleAssignmentCreated = (newAssignment: TeacherAssignment) => {
     setAssignments((prev) => [newAssignment, ...prev]);

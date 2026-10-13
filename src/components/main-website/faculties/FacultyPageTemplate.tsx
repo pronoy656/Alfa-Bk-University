@@ -1,5 +1,5 @@
 import React from "react";
-import { FacultyDetail } from "@/components/data";
+import { FacultyDetail } from "@/data";
 import FacultyHero from "./FacultyHero";
 import FacultyOverview from "./FacultyOverview";
 import FacultyPrograms from "./FacultyPrograms";

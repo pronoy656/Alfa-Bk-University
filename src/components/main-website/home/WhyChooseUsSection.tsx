@@ -6,35 +6,18 @@ import {
   MapPin,
   Clock3,
   Star,
+  LucideIcon,
 } from "lucide-react";
+import { homeData } from "@/data";
+
+const iconMap: Record<string, LucideIcon> = {
+  BriefcaseBusiness,
+  Globe2,
+  ShieldCheck,
+};
 
 export default function WhyChooseUsSection() {
-  const reasons = [
-    {
-      title: "Career-first education",
-      text: "Programs designed with industry demands and practical skill-building in mind.",
-      icon: BriefcaseBusiness,
-    },
-    {
-      title: "Global perspective",
-      text: "Partnerships, mobility programs and international cooperation opportunities.",
-      icon: Globe2,
-    },
-    {
-      title: "Student support",
-      text: "Advising, mentoring and academic services throughout the student journey.",
-      icon: ShieldCheck,
-    },
-  ];
-
-  const programs = [
-    "Undergraduate studies",
-    "Master's programs",
-    "Doctoral research",
-    "Professional development",
-    "Exchange and mobility",
-    "Career services",
-  ];
+  const { reasons, programs } = homeData.whyChooseUs;
 
   return (
     <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
@@ -47,20 +30,23 @@ export default function WhyChooseUsSection() {
             Future-ready education with real impact
           </h2>
           <div className="mt-8 space-y-5">
-            {reasons.map(({ title, text, icon: Icon }) => (
-              <div
-                key={title}
-                className="flex gap-4 rounded-2xl border border-slate-100 bg-slate-50 p-4"
-              >
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700">
-                  <Icon className="h-5 w-5" />
+            {reasons.map(({ title, text, icon }) => {
+              const Icon = iconMap[icon] || ShieldCheck;
+              return (
+                <div
+                  key={title}
+                  className="flex gap-4 rounded-2xl border border-slate-100 bg-slate-50 p-4"
+                >
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900">{title}</h3>
+                    <p className="mt-1 text-sm leading-6 text-slate-600">{text}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900">{title}</h3>
-                  <p className="mt-1 text-sm leading-6 text-slate-600">{text}</p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 

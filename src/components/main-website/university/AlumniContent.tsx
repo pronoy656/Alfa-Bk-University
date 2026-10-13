@@ -10,6 +10,16 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
+import { PageHero } from "@/components/shared";
+import {
+  faculties,
+  alumniStories,
+  careerNetworkFeatures,
+  events,
+  supportWays,
+} from "@/data/alumni";
+
+const careerIcons = [Briefcase, Users, Award, Globe];
 
 export default function AlumniContent() {
   const [submitted, setSubmitted] = useState(false);
@@ -30,106 +40,49 @@ export default function AlumniContent() {
     setSubmitted(true);
   };
 
-  const faculties = [
-    "Faculty of Finance, Banking and Auditing",
-    "Faculty of Information Technology",
-    "Faculty of Mathematics and Computer Science",
-    "Faculty of Foreign Languages",
-    "Faculty of Management in Sport",
-    "Faculty of Arts",
-  ];
-
   const graduationYears = Array.from({ length: 33 }, (_, i) => `${2025 - i}`);
 
   return (
     <div className="bg-white min-h-screen text-slate-800">
-      {/* =========================================================================
-          1. HERO BANNER
-          ========================================================================= */}
-      <section className="relative min-h-[580px] flex items-center overflow-hidden bg-[#0A1F3B] text-white">
-        {/* Background photo with overlay */}
-        <div
-          className="absolute inset-0 bg-cover bg-center sm:bg-[center_top]"
-          style={{
-            backgroundImage: "url('/alumni-hero.jpg')",
-          }}
-        />
-        {/* Soft navy overlay keeping photo clearly visible */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07172B]/80 via-[#0A1F3B]/55 to-[#0A1F3B]/30" />
-
-        <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
-          <div className="max-w-3xl">
-            {/* Tag */}
-            <p className="text-xs font-bold tracking-[0.25em] text-[#D5A754] uppercase mb-4">
-              ALUMNI NETWORK
-            </p>
-
-            {/* Title */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white uppercase leading-tight">
-              WHERE ALFA BK <br />
-              <span className="text-[#D5A754]">GRADUATES COME TOGETHER.</span>
-            </h1>
-
-            {/* Description */}
-            <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-200 max-w-2xl font-normal">
-              Connect with thousands of graduates across Serbia and the world. Share your story,
-              mentor the next generation, and grow your career through the Alfa BK Alumni Network.
-            </p>
-
-            {/* Action Buttons */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="#register"
-                className="inline-flex items-center justify-center bg-[#D5A754] hover:bg-[#c29645] text-[#0A1C30] font-bold text-xs uppercase tracking-wider px-7 py-3.5 rounded shadow-sm transition"
-              >
-                Join the Alumni Network
-              </a>
-              <a
-                href="#stories"
-                className="inline-flex items-center justify-center bg-[#132A4A]/80 hover:bg-[#18345b] text-white font-bold text-xs uppercase tracking-wider px-7 py-3.5 rounded border border-white/20 shadow-sm transition"
-              >
-                Explore Stories
-              </a>
-            </div>
-
-            {/* Stats Row */}
-            <div className="mt-14 pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
-              <div>
-                <p className="text-3xl sm:text-4xl font-black text-white tracking-tight">30+</p>
-                <p className="mt-1 text-[11px] font-bold tracking-widest text-slate-400 uppercase">
-                  YEARS OF GRADUATES
-                </p>
-              </div>
-              <div>
-                <p className="text-3xl sm:text-4xl font-black text-white tracking-tight">74</p>
-                <p className="mt-1 text-[11px] font-bold tracking-widest text-slate-400 uppercase">
-                  COUNTRIES
-                </p>
-              </div>
-              <div>
-                <p className="text-3xl sm:text-4xl font-black text-white tracking-tight">97%</p>
-                <p className="mt-1 text-[11px] font-bold tracking-widest text-slate-400 uppercase">
-                  EMPLOYMENT RATE
-                </p>
-              </div>
-              <div>
-                <p className="text-3xl sm:text-4xl font-black text-white tracking-tight">6</p>
-                <p className="mt-1 text-[11px] font-bold tracking-widest text-slate-400 uppercase">
-                  FACULTIES
-                </p>
-              </div>
-            </div>
+      {/* 1. HERO BANNER */}
+      <PageHero
+        kicker="ALUMNI NETWORK"
+        title={
+          <>
+            WHERE ALFA BK <br />
+            <span className="text-[#D5A754]">GRADUATES COME TOGETHER.</span>
+          </>
+        }
+        description="Connect with thousands of graduates across Serbia and the world. Share your story, mentor the next generation, and grow your career through the Alfa BK Alumni Network."
+        bgImage="/alumni-hero.jpg"
+        actions={
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href="#register"
+              className="inline-flex items-center justify-center bg-[#D5A754] hover:bg-[#c29645] text-[#0A1C30] font-bold text-xs uppercase tracking-wider px-7 py-3.5 rounded shadow-sm transition"
+            >
+              Join the Alumni Network
+            </a>
+            <a
+              href="#stories"
+              className="inline-flex items-center justify-center bg-[#132A4A]/80 hover:bg-[#18345b] text-white font-bold text-xs uppercase tracking-wider px-7 py-3.5 rounded border border-white/20 shadow-sm transition"
+            >
+              Explore Stories
+            </a>
           </div>
-        </div>
-      </section>
+        }
+        stats={[
+          { value: "30+", label: "YEARS OF GRADUATES" },
+          { value: "74", label: "COUNTRIES" },
+          { value: "97%", label: "EMPLOYMENT RATE" },
+          { value: "6", label: "FACULTIES" },
+        ]}
+      />
 
-      {/* =========================================================================
-          2. ABOUT THE ASSOCIATION ("MORE THAN GRADUATION")
-          ========================================================================= */}
+      {/* 2. ABOUT THE ASSOCIATION */}
       <section className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Content */}
             <div className="lg:col-span-7">
               <div className="flex items-center gap-2 mb-2">
                 <span className="h-[2px] w-6 bg-[#D5A754]" />
@@ -152,7 +105,6 @@ export default function AlumniContent() {
               </p>
             </div>
 
-            {/* Right Photo */}
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200/80 h-[380px] sm:h-[420px]">
                 <div
@@ -168,12 +120,9 @@ export default function AlumniContent() {
         </div>
       </section>
 
-      {/* =========================================================================
-          3. ALUMNI STORIES ("WHAT I STUDIED. WHAT I DO TODAY.")
-          ========================================================================= */}
+      {/* 3. ALUMNI STORIES */}
       <section id="stories" className="py-20 lg:py-24 bg-[#113565] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-14">
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="h-[2px] w-6 bg-[#D5A754]" />
@@ -190,207 +139,86 @@ export default function AlumniContent() {
             </p>
           </div>
 
-          {/* 3 Story Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1: Milena Todorović */}
-            <div className="flex flex-col rounded-2xl overflow-hidden bg-[#FAF8F5] text-slate-800 shadow-xl border-0">
-              <div className="relative h-64 w-full overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80')",
-                  }}
-                />
-              </div>
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="bg-[#113565] text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
-                      FACULTY OF BUSINESS
-                    </span>
-                    <span className="text-xs font-semibold text-slate-400">Class of 2018</span>
-                  </div>
-                  <h3 className="text-lg font-black text-[#0B1E36] uppercase tracking-tight">
-                    MILENA TODOROVIĆ
-                  </h3>
-                  <p className="text-xs font-semibold text-[#C49B55] mt-0.5">
-                    Strategy Analyst · Erste Bank
-                  </p>
-
-                  <div className="mt-6 space-y-3.5 text-xs">
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-amber-400" />
-                        <span>WHAT I STUDIED</span>
-                      </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        Business Economics at Alfa BK — fascinated by how numbers tell stories.
-                      </p>
+            {alumniStories.map((story) => (
+              <div
+                key={story.name}
+                className="flex flex-col rounded-2xl overflow-hidden bg-[#FAF8F5] text-slate-800 shadow-xl border-0"
+              >
+                <div className="relative h-64 w-full overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url('${story.image}')`,
+                    }}
+                  />
+                </div>
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="bg-[#113565] text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
+                        {story.faculty}
+                      </span>
+                      <span className="text-xs font-semibold text-slate-400">
+                        {story.classYear}
+                      </span>
                     </div>
+                    <h3 className="text-lg font-black text-[#0B1E36] uppercase tracking-tight">
+                      {story.name}
+                    </h3>
+                    <p className="text-xs font-semibold text-[#C49B55] mt-0.5">
+                      {story.role}
+                    </p>
 
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-red-500" />
-                        <span>WHAT I DO TODAY</span>
+                    <div className="mt-6 space-y-3.5 text-xs">
+                      <div>
+                        <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
+                          <span className="h-2 w-2 rounded-full bg-amber-400" />
+                          <span>WHAT I STUDIED</span>
+                        </div>
+                        <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
+                          {story.whatIStudied}
+                        </p>
                       </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        I lead strategic analysis for Erste Bank&apos;s retail division across the Balkans.
-                      </p>
-                    </div>
 
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-blue-600" />
-                        <span>HOW I GOT THERE</span>
+                      <div>
+                        <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
+                          <span className="h-2 w-2 rounded-full bg-red-500" />
+                          <span>WHAT I DO TODAY</span>
+                        </div>
+                        <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
+                          {story.whatIDoToday}
+                        </p>
                       </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        An alumni mentor I met at the Alfa BK Career Fair connected me to my first internship. The rest followed.
-                      </p>
+
+                      <div>
+                        <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
+                          <span className="h-2 w-2 rounded-full bg-blue-600" />
+                          <span>HOW I GOT THERE</span>
+                        </div>
+                        <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
+                          {story.howIGotThere}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Card 2: Nikola Petrović */}
-            <div className="flex flex-col rounded-2xl overflow-hidden bg-[#FAF8F5] text-slate-800 shadow-xl border-0">
-              <div className="relative h-64 w-full overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80')",
-                  }}
-                />
-              </div>
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="bg-[#113565] text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
-                      FACULTY OF IT
-                    </span>
-                    <span className="text-xs font-semibold text-slate-400">Class of 2016</span>
-                  </div>
-                  <h3 className="text-lg font-black text-[#0B1E36] uppercase tracking-tight">
-                    NIKOLA PETROVIĆ
-                  </h3>
-                  <p className="text-xs font-semibold text-[#C49B55] mt-0.5">
-                    Senior Software Engineer · Nordeus
-                  </p>
-
-                  <div className="mt-6 space-y-3.5 text-xs">
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-amber-400" />
-                        <span>WHAT I STUDIED</span>
-                      </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        Software Engineering — building things that actually work for people.
-                      </p>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-red-500" />
-                        <span>WHAT I DO TODAY</span>
-                      </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        I build backend infrastructure for mobile games played by millions worldwide.
-                      </p>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-blue-600" />
-                        <span>HOW I GOT THERE</span>
-                      </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        My thesis supervisor was an industry professional. That relationship opened the first door.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 3: Ana Jovanović */}
-            <div className="flex flex-col rounded-2xl overflow-hidden bg-[#FAF8F5] text-slate-800 shadow-xl border-0">
-              <div className="relative h-64 w-full overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80')",
-                  }}
-                />
-              </div>
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="bg-[#113565] text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
-                      FACULTY OF HEALTHCARE
-                    </span>
-                    <span className="text-xs font-semibold text-slate-400">Class of 2014</span>
-                  </div>
-                  <h3 className="text-lg font-black text-[#0B1E36] uppercase tracking-tight">
-                    ANA JOVANOVIĆ
-                  </h3>
-                  <p className="text-xs font-semibold text-[#C49B55] mt-0.5">
-                    Specialist Pharmacist · Clinical Centre
-                  </p>
-
-                  <div className="mt-6 space-y-3.5 text-xs">
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-amber-400" />
-                        <span>WHAT I STUDIED</span>
-                      </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        Pharmacy — I always wanted to be on the frontline of patient care.
-                      </p>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-red-500" />
-                        <span>WHAT I DO TODAY</span>
-                      </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        I specialize in clinical pharmacology at Belgrade&apos;s main hospital complex.
-                      </p>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-slate-800">
-                        <span className="h-2 w-2 rounded-full bg-blue-600" />
-                        <span>HOW I GOT THERE</span>
-                      </div>
-                      <p className="mt-1 text-slate-600 pl-3.5 leading-relaxed">
-                        Practical placements in my third year gave me hands-on experience no classroom could replicate.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
-          {/* Share Your Story Button */}
           <div className="mt-12 text-center">
             <a
               href="#register"
               className="inline-flex items-center justify-center border border-white/25 bg-white/5 hover:bg-white/10 text-white font-bold text-xs uppercase tracking-wider px-7 py-3 rounded-lg shadow-sm transition"
             >
-              Share Your Story →
+              Share Your Story &rarr;
             </a>
           </div>
         </div>
       </section>
 
-      {/* =========================================================================
-          4. CAREERS & INDUSTRY ("YOUR CAREER NETWORK")
-          ========================================================================= */}
+      {/* 4. CAREERS & INDUSTRY */}
       <section className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14">
@@ -409,66 +237,34 @@ export default function AlumniContent() {
             </p>
           </div>
 
-          {/* 4 Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="flex flex-col justify-between rounded-2xl bg-white p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition">
-              <div>
-                <div className="w-11 h-11 rounded-xl bg-[#113565] flex items-center justify-center text-[#D5A754] mb-5">
-                  <Briefcase className="h-5 w-5" />
+            {careerNetworkFeatures.map((feat, idx) => {
+              const Icon = careerIcons[idx % careerIcons.length];
+              return (
+                <div
+                  key={feat.title}
+                  className="flex flex-col justify-between rounded-2xl bg-white p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition"
+                >
+                  <div>
+                    <div className="w-11 h-11 rounded-xl bg-[#113565] flex items-center justify-center text-[#D5A754] mb-5">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="text-base font-bold text-[#0B1E36]">{feat.title}</h3>
+                    <p className="mt-2.5 text-xs text-slate-600 leading-relaxed">
+                      {feat.desc}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-base font-bold text-[#0B1E36]">Alumni Job Board</h3>
-                <p className="mt-2.5 text-xs text-slate-600 leading-relaxed">
-                  Exclusive postings from alumni employers and university partners — roles you won&apos;t find anywhere else.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col justify-between rounded-2xl bg-white p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition">
-              <div>
-                <div className="w-11 h-11 rounded-xl bg-[#113565] flex items-center justify-center text-[#D5A754] mb-5">
-                  <Users className="h-5 w-5" />
-                </div>
-                <h3 className="text-base font-bold text-[#0B1E36]">Mentorship Programme</h3>
-                <p className="mt-2.5 text-xs text-slate-600 leading-relaxed">
-                  Be matched with a current student in your field. One conversation can change a career trajectory.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col justify-between rounded-2xl bg-white p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition">
-              <div>
-                <div className="w-11 h-11 rounded-xl bg-[#113565] flex items-center justify-center text-[#D5A754] mb-5">
-                  <Award className="h-5 w-5" />
-                </div>
-                <h3 className="text-base font-bold text-[#0B1E36]">Industry Lectures</h3>
-                <p className="mt-2.5 text-xs text-slate-600 leading-relaxed">
-                  Return to campus as a speaker. Share real-world expertise with students who are where you once were.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col justify-between rounded-2xl bg-white p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition">
-              <div>
-                <div className="w-11 h-11 rounded-xl bg-[#113565] flex items-center justify-center text-[#D5A754] mb-5">
-                  <Globe className="h-5 w-5" />
-                </div>
-                <h3 className="text-base font-bold text-[#0B1E36]">Global Alumni Directory</h3>
-                <p className="mt-2.5 text-xs text-slate-600 leading-relaxed">
-                  Search and connect with graduates by faculty, industry, location, or graduation year.
-                </p>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* =========================================================================
-          5. GIVE BACK ("MENTOR A STUDENT" - Crimson / Brick Red #A2302F)
-          ========================================================================= */}
+      {/* 5. GIVE BACK */}
       <section className="bg-[#A2302F] text-white py-20 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column */}
             <div className="lg:col-span-6 flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-2">
                 <span className="h-[2px] w-6 bg-[#FFE4B5]" />
@@ -497,7 +293,6 @@ export default function AlumniContent() {
               </div>
             </div>
 
-            {/* Right Photo */}
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 h-[380px] sm:h-[420px]">
                 <div
@@ -513,12 +308,9 @@ export default function AlumniContent() {
         </div>
       </section>
 
-      {/* =========================================================================
-          6. EVENTS ("COMING TOGETHER")
-          ========================================================================= */}
+      {/* 6. EVENTS */}
       <section className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -532,123 +324,56 @@ export default function AlumniContent() {
               </h2>
             </div>
             <Link
-              href="/news"
+              href="/news-events"
               className="inline-flex items-center justify-center border border-[#0B1E36]/30 text-[#0B1E36] hover:bg-black/5 font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition self-start sm:self-auto"
             >
               See All Events
             </Link>
           </div>
 
-          {/* 3 Event Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="flex flex-col rounded-2xl overflow-hidden bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition">
-              <div className="relative h-56 w-full overflow-hidden bg-slate-900">
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80')",
-                  }}
-                />
-              </div>
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-[#D5A754] uppercase tracking-wider mb-2">
-                    <span className="h-2 w-2 rounded-full bg-[#D5A754]" />
-                    <span>15 MARCH 2026</span>
+            {events.map((evt) => (
+              <div
+                key={evt.title}
+                className="flex flex-col rounded-2xl overflow-hidden bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition"
+              >
+                <div className="relative h-56 w-full overflow-hidden bg-slate-900">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url('${evt.image}')`,
+                    }}
+                  />
+                </div>
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#D5A754] uppercase tracking-wider mb-2">
+                      <span className="h-2 w-2 rounded-full bg-[#D5A754]" />
+                      <span>{evt.date}</span>
+                    </div>
+                    <h3 className="text-lg font-bold text-[#0B1E36]">{evt.title}</h3>
+                    <p className="mt-2.5 text-xs text-slate-600 leading-relaxed font-normal">
+                      {evt.desc}
+                    </p>
                   </div>
-                  <h3 className="text-lg font-bold text-[#0B1E36]">Annual Alumni Gala</h3>
-                  <p className="mt-2.5 text-xs text-slate-600 leading-relaxed font-normal">
-                    The flagship event of the Alumni Association calendar. An evening of connection, recognition, and celebration.
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <a
-                    href="#register"
-                    className="inline-flex items-center gap-1 text-xs font-bold text-[#A2302F] hover:text-[#7f2424] uppercase tracking-wider transition-colors"
-                  >
-                    Register interest <ArrowRight className="h-3.5 w-3.5" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="flex flex-col rounded-2xl overflow-hidden bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition">
-              <div className="relative h-56 w-full overflow-hidden bg-slate-900">
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80')",
-                  }}
-                />
-              </div>
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-[#D5A754] uppercase tracking-wider mb-2">
-                    <span className="h-2 w-2 rounded-full bg-[#D5A754]" />
-                    <span>28 APRIL 2026</span>
+                  <div className="mt-6 pt-4 border-t border-slate-100">
+                    <a
+                      href="#register"
+                      className="inline-flex items-center gap-1 text-xs font-bold text-[#A2302F] hover:text-[#7f2424] uppercase tracking-wider transition-colors"
+                    >
+                      Register interest <ArrowRight className="h-3.5 w-3.5" />
+                    </a>
                   </div>
-                  <h3 className="text-lg font-bold text-[#0B1E36]">Alumni Career Fair</h3>
-                  <p className="mt-2.5 text-xs text-slate-600 leading-relaxed font-normal">
-                    Alumni employers meet current students. If you&apos;re hiring or want to give back to the pipeline — this is your moment.
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <a
-                    href="#register"
-                    className="inline-flex items-center gap-1 text-xs font-bold text-[#A2302F] hover:text-[#7f2424] uppercase tracking-wider transition-colors"
-                  >
-                    Exhibit or attend <ArrowRight className="h-3.5 w-3.5" />
-                  </a>
                 </div>
               </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="flex flex-col rounded-2xl overflow-hidden bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition">
-              <div className="relative h-56 w-full overflow-hidden bg-slate-900">
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80')",
-                  }}
-                />
-              </div>
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-[#D5A754] uppercase tracking-wider mb-2">
-                    <span className="h-2 w-2 rounded-full bg-[#D5A754]" />
-                    <span>ROLLING PROGRAMME</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-[#0B1E36]">Alumni Lecture Series</h3>
-                  <p className="mt-2.5 text-xs text-slate-600 leading-relaxed font-normal">
-                    Monthly talks from alumni professionals across all six faculties. Real careers, real knowledge, real impact on the next generation.
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <a
-                    href="#register"
-                    className="inline-flex items-center gap-1 text-xs font-bold text-[#A2302F] hover:text-[#7f2424] uppercase tracking-wider transition-colors"
-                  >
-                    View schedule <ArrowRight className="h-3.5 w-3.5" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* =========================================================================
-          7. SUPPORT ALFA BK ("GIVE BACK. SHAPE WHAT COMES NEXT.")
-          ========================================================================= */}
+      {/* 7. SUPPORT ALFA BK */}
       <section className="py-20 lg:py-24 bg-[#113565] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-14">
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="h-[2px] w-6 bg-[#D5A754]" />
@@ -666,50 +391,23 @@ export default function AlumniContent() {
             </p>
           </div>
 
-          {/* 4 Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="rounded-2xl bg-[#193F71] border border-white/10 p-7 flex flex-col justify-between">
-              <div>
-                <p className="text-2xl font-black text-[#D5A754] mb-3">01</p>
-                <h3 className="text-base font-bold text-white">Establish a Scholarship</h3>
-                <p className="mt-2 text-xs leading-relaxed text-slate-300">
-                  Name a scholarship in honour of someone who inspired you or support students from your faculty.
-                </p>
+            {supportWays.map((way) => (
+              <div
+                key={way.num}
+                className="rounded-2xl bg-[#193F71] border border-white/10 p-7 flex flex-col justify-between"
+              >
+                <div>
+                  <p className="text-2xl font-black text-[#D5A754] mb-3">{way.num}</p>
+                  <h3 className="text-base font-bold text-white">{way.title}</h3>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                    {way.desc}
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div className="rounded-2xl bg-[#193F71] border border-white/10 p-7 flex flex-col justify-between">
-              <div>
-                <p className="text-2xl font-black text-[#D5A754] mb-3">02</p>
-                <h3 className="text-base font-bold text-white">Fund Research</h3>
-                <p className="mt-2 text-xs leading-relaxed text-slate-300">
-                  Support the Institute Petar Karić and research projects that keep Alfa BK at the forefront of knowledge.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-2xl bg-[#193F71] border border-white/10 p-7 flex flex-col justify-between">
-              <div>
-                <p className="text-2xl font-black text-[#D5A754] mb-3">03</p>
-                <h3 className="text-base font-bold text-white">Offer Internships</h3>
-                <p className="mt-2 text-xs leading-relaxed text-slate-300">
-                  Partner with the university to offer paid internship places to students ready for real-world experience.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-2xl bg-[#193F71] border border-white/10 p-7 flex flex-col justify-between">
-              <div>
-                <p className="text-2xl font-black text-[#D5A754] mb-3">04</p>
-                <h3 className="text-base font-bold text-white">Annual Alumni Fund</h3>
-                <p className="mt-2 text-xs leading-relaxed text-slate-300">
-                  Join the growing group of alumni who contribute annually to campus improvements and student welfare.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
 
-          {/* 2 Buttons */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#register"
@@ -727,9 +425,7 @@ export default function AlumniContent() {
         </div>
       </section>
 
-      {/* =========================================================================
-          8. BECOME A MEMBER ("ALUMNI ASSOCIATION APPLICATION")
-          ========================================================================= */}
+      {/* 8. BECOME A MEMBER (APPLICATION FORM) */}
       <section id="register" className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -749,7 +445,6 @@ export default function AlumniContent() {
             </p>
           </div>
 
-          {/* Form Card */}
           <div className="max-w-3xl mx-auto rounded-2xl bg-white border border-slate-200/80 shadow-md p-7 sm:p-10">
             {submitted ? (
               <div className="py-12 text-center">

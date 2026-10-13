@@ -1,0 +1,109 @@
+{
+  "rector": {
+    "name": "Prof. dr Rade Milošević",
+    "badge": "RECTOR · ALFA BK UNIVERSITY",
+    "degree": "PhD in Economic Sciences · University of Belgrade",
+    "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80",
+    "bio": "Professor Milošević has led Alfa BK University since 2018, driving the university's digital transformation, international expansion, and research strategy. He holds a PhD in Economic Sciences from the University of Belgrade and has published over 40 peer-reviewed articles on macroeconomics and higher education policy.",
+    "office": {
+      "email": "rector@alfabk.edu",
+      "phone": "+381 11 260 7900"
+    }
+  },
+  "proRectors": [
+    {
+      "role": "PRO-RECTOR FOR ACADEMIC AFFAIRS",
+      "name": "PROF. DR NATAŠA JOVANOVIĆ",
+      "desc": "Curriculum design, accreditation processes and quality assurance across all six faculties.",
+      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "role": "PRO-RECTOR FOR RESEARCH",
+      "name": "PROF. DR BOJAN ĐORĐEVIĆ",
+      "desc": "Research strategy, innovation centres, grant applications and confirmed industry partnerships.",
+      "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "role": "PRO-RECTOR FOR INTERNATIONAL RELATIONS",
+      "name": "PROF. DR IVANA MARKOVIĆ",
+      "desc": "Erasmus+ coordination, bilateral agreements and international student mobility programmes.",
+      "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "deans": [
+    {
+      "initials": "AS",
+      "name": "Prof. dr Aleksandar Simić",
+      "faculty": "Faculty of Finance, Trade & Accounting",
+      "email": "dean.finance@alfabk.edu"
+    },
+    {
+      "initials": "VP",
+      "name": "Prof. dr Vesna Petrović",
+      "faculty": "Faculty of Foreign Languages",
+      "email": "dean.languages@alfabk.edu"
+    },
+    {
+      "initials": "MS",
+      "name": "Prof. dr Miloš Stanković",
+      "faculty": "Faculty of Management in Sports",
+      "email": "dean.sports@alfabk.edu"
+    },
+    {
+      "initials": "ZK",
+      "name": "Prof. dr Zoran Kovač",
+      "faculty": "Faculty of Information Technologies",
+      "email": "dean.it@alfabk.edu"
+    },
+    {
+      "initials": "LD",
+      "name": "Prof. dr Ljiljana Đorđević",
+      "faculty": "Faculty of Mathematics & Computer Sciences",
+      "email": "dean.math@alfabk.edu"
+    },
+    {
+      "initials": "DN",
+      "name": "Prof. dr Dragana Nikolić",
+      "faculty": "Faculty of Psychology",
+      "email": "dean.psychology@alfabk.edu"
+    }
+  ],
+  "administration": [
+    {
+      "role": "SECRETARY GENERAL",
+      "name": "Dragan Vukić",
+      "contact": "secretary@alfabk.edu",
+      "isEmail": true
+    },
+    {
+      "role": "HEAD OF STUDENT SERVICES",
+      "name": "Jelena Savić",
+      "contact": "+381 11 260 7901",
+      "isEmail": false
+    },
+    {
+      "role": "HEAD OF INTERNATIONAL OFFICE",
+      "name": "Ana Lazović",
+      "contact": "international@alfabk.edu",
+      "isEmail": true
+    },
+    {
+      "role": "HEAD OF FINANCE & ADMINISTRATION",
+      "name": "Marko Ristić",
+      "contact": "finance@alfabk.edu",
+      "isEmail": true
+    },
+    {
+      "role": "HEAD OF IT SERVICES",
+      "name": "Stefan Branković",
+      "contact": "it@alfabk.edu",
+      "isEmail": true
+    },
+    {
+      "role": "CHIEF LIBRARIAN",
+      "name": "Milica Todorović",
+      "contact": "library@alfabk.edu",
+      "isEmail": true
+    }
+  ]
+}

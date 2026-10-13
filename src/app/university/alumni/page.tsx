@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import AlumniContent from "./AlumniContent";
+import AlumniContent from "@/components/main-website/university/AlumniContent";
 
 export const metadata: Metadata = {
   title: "Alumni Association | Alfa BK University",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ProfessorsDirectory from "@/components/professors/ProfessorsDirectory";
+import ProfessorsDirectory from "@/components/main-website/faculties/ProfessorsDirectory";
 
 export const metadata: Metadata = {
   title: "Professors & Teaching Assistants | Alfa BK University",

@@ -1,0 +1,95 @@
+{
+  "historyTimeline": [
+    {
+      "year": "1993",
+      "color": "bg-[#1F6264]",
+      "text": "Alfa BK University (Karić Brothers) founded in Serbia"
+    },
+    {
+      "year": "1990s",
+      "color": "bg-[#BC5A3D]",
+      "text": "Expansion of faculties and progressive curriculum"
+    },
+    {
+      "year": "2005",
+      "color": "bg-[#9A8A36]",
+      "text": "Accreditation of programs across national and international partnerships"
+    },
+    {
+      "year": "2014",
+      "color": "bg-[#2563EB]",
+      "text": "Digital transformation and integrated research platforms"
+    },
+    {
+      "year": "2024",
+      "color": "bg-[#B85C2A]",
+      "text": "30+ years of academic excellence & international accreditation"
+    }
+  ],
+  "institutionalPartners": [
+    {
+      "title": "Karić Foundation:",
+      "description": "Supporting education, science, culture, and social welfare across Serbia and internationally.",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "url": "https://karicfoundation.com",
+      "urlLabel": "karicfoundation.com"
+    },
+    {
+      "title": "Art Academy (Akademija Umetnosti):",
+      "description": "Cultivating creativity, visual arts, and media innovation across multidisciplinary domains.",
+      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80",
+      "url": "https://akademijaumetnosti.edu.rs",
+      "urlLabel": "akademijaumetnosti.edu.rs"
+    }
+  ],
+  "leadershipCards": [
+    {
+      "letter": "R",
+      "title": "University Leadership",
+      "subtitle": "Rector's Office",
+      "detail": "Academic Governance",
+      "href": "/university/contact"
+    },
+    {
+      "letter": "S",
+      "title": "Student Services",
+      "subtitle": "Enrolment & Support",
+      "detail": "+381 11 260 7900",
+      "href": "tel:+381112607900"
+    },
+    {
+      "letter": "I",
+      "title": "International Office",
+      "subtitle": "International Cooperation",
+      "detail": "Erasmus+ & Partnerships",
+      "href": "/university/international-cooperation"
+    },
+    {
+      "letter": "A",
+      "title": "Alumni Association",
+      "subtitle": "Graduate Network",
+      "detail": "Institute Petar Karić",
+      "href": "/university/alumni"
+    }
+  ],
+  "partnerUniversities": [
+    "TU München",
+    "Sorbonne Université",
+    "University of Bologna",
+    "KU Leuven",
+    "Uppsala University",
+    "National University of Singapore",
+    "University of Toronto",
+    "Seoul National University"
+  ],
+  "businessPartners": [
+    "TU München",
+    "Sorbonne Université",
+    "University of Bologna",
+    "KU Leuven",
+    "Uppsala University",
+    "National University of Singapore",
+    "University of Toronto",
+    "Seoul National University"
+  ]
+}

@@ -1,39 +1,9 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { homeData } from "@/data";
 
 export default function BrowseStudyLevelsSection() {
-  const levels = [
-    {
-      title: "Basic Higher Education",
-      duration: "3 years · 180 ECTS",
-      programsCount: "11 programs",
-      description:
-        "Undergraduate programs covering the fundamentals of your chosen discipline. Same enrollment requirements across all 6 faculties.",
-      href: "/programs?level=undergraduate",
-      image:
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "Master Programs",
-      duration: "2 years · 120 ECTS",
-      programsCount: "5 programs",
-      description:
-        "Advanced specialization for graduates looking to deepen expertise and take on leadership roles in their field.",
-      href: "/programs?level=master",
-      image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      title: "Doctoral Studies",
-      duration: "3 years · 180 ECTS",
-      programsCount: "3 programs",
-      description:
-        "Research-intensive doctoral programs for those who want to advance knowledge and contribute to academic and scientific communities.",
-      href: "/programs?level=doctoral",
-      image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
-    },
-  ];
+  const levels = homeData.browseStudyLevels;
 
   return (
     <section className="py-20 bg-[#FAF8F5]">

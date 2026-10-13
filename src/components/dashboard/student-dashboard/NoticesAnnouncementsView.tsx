@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Bell, Calendar, ArrowRight, X, FileText, Download } from "lucide-react";
+import { dashboardNoticesData } from "@/data";
 
 interface NoticeItem {
   id: string;
@@ -17,83 +18,10 @@ export default function NoticesAnnouncementsView() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [activeNotice, setActiveNotice] = useState<NoticeItem | null>(null);
 
-  const categories = [
-    "All",
-    "University",
-    "Academic",
-    "Department",
-    "Exam",
-    "Holiday",
-  ];
-
-  const notices: NoticeItem[] = [
-    {
-      id: "n-1",
-      category: "Exam",
-      date: "Oct 24, 2026",
-      title: "Final Examination Schedule Fall 2026",
-      description:
-        "The draft schedule for Fall 2026 final exams has been published. Please review and report any clashes by November 2nd.",
-      publisher: "Office of the Controller of Exams",
-      fullBody:
-        "The Controller of Examinations hereby notifies all undergraduate and post-graduate students of Alfa BK University that the official Fall 2026 semester final examination routines have been dispatched. Students must verify their enrolled course codes, invigilation hall allocations, and slot sequences. In case of dual course exam clashes, notify the academic desk before November 2nd.",
-    },
-    {
-      id: "n-2",
-      category: "Holiday",
-      date: "Oct 22, 2026",
-      title: "University Closed for Eid-ul-Adha Holiday",
-      description:
-        "All academic and administrative operations will remain closed from October 28th to November 4th in observation of Eid-ul-Adha.",
-      publisher: "Registrar Office",
-      fullBody:
-        "In commemoration of Eid-ul-Adha, Alfa BK University academic faculties, administrative units, research centers, and central library services will be closed from October 28th through November 4th. Standard educational lectures, online laboratories, and student advising hours will resume as scheduled on Wednesday, November 5th.",
-    },
-    {
-      id: "n-3",
-      category: "University",
-      date: "Oct 19, 2026",
-      title: "New Library Hours and Extended Night Access",
-      description:
-        "Starting next semester, the central library will remain open until 10:00 PM on weekdays with strict quiet study rules.",
-      publisher: "Chief Librarian",
-      fullBody:
-        "To assist students in mid-term preparation and collaborative thesis research, the Central University Library announces extended operational hours. Study halls on the 2nd and 3rd floors will remain accessible until 10:00 PM Monday through Friday. Digital database access and EBSCO borrowing kiosks will remain accessible 24/7.",
-    },
-    {
-      id: "n-4",
-      category: "Department",
-      date: "Oct 15, 2026",
-      title: "Inter-Department Programming Contest Registration",
-      description:
-        "Registration is now open for the annual ABK Hackathon. Form a team of 3 and register before the end of this week.",
-      publisher: "Department of CSE",
-      fullBody:
-        "The Department of Computer Science & Engineering invites all software enthusiasts, coders, and designers to participate in the Annual ABK Hackathon & Competitive Programming Sprint. Teams of three students may enter. Cash prizes, trophy awards, and industry internship placements will be awarded to top podium finishes.",
-    },
-    {
-      id: "n-5",
-      category: "Academic",
-      date: "Oct 10, 2026",
-      title: "Course Registration Guidelines for Spring 2027",
-      description:
-        "Please clear any outstanding tuition fees to ensure smooth online course advising and registration for Spring 2027.",
-      publisher: "Office of the Registrar",
-      fullBody:
-        "Pre-registration advising windows for the Spring 2027 academic session will officially open next month. Students must consult with their faculty advisors to finalize their prerequisite clearance, major electives, and credit limits. Ensure all semester tuition balances are reconciled to prevent portal access holds.",
-    },
-    {
-      id: "n-6",
-      category: "Academic",
-      date: "Oct 05, 2026",
-      title: "Post-Graduate Scholarship Application Briefing",
-      description:
-        "A seminar on global research scholarships will be hosted at the central auditorium on Monday at 3:00 PM.",
-      publisher: "International Affairs Division",
-      fullBody:
-        "The International Affairs Division is pleased to present an informative briefing on Erasmus+ scholarships, DAAD international fellowships, and research bursaries for senior undergraduate scholars. The session will feature guest speakers from partner universities across Europe.",
-    },
-  ];
+  const { categories, notices } = dashboardNoticesData as {
+    categories: string[];
+    notices: NoticeItem[];
+  };
 
   const filteredNotices = notices.filter(
     (n) => selectedCategory === "All" || n.category === selectedCategory

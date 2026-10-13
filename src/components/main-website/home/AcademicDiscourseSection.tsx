@@ -1,29 +1,16 @@
 import Link from "next/link";
-import { BookOpen, Users, FolderUp, Globe } from "lucide-react";
+import { BookOpen, Users, FolderUp, Globe, LucideIcon } from "lucide-react";
+import { homeData } from "@/data";
+
+const iconMap: Record<string, LucideIcon> = {
+  BookOpen,
+  Users,
+  FolderUp,
+  Globe,
+};
 
 export default function AcademicDiscourseSection() {
-  const features = [
-    {
-      title: "4 Academic Journals",
-      icon: BookOpen,
-      iconColor: "text-amber-400 bg-amber-400/10",
-    },
-    {
-      title: "Annual Conferences",
-      icon: Users,
-      iconColor: "text-amber-400 bg-amber-400/10",
-    },
-    {
-      title: "University Repositoria",
-      icon: FolderUp,
-      iconColor: "text-amber-400 bg-amber-400/10",
-    },
-    {
-      title: "International Cooperation",
-      icon: Globe,
-      iconColor: "text-cyan-400 bg-cyan-400/10",
-    },
-  ];
+  const { academicDiscourse } = homeData;
 
   return (
     <section className="py-24 bg-[#0E2038] text-white overflow-hidden">
@@ -32,19 +19,19 @@ export default function AcademicDiscourseSection() {
           {/* Left Column Content */}
           <div className="fade-up-scroll">
             <p className="text-xs font-bold uppercase tracking-widest text-[#BE9F5A]">
-              ACADEMIC EXCELLENCE
+              {academicDiscourse.tag}
             </p>
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-white leading-tight tracking-tight">
-              Fostering Academic Discourse and Global Dialogue
+              {academicDiscourse.title}
             </h2>
             <p className="mt-5 text-sm sm:text-base text-slate-300 leading-relaxed">
-              Through our four scholarly journals—Reči, Management in Sports, Alfa Tech, and Journal of Social Sciences—and a cycle of international conferences, we publish leading research and build global academic bridges. Our University Repositoria ensures knowledge is accessible.
+              {academicDiscourse.description}
             </p>
 
             {/* 4 Feature Cards in 2x2 Grid */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {features.map((item, idx) => {
-                const Icon = item.icon;
+              {academicDiscourse.features.map((item, idx) => {
+                const Icon = iconMap[item.icon] || BookOpen;
                 return (
                   <div
                     key={idx}

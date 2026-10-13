@@ -1,30 +1,7 @@
+import { homeData } from "@/data";
+
 export default function StudentStoriesSection() {
-  const stories = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
-      quote:
-        '"I found the confidence to build an idea – and the team to make it real."',
-      name: "Mila Petrović",
-      role: "Computer Science student · STORY PLACEHOLDER",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-      quote:
-        '"Belgrade became a second home, and Alfa BK opened doors across Europe."',
-      name: "Omar Haddad",
-      role: "International alumnus · STORY PLACEHOLDER",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
-      quote:
-        '"We teach students to question boldly, then give them the tools to act."',
-      name: "Prof. Ana Jovanović",
-      role: "Innovation mentor · STORY PLACEHOLDER",
-    },
-  ];
+  const stories = homeData.studentStories;
 
   return (
     <section className="py-20 bg-[#BE9F5A]">

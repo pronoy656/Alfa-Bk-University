@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { CheckCircle2, UploadCloud, Video, FileText } from "lucide-react";
 import { LectureItem } from "@/components/dashboard/types";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 interface UploadLectureModalProps {
   isOpen: boolean;

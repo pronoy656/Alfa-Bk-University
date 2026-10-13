@@ -14,7 +14,8 @@ import {
   X,
   AlertTriangle,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
+import { dashboardAdminData } from "@/data";
 
 export interface StudentRecord {
   id: string;
@@ -29,131 +30,10 @@ export interface StudentRecord {
   cgpa?: string;
 }
 
-const initialStudents: StudentRecord[] = [
-  {
-    id: "STU-2026-001",
-    name: "Shahriar Kabir",
-    department: "CSE",
-    program: "BSc CS",
-    batch: "Fall 26",
-    semester: "6th",
-    status: "Active",
-    email: "shahriar.kabir@alfa.edu.rs",
-    phone: "+381 64 123 4567",
-    cgpa: "3.85",
-  },
-  {
-    id: "STU-2026-002",
-    name: "Emma Wilson",
-    department: "CSE",
-    program: "BSc CS",
-    batch: "Fall 26",
-    semester: "8th",
-    status: "Active",
-    email: "emma.wilson@alfa.edu.rs",
-    phone: "+381 64 234 5678",
-    cgpa: "3.92",
-  },
-  {
-    id: "STU-2026-003",
-    name: "Sarah Chen",
-    department: "CSE",
-    program: "BSc CS",
-    batch: "Fall 25",
-    semester: "6th",
-    status: "Active",
-    email: "sarah.chen@alfa.edu.rs",
-    phone: "+381 64 345 6789",
-    cgpa: "3.78",
-  },
-  {
-    id: "STU-2026-004",
-    name: "James Park",
-    department: "EEE",
-    program: "BSc EE",
-    batch: "Fall 25",
-    semester: "6th",
-    status: "Active",
-    email: "james.park@alfa.edu.rs",
-    phone: "+381 64 456 7890",
-    cgpa: "3.65",
-  },
-  {
-    id: "STU-2026-005",
-    name: "Michael Torres",
-    department: "CSE",
-    program: "BSc CS",
-    batch: "Fall 24",
-    semester: "4th",
-    status: "Active",
-    email: "michael.torres@alfa.edu.rs",
-    phone: "+381 64 567 8901",
-    cgpa: "3.71",
-  },
-  {
-    id: "STU-2026-006",
-    name: "Lisa Anderson",
-    department: "BBA",
-    program: "BBA",
-    batch: "Spring 26",
-    semester: "2nd",
-    status: "Active",
-    email: "lisa.anderson@alfa.edu.rs",
-    phone: "+381 64 678 9012",
-    cgpa: "3.88",
-  },
-  {
-    id: "STU-2026-007",
-    name: "Tania Ahmed",
-    department: "CSE",
-    program: "BSc CS",
-    batch: "Fall 26",
-    semester: "8th",
-    status: "Active",
-    email: "tania.ahmed@alfa.edu.rs",
-    phone: "+381 64 789 0123",
-    cgpa: "3.95",
-  },
-  {
-    id: "STU-2026-008",
-    name: "Rahat Khan",
-    department: "BBA",
-    program: "BBA",
-    batch: "Fall 23",
-    semester: "7th",
-    status: "Inactive",
-    email: "rahat.khan@alfa.edu.rs",
-    phone: "+381 64 890 1234",
-    cgpa: "3.20",
-  },
-  {
-    id: "STU-2026-009",
-    name: "Nabila Yasmin",
-    department: "ENG",
-    program: "BA Eng",
-    batch: "Fall 25",
-    semester: "5th",
-    status: "Active",
-    email: "nabila.yasmin@alfa.edu.rs",
-    phone: "+381 64 901 2345",
-    cgpa: "3.82",
-  },
-  {
-    id: "STU-2026-010",
-    name: "Aurnab Sen",
-    department: "EEE",
-    program: "BSc EE",
-    batch: "Spring 25",
-    semester: "3rd",
-    status: "Active",
-    email: "aurnab.sen@alfa.edu.rs",
-    phone: "+381 64 012 3456",
-    cgpa: "3.60",
-  },
-];
-
 export default function AdminStudentsView() {
-  const [students, setStudents] = useState<StudentRecord[]>(initialStudents);
+  const [students, setStudents] = useState<StudentRecord[]>(
+    dashboardAdminData.students as StudentRecord[]
+  );
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDept, setSelectedDept] = useState("All Departments");
   const [selectedProgram, setSelectedProgram] = useState("All Programs");

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import FacultyPageTemplate from "@/components/faculties/FacultyPageTemplate";
-import { facultiesData } from "@/components/data";
+import FacultyPageTemplate from "@/components/main-website/faculties/FacultyPageTemplate";
+import { facultiesData } from "@/data";
 
 export const metadata: Metadata = {
   title: "Faculty of Information Technologies | Alfa BK University",

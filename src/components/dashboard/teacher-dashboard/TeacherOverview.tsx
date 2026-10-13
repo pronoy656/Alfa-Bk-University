@@ -15,6 +15,7 @@ import {
   Award,
 } from "lucide-react";
 import { TeacherRecentActivity } from "@/components/dashboard/types";
+import { dashboardTeacherData } from "@/data";
 import CreateAssignmentModal from "./CreateAssignmentModal";
 import UploadLectureModal from "./UploadLectureModal";
 
@@ -25,49 +26,8 @@ interface TeacherOverviewProps {
 export default function TeacherOverview({ onNavigateTab }: TeacherOverviewProps) {
   const [isAssignmentModalOpen, setIsAssignmentModalOpen] = useState(false);
   const [isLectureModalOpen, setIsLectureModalOpen] = useState(false);
-  const stats = [
-    {
-      label: "Total Courses",
-      value: "4",
-      subtext: "All semesters",
-    },
-    {
-      label: "Total Students",
-      value: "156",
-      subtext: "Across 4 batches",
-    },
-    {
-      label: "Pending Assignments",
-      value: "12",
-      subtext: "Unsubmitted by students",
-    },
-    {
-      label: "Pending Grading",
-      value: "8",
-      subtext: "Needs evaluation",
-    },
-  ];
 
-  const todayClasses = [
-    {
-      id: "cls-1",
-      title: "Database Management",
-      codeRoom: "CSE-305 · Room 302",
-      time: "09:00 AM",
-    },
-    {
-      id: "cls-2",
-      title: "Software Engineering",
-      codeRoom: "CSE-311 · Room 204",
-      time: "11:00 AM",
-    },
-    {
-      id: "cls-3",
-      title: "Computer Architecture",
-      codeRoom: "CSE-315 · Lab 3",
-      time: "02:00 PM",
-    },
-  ];
+  const { stats, todayClasses } = dashboardTeacherData;
 
   const recentActivities: TeacherRecentActivity[] = [
     {

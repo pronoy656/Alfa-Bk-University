@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { CheckCircle2, Clock, Calendar, FileQuestion } from "lucide-react";
 import { TeacherQuiz } from "@/components/dashboard/types";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 interface CreateQuizModalProps {
   isOpen: boolean;

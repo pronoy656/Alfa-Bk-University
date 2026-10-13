@@ -11,7 +11,7 @@ import {
   ChevronRight,
   Filter,
 } from "lucide-react";
-import { newsEventsData } from "@/components/data";
+import { newsEventsData } from "@/data";
 import { AllEventItem, getBadgeColorClass } from "./types";
 
 interface AllEventsViewProps {

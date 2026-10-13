@@ -16,7 +16,7 @@ import {
   Download,
   AlertCircle,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 export interface StudentAttendanceEntry {
   studentId: string;

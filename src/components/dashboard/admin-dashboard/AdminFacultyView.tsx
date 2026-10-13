@@ -12,7 +12,7 @@ import {
   BookOpen,
   CheckCircle2,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 interface DepartmentInfo {
   code: string;

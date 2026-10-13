@@ -2,14 +2,14 @@
 
 import React, { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import NewsHero from "@/components/news-events/NewsHero";
-import LatestNewsSection from "@/components/news-events/LatestNewsSection";
-import UpcomingEventsSection from "@/components/news-events/UpcomingEventsSection";
-import AllEventsView from "@/components/news-events/AllEventsView";
-import EventRegistrationModal from "@/components/news-events/EventRegistrationModal";
-import ArticleDetailModal from "@/components/news-events/ArticleDetailModal";
-import { newsEventsData } from "@/components/data";
-import { NewsArticle, UpcomingEvent, AllEventItem } from "@/components/news-events/types";
+import NewsHero from "@/components/main-website/news-events/NewsHero";
+import LatestNewsSection from "@/components/main-website/news-events/LatestNewsSection";
+import UpcomingEventsSection from "@/components/main-website/news-events/UpcomingEventsSection";
+import AllEventsView from "@/components/main-website/news-events/AllEventsView";
+import EventRegistrationModal from "@/components/main-website/news-events/EventRegistrationModal";
+import ArticleDetailModal from "@/components/main-website/news-events/ArticleDetailModal";
+import { newsEventsData } from "@/data";
+import { NewsArticle, UpcomingEvent, AllEventItem } from "@/components/main-website/news-events/types";
 
 function NewsEventsContent() {
   const searchParams = useSearchParams();
@@ -39,6 +39,7 @@ function NewsEventsContent() {
           kicker="NEWSROOM"
           title="News & Events"
           subtitle="Achievements, announcements, media, and what's happening on campus."
+          bgImage={newsEventsData.newsroom.bgImage}
           heroImage={newsEventsData.newsroom.heroImage}
           activeView="overview"
           onViewChange={handleViewChange}
@@ -48,6 +49,7 @@ function NewsEventsContent() {
           kicker="NEWSROOM"
           title="All Events"
           subtitle="Explore all upcoming and past events, workshops, and activities happening at Alfa BK University."
+          bgImage={newsEventsData.newsroom.bgImage}
           heroImage={newsEventsData.newsroom.heroImage}
           activeView="events"
           onViewChange={handleViewChange}

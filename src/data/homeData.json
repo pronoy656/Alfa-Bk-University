@@ -1,0 +1,250 @@
+{
+  "heroStats": [
+    { "value": "1993", "label": "YEAR FOUNDED" },
+    { "value": "30+", "label": "YEARS OF EXPERIENCE" },
+    { "value": "6", "label": "FACULTIES" },
+    { "value": "25.325", "label": "STUDENTS" },
+    { "value": "15", "label": "ACCREDITED PROGRAMS" },
+    { "value": "60", "label": "COUNTRIES REPRESENTED" }
+  ],
+  "academicDiscourse": {
+    "tag": "ACADEMIC EXCELLENCE",
+    "title": "Fostering Academic Discourse and Global Dialogue",
+    "description": "Through our four scholarly journals—Reči, Management in Sports, Alfa Tech, and Journal of Social Sciences—and a cycle of international conferences, we publish leading research and build global academic bridges. Our University Repositoria ensures knowledge is accessible.",
+    "features": [
+      {
+        "title": "4 Academic Journals",
+        "icon": "BookOpen",
+        "iconColor": "text-amber-400 bg-amber-400/10"
+      },
+      {
+        "title": "Annual Conferences",
+        "icon": "Users",
+        "iconColor": "text-amber-400 bg-amber-400/10"
+      },
+      {
+        "title": "University Repositoria",
+        "icon": "FolderUp",
+        "iconColor": "text-amber-400 bg-amber-400/10"
+      },
+      {
+        "title": "International Cooperation",
+        "icon": "Globe",
+        "iconColor": "text-cyan-400 bg-cyan-400/10"
+      }
+    ]
+  },
+  "browseStudyLevels": [
+    {
+      "title": "Basic Higher Education",
+      "duration": "3 years · 180 ECTS",
+      "programsCount": "11 programs",
+      "description": "Undergraduate programs covering the fundamentals of your chosen discipline. Same enrollment requirements across all 6 faculties.",
+      "href": "/programs?level=undergraduate",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "title": "Master Programs",
+      "duration": "2 years · 120 ECTS",
+      "programsCount": "5 programs",
+      "description": "Advanced specialization for graduates looking to deepen expertise and take on leadership roles in their field.",
+      "href": "/programs?level=master",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "title": "Doctoral Studies",
+      "duration": "3 years · 180 ECTS",
+      "programsCount": "3 programs",
+      "description": "Research-intensive doctoral programs for those who want to advance knowledge and contribute to academic and scientific communities.",
+      "href": "/programs?level=doctoral",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "careersIndustries": [
+    "Technology & AI",
+    "Business & Finance",
+    "Creative Economy",
+    "Sport & Wellbeing",
+    "Public Affairs"
+  ],
+  "lifeAtAlfaBk": {
+    "col1Moments": [
+      {
+        "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80",
+        "alt": "Sports and campus cheer",
+        "aspect": "aspect-[16/11]"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80",
+        "alt": "Students social gathering and study break",
+        "aspect": "aspect-[16/11]"
+      }
+    ],
+    "col2Moments": [
+      {
+        "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+        "alt": "Campus workshop and community gathering",
+        "aspect": "aspect-[3/4.2]"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
+        "alt": "University choir and arts performance",
+        "aspect": "aspect-[3/4.2]"
+      }
+    ],
+    "col3Moments": [
+      {
+        "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+        "alt": "Academic presentation and guest lecture",
+        "aspect": "aspect-[16/11]"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+        "alt": "Graduation celebration on campus",
+        "aspect": "aspect-[16/11]"
+      }
+    ]
+  },
+  "studentStories": [
+    {
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+      "quote": "\"I found the confidence to build an idea – and the team to make it real.\"",
+      "name": "Mila Petrović",
+      "role": "Computer Science student · STORY PLACEHOLDER"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+      "quote": "\"Belgrade became a second home, and Alfa BK opened doors across Europe.\"",
+      "name": "Omar Haddad",
+      "role": "International alumnus · STORY PLACEHOLDER"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+      "quote": "\"We teach students to question boldly, then give them the tools to act.\"",
+      "name": "Prof. Ana Jovanović",
+      "role": "Innovation mentor · STORY PLACEHOLDER"
+    }
+  ],
+  "newsArticles": [
+    {
+      "category": "TECHNOLOGY",
+      "date": "14 OCT",
+      "type": "SAMPLE",
+      "title": "AI Lab Open Week",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+      "href": "/news-events"
+    },
+    {
+      "category": "COMMUNITY",
+      "date": "02 NOV",
+      "type": "SAMPLE",
+      "title": "Graduation Day 2026",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+      "href": "/news-events"
+    },
+    {
+      "category": "ARTS",
+      "date": "19 NOV",
+      "type": "SAMPLE",
+      "title": "Creative Futures Forum",
+      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+      "href": "/news-events"
+    }
+  ],
+  "whyChooseUs": {
+    "reasons": [
+      {
+        "title": "Career-first education",
+        "text": "Programs designed with industry demands and practical skill-building in mind.",
+        "icon": "BriefcaseBusiness"
+      },
+      {
+        "title": "Global perspective",
+        "text": "Partnerships, mobility programs and international cooperation opportunities.",
+        "icon": "Globe2"
+      },
+      {
+        "title": "Student support",
+        "text": "Advising, mentoring and academic services throughout the student journey.",
+        "icon": "ShieldCheck"
+      }
+    ],
+    "programs": [
+      "Undergraduate studies",
+      "Master's programs",
+      "Doctoral research",
+      "Professional development",
+      "Exchange and mobility",
+      "Career services"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "When do Fall 2026 applications close?",
+      "answer": "The general application deadline for the Fall 2026 academic term is September 15, 2026. Early admissions and priority scholarship considerations close on July 31, 2026. International students requiring visa assistance are encouraged to submit their documents by June 30, 2026."
+    },
+    {
+      "question": "Are scholarships available for international students?",
+      "answer": "Yes, Alfa BK University provides merit-based academic scholarships covering up to 50% of annual tuition, as well as talent and athletic awards. All international applicants with a high GPA are automatically considered during admissions review."
+    },
+    {
+      "question": "Can I study fully online?",
+      "answer": "Several undergraduate and graduate programs offer a distance learning option through our accredited e-classroom (Moodle) platform. Students can follow live lectures, access recorded materials, and coordinate with academic advisors online."
+    },
+    {
+      "question": "Is the university internationally accredited?",
+      "answer": "Yes. Alfa BK University is accredited by the National Entity for Accreditation and Quality Assurance (NEAQA) in Serbia. All diplomas and ECTS credits conform to the Bologna declaration and are recognized throughout the European Higher Education Area (EQAR and ENQA frameworks)."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "The e-classroom and mentorship at Alfa BK gave me the skills to land a software engineering role in Berlin before graduation.",
+      "author": "Amina Hassan",
+      "degree": "BSc Computer Science '25 — Kenya"
+    },
+    {
+      "quote": "World-class professors, real consulting projects, and a network across 60 partner universities. Truly transformational.",
+      "author": "Luka Petrović",
+      "degree": "MBA Global Business '24 — Serbia"
+    },
+    {
+      "quote": "The FinTech Venture Lab connected me with investors. My startup was incubated on campus and is now funded.",
+      "author": "Chen Wei",
+      "degree": "MSc FinTech '25 — China"
+    }
+  ],
+  "galleryImages": [
+    {
+      "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
+      "alt": "Students collaboration"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
+      "alt": "Academics and literature"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
+      "alt": "Modern laboratory"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80",
+      "alt": "Campus life and sports"
+    }
+  ],
+  "partnerUniversities": [
+    "TU München",
+    "Sorbonne Université",
+    "University of Bologna",
+    "KU Leuven",
+    "Uppsala University",
+    "National University of Singapore",
+    "University of Toronto",
+    "Seoul National University"
+  ],
+  "campusLifePoints": [
+    "80+ student clubs and societies",
+    "Modern on-campus accommodation",
+    "Dedicated international student office",
+    "Career services with 97% graduate employment"
+  ]
+}

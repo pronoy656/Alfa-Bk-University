@@ -1,54 +1,7 @@
+import { homeData } from "@/data";
+
 export default function TestimonialsSection() {
-  const testimonials = [
-    {
-      quote:
-        "The e-classroom and mentorship at Alfa BK gave me the skills to land a software engineering role in Berlin before graduation.",
-      author: "Amina Hassan",
-      degree: "BSc Computer Science '25 — Kenya",
-    },
-    {
-      quote:
-        "World-class professors, real consulting projects, and a network across 60 partner universities. Truly transformational.",
-      author: "Luka Petrović",
-      degree: "MBA Global Business '24 — Serbia",
-    },
-    {
-      quote:
-        "The FinTech Venture Lab connected me with investors. My startup was incubated on campus and is now funded.",
-      author: "Chen Wei",
-      degree: "MSc FinTech '25 — China",
-    },
-  ];
-
-  const galleryImages = [
-    {
-      url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
-      alt: "Students collaboration",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
-      alt: "Academics and literature",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
-      alt: "Modern laboratory",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80",
-      alt: "Campus life and sports",
-    },
-  ];
-
-  const partners = [
-    "TU München",
-    "Sorbonne Université",
-    "University of Bologna",
-    "KU Leuven",
-    "Uppsala University",
-    "National University of Singapore",
-    "University of Toronto",
-    "Seoul National University",
-  ];
+  const { testimonials, galleryImages, partnerUniversities: partners } = homeData;
 
   return (
     <section className="py-20 bg-white border-b border-slate-100">

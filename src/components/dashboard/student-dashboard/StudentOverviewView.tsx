@@ -13,78 +13,15 @@ import {
   AssignmentItem,
 } from "@/components/dashboard";
 import { ArrowRight, BookOpen } from "lucide-react";
+import { dashboardStudentData } from "@/data";
 
 export default function StudentOverviewView() {
-  const academicStats: DashboardStat[] = [
-    {
-      label: "Current GPA",
-      value: "3.82",
-      subtext: "This semester",
-    },
-    {
-      label: "CGPA",
-      value: "3.71",
-      subtext: "Cumulative standing",
-    },
-    {
-      label: "Total Credits",
-      value: "118 / 140",
-      subtext: "84% completed",
-    },
-    {
-      label: "Attendance",
-      value: "86%",
-      subtext: "Overall eligible",
-    },
-  ];
-
-  const todayClasses: ClassScheduleItem[] = [
-    {
-      title: "Database Management",
-      instructor: "Dr. Rahman",
-      room: "Room 302",
-      time: "09:00 AM",
-      code: "CSE-305",
-    },
-    {
-      title: "Software Engineering",
-      instructor: "Dr. Hasan",
-      room: "Room 204",
-      time: "11:00 AM",
-      code: "CSE-310",
-    },
-    {
-      title: "Computer Architecture",
-      instructor: "Prof. Milan",
-      room: "Lab 3",
-      time: "02:00 PM",
-      code: "CSE-315",
-    },
-  ];
-
-  const upcomingAssignments: AssignmentItem[] = [
-    {
-      title: "Assignment 04: Normalization Practice",
-      course: "Database Management (CSE-305)",
-      due: "Due Oct 25, 11:59 PM",
-      status: "3 Days Left",
-      statusType: "urgent",
-    },
-    {
-      title: "UML Architecture & Class Diagrams",
-      course: "Software Engineering (CSE-310)",
-      due: "Due Oct 30, 11:59 PM",
-      status: "Pending",
-      statusType: "pending",
-    },
-    {
-      title: "Packet Trace Routing Lab Analysis",
-      course: "Computer Networking (CSE-320)",
-      due: "Due Nov 05, 05:00 PM",
-      status: "Submitted",
-      statusType: "completed",
-    },
-  ];
+  const { academicStats, todayClasses, upcomingAssignments } =
+    dashboardStudentData as {
+      academicStats: DashboardStat[];
+      todayClasses: ClassScheduleItem[];
+      upcomingAssignments: AssignmentItem[];
+    };
 
   return (
     <div className="w-full space-y-6">

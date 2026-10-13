@@ -1,0 +1,102 @@
+{
+  "semesters": [
+    {
+      "id": "sem-8",
+      "semesterName": "Spring 2026 (8th Semester)",
+      "subtext": "Current Active Term · Enrolled in 5 Core Subjects",
+      "gpa": "Pending",
+      "isActive": true
+    },
+    {
+      "id": "sem-7",
+      "semesterName": "Fall 2025 (7th Semester)",
+      "subtext": "Completed · Total 15.0 Credits",
+      "gpa": "3.85",
+      "isActive": false
+    }
+  ],
+  "sem7Courses": [
+    {
+      "name": "Object Oriented Programming (CSE-202)",
+      "code": "CSE-202",
+      "credit": 3.0,
+      "marks": 92,
+      "grade": "A+",
+      "gradePoint": "4.00"
+    },
+    {
+      "name": "Theory of Computation (CSE-301)",
+      "code": "CSE-301",
+      "credit": 3.0,
+      "marks": 84,
+      "grade": "A",
+      "gradePoint": "3.75"
+    },
+    {
+      "name": "Microprocessors & Interfacing (CSE-303)",
+      "code": "CSE-303",
+      "credit": 3.0,
+      "marks": 88,
+      "grade": "A+",
+      "gradePoint": "4.00"
+    },
+    {
+      "name": "Data Communication (CSE-309)",
+      "code": "CSE-309",
+      "credit": 3.0,
+      "marks": 78,
+      "grade": "A-",
+      "gradePoint": "3.50"
+    },
+    {
+      "name": "Discrete Mathematics (GED-103)",
+      "code": "GED-103",
+      "credit": 3.0,
+      "marks": 89,
+      "grade": "A+",
+      "gradePoint": "4.00"
+    }
+  ],
+  "sem8Courses": [
+    {
+      "name": "Database Management System (CSE-305)",
+      "code": "CSE-305",
+      "credit": 3.0,
+      "marks": 94,
+      "grade": "In Progress",
+      "gradePoint": "Pending"
+    },
+    {
+      "name": "Software Engineering (CSE-310)",
+      "code": "CSE-310",
+      "credit": 3.0,
+      "marks": 88,
+      "grade": "In Progress",
+      "gradePoint": "Pending"
+    },
+    {
+      "name": "Computer Networking (CSE-320)",
+      "code": "CSE-320",
+      "credit": 3.0,
+      "marks": 85,
+      "grade": "In Progress",
+      "gradePoint": "Pending"
+    },
+    {
+      "name": "Artificial Intelligence (CSE-401)",
+      "code": "CSE-401",
+      "credit": 3.0,
+      "marks": 90,
+      "grade": "In Progress",
+      "gradePoint": "Pending"
+    },
+    {
+      "name": "Web Engineering & Design (CSE-315)",
+      "code": "CSE-315",
+      "credit": 3.0,
+      "marks": 91,
+      "grade": "In Progress",
+      "gradePoint": "Pending"
+    }
+  ]
+}

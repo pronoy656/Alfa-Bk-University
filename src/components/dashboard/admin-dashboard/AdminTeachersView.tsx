@@ -11,7 +11,8 @@ import {
   CheckCircle2,
   AlertTriangle,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
+import { dashboardAdminData } from "@/data";
 
 export interface TeacherRecord {
   id: string;
@@ -27,141 +28,10 @@ export interface TeacherRecord {
   coursesCount?: number;
 }
 
-const initialTeachers: TeacherRecord[] = [
-  {
-    id: "FAC-2026-001",
-    name: "Dr. Mohammad Rahman",
-    department: "CSE",
-    designation: "Associate Professor",
-    faculty: "Science & Eng",
-    experience: "8 Years",
-    status: "Active",
-    email: "rahman@alfa.edu.rs",
-    phone: "+381 64 111 2233",
-    office: "Room 412, Science Complex",
-    coursesCount: 3,
-  },
-  {
-    id: "FAC-2026-002",
-    name: "Prof. Dr. Milan Stanković",
-    department: "CSE",
-    designation: "Professor & Chair",
-    faculty: "Science & Eng",
-    experience: "14 Years",
-    status: "Active",
-    email: "milan.stankovic@alfa.edu.rs",
-    phone: "+381 64 222 3344",
-    office: "Room 501, Engineering Wing",
-    coursesCount: 2,
-  },
-  {
-    id: "FAC-2026-003",
-    name: "Doc. Dr. Jelena Novak",
-    department: "CSE",
-    designation: "Assistant Professor",
-    faculty: "Science & Eng",
-    experience: "5 Years",
-    status: "Active",
-    email: "jelena.novak@alfa.edu.rs",
-    phone: "+381 64 333 4455",
-    office: "Room 408, Science Complex",
-    coursesCount: 3,
-  },
-  {
-    id: "FAC-2026-004",
-    name: "Dr. Hasan Mahmud",
-    department: "CSE",
-    designation: "Associate Professor",
-    faculty: "Science & Eng",
-    experience: "9 Years",
-    status: "Active",
-    email: "hasan.mahmud@alfa.edu.rs",
-    phone: "+381 64 444 5566",
-    office: "Room 415, Science Complex",
-    coursesCount: 4,
-  },
-  {
-    id: "FAC-2026-005",
-    name: "Ms. Farhana Sultana",
-    department: "CSE",
-    designation: "Senior Lecturer",
-    faculty: "Science & Eng",
-    experience: "4 Years",
-    status: "Active",
-    email: "farhana.sultana@alfa.edu.rs",
-    phone: "+381 64 555 6677",
-    office: "Room 304, Academic Block",
-    coursesCount: 3,
-  },
-  {
-    id: "FAC-2026-006",
-    name: "Prof. Dr. Israt Jahan",
-    department: "BBA",
-    designation: "Professor & Dean",
-    faculty: "Business Admin",
-    experience: "16 Years",
-    status: "Active",
-    email: "israt.jahan@alfa.edu.rs",
-    phone: "+381 64 666 7788",
-    office: "Dean Office, Business Building",
-    coursesCount: 2,
-  },
-  {
-    id: "FAC-2026-007",
-    name: "Dr. Tanvir Anjum",
-    department: "ENG",
-    designation: "Associate Professor",
-    faculty: "Arts & Social Sci",
-    experience: "7 Years",
-    status: "Active",
-    email: "tanvir.anjum@alfa.edu.rs",
-    phone: "+381 64 777 8899",
-    office: "Room 210, Arts Hall",
-    coursesCount: 3,
-  },
-  {
-    id: "FAC-2026-008",
-    name: "Dr. Syeda Sultana",
-    department: "LAW",
-    designation: "Assistant Professor",
-    faculty: "Law & Legal",
-    experience: "6 Years",
-    status: "Active",
-    email: "syeda.sultana@alfa.edu.rs",
-    phone: "+381 64 888 9900",
-    office: "Moot Court Chambers Room 102",
-    coursesCount: 2,
-  },
-  {
-    id: "FAC-2026-009",
-    name: "Mr. Tariqul Islam",
-    department: "EEE",
-    designation: "Assistant Professor",
-    faculty: "Science & Eng",
-    experience: "3 Years",
-    status: "On Leave",
-    email: "tariqul.islam@alfa.edu.rs",
-    phone: "+381 64 999 0011",
-    office: "Room 312, Circuits Wing",
-    coursesCount: 0,
-  },
-  {
-    id: "FAC-2026-010",
-    name: "Dr. Nusrat Jahan",
-    department: "BBA",
-    designation: "Assistant Professor",
-    faculty: "Business Admin",
-    experience: "5 Years",
-    status: "Active",
-    email: "nusrat.jahan@alfa.edu.rs",
-    phone: "+381 64 000 1122",
-    office: "Room 205, Business Building",
-    coursesCount: 3,
-  },
-];
-
 export default function AdminTeachersView() {
-  const [teachers, setTeachers] = useState<TeacherRecord[]>(initialTeachers);
+  const [teachers, setTeachers] = useState<TeacherRecord[]>(
+    dashboardAdminData.teachers as TeacherRecord[]
+  );
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDept, setSelectedDept] = useState("All Departments");
   const [selectedDesignation, setSelectedDesignation] = useState("All Designations");

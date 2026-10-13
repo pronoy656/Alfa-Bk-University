@@ -4,19 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Search, ArrowRight, Sparkles } from "lucide-react";
+import { homeData } from "@/data";
 
 export default function HeroSection() {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
 
-  const stats = [
-    { value: "1993", label: "YEAR FOUNDED" },
-    { value: "30+", label: "YEARS OF EXPERIENCE" },
-    { value: "6", label: "FACULTIES" },
-    { value: "25.325", label: "STUDENTS" },
-    { value: "15", label: "ACCREDITED PROGRAMS" },
-    { value: "60", label: "COUNTRIES REPRESENTED" },
-  ];
+  const stats = homeData.heroStats;
 
   return (
     <>

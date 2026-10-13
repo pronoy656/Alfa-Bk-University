@@ -1,0 +1,102 @@
+{
+  "faculties": [
+    "Faculty of Finance, Banking and Auditing",
+    "Faculty of Information Technology",
+    "Faculty of Mathematics and Computer Science",
+    "Faculty of Foreign Languages",
+    "Faculty of Management in Sport",
+    "Faculty of Arts"
+  ],
+  "alumniStories": [
+    {
+      "name": "MILENA TODOROVIĆ",
+      "faculty": "FACULTY OF BUSINESS",
+      "classYear": "Class of 2018",
+      "role": "Strategy Analyst · Erste Bank",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+      "whatIStudied": "Business Economics at Alfa BK — fascinated by how numbers tell stories.",
+      "whatIDoToday": "I lead strategic analysis for Erste Bank's retail division across the Balkans.",
+      "howIGotThere": "An alumni mentor I met at the Alfa BK Career Fair connected me to my first internship. The rest followed."
+    },
+    {
+      "name": "NIKOLA PETROVIĆ",
+      "faculty": "FACULTY OF IT",
+      "classYear": "Class of 2016",
+      "role": "Senior Software Engineer · Nordeus",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+      "whatIStudied": "Software Engineering — building things that actually work for people.",
+      "whatIDoToday": "I build backend infrastructure for mobile games played by millions worldwide.",
+      "howIGotThere": "My thesis supervisor was an industry professional. That relationship opened the first door."
+    },
+    {
+      "name": "ANA JOVANOVIĆ",
+      "faculty": "FACULTY OF HEALTHCARE",
+      "classYear": "Class of 2014",
+      "role": "Specialist Pharmacist · Clinical Centre",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80",
+      "whatIStudied": "Pharmacy — I always wanted to be on the frontline of patient care.",
+      "whatIDoToday": "I specialize in clinical pharmacology at Belgrade's main hospital complex.",
+      "howIGotThere": "Practical placements in my third year gave me hands-on experience no classroom could replicate."
+    }
+  ],
+  "careerNetworkFeatures": [
+    {
+      "title": "Alumni Job Board",
+      "desc": "Exclusive postings from alumni employers and university partners — roles you won't find anywhere else."
+    },
+    {
+      "title": "Mentorship Programme",
+      "desc": "Be matched with a current student in your field. One conversation can change a career trajectory."
+    },
+    {
+      "title": "Industry Lectures",
+      "desc": "Return to campus as a speaker. Share real-world expertise with students who are where you once were."
+    },
+    {
+      "title": "Global Alumni Directory",
+      "desc": "Search and connect with graduates by faculty, industry, location, or graduation year."
+    }
+  ],
+  "events": [
+    {
+      "date": "15 MARCH 2026",
+      "title": "Annual Alumni Gala",
+      "desc": "The flagship event of the Alumni Association calendar. An evening of connection, recognition, and celebration.",
+      "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "date": "28 APRIL 2026",
+      "title": "Alumni Career Fair",
+      "desc": "Alumni employers meet current students. If you're hiring or want to give back to the pipeline — this is your moment.",
+      "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "date": "ROLLING PROGRAMME",
+      "title": "Alumni Lecture Series",
+      "desc": "Monthly talks from alumni professionals across all six faculties. Real careers, real knowledge, real impact on the next generation.",
+      "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "supportWays": [
+    {
+      "num": "01",
+      "title": "Establish a Scholarship",
+      "desc": "Name a scholarship in honour of someone who inspired you or support students from your faculty."
+    },
+    {
+      "num": "02",
+      "title": "Fund Research",
+      "desc": "Support the Institute Petar Karić and research projects that keep Alfa BK at the forefront of knowledge."
+    },
+    {
+      "num": "03",
+      "title": "Offer Internships",
+      "desc": "Partner with the university to offer paid internship places to students ready for real-world experience."
+    },
+    {
+      "num": "04",
+      "title": "Annual Alumni Fund",
+      "desc": "Join the growing group of alumni who contribute annually to campus improvements and student welfare."
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "hero": {
+    "kicker": "— INTERNATIONAL COOPERATION · ALFA BK UNIVERSITY",
+    "titlePrefix": "THE WORLD IS",
+    "titleHighlight": "YOUR CAMPUS.",
+    "description": "Partnerships with 60+ universities across 40 countries — opening doors to exchange semesters, joint research, dual degrees and global careers. All figures are provisional and subject to verification.",
+    "bgImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2000&q=80",
+    "ctaExplore": { "text": "EXPLORE OPPORTUNITIES", "href": "#programs" },
+    "ctaContact": { "text": "CONTACT INTERNATIONAL OFFICE", "href": "#contact" }
+  },
+  "stats": [
+    { "value": "60+", "label": "PARTNER UNIVERSITIES" },
+    { "value": "40+", "label": "COUNTRIES" },
+    { "value": "800+", "label": "EXCHANGE STUDENTS / YEAR" },
+    { "value": "15+", "label": "ACTIVE PROGRAMS" }
+  ],
+  "mobilityPrograms": [
+    {
+      "id": 0,
+      "badge": "ERASMUS+ EXCHANGE",
+      "badgeBg": "bg-[#C26B1E]",
+      "title": "STUDENT EXCHANGE SEMESTERS",
+      "description": "Spend one or two semesters at any of our 60+ Erasmus+ partner universities across Europe. Courses completed abroad are fully recognised toward your degree. Grants are available to eligible students to offset travel and living costs.",
+      "points": [
+        "Course recognition",
+        "Grant funding available",
+        "1–2 semester stays"
+      ],
+      "action": "APPLY FOR ERASMUS+",
+      "link": "#contact",
+      "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 1,
+      "badge": "STAFF MOBILITY",
+      "badgeBg": "bg-[#1E70A2]",
+      "title": "STAFF TEACHING & TRAINING",
+      "description": "Academic and administrative staff may apply for Erasmus+ teaching and training mobility — delivering guest lectures at partner universities or attending professional development programmes abroad.",
+      "points": [
+        "Teaching mobility",
+        "Training mobility",
+        "Staff grants"
+      ],
+      "action": "STAFF MOBILITY PROGRAM",
+      "link": "#contact",
+      "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 2,
+      "badge": "JOINT RESEARCH",
+      "badgeBg": "bg-[#6366F1]",
+      "title": "INTERNATIONAL RESEARCH PROJECTS",
+      "description": "Alfa BK participates in EU-funded and bilateral research collaborations in areas including AI, applied economics, mathematics and sports science. Research opportunities are subject to annual funding cycles.",
+      "points": [
+        "Horizon Europe & Erasmus+",
+        "Co-authored publications",
+        "Laboratory exchanges"
+      ],
+      "action": "RESEARCH COLLABORATIONS",
+      "link": "#contact",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 3,
+      "badge": "DUAL DEGREE",
+      "badgeBg": "bg-[#0D825E]",
+      "title": "DUAL DEGREE PATHWAYS",
+      "description": "Select partner universities offer pathways where students graduate with qualifications from both Alfa BK and the partner institution. Currently active with partner universities in Germany, France and Russia — subject to confirmation.",
+      "points": [
+        "Two recognised diplomas",
+        "Integrated curricula",
+        "Career acceleration"
+      ],
+      "action": "VIEW DUAL DEGREES",
+      "link": "#contact",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "europeanPartners": [
+    {
+      "flagCode": "de",
+      "name": "TU München",
+      "country": "Munich, Germany",
+      "disciplines": "Engineering · CS · Business",
+      "status": "Active Exchange"
+    },
+    {
+      "flagCode": "fr",
+      "name": "Sorbonne Université",
+      "country": "Paris, France",
+      "disciplines": "Humanities · Sciences · Law",
+      "status": "Active Exchange"
+    },
+    {
+      "flagCode": "it",
+      "name": "University of Bologna",
+      "country": "Bologna, Italy",
+      "disciplines": "Economics · Political Science",
+      "status": "Active Exchange"
+    },
+    {
+      "flagCode": "be",
+      "name": "KU Leuven",
+      "country": "Leuven, Belgium",
+      "disciplines": "Engineering · Life Sciences",
+      "status": "Active Exchange"
+    },
+    {
+      "flagCode": "se",
+      "name": "Uppsala University",
+      "country": "Uppsala, Sweden",
+      "disciplines": "All disciplines",
+      "status": "Active Exchange"
+    },
+    {
+      "flagCode": "pl",
+      "name": "University of Warsaw",
+      "country": "Warsaw, Poland",
+      "disciplines": "Economics · CS · Languages",
+      "status": "Active Exchange"
+    },
+    {
+      "flagCode": "cz",
+      "name": "Charles University",
+      "country": "Prague, Czech Republic",
+      "disciplines": "Law · Medicine · Humanities",
+      "status": "Active Exchange"
+    },
+    {
+      "flagCode": "at",
+      "name": "University of Vienna",
+      "country": "Vienna, Austria",
+      "disciplines": "Business · Psychology · Arts",
+      "status": "Active Exchange"
+    }
+  ],
+  "visitingProfessors": {
+    "tag": "VISITING PROFESSORS",
+    "title": "GLOBAL EXPERTISE BROUGHT TO YOU.",
+    "description": "Alfa BK regularly hosts visiting academics from partner institutions — bringing fresh perspectives into classrooms across all faculties. Visiting professorships are arranged through our International Office and are subject to availability each semester.",
+    "points": [
+      "Guest lectures and intensive workshops",
+      "Co-supervised thesis and research projects",
+      "Short-term teaching mobility via Erasmus+"
+    ],
+    "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80",
+    "action": { "text": "INVITE A VISITING PROFESSOR", "href": "#contact" }
+  },
+  "internationalStudents": {
+    "tag": "INTERNATIONAL STUDENTS",
+    "title": "STUDY AT ALFA BK FROM ANYWHERE.",
+    "description": "We welcome inbound students from partner universities as exchange visitors and full-degree applicants. English-taught programmes, student support services and cultural integration activities help international students thrive in Belgrade.",
+    "points": [
+      "Inbound Erasmus+ exchange semesters",
+      "Full-degree programmes open to international applicants",
+      "Dedicated international student support services"
+    ],
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80",
+    "action": { "text": "APPLY AS AN INTERNATIONAL STUDENT", "href": "/programs" }
+  },
+  "globalPartners": [
+    {
+      "flagCode": "sg",
+      "name": "National University of Singapore",
+      "country": "Singapore",
+      "type": "Research partnership"
+    },
+    {
+      "flagCode": "ca",
+      "name": "University of Toronto",
+      "country": "Canada",
+      "type": "Academic cooperation"
+    },
+    {
+      "flagCode": "kr",
+      "name": "Seoul National University",
+      "country": "South Korea",
+      "type": "Student exchange"
+    },
+    {
+      "flagCode": "ru",
+      "name": "Lomonosov Moscow State University",
+      "country": "Russia",
+      "type": "Academic cooperation"
+    },
+    {
+      "flagCode": "cn",
+      "name": "Peking University",
+      "country": "China",
+      "type": "Research partnership"
+    },
+    {
+      "flagCode": "ae",
+      "name": "American University in Dubai",
+      "country": "UAE",
+      "type": "Student exchange"
+    }
+  ],
+  "officeContact": {
+    "tag": "INTERNATIONAL OFFICE",
+    "title": "FROM INQUIRY TO OPPORTUNITY.",
+    "description": "Whether you are a student considering exchange, a staff member applying for teaching mobility, or an institution exploring a new partnership — our International Office team is your first point of contact.",
+    "stripPhotos": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=80"
+    ],
+    "contacts": [
+      {
+        "type": "EMAIL",
+        "value": "international@alfabk.edu",
+        "href": "mailto:international@alfabk.edu",
+        "sub": "Response within 2 business days"
+      },
+      {
+        "type": "PHONE",
+        "value": "+381 11 260 7902",
+        "href": "tel:+381112607902",
+        "sub": "Mon–Fri, 09:00 – 16:00 CET"
+      },
+      {
+        "type": "LOCATION & HOURS",
+        "value": "Main Building, Room 104",
+        "sub": "Mon–Fri 09:00–16:00"
+      }
+    ]
+  },
+  "cta": {
+    "motto": "— UVEK PRVI - ALWAYS FIRST —",
+    "title": "YOUR FUTURE STARTS HERE.",
+    "description": "Find a programme, speak to admissions or explore how our international partnerships can take your academic journey further.",
+    "buttons": [
+      { "text": "FIND A PROGRAMME", "href": "/programs" },
+      { "text": "CONTACT ADMISSIONS", "href": "/university/contact" }
+    ]
+  }
+}

@@ -22,7 +22,7 @@ import {
   Users2,
   LucideIcon,
 } from "lucide-react";
-import { ProgramItem, AdvancedProgram } from "@/components/data";
+import { ProgramItem, AdvancedProgram } from "@/data";
 
 const iconMap: Record<string, LucideIcon> = {
   TrendingUp,

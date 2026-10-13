@@ -15,7 +15,7 @@ import {
   Plus,
   X,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 export default function AdminOverviewView() {
   // Modal states for Quick Actions

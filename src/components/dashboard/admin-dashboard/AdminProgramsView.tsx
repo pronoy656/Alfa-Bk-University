@@ -18,7 +18,7 @@ import {
   Award,
   Sparkles,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 export interface ProgramRecord {
   code: string;

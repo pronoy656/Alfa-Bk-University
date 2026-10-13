@@ -1,11 +1,15 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
-export interface DashboardCardProps {
+export interface CardProps {
   title?: React.ReactNode;
   subtitle?: React.ReactNode;
   headerRight?: React.ReactNode;
+  actionText?: string;
+  actionHref?: string;
+  onActionClick?: () => void;
   children: React.ReactNode;
   footer?: React.ReactNode;
   variant?: "default" | "gold" | "navy" | "glass";
@@ -28,18 +32,45 @@ const paddingStyles = {
   lg: "p-8",
 };
 
-export default function DashboardCard({
+export default function Card({
   title,
   subtitle,
   headerRight,
+  actionText,
+  actionHref,
+  onActionClick,
   children,
   footer,
   variant = "default",
   padding = "md",
   className = "",
   onClick,
-}: DashboardCardProps) {
+}: CardProps) {
   const isNavy = variant === "navy";
+
+  // If headerRight isn't supplied but actionText is, render standard action button/link
+  const resolvedHeaderRight =
+    headerRight ||
+    (actionText ? (
+      actionHref ? (
+        <Link
+          href={actionHref}
+          className="text-xs font-bold text-[#C58B24] hover:text-[#A77218] transition cursor-pointer"
+        >
+          {actionText}
+        </Link>
+      ) : (
+        <button
+          type="button"
+          onClick={onActionClick}
+          className="text-xs font-bold text-[#C58B24] hover:text-[#A77218] transition cursor-pointer"
+        >
+          {actionText}
+        </button>
+      )
+    ) : null);
+
+  const hasHeader = Boolean(title || resolvedHeaderRight);
 
   return (
     <div
@@ -48,11 +79,19 @@ export default function DashboardCard({
         onClick ? "cursor-pointer hover:shadow-xs active:scale-[0.99]" : ""
       } ${className}`}
     >
-      {(title || headerRight) && (
+      {hasHeader && (
         <div
           className={`flex items-start sm:items-center justify-between gap-4 pb-4 border-b ${
             isNavy ? "border-white/10" : "border-slate-100"
-          } ${padding === "none" ? "p-6 pb-4" : padding === "sm" ? "px-4 pt-4" : padding === "lg" ? "px-8 pt-8" : "px-6 pt-6"}`}
+          } ${
+            padding === "none"
+              ? "p-6 pb-4"
+              : padding === "sm"
+              ? "px-4 pt-4"
+              : padding === "lg"
+              ? "px-8 pt-8"
+              : "px-6 pt-6"
+          }`}
         >
           <div>
             {typeof title === "string" ? (
@@ -76,13 +115,15 @@ export default function DashboardCard({
               </p>
             )}
           </div>
-          {headerRight && <div className="shrink-0">{headerRight}</div>}
+          {resolvedHeaderRight && (
+            <div className="shrink-0">{resolvedHeaderRight}</div>
+          )}
         </div>
       )}
 
       <div
         className={`${paddingStyles[padding]} ${
-          title || headerRight ? "pt-4" : ""
+          hasHeader ? "pt-4" : ""
         }`}
       >
         {children}
@@ -91,9 +132,15 @@ export default function DashboardCard({
       {footer && (
         <div
           className={`border-t ${
-            isNavy ? "border-white/10 bg-white/5" : "border-slate-100 bg-slate-50/50"
+            isNavy
+              ? "border-white/10 bg-white/5"
+              : "border-slate-100 bg-slate-50/50"
           } rounded-b-2xl ${
-            padding === "none" ? "p-4" : padding === "sm" ? "px-4 py-3" : "px-6 py-4"
+            padding === "none"
+              ? "p-4"
+              : padding === "sm"
+              ? "px-4 py-3"
+              : "px-6 py-4"
           }`}
         >
           {footer}
@@ -102,3 +149,7 @@ export default function DashboardCard({
     </div>
   );
 }
+
+// Alias for dashboard compatibility
+export { Card as DashboardCard };
+export type DashboardCardProps = CardProps;

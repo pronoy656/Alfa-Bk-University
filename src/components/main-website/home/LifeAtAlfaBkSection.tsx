@@ -1,50 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
+import { homeData } from "@/data";
 
 export default function LifeAtAlfaBkSection() {
-  const col1Moments = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80",
-      alt: "Sports and campus cheer",
-      aspect: "aspect-[16/11]",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80",
-      alt: "Students social gathering and study break",
-      aspect: "aspect-[16/11]",
-    },
-  ];
-
-  const col2Moments = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
-      alt: "Campus workshop and community gathering",
-      aspect: "aspect-[3/4.2]",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80",
-      alt: "University choir and arts performance",
-      aspect: "aspect-[3/4.2]",
-    },
-  ];
-
-  const col3Moments = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
-      alt: "Academic presentation and guest lecture",
-      aspect: "aspect-[16/11]",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
-      alt: "Graduation celebration on campus",
-      aspect: "aspect-[16/11]",
-    },
-  ];
+  const { col1Moments, col2Moments, col3Moments } = homeData.lifeAtAlfaBk;
 
   return (
     <section className="py-20 bg-[#FAF8F5]">

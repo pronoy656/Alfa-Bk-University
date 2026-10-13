@@ -3,7 +3,7 @@
 import React from "react";
 import { Loader2 } from "lucide-react";
 
-export interface DashboardTableColumn<T> {
+export interface TableColumn<T> {
   header: string;
   accessorKey?: keyof T;
   render?: (row: T, index: number) => React.ReactNode;
@@ -12,8 +12,8 @@ export interface DashboardTableColumn<T> {
   className?: string;
 }
 
-export interface DashboardTableProps<T> {
-  columns: DashboardTableColumn<T>[];
+export interface TableProps<T> {
+  columns: TableColumn<T>[];
   data: T[];
   keyField?: keyof T;
   isLoading?: boolean;
@@ -22,7 +22,7 @@ export interface DashboardTableProps<T> {
   className?: string;
 }
 
-export default function DashboardTable<T extends Record<string, unknown>>({
+export default function Table<T extends Record<string, unknown>>({
   columns,
   data,
   keyField = "id",
@@ -30,7 +30,7 @@ export default function DashboardTable<T extends Record<string, unknown>>({
   emptyMessage = "No records found.",
   onRowClick,
   className = "",
-}: DashboardTableProps<T>) {
+}: TableProps<T>) {
   return (
     <div
       className={`w-full overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-2xs ${className}`}
@@ -130,3 +130,8 @@ export default function DashboardTable<T extends Record<string, unknown>>({
     </div>
   );
 }
+
+// Aliases for dashboard compatibility
+export { Table as DashboardTable };
+export type DashboardTableProps<T> = TableProps<T>;
+export type DashboardTableColumn<T> = TableColumn<T>;

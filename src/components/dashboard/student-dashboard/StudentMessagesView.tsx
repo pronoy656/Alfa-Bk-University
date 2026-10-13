@@ -13,6 +13,7 @@ import {
   Circle,
   Clock,
 } from "lucide-react";
+import { dashboardMessagesData } from "@/data";
 
 interface Message {
   id: string;
@@ -35,122 +36,9 @@ interface Conversation {
 }
 
 export default function StudentMessagesView() {
-  const [conversations, setConversations] = useState<Conversation[]>([
-    {
-      id: "c-1",
-      name: "Dr. Rahman",
-      role: "Associate Professor",
-      course: "Database Management (CSE-305)",
-      avatarUrl:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80",
-      online: true,
-      unreadCount: 1,
-      lastMessage: "Please check the revised SQL indexing slides uploaded today.",
-      lastTime: "10:14 AM",
-      messages: [
-        {
-          id: "m-1",
-          sender: "student",
-          text: "Assalamu Alaikum Dr. Rahman, could you please clarify question 3 regarding BCNF decomposition from Assignment 4?",
-          time: "09:45 AM",
-        },
-        {
-          id: "m-2",
-          sender: "faculty",
-          text: "Wa Alaikum Assalam Shahriar. In step 3, make sure you compute the canonical cover first before projecting functional dependencies.",
-          time: "09:52 AM",
-        },
-        {
-          id: "m-3",
-          sender: "student",
-          text: "Understood, thank you sir! I have submitted the draft PDF.",
-          time: "10:02 AM",
-        },
-        {
-          id: "m-4",
-          sender: "faculty",
-          text: "Please check the revised SQL indexing slides uploaded today.",
-          time: "10:14 AM",
-        },
-      ],
-    },
-    {
-      id: "c-2",
-      name: "Dr. Hasan Mahmud",
-      role: "Professor & Head of Dept.",
-      course: "Software Engineering (CSE-310)",
-      avatarUrl:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80",
-      online: true,
-      lastMessage: "The class presentation schedule has been confirmed for Monday.",
-      lastTime: "Yesterday",
-      messages: [
-        {
-          id: "m-21",
-          sender: "faculty",
-          text: "The class presentation schedule has been confirmed for Monday.",
-          time: "Yesterday, 04:30 PM",
-        },
-      ],
-    },
-    {
-      id: "c-3",
-      name: "Ms. Farhana Sultana",
-      role: "Assistant Professor",
-      course: "Computer Networking (CSE-320)",
-      avatarUrl:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80",
-      online: false,
-      lastMessage: "Your lab packet sniffing report score has been updated.",
-      lastTime: "Oct 06",
-      messages: [
-        {
-          id: "m-31",
-          sender: "faculty",
-          text: "Your lab packet sniffing report score has been updated.",
-          time: "Oct 06, 02:15 PM",
-        },
-      ],
-    },
-    {
-      id: "c-4",
-      name: "Prof. Dr. Milan Stanković",
-      role: "Senior Chair",
-      course: "Artificial Intelligence (CSE-401)",
-      avatarUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80",
-      online: true,
-      lastMessage: "Good job on the heuristic search formulation for A* pathfinding.",
-      lastTime: "Oct 04",
-      messages: [
-        {
-          id: "m-41",
-          sender: "faculty",
-          text: "Good job on the heuristic search formulation for A* pathfinding.",
-          time: "Oct 04, 11:20 AM",
-        },
-      ],
-    },
-    {
-      id: "c-5",
-      name: "Registrar Academic Helpdesk",
-      role: "University Administration",
-      course: "Student Advisory & Records",
-      avatarUrl:
-        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&q=80",
-      online: false,
-      lastMessage: "Spring 2027 course pre-advising is active until Nov 10.",
-      lastTime: "Sep 28",
-      messages: [
-        {
-          id: "m-51",
-          sender: "faculty",
-          text: "Spring 2027 course pre-advising is active until Nov 10.",
-          time: "Sep 28, 09:00 AM",
-        },
-      ],
-    },
-  ]);
+  const [conversations, setConversations] = useState<Conversation[]>(
+    dashboardMessagesData.conversations as Conversation[]
+  );
 
   const [activeConvId, setActiveConvId] = useState<string>("c-1");
   const [inputText, setInputText] = useState("");

@@ -17,7 +17,7 @@ import {
   AlertCircle,
   TrendingUp,
 } from "lucide-react";
-import { DashboardModal, DashboardButton } from "@/components/dashboard/shared";
+import { DashboardModal, DashboardButton } from "@/components/shared";
 
 export default function AdminReportsView() {
   const [activeModal, setActiveModal] = useState<

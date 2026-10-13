@@ -32,7 +32,7 @@ import {
   DashboardModal,
   DashboardButton,
   DashboardBadge,
-} from "@/components/dashboard/shared";
+} from "@/components/shared";
 
 interface StudentCourseDetailViewProps {
   courseId: string;

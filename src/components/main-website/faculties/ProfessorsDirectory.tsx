@@ -18,7 +18,7 @@ import {
   Landmark,
   LucideIcon,
 } from "lucide-react";
-import { professorsData, ProfessorItem } from "@/components/data";
+import { professorsData, ProfessorItem } from "@/data";
 import UniversityGradient from "@/components/shared/UniversityGradient";
 
 const iconMap: Record<string, LucideIcon> = {

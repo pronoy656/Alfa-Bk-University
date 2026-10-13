@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import DocumentLibraryContent from "./DocumentLibraryContent";
+import DocumentLibraryContent from "@/components/main-website/university/DocumentLibraryContent";
 
 export const metadata: Metadata = {
   title: "Document Library | Alfa BK University",

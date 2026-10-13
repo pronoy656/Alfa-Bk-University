@@ -67,11 +67,6 @@ export default function Navbar() {
     { label: "Distance Learning (Online)", href: "/e-learning" },
   ];
 
-  const portalLinks = [
-    { label: "e-employee", href: "/e-employee" },
-    { label: "e-student", href: "/e-student" },
-    { label: "e-learning (Moodle)", href: "/e-learning" },
-  ];
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#113565] shadow-md border-b border-white/10">
@@ -215,11 +210,23 @@ export default function Navbar() {
               Research
             </Link>
 
+            {/* Career & Industry */}
+            <Link
+              href="/career-industry"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-[13px] font-semibold rounded-lg transition-colors ${
+                pathname === "/career-industry"
+                  ? "text-white bg-white/15"
+                  : "text-slate-200 hover:text-white hover:bg-white/10"
+              }`}
+            >
+              Career & Industry
+            </Link>
+
             {/* News & Events */}
             <Link
               href="/news-events"
               className={`px-2.5 xl:px-3 py-2 text-xs xl:text-[13px] font-semibold rounded-lg transition-colors ${
-                pathname === "/news-events"
+                pathname === "/news-events" || pathname === "/events"
                   ? "text-white bg-white/15"
                   : "text-slate-200 hover:text-white hover:bg-white/10"
               }`}
@@ -227,30 +234,17 @@ export default function Navbar() {
               News & Events
             </Link>
 
-            {/* Portals Dropdown */}
-            <div className="relative group">
-              <button
-                type="button"
-                className="flex items-center gap-1 px-2.5 xl:px-3 py-2 text-xs xl:text-[13px] font-semibold text-slate-200 hover:bg-white/10 rounded-lg transition-colors group-hover:text-white"
-              >
-                <span>Portals</span>
-                <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 text-slate-300 group-hover:text-white" />
-              </button>
-
-              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 ease-out transform translate-y-2 group-hover:translate-y-0 absolute left-0 w-48 bg-white rounded-xl shadow-xl border border-slate-100 p-2 z-50">
-                <div className="space-y-0.5">
-                  {portalLinks.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="block px-3 py-2 rounded-lg text-xs font-medium text-slate-700 hover:text-blue-700 hover:bg-slate-50 transition"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
+            {/* E-Learning */}
+            <Link
+              href="/e-learning"
+              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-[13px] font-semibold rounded-lg transition-colors ${
+                pathname === "/e-learning"
+                  ? "text-white bg-white/15"
+                  : "text-slate-200 hover:text-white hover:bg-white/10"
+              }`}
+            >
+              E-Learning
+            </Link>
           </nav>
 
           {/* Right Action: Language + Login + Apply Button */}
@@ -414,25 +408,26 @@ export default function Navbar() {
             Research
           </Link>
           <Link
+            href="/career-industry"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-sm font-semibold text-white hover:text-amber-300"
+          >
+            Career & Industry
+          </Link>
+          <Link
             href="/news-events"
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-sm font-semibold text-white hover:text-amber-300"
           >
             News & Events
           </Link>
-
-          <div className="pt-2 border-t border-white/15 flex flex-wrap gap-2 text-xs text-slate-300">
-            {portalLinks.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-2 py-1 bg-white/10 rounded hover:bg-white/20 text-slate-200 hover:text-white"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
+          <Link
+            href="/e-learning"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-sm font-semibold text-white hover:text-amber-300"
+          >
+            E-Learning
+          </Link>
 
           <div className="pt-2">
             <Link

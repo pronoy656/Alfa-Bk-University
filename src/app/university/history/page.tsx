@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import HistoryClient from "./HistoryClient";
+import HistoryClient from "@/components/main-website/university/HistoryClient";
 
 export const metadata: Metadata = {
   title: "Istorijat | Alfa BK Univerzitet",

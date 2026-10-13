@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Plus } from "lucide-react";
 import { TeacherCourse } from "@/components/dashboard/types";
+import { dashboardTeacherData } from "@/data";
 import UploadLectureModal from "./UploadLectureModal";
 
 interface TeacherCoursesListProps {
@@ -16,44 +17,7 @@ export default function TeacherCoursesList({
   const [selectedCourseForLecture, setSelectedCourseForLecture] = useState(
     "Database Management System (CSE-305)"
   );
-  const courses: TeacherCourse[] = [
-    {
-      id: "cse-305",
-      code: "CSE-305",
-      credits: 3,
-      title: "Database Management System",
-      enrolled: 45,
-      progress: 62,
-      lastActive: "Today, 09:00 AM",
-    },
-    {
-      id: "cse-311",
-      code: "CSE-311",
-      credits: 3,
-      title: "Software Engineering",
-      enrolled: 38,
-      progress: 45,
-      lastActive: "Yesterday",
-    },
-    {
-      id: "cse-201",
-      code: "CSE-201",
-      credits: 4,
-      title: "Data Structures",
-      enrolled: 52,
-      progress: 85,
-      lastActive: "2 days ago",
-    },
-    {
-      id: "cse-315",
-      code: "CSE-315",
-      credits: 3,
-      title: "Computer Architecture",
-      enrolled: 41,
-      progress: 30,
-      lastActive: "1 week ago",
-    },
-  ];
+  const courses = dashboardTeacherData.courses as TeacherCourse[];
 
   return (
     <div className="space-y-6">

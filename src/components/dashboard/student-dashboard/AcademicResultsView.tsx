@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Download, ChevronDown, ChevronUp, Award, CheckCircle2, FileText } from "lucide-react";
+import { dashboardResultsData } from "@/data";
 
 interface CourseGrade {
   name: string;
@@ -34,99 +35,10 @@ export default function AcademicResultsView() {
     }));
   };
 
-  const sem7Courses: CourseGrade[] = [
-    {
-      name: "Object Oriented Programming (CSE-202)",
-      code: "CSE-202",
-      credit: 3.0,
-      marks: 92,
-      grade: "A+",
-      gradePoint: "4.00",
-    },
-    {
-      name: "Theory of Computation (CSE-301)",
-      code: "CSE-301",
-      credit: 3.0,
-      marks: 84,
-      grade: "A",
-      gradePoint: "3.75",
-    },
-    {
-      name: "Microprocessors & Interfacing (CSE-303)",
-      code: "CSE-303",
-      credit: 3.0,
-      marks: 88,
-      grade: "A+",
-      gradePoint: "4.00",
-    },
-    {
-      name: "Data Communication (CSE-309)",
-      code: "CSE-309",
-      credit: 3.0,
-      marks: 78,
-      grade: "A-",
-      gradePoint: "3.50",
-    },
-    {
-      name: "Discrete Mathematics (GED-103)",
-      code: "GED-103",
-      credit: 3.0,
-      marks: 89,
-      grade: "A+",
-      gradePoint: "4.00",
-    },
-  ];
-
-  const sem8Courses: CourseGrade[] = [
-    {
-      name: "Database Management System (CSE-305)",
-      code: "CSE-305",
-      credit: 3.0,
-      marks: 94,
-      grade: "In Progress",
-      gradePoint: "Pending",
-    },
-    {
-      name: "Software Engineering (CSE-310)",
-      code: "CSE-310",
-      credit: 3.0,
-      marks: 88,
-      grade: "In Progress",
-      gradePoint: "Pending",
-    },
-    {
-      name: "Computer Networking (CSE-320)",
-      code: "CSE-320",
-      credit: 3.0,
-      marks: 85,
-      grade: "In Progress",
-      gradePoint: "Pending",
-    },
-    {
-      name: "Artificial Intelligence (CSE-401)",
-      code: "CSE-401",
-      credit: 3.0,
-      marks: 90,
-      grade: "In Progress",
-      gradePoint: "Pending",
-    },
-    {
-      name: "Web Engineering & Design (CSE-315)",
-      code: "CSE-315",
-      credit: 3.0,
-      marks: 91,
-      grade: "In Progress",
-      gradePoint: "Pending",
-    },
-    {
-      name: "Undergraduate Thesis & Project (CSE-499)",
-      code: "CSE-499",
-      credit: 3.0,
-      marks: 95,
-      grade: "In Progress",
-      gradePoint: "Pending",
-    },
-  ];
+  const { sem7Courses, sem8Courses } = dashboardResultsData as {
+    sem7Courses: CourseGrade[];
+    sem8Courses: CourseGrade[];
+  };
 
   const handleDownloadTranscript = () => {
     alert("Generating official Alfa BK University academic transcript PDF...");

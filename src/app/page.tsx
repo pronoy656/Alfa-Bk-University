@@ -1,15 +1,15 @@
-import HeroSection from "@/components/home/HeroSection";
-import BrowseStudyLevelsSection from "@/components/home/BrowseStudyLevelsSection";
-import FacultiesSection from "@/components/home/FacultiesSection";
-import AcademicDiscourseSection from "@/components/home/AcademicDiscourseSection";
-import CareersDegreeSection from "@/components/home/CareersDegreeSection";
-import UniversityFilmSection from "@/components/home/UniversityFilmSection";
-import NewsEventsSection from "@/components/home/NewsEventsSection";
-import StudentStoriesSection from "@/components/home/StudentStoriesSection";
-import LifeAtAlfaBkSection from "@/components/home/LifeAtAlfaBkSection";
-import PartnerUniversitiesSection from "@/components/home/PartnerUniversitiesSection";
-import FaqSection from "@/components/home/FaqSection";
-import CtaSection from "@/components/home/CtaSection";
+import HeroSection from "@/components/main-website/home/HeroSection";
+import BrowseStudyLevelsSection from "@/components/main-website/home/BrowseStudyLevelsSection";
+import FacultiesSection from "@/components/main-website/home/FacultiesSection";
+import AcademicDiscourseSection from "@/components/main-website/home/AcademicDiscourseSection";
+import CareersDegreeSection from "@/components/main-website/home/CareersDegreeSection";
+import UniversityFilmSection from "@/components/main-website/home/UniversityFilmSection";
+import NewsEventsSection from "@/components/main-website/home/NewsEventsSection";
+import StudentStoriesSection from "@/components/main-website/home/StudentStoriesSection";
+import LifeAtAlfaBkSection from "@/components/main-website/home/LifeAtAlfaBkSection";
+import PartnerUniversitiesSection from "@/components/main-website/home/PartnerUniversitiesSection";
+import FaqSection from "@/components/main-website/home/FaqSection";
+import CtaSection from "@/components/main-website/home/CtaSection";
 
 export default function Home() {
   return (

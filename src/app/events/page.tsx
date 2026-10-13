@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import NewsHero from "@/components/news-events/NewsHero";
-import AllEventsView from "@/components/news-events/AllEventsView";
-import ArticleDetailModal from "@/components/news-events/ArticleDetailModal";
-import { newsEventsData } from "@/components/data";
-import { AllEventItem } from "@/components/news-events/types";
+import NewsHero from "@/components/main-website/news-events/NewsHero";
+import AllEventsView from "@/components/main-website/news-events/AllEventsView";
+import ArticleDetailModal from "@/components/main-website/news-events/ArticleDetailModal";
+import { newsEventsData } from "@/data";
+import { AllEventItem } from "@/components/main-website/news-events/types";
 
 export default function EventsPage() {
   const [selectedArticle, setSelectedArticle] = useState<AllEventItem | null>(null);

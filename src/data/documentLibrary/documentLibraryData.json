@@ -1,0 +1,288 @@
+{
+  "hero": {
+    "kicker": "ACADEMIC RESOURCES · OFFICIAL PUBLICATIONS",
+    "titlePrefix": "DOCUMENT",
+    "titleHighlight": "LIBRARY.",
+    "description": "University statutes, accreditation certificates, program documents, enrollment guides, and legally required publications. All documents are official unless marked provisional.",
+    "bgImage": "/docs-hero.jpg",
+    "stats": [
+      { "value": "24", "label": "DOCUMENTS AVAILABLE" },
+      { "value": "7", "label": "CATEGORIES" }
+    ]
+  },
+  "categoryKeys": [
+    "University Documents",
+    "Accreditation",
+    "Enrollment Documents",
+    "Faculty Documents",
+    "Program Documents",
+    "Student Documents",
+    "Legal Documents"
+  ],
+  "categories": {
+    "University Documents": {
+      "name": "University Documents",
+      "dotColor": "bg-[#113565]",
+      "borderColor": "border-l-[#113565]",
+      "badgeBg": "bg-[#113565]",
+      "badgeText": "text-white",
+      "btnBg": "bg-[#113565]",
+      "btnHover": "hover:bg-[#0c274d]",
+      "iconBg": "bg-slate-100",
+      "iconColor": "text-[#113565]",
+      "icon": "FileText"
+    },
+    "Accreditation": {
+      "name": "Accreditation",
+      "dotColor": "bg-[#A2302F]",
+      "borderColor": "border-l-[#A2302F]",
+      "badgeBg": "bg-[#A2302F]",
+      "badgeText": "text-white",
+      "btnBg": "bg-[#A2302F]",
+      "btnHover": "hover:bg-[#7f2424]",
+      "iconBg": "bg-rose-50",
+      "iconColor": "text-[#A2302F]",
+      "icon": "Award"
+    },
+    "Enrollment Documents": {
+      "name": "Enrollment Documents",
+      "dotColor": "bg-[#0D825E]",
+      "borderColor": "border-l-[#0D825E]",
+      "badgeBg": "bg-[#0D825E]",
+      "badgeText": "text-white",
+      "btnBg": "bg-[#0D825E]",
+      "btnHover": "hover:bg-[#096347]",
+      "iconBg": "bg-emerald-50",
+      "iconColor": "text-[#0D825E]",
+      "icon": "Users"
+    },
+    "Faculty Documents": {
+      "name": "Faculty Documents",
+      "dotColor": "bg-[#6B21A8]",
+      "borderColor": "border-l-[#6B21A8]",
+      "badgeBg": "bg-[#6B21A8]",
+      "badgeText": "text-white",
+      "btnBg": "bg-[#6B21A8]",
+      "btnHover": "hover:bg-[#531885]",
+      "iconBg": "bg-purple-50",
+      "iconColor": "text-[#6B21A8]",
+      "icon": "BookOpen"
+    },
+    "Program Documents": {
+      "name": "Program Documents",
+      "dotColor": "bg-[#C27803]",
+      "borderColor": "border-l-[#C27803]",
+      "badgeBg": "bg-[#C27803]",
+      "badgeText": "text-white",
+      "btnBg": "bg-[#C27803]",
+      "btnHover": "hover:bg-[#9d6002]",
+      "iconBg": "bg-amber-50",
+      "iconColor": "text-[#C27803]",
+      "icon": "BookOpen"
+    },
+    "Student Documents": {
+      "name": "Student Documents",
+      "dotColor": "bg-[#059669]",
+      "borderColor": "border-l-[#059669]",
+      "badgeBg": "bg-[#059669]",
+      "badgeText": "text-white",
+      "btnBg": "bg-[#059669]",
+      "btnHover": "hover:bg-[#047857]",
+      "iconBg": "bg-emerald-50",
+      "iconColor": "text-[#059669]",
+      "icon": "GraduationCap"
+    },
+    "Legal Documents": {
+      "name": "Legal Documents",
+      "dotColor": "bg-[#2563EB]",
+      "borderColor": "border-l-[#2563EB]",
+      "badgeBg": "bg-[#2563EB]",
+      "badgeText": "text-white",
+      "btnBg": "bg-[#2563EB]",
+      "btnHover": "hover:bg-[#1d4ed8]",
+      "iconBg": "bg-blue-50",
+      "iconColor": "text-[#2563EB]",
+      "icon": "Scale"
+    }
+  },
+  "documents": [
+    {
+      "id": "univ-1",
+      "title": "University Statute",
+      "category": "University Documents",
+      "date": "Jan 2026",
+      "lang": "SR / EN"
+    },
+    {
+      "id": "univ-2",
+      "title": "Academic Calendar 2026/2027",
+      "category": "University Documents",
+      "date": "Aug 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "univ-3",
+      "title": "University Development Strategy 2024-2030",
+      "category": "University Documents",
+      "date": "Mar 2024",
+      "lang": "SR"
+    },
+    {
+      "id": "univ-4",
+      "title": "Quality Assurance Policy",
+      "category": "University Documents",
+      "date": "Sep 2025",
+      "lang": "SR / EN"
+    },
+    {
+      "id": "acc-1",
+      "title": "Accreditation Certificate - Alfa BK University",
+      "category": "Accreditation",
+      "date": "2022",
+      "lang": "SR"
+    },
+    {
+      "id": "acc-2",
+      "title": "Accreditation Report - Faculty of Finance, Trade and Accounting",
+      "category": "Accreditation",
+      "subCategory": "Finance, Trade & Accounting",
+      "date": "2022",
+      "lang": "SR"
+    },
+    {
+      "id": "acc-3",
+      "title": "Accreditation Report - Faculty of Information Technologies",
+      "category": "Accreditation",
+      "subCategory": "Information Technologies",
+      "date": "2022",
+      "lang": "SR"
+    },
+    {
+      "id": "acc-4",
+      "title": "Accreditation Report - Faculty of Mathematics and Computer Sciences",
+      "category": "Accreditation",
+      "subCategory": "Mathematics & CS",
+      "date": "2022",
+      "lang": "SR"
+    },
+    {
+      "id": "enr-1",
+      "title": "Enrollment Requirements 2026/2027",
+      "category": "Enrollment Documents",
+      "date": "Jul 2026",
+      "lang": "SR / EN / RU"
+    },
+    {
+      "id": "enr-2",
+      "title": "Required Documents for Enrollment - Checklist",
+      "category": "Enrollment Documents",
+      "date": "Jul 2026",
+      "lang": "SR / EN"
+    },
+    {
+      "id": "enr-3",
+      "title": "Tuition Payment Information",
+      "category": "Enrollment Documents",
+      "date": "Aug 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "fac-1",
+      "title": "Faculty Guide - Finance, Trade and Accounting",
+      "category": "Faculty Documents",
+      "subCategory": "Finance, Trade & Accounting",
+      "date": "Sep 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "fac-2",
+      "title": "Faculty Guide - Information Technologies",
+      "category": "Faculty Documents",
+      "subCategory": "Information Technologies",
+      "date": "Sep 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "fac-3",
+      "title": "Faculty Guide - Mathematics and Computer Sciences",
+      "category": "Faculty Documents",
+      "subCategory": "Mathematics & CS",
+      "date": "Sep 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "prg-1",
+      "title": "Book of Subjects - Economics and Finance (BSc)",
+      "category": "Program Documents",
+      "subCategory": "Finance, Trade & Accounting",
+      "date": "Sep 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "prg-2",
+      "title": "Study Plan - Information Technologies (BSc)",
+      "category": "Program Documents",
+      "subCategory": "Information Technologies",
+      "date": "Sep 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "prg-3",
+      "title": "Study Plan - Computer Sciences (BSc)",
+      "category": "Program Documents",
+      "subCategory": "Mathematics & CS",
+      "date": "Sep 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "prg-4",
+      "title": "Tutor's Book - Anglistics (BSc)",
+      "category": "Program Documents",
+      "subCategory": "Foreign Languages",
+      "date": "Sep 2026",
+      "lang": "SR"
+    },
+    {
+      "id": "stu-1",
+      "title": "Student Rights and Obligations",
+      "category": "Student Documents",
+      "date": "Sep 2025",
+      "lang": "SR"
+    },
+    {
+      "id": "stu-2",
+      "title": "Code of Student Conduct",
+      "category": "Student Documents",
+      "date": "Jan 2024",
+      "lang": "SR"
+    },
+    {
+      "id": "stu-3",
+      "title": "Student Complaint Procedure",
+      "category": "Student Documents",
+      "date": "Jan 2024",
+      "lang": "SR / EN"
+    },
+    {
+      "id": "leg-1",
+      "title": "Higher Education Law of the Republic of Serbia",
+      "category": "Legal Documents",
+      "date": "2021",
+      "lang": "SR"
+    },
+    {
+      "id": "leg-2",
+      "title": "Privacy Policy",
+      "category": "Legal Documents",
+      "date": "Jan 2026",
+      "lang": "SR / EN"
+    },
+    {
+      "id": "leg-3",
+      "title": "Anti-Corruption Policy",
+      "category": "Legal Documents",
+      "date": "Mar 2025",
+      "lang": "SR"
+    }
+  ]
+}

@@ -3,7 +3,8 @@
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { Search, ArrowRight } from "lucide-react";
-import { programsData } from "@/components/data";
+import { programsData } from "@/data";
+import { PageHero } from "@/components/shared";
 
 export default function ProgramsPage() {
   const [search, setSearch] = useState("");
@@ -53,30 +54,12 @@ export default function ProgramsPage() {
   return (
     <div className="bg-[#FAF9F6] min-h-screen">
       {/* 1. HERO BANNER */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-[#0B1E36] via-[#102444] to-[#B87A1E] text-white">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=80')",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/85 via-[#0B1E36]/65 to-[#102444]/40" />
-
-        <div className="container relative mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="text-xs font-bold tracking-[0.2em] text-[#D5A754] uppercase">
-              {programsData.kicker}
-            </span>
-            <h1 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl text-white">
-              {programsData.title}
-            </h1>
-            <p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base max-w-2xl">
-              {programsData.subtitle}
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        kicker={programsData.kicker}
+        title={programsData.title}
+        subtitle={programsData.subtitle}
+        bgImage="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2000&q=80"
+      />
 
       {/* 2. SEARCH & DUAL FILTERS */}
       <section className="pt-8 pb-6 bg-white border-b border-slate-200/80">

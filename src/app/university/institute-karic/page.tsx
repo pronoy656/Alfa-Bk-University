@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import InstituteKaricContent from "./InstituteKaricContent";
+import InstituteKaricContent from "@/components/main-website/university/InstituteKaricContent";
 
 export const metadata: Metadata = {
   title: "Institute Petar Karic | Alfa BK University",
