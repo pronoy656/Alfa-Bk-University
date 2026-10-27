@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 
 export default function FacultiesSection() {
   const faculties = [
@@ -69,14 +70,14 @@ export default function FacultiesSection() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-10 fade-up-scroll">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#DF5C55]">
-            02 · ACADEMIC COMMUNITY
-          </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1E36] tracking-tight uppercase">
-            OUR FACULTIES
-          </h2>
-        </div>
+        <TitleSubtitle
+          tag="02 · ACADEMIC COMMUNITY"
+          kickerClassName="!text-[#DF5C55]"
+          title="OUR FACULTIES"
+          size="xl"
+          uppercase
+          className="mb-10 fade-up-scroll"
+        />
 
         {/* 10 Colorful Faculty Cards Grid (5 columns x 2 rows) */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

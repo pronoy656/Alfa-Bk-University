@@ -1,3 +1,4 @@
+import { TitleSubtitle } from "@/components/shared";
 import { homeData } from "@/data";
 
 export default function TestimonialsSection() {
@@ -7,14 +8,12 @@ export default function TestimonialsSection() {
     <section className="py-20 bg-white border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-xl mx-auto mb-14 fade-up-scroll">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
-            STUDENT VOICES
-          </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight">
-            What Our Students Say
-          </h2>
-        </div>
+        <TitleSubtitle
+          align="center"
+          tag="STUDENT VOICES"
+          title="What Our Students Say"
+          className="mb-14 fade-up-scroll"
+        />
 
         {/* 3 Testimonials Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

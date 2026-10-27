@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 
 export interface FeatureSplitData {
   tag: string;
@@ -52,20 +53,14 @@ export default function InternationalFeatureSplit({
               reverse ? "order-2 lg:order-1" : ""
             }`}
           >
-            <div className="flex items-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                {data.tag}
-              </span>
-            </div>
-
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase leading-tight">
-              {data.title}
-            </h2>
-
-            <p className="mt-4 text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
-              {data.description}
-            </p>
+            <TitleSubtitle
+              kicker={data.tag}
+              withGoldLine
+              theme="dark"
+              uppercase
+              title={data.title}
+              subtitle={data.description}
+            />
 
             <div className="mt-8 space-y-4">
               {data.points.map((pt, idx) => (

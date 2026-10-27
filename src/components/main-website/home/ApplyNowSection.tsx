@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
+import { Input } from "@/components/shared";
 
 export default function ApplyNowSection() {
   const [formData, setFormData] = useState({
@@ -145,48 +146,39 @@ export default function ApplyNowSection() {
                   </div>
 
                   {/* Full Name */}
-                  <div>
-                    <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                      FULL NAME
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Your full name"
-                      value={formData.fullName}
-                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full bg-[#0A192F] border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#D5A754] transition"
-                    />
-                  </div>
+                  <Input
+                    label="FULL NAME"
+                    type="text"
+                    required
+                    placeholder="Your full name"
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                    className="bg-[#0A192F] border-white/15 text-white placeholder-slate-500 focus:border-[#D5A754]"
+                    labelClassName="text-slate-300 font-semibold"
+                  />
 
                   {/* Email & Phone */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        EMAIL
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        placeholder="you@example.com"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full bg-[#0A192F] border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#D5A754] transition"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        PHONE
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        placeholder="+381 ..."
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full bg-[#0A192F] border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#D5A754] transition"
-                      />
-                    </div>
+                    <Input
+                      label="EMAIL"
+                      type="email"
+                      required
+                      placeholder="you@example.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="bg-[#0A192F] border-white/15 text-white placeholder-slate-500 focus:border-[#D5A754]"
+                      labelClassName="text-slate-300 font-semibold"
+                    />
+                    <Input
+                      label="PHONE"
+                      type="tel"
+                      required
+                      placeholder="+381 ..."
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      className="bg-[#0A192F] border-white/15 text-white placeholder-slate-500 focus:border-[#D5A754]"
+                      labelClassName="text-slate-300 font-semibold"
+                    />
                   </div>
 
                   {/* Submit Button */}

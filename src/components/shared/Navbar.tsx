@@ -189,13 +189,25 @@ export default function Navbar() {
             {/* Students */}
             <Link
               href="/students"
-              className={`px-2.5 xl:px-3 py-2 text-xs xl:text-[13px] font-semibold rounded-lg transition-colors ${
+              className={`px-2 xl:px-2.5 py-2 text-xs xl:text-[13px] font-semibold rounded-lg transition-colors ${
                 pathname === "/students"
                   ? "text-white bg-white/15"
                   : "text-slate-200 hover:text-white hover:bg-white/10"
               }`}
             >
               Students
+            </Link>
+
+            {/* Student Parliament */}
+            <Link
+              href="/student-parliament"
+              className={`px-2 xl:px-2.5 py-2 text-xs xl:text-[13px] font-semibold rounded-lg transition-colors ${
+                pathname === "/student-parliament"
+                  ? "text-white bg-white/15"
+                  : "text-slate-200 hover:text-white hover:bg-white/10"
+              }`}
+            >
+              Student Parliament
             </Link>
 
             {/* Research */}
@@ -399,6 +411,13 @@ export default function Navbar() {
             className="block py-2 text-sm font-semibold text-white hover:text-amber-300"
           >
             Students
+          </Link>
+          <Link
+            href="/student-parliament"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-sm font-semibold text-white hover:text-amber-300"
+          >
+            Student Parliament
           </Link>
           <Link
             href="/university/international-cooperation"

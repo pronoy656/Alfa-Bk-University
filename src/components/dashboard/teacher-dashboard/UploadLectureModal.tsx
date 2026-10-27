@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { CheckCircle2, UploadCloud, Video, FileText } from "lucide-react";
 import { LectureItem } from "@/components/dashboard/types";
-import { DashboardModal, DashboardButton } from "@/components/shared";
+import { DashboardModal, DashboardButton, DashboardInput } from "@/components/shared";
 
 interface UploadLectureModalProps {
   isOpen: boolean;
@@ -125,29 +125,25 @@ export default function UploadLectureModal({
           {/* Row 2: Title and Duration */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="sm:col-span-2">
-              <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                Lecture Title <span className="text-red-500">*</span>
-              </label>
-              <input
+              <DashboardInput
+                label={<>Lecture Title <span className="text-red-500">*</span></>}
                 type="text"
                 required
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="e.g. Lecture 07: BCNF Decomposition & Minimal Cover"
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
+                labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                Estimated Duration
-              </label>
-              <input
+              <DashboardInput
+                label="Estimated Duration"
                 type="text"
                 value={duration}
                 onChange={(e) => setDuration(e.target.value)}
                 placeholder="e.g. 45 mins"
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
+                labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
               />
             </div>
           </div>

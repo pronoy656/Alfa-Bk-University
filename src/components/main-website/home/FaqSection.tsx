@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 import { homeData } from "@/data";
 
 export default function FaqSection() {
@@ -11,9 +12,12 @@ export default function FaqSection() {
   return (
     <section className="py-24 bg-[#FAF8F5]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1E36] text-center mb-14 tracking-tight fade-up-scroll">
-          Frequently Asked Questions
-        </h2>
+        <TitleSubtitle
+          align="center"
+          title="Frequently Asked Questions"
+          size="xl"
+          className="mb-14 fade-up-scroll"
+        />
 
         <div className="divide-y divide-slate-200/90 border-y border-slate-200/90 fade-up-scroll">
           {faqs.map((faq, idx) => {

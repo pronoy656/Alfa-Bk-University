@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronRight, Play } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 import { homeData } from "@/data";
 
 export default function CampusLifeSection() {
@@ -15,7 +16,7 @@ export default function CampusLifeSection() {
           <div className="relative fade-up-scroll">
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-4/3 bg-slate-100">
               <img
-                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+                src="/24d20d9426b01552e1f0e76c4f41a02bda9d7aae.jpg"
                 alt="Alfa BK University Students"
                 className="w-full h-full object-cover"
               />
@@ -24,15 +25,12 @@ export default function CampusLifeSection() {
 
           {/* Right: Copy & Checklist */}
           <div className="fade-up-scroll delay-200">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
-              CAMPUS LIFE
-            </p>
-            <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight leading-tight">
-              A Global Community of 12,458 Students
-            </h2>
-            <p className="mt-4 text-base text-slate-600 leading-relaxed">
-              Students from 74 countries call Alfa BK home. With 80+ clubs, modern accommodation, dedicated international student support, and a vibrant city campus, your university experience extends far beyond the classroom.
-            </p>
+            <TitleSubtitle
+              tag="CAMPUS LIFE"
+              title="A Global Community of 12,458 Students"
+              subtitle="Students from 74 countries call Alfa BK home. With 80+ clubs, modern accommodation, dedicated international student support, and a vibrant city campus, your university experience extends far beyond the classroom."
+              maxWidth="none"
+            />
 
             {/* Checklist */}
             <div className="mt-6 space-y-3.5">
@@ -57,7 +55,7 @@ export default function CampusLifeSection() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1600&q=80')",
+                "url('/006cc1cfa442fbac675b6f6549e2b7458668d501.jpg')",
             }}
           />
           {/* Blue Overlay */}

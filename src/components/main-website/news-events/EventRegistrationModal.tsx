@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { X, CheckCircle2, Calendar, MapPin, Clock } from "lucide-react";
 import { UpcomingEvent, AllEventItem } from "./types";
+import { Input } from "@/components/shared";
 
 interface EventRegistrationModalProps {
   event: UpcomingEvent | AllEventItem | null;
@@ -89,52 +90,40 @@ export default function EventRegistrationModal({
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  required
-                  placeholder="e.g. Marko Petrovic"
-                  value={formData.fullName}
-                  onChange={(e) =>
-                    setFormData({ ...formData, fullName: e.target.value })
-                  }
-                  className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:border-[#0B1E36] focus:outline-hidden"
-                />
-              </div>
+              <Input
+                label="Full Name *"
+                type="text"
+                required
+                placeholder="e.g. Marko Petrovic"
+                value={formData.fullName}
+                onChange={(e) =>
+                  setFormData({ ...formData, fullName: e.target.value })
+                }
+                labelClassName="font-semibold text-slate-700 capitalize text-xs tracking-normal"
+              />
 
-              <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  required
-                  placeholder="e.g. marko.p@gmail.com"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:border-[#0B1E36] focus:outline-hidden"
-                />
-              </div>
+              <Input
+                label="Email Address *"
+                type="email"
+                required
+                placeholder="e.g. marko.p@gmail.com"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
+                labelClassName="font-semibold text-slate-700 capitalize text-xs tracking-normal"
+              />
 
-              <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  placeholder="+381 11 123 4567"
-                  value={formData.phone}
-                  onChange={(e) =>
-                    setFormData({ ...formData, phone: e.target.value })
-                  }
-                  className="w-full rounded-xl border border-slate-200 px-3.5 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:border-[#0B1E36] focus:outline-hidden"
-                />
-              </div>
+              <Input
+                label="Phone Number"
+                type="tel"
+                placeholder="+381 11 123 4567"
+                value={formData.phone}
+                onChange={(e) =>
+                  setFormData({ ...formData, phone: e.target.value })
+                }
+                labelClassName="font-semibold text-slate-700 capitalize text-xs tracking-normal"
+              />
 
               <div>
                 <label className="block text-xs font-semibold text-slate-700 mb-1">

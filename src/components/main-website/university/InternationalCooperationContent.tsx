@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowRight, ExternalLink } from "lucide-react";
-import { PageHero } from "@/components/shared";
+import { PageHero, TitleSubtitle } from "@/components/shared";
 import {
   hero,
   stats,
@@ -58,21 +58,14 @@ export default function InternationalCooperationContent() {
       {/* 2. Mobility Programs */}
       <section id="programs" className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-14">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                INTERNATIONAL MOBILITY
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-              PROGRAMS THAT TAKE YOU FURTHER.
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 max-w-2xl font-normal leading-relaxed">
-              Explore exchange opportunities for undergraduate and postgraduate students, faculty and staff.
-              Terms, grant amounts and eligible destinations vary by academic year.
-            </p>
-          </div>
+          <TitleSubtitle
+            kicker="INTERNATIONAL MOBILITY"
+            withGoldLine
+            uppercase
+            title="PROGRAMS THAT TAKE YOU FURTHER."
+            subtitle="Explore exchange opportunities for undergraduate and postgraduate students, faculty and staff. Terms, grant amounts and eligible destinations vary by academic year."
+            className="mb-14"
+          />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {mobilityPrograms.map((prog) => (
@@ -147,21 +140,14 @@ export default function InternationalCooperationContent() {
       {/* 3. European Partners */}
       <section className="py-20 lg:py-24 bg-white border-t border-slate-200/70">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                ERASMUS+ NETWORK
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-              EUROPEAN PARTNER UNIVERSITIES.
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 max-w-2xl font-normal leading-relaxed">
-              Alfa BK is an active Erasmus+ member. Students may apply for exchange semesters at these
-              partner institutions. All partnerships are subject to annual renewal and place availability.
-            </p>
-          </div>
+          <TitleSubtitle
+            kicker="ERASMUS+ NETWORK"
+            withGoldLine
+            uppercase
+            title="EUROPEAN PARTNER UNIVERSITIES."
+            subtitle="Alfa BK is an active Erasmus+ member. Students may apply for exchange semesters at these partner institutions. All partnerships are subject to annual renewal and place availability."
+            className="mb-12"
+          />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {europeanPartners.map((item) => (
@@ -207,21 +193,14 @@ export default function InternationalCooperationContent() {
       {/* 6. Global Partners */}
       <section className="py-20 lg:py-24 bg-[#F6F5F0] border-t border-slate-200/70">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                GLOBAL NETWORK
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-              PARTNERS BEYOND EUROPE.
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 max-w-2xl font-normal leading-relaxed">
-              Our cooperative network extends to leading institutions across Asia, the Americas and
-              the Middle East. All partnerships are provisional and subject to verification.
-            </p>
-          </div>
+          <TitleSubtitle
+            kicker="GLOBAL NETWORK"
+            withGoldLine
+            uppercase
+            title="PARTNERS BEYOND EUROPE."
+            subtitle="Our cooperative network extends to leading institutions across Asia, the Americas and the Middle East. All partnerships are provisional and subject to verification."
+            className="mb-12"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {globalPartners.map((p) => (
@@ -265,20 +244,15 @@ export default function InternationalCooperationContent() {
             ))}
           </div>
 
-          <div className="max-w-3xl mb-12">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                {officeContact.tag}
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
-              {officeContact.title}
-            </h2>
-            <p className="mt-3 text-sm text-slate-300 font-normal leading-relaxed">
-              {officeContact.description}
-            </p>
-          </div>
+          <TitleSubtitle
+            kicker={officeContact.tag}
+            withGoldLine
+            theme="dark"
+            uppercase
+            title={officeContact.title}
+            subtitle={officeContact.description}
+            className="mb-12"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {officeContact.contacts.map((c, idx) => (

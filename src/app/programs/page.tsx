@@ -4,7 +4,7 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { Search, ArrowRight } from "lucide-react";
 import { programsData } from "@/data";
-import { PageHero } from "@/components/shared";
+import { PageHero, Input } from "@/components/shared";
 
 export default function ProgramsPage() {
   const [search, setSearch] = useState("");
@@ -66,16 +66,14 @@ export default function ProgramsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl space-y-4">
             {/* Search Input */}
-            <div className="relative">
-              <Search className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-slate-400" />
-              <input
-                type="text"
-                placeholder="Search programs or faculties..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-white py-3 pr-4 pl-11 text-xs sm:text-sm text-slate-800 placeholder-slate-400 shadow-2xs focus:border-[#0B1E36] focus:outline-hidden"
-              />
-            </div>
+            <Input
+              type="text"
+              placeholder="Search programs or faculties..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              leftIcon={<Search className="h-4 w-4 text-slate-400" />}
+              className="py-3 text-xs sm:text-sm rounded-xl"
+            />
 
             {/* Level Filter Row */}
             <div className="flex flex-wrap items-center gap-2 pt-1">

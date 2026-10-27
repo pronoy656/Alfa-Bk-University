@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 import { homeData } from "@/data";
 
 export default function LifeAtAlfaBkSection() {
@@ -8,14 +9,13 @@ export default function LifeAtAlfaBkSection() {
     <section className="py-20 bg-[#FAF8F5]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-10 fade-up-scroll">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#BE9F5A]">
-            CAMPUS FEED
-          </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1E36] tracking-tight uppercase">
-            LIFE AT ALFA BK
-          </h2>
-        </div>
+        <TitleSubtitle
+          tag="CAMPUS FEED"
+          title="LIFE AT ALFA BK"
+          size="xl"
+          uppercase
+          className="mb-10 fade-up-scroll"
+        />
 
         {/* Multi-Dimensional Asymmetric Grid (5 cols - 3 cols - 4 cols) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 items-start">

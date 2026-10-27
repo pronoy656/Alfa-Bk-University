@@ -12,7 +12,7 @@ import {
   Scale,
   AlertCircle,
 } from "lucide-react";
-import { PageHero } from "@/components/shared";
+import { PageHero, Input } from "@/components/shared";
 import {
   hero,
   categoryKeys,
@@ -115,16 +115,16 @@ export default function DocumentLibraryContent() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Search Box */}
           <div className="flex flex-col sm:flex-row items-center gap-3 max-w-4xl">
-            <div className="relative flex-1 w-full">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
-              <input
-                type="text"
-                placeholder="Search documents by name, category, or keyword..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-lg border border-slate-200 bg-[#FBFBFA] pl-11 pr-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:border-[#113565] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#113565]"
-              />
-            </div>
+            <Input
+              type="text"
+              placeholder="Search documents by name, category, or keyword..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              leftIcon={<Search className="h-4 w-4 text-slate-400" />}
+              variant="filled"
+              className="py-3 text-sm rounded-lg"
+              containerClassName="flex-1 w-full"
+            />
             <button
               type="button"
               className="w-full sm:w-auto bg-[#113565] hover:bg-[#0c274d] text-white font-bold text-xs uppercase tracking-wider px-7 py-3.5 rounded-lg shadow-xs transition cursor-pointer"

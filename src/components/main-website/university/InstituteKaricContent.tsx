@@ -15,7 +15,7 @@ import {
   Scale,
   ShieldCheck,
 } from "lucide-react";
-import { PageHero } from "@/components/shared";
+import { PageHero, TitleSubtitle } from "@/components/shared";
 import {
   hero,
   stats,
@@ -110,15 +110,13 @@ export default function InstituteKaricContent() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column */}
             <div className="lg:col-span-7">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="h-[2px] w-6 bg-[#D5A754]" />
-                <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                  {content.about.tag}
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase leading-tight">
-                {content.about.title}
-              </h2>
+              <TitleSubtitle
+                kicker={content.about.tag}
+                withGoldLine
+                uppercase
+                title={content.about.title}
+                maxWidth="none"
+              />
               {content.about.paragraphs.map((para, idx) => (
                 <p
                   key={idx}
@@ -187,21 +185,16 @@ export default function InstituteKaricContent() {
       <section className="py-20 lg:py-24 bg-[#113565] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                WHAT WE DO
-              </span>
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase leading-tight">
-              AREAS OF ACTIVITY
-            </h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-300 font-normal">
-              Six pillars of the Institute&apos;s engagement
-            </p>
-          </div>
+          <TitleSubtitle
+            align="center"
+            kicker="WHAT WE DO"
+            withGoldLine
+            theme="dark"
+            uppercase
+            title="AREAS OF ACTIVITY"
+            subtitle="Six pillars of the Institute's engagement"
+            className="mb-14"
+          />
 
           {/* 6 Cards Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -236,21 +229,14 @@ export default function InstituteKaricContent() {
       <section id="research" className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="mb-14">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                RESEARCH
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-              ACTIVE RESEARCH PROJECTS
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 max-w-3xl font-normal leading-relaxed">
-              The Institute hosts six active research groups. Full project details, team members, and
-              findings will be published upon completion.
-            </p>
-          </div>
+          <TitleSubtitle
+            kicker="RESEARCH"
+            withGoldLine
+            uppercase
+            title="ACTIVE RESEARCH PROJECTS"
+            subtitle="The Institute hosts six active research groups. Full project details, team members, and findings will be published upon completion."
+            className="mb-14"
+          />
 
           {/* 6 Research Cards Grid (2 cols x 3 rows) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -292,20 +278,13 @@ export default function InstituteKaricContent() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="h-[2px] w-6 bg-[#D5A754]" />
-                <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                  ACADEMIC OUTPUT
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-                PUBLICATIONS & JOURNAL
-              </h2>
-              <p className="mt-2 text-sm text-slate-600">
-                The Alfa BK Academic Journal and conference proceedings. Current volume in preparation.
-              </p>
-            </div>
+            <TitleSubtitle
+              kicker="ACADEMIC OUTPUT"
+              withGoldLine
+              uppercase
+              title="PUBLICATIONS & JOURNAL"
+              subtitle="The Alfa BK Academic Journal and conference proceedings. Current volume in preparation."
+            />
             <Link
               href="/news"
               className="inline-flex items-center justify-center bg-[#113565] hover:bg-[#0c274d] text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition self-start sm:self-auto"
@@ -361,20 +340,13 @@ export default function InstituteKaricContent() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="h-[2px] w-6 bg-[#D5A754]" />
-                <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                  UPCOMING
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-                EVENTS & CONFERENCES
-              </h2>
-              <p className="mt-2 text-sm text-slate-600">
-                Lectures, symposia, award ceremonies and cultural evenings. Programme announced each semester.
-              </p>
-            </div>
+            <TitleSubtitle
+              kicker="UPCOMING"
+              withGoldLine
+              uppercase
+              title="EVENTS & CONFERENCES"
+              subtitle="Lectures, symposia, award ceremonies and cultural evenings. Programme announced each semester."
+            />
             <Link
               href="/news-events"
               className="inline-flex items-center justify-center bg-[#113565] hover:bg-[#0c274d] text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition self-start sm:self-auto"
@@ -427,21 +399,16 @@ export default function InstituteKaricContent() {
       <section className="py-20 lg:py-24 bg-[#113565] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                CAMPUS LIFE
-              </span>
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase leading-tight">
-              INSTITUTE IN PICTURES
-            </h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-300 font-normal">
-              Photographs from Institute events, lectures, and campus life. Gallery updated each semester.
-            </p>
-          </div>
+          <TitleSubtitle
+            align="center"
+            kicker="CAMPUS LIFE"
+            withGoldLine
+            theme="dark"
+            uppercase
+            title="INSTITUTE IN PICTURES"
+            subtitle="Photographs from Institute events, lectures, and campus life. Gallery updated each semester."
+            className="mb-14"
+          />
 
           {/* 3 Photos */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

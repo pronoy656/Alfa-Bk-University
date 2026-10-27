@@ -10,7 +10,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { newsEventsData } from "@/data";
-import { PageHero } from "@/components/shared";
+import { PageHero, Input } from "@/components/shared";
 
 const FEATURE_ICONS: Record<string, React.ReactNode> = {
   BookOpen: <BookOpen className="h-5 w-5 text-[#D5A754]" />,
@@ -49,19 +49,19 @@ export default function LibraryView() {
             onSubmit={handleSearch}
             className="flex items-center gap-2 rounded-2xl border border-slate-200/90 bg-white p-2 sm:p-2.5 shadow-xl shadow-slate-200/60"
           >
-            <div className="relative flex flex-1 items-center">
-              <Search className="pointer-events-none absolute left-3.5 h-4 w-4 text-slate-400" />
-              <input
-                type="text"
-                value={catalogQuery}
-                onChange={(e) => {
-                  setCatalogQuery(e.target.value);
-                  if (searched) setSearched(false);
-                }}
-                placeholder={library.searchPlaceholder}
-                className="w-full bg-transparent py-2.5 pr-4 pl-10 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-hidden"
-              />
-            </div>
+            <Input
+              type="text"
+              value={catalogQuery}
+              onChange={(e) => {
+                setCatalogQuery(e.target.value);
+                if (searched) setSearched(false);
+              }}
+              placeholder={library.searchPlaceholder}
+              leftIcon={<Search className="h-4 w-4 text-slate-400" />}
+              variant="outline"
+              className="border-transparent focus:border-transparent focus:ring-0 shadow-none text-xs sm:text-sm py-2.5"
+              containerClassName="flex-1"
+            />
             <button
               type="submit"
               className="rounded-xl bg-[#C69234] hover:bg-[#B87A1E] px-4 sm:px-6 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-xs transition cursor-pointer shrink-0"

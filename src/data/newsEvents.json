@@ -4,7 +4,7 @@
     "title": "News & Events",
     "subtitle": "Achievements, announcements, media, and what's happening on campus.",
     "bgImage": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=2000&q=80",
-    "heroImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+    "heroImage": "/24d20d9426b01552e1f0e76c4f41a02bda9d7aae.jpg"
   },
   "featuredNews": {
     "id": "top-100-young-universities",
@@ -12,7 +12,7 @@
     "date": "Jul 2, 2026",
     "title": "Alfa BK ranked among Top 100 Young Universities worldwide",
     "excerpt": "The 2026 global rankings recognize Alfa BK University's rapid rise in research output and graduate employability.",
-    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    "image": "/24d20d9426b01552e1f0e76c4f41a02bda9d7aae.jpg",
     "readTime": "4 min read",
     "featured": true
   },
@@ -31,7 +31,7 @@
       "date": "Jun 18, 2026",
       "title": "Record 3,200 international applications for Fall 2026",
       "excerpt": "Applications from 74 countries mark a 28% year-on-year increase for the upcoming..",
-      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+      "image": "/0c2239dd77e20bfac14116b810004a66b2b082b7.jpg"
     },
     {
       "id": "partnership-european-universities",
@@ -39,7 +39,7 @@
       "date": "Jun 9, 2026",
       "title": "Alfa BK signs partnership with 5 European universities",
       "excerpt": "New Erasmus+ agreements expand exchange opportunities for over 800 students annually.",
-      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+      "image": "/8fd272653a20ef37c1e2c830af7a5638e9445685.jpg"
     }
   ],
   "upcomingEvents": [
@@ -73,7 +73,7 @@
       "title": "Freshers Orientation Week",
       "time": "All day",
       "location": "Campus-wide",
-      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80",
+      "image": "/24d20d9426b01552e1f0e76c4f41a02bda9d7aae.jpg",
       "category": "Sports"
     },
     {
@@ -115,7 +115,7 @@
       "title": "Record 3,200 international applications for Fall 2026",
       "description": "Applications from 74 countries mark a 28% year-on-year increase for the upcoming academic year.",
       "location": "Admissions Office",
-      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+      "image": "/0c2239dd77e20bfac14116b810004a66b2b082b7.jpg"
     },
     {
       "id": "all-partnership-europe",
@@ -124,7 +124,7 @@
       "title": "Alfa BK signs partnership with 5 European universities",
       "description": "New Erasmus+ agreements expand exchange opportunities for over 800 students annually.",
       "location": "International Relations Office",
-      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+      "image": "/8fd272653a20ef37c1e2c830af7a5638e9445685.jpg"
     },
     {
       "id": "all-career-fair",
@@ -160,7 +160,7 @@
       "title": "Freshers Orientation Week",
       "description": "Welcome to Alfa BK! Meet your peers, explore campus, and get ready for an amazing journey.",
       "location": "Campus-wide",
-      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+      "image": "/24d20d9426b01552e1f0e76c4f41a02bda9d7aae.jpg"
     },
     {
       "id": "all-entrepreneurship-workshop",
@@ -169,7 +169,7 @@
       "title": "Innovation & Entrepreneurship Workshop",
       "description": "Learn from industry experts and turn your ideas into impactful solutions.",
       "location": "Business Incubation Center",
-      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+      "image": "/d51b39cf482c946028913aa1dcd650b60234b40e.jpg"
     }
   ],
   "library": {
@@ -203,6 +203,6 @@
         "icon": "Globe"
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1600&q=80"
+    "heroImage": "/30077f4e0c868154e1556973be2faca8967d6e07.jpg"
   }
 }

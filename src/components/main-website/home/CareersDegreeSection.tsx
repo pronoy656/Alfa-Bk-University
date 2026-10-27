@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Compass, ArrowRight } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 import { homeData } from "@/data";
 
 export default function CareersDegreeSection() {
@@ -13,7 +14,7 @@ export default function CareersDegreeSection() {
           <div className="lg:col-span-5 fade-up-scroll">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-slate-100">
               <img
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
+                src="/8857b18bb800e6c1325a0a319d6a30f099236053.jpg"
                 alt="Students career and industry preparation"
                 className="w-full h-full object-cover"
               />
@@ -22,15 +23,15 @@ export default function CareersDegreeSection() {
 
           {/* Right Column: Careers Copy */}
           <div className="lg:col-span-7 fade-up-scroll">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#BE9F5A]">
-              CAREERS & INDUSTRY
-            </p>
-            <h2 className="mt-2 text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0B1E36] tracking-tight leading-tight uppercase">
-              WHAT CAN YOU DO WITH YOUR DEGREE?
-            </h2>
-            <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-2xl">
-              Connect your study choices to real sectors, roles and skills – from fintech and AI to diplomacy, sport, media and the arts.
-            </p>
+            <TitleSubtitle
+              tag="CAREERS & INDUSTRY"
+              title="WHAT CAN YOU DO WITH YOUR DEGREE?"
+              subtitle="Connect your study choices to real sectors, roles and skills – from fintech and AI to diplomacy, sport, media and the arts."
+              size="lg"
+              uppercase
+              titleClassName="lg:text-[42px]"
+              maxWidth="none"
+            />
 
             {/* Industry Pills */}
             <div className="mt-6 flex flex-wrap items-center gap-2.5">

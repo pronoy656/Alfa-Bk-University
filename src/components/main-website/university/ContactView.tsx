@@ -15,7 +15,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { universityData, facultiesData } from "@/data";
-import { PageHero, UniversityGradient } from "@/components/shared";
+import { PageHero, UniversityGradient, Input } from "@/components/shared";
 
 export default function ContactView() {
   const { contact } = universityData;
@@ -136,52 +136,37 @@ export default function ContactView() {
                   onSubmit={handleSubmit}
                   className="mt-8 space-y-4 rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm sm:p-8"
                 >
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase">
-                      FULL NAME *
-                    </label>
-                    <input
-                      required
-                      type="text"
-                      placeholder="Your full name"
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
-                      className="mt-1.5 w-full rounded-xl border border-slate-200 bg-slate-50/50 p-3 text-xs text-slate-900 focus:border-blue-500 focus:bg-white focus:outline-hidden"
-                    />
-                  </div>
+                  <Input
+                    label="Full Name *"
+                    required
+                    type="text"
+                    placeholder="Your full name"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
+                  />
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase">
-                        EMAIL ADDRESS *
-                      </label>
-                      <input
-                        required
-                        type="email"
-                        placeholder="you@example.com"
-                        value={formData.email}
-                        onChange={(e) =>
-                          setFormData({ ...formData, email: e.target.value })
-                        }
-                        className="mt-1.5 w-full rounded-xl border border-slate-200 bg-slate-50/50 p-3 text-xs text-slate-900 focus:border-blue-500 focus:bg-white focus:outline-hidden"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase">
-                        PHONE NUMBER
-                      </label>
-                      <input
-                        type="tel"
-                        placeholder="+381 60 123 4567"
-                        value={formData.phone}
-                        onChange={(e) =>
-                          setFormData({ ...formData, phone: e.target.value })
-                        }
-                        className="mt-1.5 w-full rounded-xl border border-slate-200 bg-slate-50/50 p-3 text-xs text-slate-900 focus:border-blue-500 focus:bg-white focus:outline-hidden"
-                      />
-                    </div>
+                    <Input
+                      label="Email Address *"
+                      required
+                      type="email"
+                      placeholder="you@example.com"
+                      value={formData.email}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
+                    />
+                    <Input
+                      label="Phone Number"
+                      type="tel"
+                      placeholder="+381 60 123 4567"
+                      value={formData.phone}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
+                    />
                   </div>
 
                   <div>

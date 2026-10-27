@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Search, ArrowRight, Sparkles } from "lucide-react";
 import { homeData } from "@/data";
+import { Input } from "@/components/shared";
 
 export default function HeroSection() {
   const router = useRouter();
@@ -21,7 +22,7 @@ export default function HeroSection() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=2000&q=80')",
+              "url('/d09b8bf4e6edfa81783a8c38e81ad142f70b718f.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/80 via-[#0B1E36]/60 to-[#0B1E36]/35" />
@@ -59,15 +60,15 @@ export default function HeroSection() {
               }}
               className="hero-animate-fade-up hero-delay-500 mt-8 max-w-xl flex items-center bg-[#0B1E36]/90 border border-white/20 rounded-xl p-1.5 focus-within:border-[#D5A754] transition shadow-lg"
             >
-              <div className="pl-3.5 pr-2 text-slate-400">
-                <Search className="w-5 h-5 text-slate-300" />
-              </div>
-              <input
+              <Input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search 138 programs — e.g. Computer Science, MBA, Law..."
-                className="w-full bg-transparent text-sm text-white placeholder-slate-400 focus:outline-none px-2 py-2"
+                leftIcon={<Search className="w-5 h-5 text-slate-300" />}
+                variant="outline"
+                className="border-transparent text-sm text-white placeholder-slate-400 focus:border-transparent focus:ring-0 shadow-none px-2 py-2"
+                containerClassName="flex-1 w-full"
               />
               <button
                 type="submit"

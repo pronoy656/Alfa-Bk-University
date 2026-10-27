@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
+import Input from "./Input";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0C213B] text-slate-300 border-t border-slate-800/80 mt-auto">
+    <footer className="bg-[#113565] text-slate-300 border-t border-slate-800/80 mt-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           {/* Column 1: Brand & Contact & Socials (4 cols) */}
@@ -108,6 +109,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/student-parliament" className="hover:text-white transition">
+                  Student Parliament
+                </Link>
+              </li>
+              <li>
                 <Link href="/news-events" className="hover:text-white transition">
                   News & Events
                 </Link>
@@ -183,11 +189,13 @@ export default function Footer() {
               }}
               className="flex items-center gap-2"
             >
-              <input
+              <Input
                 type="email"
                 required
                 placeholder="Email address"
-                className="w-full bg-white text-slate-900 border border-transparent rounded-lg px-3 py-2 text-xs placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#D5A754] transition"
+                inputSize="sm"
+                className="bg-white text-slate-900 border-transparent text-xs placeholder-slate-400 focus:ring-2 focus:ring-[#D5A754]"
+                containerClassName="flex-1 w-full"
               />
               <button
                 type="submit"

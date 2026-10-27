@@ -1,234 +1,572 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import {
-  Briefcase,
-  Building2,
-  GraduationCap,
-  Users,
-  Target,
-  ArrowRight,
-  Award,
-  CheckCircle2,
-  Calendar,
-  Mail,
-  Phone,
-} from "lucide-react";
-import PageHero from "@/components/shared/PageHero";
-import { Button, Card, Badge } from "@/components/shared";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Career & Industry | Alfa BK University",
-  description:
-    "Bridging academic excellence with real-world industry leaders. Discover career development services, internship placements, and corporate partnerships.",
-};
+import React, { useState } from "react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function CareerIndustryPage() {
-  const stats = [
-    { label: "Graduate Employment Rate", value: "94%", detail: "within 6 months of graduation" },
-    { label: "Corporate & Industry Partners", value: "200+", detail: "leading global & local organizations" },
-    { label: "Internship Placements", value: "1,500+", detail: "annual paid internship opportunities" },
-    { label: "Recruiter Networking Events", value: "25+", detail: "job fairs and workshops per year" },
+  const [activeOutcomeTab, setActiveOutcomeTab] = useState<
+    "economics" | "it" | "arts"
+  >("economics");
+
+  const outcomesData = {
+    economics: {
+      kicker: "ECONOMICS · EXAMPLE PATHS",
+      title: "FROM ANALYSIS TO DECISION-MAKING",
+      subtitle:
+        "Illustrative directions only. Outcomes vary by programme, experience and employer requirements.",
+      paths: [
+        {
+          num: "01",
+          title: "Business and financial analysis",
+        },
+        {
+          num: "02",
+          title: "Operations and project coordination",
+        },
+        {
+          num: "03",
+          title: "Entrepreneurship and consulting",
+        },
+        {
+          num: "04",
+          title: "Public, nonprofit and research support",
+        },
+      ],
+    },
+    it: {
+      kicker: "INFORMATION TECHNOLOGY · EXAMPLE PATHS",
+      title: "FROM CODE TO DIGITAL PRODUCTS",
+      subtitle:
+        "Illustrative directions only. Outcomes vary by programme, experience and employer requirements.",
+      paths: [
+        {
+          num: "01",
+          title: "Software development and engineering",
+        },
+        {
+          num: "02",
+          title: "Data analytics and systems architecture",
+        },
+        {
+          num: "03",
+          title: "Cybersecurity and network administration",
+        },
+        {
+          num: "04",
+          title: "Product management and technical consulting",
+        },
+      ],
+    },
+    arts: {
+      kicker: "ARTS & MEDIA · EXAMPLE PATHS",
+      title: "FROM CREATIVITY TO PRODUCTION",
+      subtitle:
+        "Illustrative directions only. Outcomes vary by programme, experience and employer requirements.",
+      paths: [
+        {
+          num: "01",
+          title: "Digital media and creative direction",
+        },
+        {
+          num: "02",
+          title: "Visual design, branding and animation",
+        },
+        {
+          num: "03",
+          title: "Cultural curation and arts administration",
+        },
+        {
+          num: "04",
+          title: "Freelance production and studio practice",
+        },
+      ],
+    },
+  };
+
+  const currentOutcome = outcomesData[activeOutcomeTab];
+
+  const careerServices = [
+    {
+      num: "01",
+      title: "Career direction & goal setting",
+    },
+    {
+      num: "02",
+      title: "CV, portfolio & interview preparation",
+    },
+    {
+      num: "03",
+      title: "Internship and opportunity navigation",
+    },
+    {
+      num: "04",
+      title: "Employer introductions & career events",
+    },
+    {
+      num: "05",
+      title: "Mentorship and alumni connections",
+    },
+    {
+      num: "06",
+      title: "Entrepreneurship and project guidance",
+    },
   ];
 
-  const services = [
+  const employerConnections = [
     {
-      title: "Individual Career Coaching",
-      desc: "One-on-one sessions with seasoned HR advisors to optimize CVs, tailor cover letters, and prepare for high-stakes interviews.",
-      icon: Users,
+      num: "01",
+      title: "Internships",
+      theme: "white",
     },
     {
-      title: "Corporate Internship Placement",
-      desc: "Guaranteed access to verified internships across our 6 faculties, granting real industry experience before graduation.",
-      icon: Briefcase,
+      num: "02",
+      title: "Employment",
+      theme: "white",
     },
     {
-      title: "Industry Mentorship Program",
-      desc: "Connect with high-achieving alumni and senior executives who provide ongoing professional guidance and insider insights.",
-      icon: Target,
+      num: "03",
+      title: "Mentorship",
+      theme: "red", // Solid red/burgundy card
     },
     {
-      title: "Annual Career & Tech Fairs",
-      desc: "Direct recruitment days on campus where Fortune 500 companies and regional champions interview students on the spot.",
-      icon: Building2,
+      num: "04",
+      title: "Guest lectures",
+      theme: "white",
+    },
+    {
+      num: "05",
+      title: "Live projects",
+      theme: "navy", // Solid navy card
+    },
+    {
+      num: "06",
+      title: "Scholarships",
+      theme: "white",
     },
   ];
 
-  const partnerSectors = [
+  const alumniProfiles = [
     {
-      name: "Banking & Financial Services",
-      desc: "Commercial banks, investment firms, audit conglomerates, and fintech disruptors.",
-      partners: ["Banca Intesa", "UniCredit Bank", "Erste Bank", "KPMG", "Deloitte"],
+      photo: "/d8cfd35298abf018885901538bce6a11c882ea4e.jpg",
+      studied: "Economics",
+      role: "Business operations",
+      path: "Coursework + student project + internship + first role",
     },
     {
-      name: "Technology & Software Engineering",
-      desc: "Tier-1 software development houses, cloud service providers, and AI startups.",
-      partners: ["Microsoft Development Center", "Nordeus", "Schneider Electric", "Endava"],
+      photo: "/006cc1cfa442fbac675b6f6549e2b7458668d501.jpg",
+      studied: "Information Technology",
+      role: "Product development",
+      path: "Lab practice + mentor feedback + portfolio + junior team",
     },
     {
-      name: "Legal, Media & Sports Management",
-      desc: "National law associations, broadcast networks, sports federations, and marketing agencies.",
-      partners: ["Serbian Olympic Committee", "Arena Channels Group", "Karanovic & Partners"],
+      photo: "/d51b39cf482c946028913aa1dcd650b60234b40e.jpg",
+      studied: "Arts",
+      role: "Creative production",
+      path: "Studio brief + public showcase + collaboration + independent practice",
     },
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen">
+    <div className="bg-[#FAF8F5] text-slate-900 min-h-screen">
+      {/* ========================================================= */}
       {/* 1. HERO SECTION */}
-      <PageHero
-        badge="Career & Industry"
-        title="Connecting Ambition with Global Industry"
-        description="At Alfa BK University, your career starts on day one. We partner directly with leading financial institutions, IT powerhouses, and industry pioneers to turn academic knowledge into thriving professional careers."
-        backLink={{ label: "Back to Home", href: "/" }}
-      />
+      {/* ========================================================= */}
+      <section className="relative min-h-[500px] lg:min-h-[540px] flex items-center bg-[#0B1E36] text-white overflow-hidden">
+        {/* Background photo: Students discussing at meeting table */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('/24d20d9426b01552e1f0e76c4f41a02bda9d7aae.jpg')",
+          }}
+        />
+        {/* Lighter Navy gradient overlays */}
+        <div className="absolute inset-0 bg-[#0B1E36]/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E36]/85 via-[#0B1E36]/50 to-[#0B1E36]/20" />
 
-      {/* 2. STATS BANNER */}
-      <section className="container mx-auto px-4 -mt-10 relative z-10 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {stats.map((s, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-2xl p-6 shadow-md border border-slate-200/80 hover:shadow-lg transition-shadow"
-            >
-              <div className="text-3xl lg:text-4xl font-extrabold text-[#113565] tracking-tight">
-                {s.value}
-              </div>
-              <div className="mt-2 text-sm font-bold text-slate-800">
-                {s.label}
-              </div>
-              <div className="mt-1 text-xs text-slate-500">
-                {s.detail}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 3. CAREER CENTER SERVICES */}
-      <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <Badge variant="info" className="mb-2">
-            Career Development Center
-          </Badge>
-          <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
-            Empowering Your Professional Journey
-          </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base">
-            From your freshman orientation through executive graduation, our dedicated Career Services team equips you with the competitive skills employers demand.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((svc, i) => {
-            const Icon = svc.icon;
-            return (
-              <Card
-                key={i}
-                variant="default"
-                padding="lg"
-                className="hover:-translate-y-1 transition-transform border-slate-200"
-              >
-                <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#113565] flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  {svc.title}
-                </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  {svc.desc}
-                </p>
-              </Card>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* 4. INDUSTRY PARTNER SECTORS */}
-      <section className="bg-white border-y border-slate-200 py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center mb-12">
-            <Badge variant="warning" className="mb-2">
-              Industry Partnerships
-            </Badge>
-            <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
-              Trusted by 200+ Premier Employers
-            </h2>
-            <p className="mt-3 text-slate-600 text-sm sm:text-base">
-              Alfa BK University maintains active Memorandums of Understanding (MoU) with domestic and multinational leaders across every key academic field.
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+          <div className="max-w-3xl">
+            {/* Kicker */}
+            <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754] mb-4">
+              CAREERS & INDUSTRY · YOUR NEXT CHAPTER
             </p>
+
+            {/* Headline */}
+            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-black uppercase tracking-tight leading-[1.1] text-white">
+              TURN WHAT YOU LEARN
+              <br />
+              INTO WHAT YOU DO.
+            </h1>
+
+            {/* Subtitle */}
+            <p className="mt-6 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
+              Explore possible directions, build practical experience and meet the people
+              who can help you move from education to opportunity.
+            </p>
+
+            {/* Action Buttons */}
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="#possible-outcomes"
+                className="inline-flex items-center justify-center bg-[#C69A4C] hover:bg-[#b08539] text-slate-950 font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg shadow-lg shadow-amber-900/20 transition cursor-pointer"
+              >
+                EXPLORE CAREER PATHS
+              </a>
+              <Link
+                href="/university/contact"
+                className="inline-flex items-center justify-center border border-white/30 hover:border-white text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg hover:bg-white/10 transition cursor-pointer"
+              >
+                BOOK A CONSULTATION
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================= */}
+      {/* 2. EXPLORE POSSIBLE OUTCOMES: WHAT CAN I DO WITH THIS EDUCATION? */}
+      {/* ========================================================= */}
+      <section id="possible-outcomes" className="py-16 lg:py-24 bg-[#FAF8F5]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="h-[2px] w-8 bg-[#D5A754] mb-3" />
+          <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
+            EXPLORE POSSIBLE OUTCOMES
+          </p>
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0B1E36] tracking-tight uppercase leading-tight mt-2">
+            WHAT CAN I DO WITH THIS EDUCATION?
+          </h2>
+
+          {/* Filter Pills */}
+          <div className="flex flex-wrap items-center gap-3 mt-7">
+            <button
+              onClick={() => setActiveOutcomeTab("economics")}
+              className={`px-5 py-2 rounded-full text-xs font-bold transition cursor-pointer ${
+                activeOutcomeTab === "economics"
+                  ? "bg-[#0C213B] text-white shadow-sm"
+                  : "bg-white border border-slate-300 text-slate-700 hover:border-slate-400"
+              }`}
+            >
+              Economics
+            </button>
+            <button
+              onClick={() => setActiveOutcomeTab("it")}
+              className={`px-5 py-2 rounded-full text-xs font-bold transition cursor-pointer ${
+                activeOutcomeTab === "it"
+                  ? "bg-[#0C213B] text-white shadow-sm"
+                  : "bg-white border border-slate-300 text-slate-700 hover:border-slate-400"
+              }`}
+            >
+              Information Technology
+            </button>
+            <button
+              onClick={() => setActiveOutcomeTab("arts")}
+              className={`px-5 py-2 rounded-full text-xs font-bold transition cursor-pointer ${
+                activeOutcomeTab === "arts"
+                  ? "bg-[#0C213B] text-white shadow-sm"
+                  : "bg-white border border-slate-300 text-slate-700 hover:border-slate-400"
+              }`}
+            >
+              Arts
+            </button>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {partnerSectors.map((sector, idx) => (
-              <div
-                key={idx}
-                className="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between"
-              >
-                <div>
-                  <h3 className="text-lg font-bold text-[#113565] mb-2">
-                    {sector.name}
-                  </h3>
-                  <p className="text-xs text-slate-600 mb-6 leading-relaxed">
-                    {sector.desc}
-                  </p>
-                  <div className="space-y-2.5">
-                    {sector.partners.map((partner, pIdx) => (
-                      <div
-                        key={pIdx}
-                        className="flex items-center gap-2.5 text-xs font-semibold text-slate-700 bg-white px-3.5 py-2.5 rounded-xl border border-slate-200/80 shadow-2xs"
-                      >
-                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{partner}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+          {/* Paths Card Box */}
+          <div className="mt-8 rounded-2xl border border-slate-200/90 bg-white p-7 sm:p-9 shadow-xs">
+            <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
+              {currentOutcome.kicker}
+            </p>
+            <h3 className="text-xl sm:text-2xl font-black text-[#0B1E36] tracking-tight uppercase mt-1">
+              {currentOutcome.title}
+            </h3>
+            <p className="text-xs text-slate-500 mt-2">
+              {currentOutcome.subtitle}
+            </p>
 
-                <div className="mt-6 pt-4 border-t border-slate-200/80">
-                  <span className="text-xs font-semibold text-blue-700 inline-flex items-center gap-1">
-                    Direct recruitment pipelines <ArrowRight className="w-3.5 h-3.5" />
+            {/* List of 4 paths */}
+            <div className="mt-8 divide-y divide-slate-100">
+              {currentOutcome.paths.map((p, idx) => (
+                <div key={idx} className="py-4 first:pt-0 last:pb-0">
+                  <span className="text-xs font-semibold text-slate-400 font-mono">
+                    {p.num}
                   </span>
+                  <h4 className="text-sm sm:text-base font-bold text-[#0B1E36] mt-0.5">
+                    {p.title}
+                  </h4>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================= */}
+      {/* 3. ALFA BK CAREER OFFICE: FROM EDUCATION TO OPPORTUNITY */}
+      {/* ========================================================= */}
+      <section className="py-16 lg:py-24 bg-[#113565] text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="h-[2px] w-8 bg-[#D5A754] mb-3" />
+          <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
+            ALFA BK CAREER OFFICE
+          </p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight uppercase leading-tight mt-2">
+            FROM EDUCATION TO OPPORTUNITY.
+          </h2>
+          <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
+            A practical point of contact for students and alumni preparing for work,
+            further study or a new direction. Services are tailored to your next decision.
+          </p>
+
+          <Link
+            href="/university/contact"
+            className="inline-flex items-center justify-center bg-[#C69A4C] hover:bg-[#b08539] text-slate-950 font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg shadow-lg shadow-amber-900/20 transition cursor-pointer mt-6"
+          >
+            BOOK A CAREER CONSULTATION
+          </Link>
+
+          {/* 6 Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+            {careerServices.map((svc) => (
+              <div
+                key={svc.num}
+                className="rounded-2xl border border-white/10 bg-[#16355C]/40 p-6 backdrop-blur-xs hover:border-amber-400/40 hover:bg-[#16355C]/55 transition"
+              >
+                <span className="text-xs font-semibold text-slate-400 font-mono">
+                  {svc.num}
+                </span>
+                <h4 className="text-sm sm:text-base font-bold text-white mt-3">
+                  {svc.title}
+                </h4>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 5. CONTACT & RECRUITMENT CTA */}
-      <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-gradient-to-r from-[#113565] via-[#1a4884] to-[#113565] p-8 md:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="max-w-xl">
-            <span className="text-xs font-bold tracking-widest text-[#E5A83B] uppercase">
-              Looking to Hire or Partner?
-            </span>
-            <h2 className="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight">
-              Connect with Alfa BK University Career Center
-            </h2>
-            <p className="mt-3 text-sm text-slate-200 leading-relaxed">
-              Whether you are an employer looking for top-tier interns, or a student preparing your initial resume, we are here to support your success.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-4 text-xs text-slate-200">
-              <span className="inline-flex items-center gap-1.5">
-                <Mail className="w-4 h-4 text-[#E5A83B]" /> careers@alfa.edu.rs
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Phone className="w-4 h-4 text-[#E5A83B]" /> +381 11 2674 164
-              </span>
+      {/* ========================================================= */}
+      {/* 4. INDUSTRY CONNECTION: MEET YOUR FUTURE EMPLOYERS */}
+      {/* ========================================================= */}
+      <section className="py-16 lg:py-24 bg-[#FAF8F5]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="h-[2px] w-8 bg-[#D5A754] mb-3" />
+          <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
+            INDUSTRY CONNECTION
+          </p>
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0B1E36] tracking-tight uppercase leading-tight mt-2">
+            MEET YOUR FUTURE EMPLOYERS
+          </h2>
+          <p className="mt-2 text-xs sm:text-sm text-slate-600 max-w-3xl leading-relaxed">
+            Not a logo wall: a working relationship between education and industry, built
+            around useful encounters and real briefs. Participating organisations and
+            opportunities remain provisional until confirmed.
+          </p>
+
+          {/* 6 Formats Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-8">
+            {employerConnections.map((item) => {
+              const isRed = item.theme === "red";
+              const isNavy = item.theme === "navy";
+
+              return (
+                <div
+                  key={item.num}
+                  className={`rounded-2xl p-6 flex flex-col justify-between min-h-[140px] shadow-xs transition duration-200 hover:-translate-y-0.5 ${
+                    isRed
+                      ? "bg-[#A2302F] text-white"
+                      : isNavy
+                      ? "bg-[#0C213B] text-white"
+                      : "bg-white border border-slate-200/90 text-slate-900"
+                  }`}
+                >
+                  <span
+                    className={`text-xs font-mono font-semibold ${
+                      isRed || isNavy ? "text-white/60" : "text-[#B91C1C]"
+                    }`}
+                  >
+                    {item.num}
+                  </span>
+                  <h4 className="text-sm font-bold mt-6">{item.title}</h4>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================= */}
+      {/* 5. HANDS-ON LEARNING: REAL EXPERIENCE. BEFORE YOU GRADUATE. (Crimson #A2302F) */}
+      {/* ========================================================= */}
+      <section className="bg-[#A2302F] py-16 lg:py-24 text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left Column: Lecture Hall Image */}
+            <div className="lg:col-span-6">
+              <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[16/11] bg-slate-900/20">
+                <img
+                  src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80"
+                  alt="Students interactive lecture in university hall"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Column: Copy & Link */}
+            <div className="lg:col-span-6">
+              <div className="h-[2px] w-8 bg-[#FCD34D] mb-3" />
+              <p className="text-xs font-bold uppercase tracking-wider text-[#FCD34D]">
+                HANDS-ON LEARNING
+              </p>
+              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-black uppercase tracking-tight leading-[1.1] text-white mt-2">
+                REAL EXPERIENCE.
+                <br />
+                BEFORE YOU
+                <br />
+                GRADUATE.
+              </h2>
+              <p className="mt-5 text-xs sm:text-sm text-white/90 leading-relaxed max-w-xl">
+                Students work on actual events, club operations, and sport marketing
+                campaigns. Supervised internships, studio briefs, and collaborative industry
+                projects connect theory to the profession from day one. Availability depends
+                on faculty and confirmed partners.
+              </p>
+
+              <div className="mt-8">
+                <Link
+                  href="/programs"
+                  className="inline-flex items-center justify-center border border-white/40 hover:border-white text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg hover:bg-white/10 transition cursor-pointer"
+                >
+                  EXPLORE FACULTIES & PROGRAMS
+                </Link>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+      {/* ========================================================= */}
+      {/* 6. ALUMNI STORIES: WHERE ARE THEY NOW? */}
+      {/* ========================================================= */}
+      <section className="py-16 lg:py-24 bg-[#0C213B] text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="h-[2px] w-8 bg-[#D5A754] mb-3" />
+          <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
+            ALUMNI STORIES
+          </p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight uppercase leading-tight mt-2">
+            WHERE ARE THEY NOW?
+          </h2>
+
+          {/* 3 Alumni Profile Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            {alumniProfiles.map((p, idx) => (
+              <div
+                key={idx}
+                className="rounded-2xl bg-[#FFFDF8] p-5 text-slate-900 shadow-lg flex flex-col justify-between hover:shadow-xl transition"
+              >
+                <div>
+                  <div className="rounded-xl overflow-hidden aspect-[4/3] bg-slate-100">
+                    <img
+                      src={p.photo}
+                      alt={p.role}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-[#992626] mt-4 mb-2">
+                    ILLUSTRATIVE ALUMNI PROFILE
+                  </p>
+
+                  <div className="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                    <p>
+                      What I studied •{" "}
+                      <strong className="text-slate-900 font-bold">
+                        {p.studied}
+                      </strong>
+                    </p>
+                    <p>
+                      What I do today •{" "}
+                      <strong className="text-slate-900 font-bold">
+                        {p.role}
+                      </strong>
+                    </p>
+                    <p className="text-[11px] text-slate-500 pt-1">
+                      How I got there • {p.path}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* 3 Footer Link Buttons */}
+          <div className="flex flex-wrap items-center gap-3.5 mt-9">
             <Link
-              href="/university/contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E5A83B] text-slate-900 font-bold text-xs uppercase tracking-wider hover:bg-[#d4962c] transition shadow"
+              href="/programs"
+              className="inline-flex items-center justify-center border border-white/20 hover:border-white text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg transition"
             >
-              Contact Career Office
+              BROWSE FACULTIES
             </Link>
             <Link
-              href="/apply-now"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white/10 text-white font-bold text-xs uppercase tracking-wider hover:bg-white/20 transition border border-white/20"
+              href="/programs"
+              className="inline-flex items-center justify-center border border-white/20 hover:border-white text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg transition"
             >
-              Enroll Now
+              EXPLORE PROGRAMS
+            </Link>
+            <Link
+              href="/university/alumni"
+              className="inline-flex items-center justify-center border border-white/20 hover:border-white text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg transition"
+            >
+              MEET ALUMNI
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================= */}
+      {/* 7. CTA BANNER: YOUR FUTURE STARTS HERE. */}
+      {/* ========================================================= */}
+      <section className="relative min-h-[460px] lg:min-h-[500px] flex items-center justify-center overflow-hidden bg-[#113565]">
+        {/* Background Campus building */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('/d09b8bf4e6edfa81783a8c38e81ad142f70b718f.jpg')",
+          }}
+        />
+        {/* Lighter Atmospheric Overlays */}
+        <div className="absolute inset-0 bg-[#113565]/45" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#113565]/70 via-[#113565]/30 to-[#113565]/50" />
+
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center max-w-4xl">
+          <p className="text-xs font-bold tracking-[0.25em] uppercase text-[#D5A754] mb-4">
+            UVEK PRVI - ALWAYS FIRST
+          </p>
+
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-tight drop-shadow-md">
+            YOUR FUTURE STARTS HERE.
+          </h2>
+
+          <p className="mt-5 text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+            Find a programme, talk to admissions or plan your first career conversation.
+          </p>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
+            <Link
+              href="/programs"
+              className="inline-flex items-center justify-center bg-[#C69A4C] hover:bg-[#b08539] text-slate-950 font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg shadow-lg shadow-amber-900/20 transition cursor-pointer"
+            >
+              FIND A PROGRAM
+            </Link>
+            <Link
+              href="/university/contact"
+              className="inline-flex items-center justify-center bg-[#16355C]/90 hover:bg-[#1d4577] text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg border border-white/20 shadow-lg transition cursor-pointer"
+            >
+              CONTACT ADMISSIONS
             </Link>
           </div>
         </div>

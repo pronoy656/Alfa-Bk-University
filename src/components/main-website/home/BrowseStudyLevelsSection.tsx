@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 import { homeData } from "@/data";
 
 export default function BrowseStudyLevelsSection() {
@@ -9,17 +10,12 @@ export default function BrowseStudyLevelsSection() {
     <section className="py-20 bg-[#FAF8F5]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-12 fade-up-scroll">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#BE9F5A]">
-            PROGRAMS
-          </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight">
-            Browse by Study Level
-          </h2>
-          <p className="mt-3 text-base text-slate-600 max-w-2xl">
-            Serbian higher education offers three study levels. Choose the one that fits your goals.
-          </p>
-        </div>
+        <TitleSubtitle
+          tag="PROGRAMS"
+          title="Browse by Study Level"
+          subtitle="Serbian higher education offers three study levels. Choose the one that fits your goals."
+          className="mb-12 fade-up-scroll"
+        />
 
         {/* 3 Level Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

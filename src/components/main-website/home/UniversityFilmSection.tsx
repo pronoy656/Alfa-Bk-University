@@ -10,12 +10,12 @@ export default function UniversityFilmSection() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=2000&q=80')",
+            "url('/d02daf33fa7a4f39c2be97b1fe6723a92e6ecb0b.jpg')",
         }}
       />
       {/* Deep Navy/Blue Atmospheric Gradient Overlay */}
-      <div className="absolute inset-0 bg-[#0B1E36]/80" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E36]/90 via-transparent to-[#0B1E36]/60" />
+      <div className="absolute inset-0 bg-[#0B1E36]/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E36]/85 via-transparent to-[#0B1E36]/60" />
 
       {/* Center Film Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 fade-up-scroll">

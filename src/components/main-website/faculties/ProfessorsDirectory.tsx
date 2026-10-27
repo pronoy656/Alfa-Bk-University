@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { professorsData, ProfessorItem } from "@/data";
 import UniversityGradient from "@/components/shared/UniversityGradient";
+import { Input } from "@/components/shared";
 
 const iconMap: Record<string, LucideIcon> = {
   TrendingUp,
@@ -131,14 +132,15 @@ export default function ProfessorsDirectory() {
         <div className="rounded-2xl border border-slate-200/90 bg-white p-4 shadow-lg lg:p-5">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:items-center">
             {/* Search Input */}
-            <div className="relative lg:col-span-6">
-              <Search className="pointer-events-none absolute top-1/2 left-3.5 h-4 w-4 -translate-y-1/2 text-slate-400" />
-              <input
+            <div className="lg:col-span-6">
+              <Input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search by name, department, or interest..."
-                className="w-full rounded-xl border border-slate-200 bg-slate-50/50 py-3 pr-4 pl-10 text-xs text-slate-800 placeholder-slate-400 transition focus:border-blue-500 focus:bg-white focus:outline-hidden"
+                leftIcon={<Search className="h-4 w-4 text-slate-400" />}
+                variant="filled"
+                className="py-3 text-xs"
               />
             </div>
 

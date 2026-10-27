@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { CheckCircle2, UploadCloud, Calendar } from "lucide-react";
 import { TeacherAssignment } from "@/components/dashboard/types";
-import { DashboardModal, DashboardButton } from "@/components/shared";
+import { DashboardModal, DashboardButton, DashboardInput } from "@/components/shared";
 
 interface CreateAssignmentModalProps {
   isOpen: boolean;
@@ -115,19 +115,15 @@ export default function CreateAssignmentModal({
           </div>
 
           {/* Title */}
-          <div>
-            <label className="block text-xs font-bold text-slate-700 mb-1.5">
-              Assignment Title <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              required
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              placeholder="e.g. Assignment 04: Normalization and BCNF Decomposition"
-              className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
-            />
-          </div>
+          <DashboardInput
+            label={<>Assignment Title <span className="text-red-500">*</span></>}
+            type="text"
+            required
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="e.g. Assignment 04: Normalization and BCNF Decomposition"
+            labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
+          />
 
           {/* Instructions */}
           <div>
@@ -146,34 +142,30 @@ export default function CreateAssignmentModal({
 
           {/* Deadline & Marks */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5 flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5 text-[#C69234]" />
-                <span>Due Date & Time <span className="text-red-500">*</span></span>
-              </label>
-              <input
-                type="datetime-local"
-                required
-                value={deadline}
-                onChange={(e) => setDeadline(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
-              />
-            </div>
+            <DashboardInput
+              label={
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="w-3.5 h-3.5 text-[#C69234]" />
+                  <span>Due Date & Time <span className="text-red-500">*</span></span>
+                </span>
+              }
+              type="datetime-local"
+              required
+              value={deadline}
+              onChange={(e) => setDeadline(e.target.value)}
+              labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
+            />
 
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                Total Assessment Marks <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="number"
-                min="5"
-                max="100"
-                required
-                value={totalMarks}
-                onChange={(e) => setTotalMarks(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
-              />
-            </div>
+            <DashboardInput
+              label={<>Total Assessment Marks <span className="text-red-500">*</span></>}
+              type="number"
+              min="5"
+              max="100"
+              required
+              value={totalMarks}
+              onChange={(e) => setTotalMarks(e.target.value)}
+              labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
+            />
           </div>
 
           {/* File Attachments */}

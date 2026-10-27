@@ -33,11 +33,18 @@ export type {
 export { default as Pagination, DashboardPagination } from "./Pagination";
 export type { PaginationProps, DashboardPaginationProps } from "./Pagination";
 
-export { default as SectionHeader } from "./SectionHeader";
-export type { SectionHeaderProps } from "./SectionHeader";
+export { default as SectionHeader, SectionTitle, TitleSubtitle } from "./SectionHeader";
+export type {
+  SectionHeaderProps,
+  SectionTitleProps,
+  TitleSubtitleProps,
+} from "./SectionHeader";
 
 export { default as StatCard } from "./StatCard";
 export type { StatCardProps } from "./StatCard";
 
 export { default as EmptyState } from "./EmptyState";
 export type { EmptyStateProps } from "./EmptyState";
+
+export { default as Input, DashboardInput } from "./Input";
+export type { InputProps, DashboardInputProps } from "./Input";

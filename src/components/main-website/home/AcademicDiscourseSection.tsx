@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BookOpen, Users, FolderUp, Globe, LucideIcon } from "lucide-react";
+import { TitleSubtitle } from "@/components/shared";
 import { homeData } from "@/data";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -18,15 +19,14 @@ export default function AcademicDiscourseSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column Content */}
           <div className="fade-up-scroll">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#BE9F5A]">
-              {academicDiscourse.tag}
-            </p>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-white leading-tight tracking-tight">
-              {academicDiscourse.title}
-            </h2>
-            <p className="mt-5 text-sm sm:text-base text-slate-300 leading-relaxed">
-              {academicDiscourse.description}
-            </p>
+            <TitleSubtitle
+              tag={academicDiscourse.tag}
+              title={academicDiscourse.title}
+              subtitle={academicDiscourse.description}
+              theme="dark"
+              maxWidth="none"
+              titleClassName="lg:text-[42px]"
+            />
 
             {/* 4 Feature Cards in 2x2 Grid */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -12,6 +12,7 @@ import {
   Filter,
 } from "lucide-react";
 import { newsEventsData } from "@/data";
+import { Input } from "@/components/shared";
 import { AllEventItem, getBadgeColorClass } from "./types";
 
 interface AllEventsViewProps {
@@ -92,13 +93,14 @@ export default function AllEventsView({ onOpenArticle }: AllEventsViewProps) {
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
             {/* Search Input Box with Search Button */}
             <div className="relative flex flex-1 items-center">
-              <Search className="pointer-events-none absolute left-3.5 h-4 w-4 text-slate-400" />
-              <input
+              <Input
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search events, topics, or keywords..."
-                className="w-full rounded-xl border border-slate-200 bg-white py-2.5 pr-24 pl-10 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:border-[#0B1E36] focus:outline-hidden"
+                leftIcon={<Search className="h-4 w-4 text-slate-400" />}
+                className="pr-24 text-xs sm:text-sm py-2.5 rounded-xl"
+                containerClassName="w-full flex-1"
               />
               <button
                 type="button"

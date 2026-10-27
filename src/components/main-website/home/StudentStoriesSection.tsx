@@ -1,4 +1,10 @@
+import { Sora } from "next/font/google";
 import { homeData } from "@/data";
+
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function StudentStoriesSection() {
   const stories = homeData.studentStories;
@@ -8,7 +14,16 @@ export default function StudentStoriesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-10 fade-up-scroll">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1E36] tracking-tight uppercase">
+          <h2
+            className={`${sora.className} font-bold text-[#0B1E36] uppercase`}
+            style={{
+              fontFamily: `${sora.style.fontFamily}, var(--font-sora), 'Sora', sans-serif`,
+              fontWeight: 700,
+              fontSize: "38px",
+              lineHeight: "108%",
+              letterSpacing: "-0.03em",
+            }}
+          >
             STUDENT & ALUMNI STORIES
           </h2>
         </div>

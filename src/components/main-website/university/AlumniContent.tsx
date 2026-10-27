@@ -10,7 +10,7 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
-import { PageHero } from "@/components/shared";
+import { PageHero, Input, TitleSubtitle } from "@/components/shared";
 import {
   faculties,
   alumniStories,
@@ -84,15 +84,13 @@ export default function AlumniContent() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="h-[2px] w-6 bg-[#D5A754]" />
-                <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                  ABOUT THE ASSOCIATION
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase leading-tight">
-                MORE THAN GRADUATION
-              </h2>
+              <TitleSubtitle
+                kicker="ABOUT THE ASSOCIATION"
+                withGoldLine
+                uppercase
+                title="MORE THAN GRADUATION"
+                maxWidth="none"
+              />
               <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-700 font-normal">
                 The Alfa BK University Alumni Association has connected graduates since 1993. Our community
                 spans Serbia, the region, and the world — united by shared experience, a commitment to
@@ -111,7 +109,7 @@ export default function AlumniContent() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80')",
+                      "url('/8857b18bb800e6c1325a0a319d6a30f099236053.jpg')",
                   }}
                 />
               </div>
@@ -123,21 +121,16 @@ export default function AlumniContent() {
       {/* 3. ALUMNI STORIES */}
       <section id="stories" className="py-20 lg:py-24 bg-[#113565] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                ALUMNI STORIES
-              </span>
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase leading-tight">
-              WHAT I STUDIED. WHAT I DO TODAY.
-            </h2>
-            <p className="mt-3 text-sm text-slate-300 font-normal">
-              Real paths from graduation to career. No invented facts — just honest journeys.
-            </p>
-          </div>
+          <TitleSubtitle
+            align="center"
+            kicker="ALUMNI STORIES"
+            withGoldLine
+            theme="dark"
+            uppercase
+            title="WHAT I STUDIED. WHAT I DO TODAY."
+            subtitle="Real paths from graduation to career. No invented facts — just honest journeys."
+            className="mb-14"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {alumniStories.map((story) => (
@@ -221,21 +214,14 @@ export default function AlumniContent() {
       {/* 4. CAREERS & INDUSTRY */}
       <section className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-14">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                CAREERS & INDUSTRY
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-              YOUR CAREER NETWORK
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 max-w-2xl font-normal leading-relaxed">
-              The Alfa BK alumni community spans industries, sectors, and borders. Use the network to
-              find opportunities, open doors, and build partnerships.
-            </p>
-          </div>
+          <TitleSubtitle
+            kicker="CAREERS & INDUSTRY"
+            withGoldLine
+            uppercase
+            title="YOUR CAREER NETWORK"
+            subtitle="The Alfa BK alumni community spans industries, sectors, and borders. Use the network to find opportunities, open doors, and build partnerships."
+            className="mb-14"
+          />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {careerNetworkFeatures.map((feat, idx) => {
@@ -266,15 +252,16 @@ export default function AlumniContent() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-6 flex flex-col justify-center">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="h-[2px] w-6 bg-[#FFE4B5]" />
-                <span className="text-xs font-bold tracking-widest text-[#FFE4B5] uppercase">
-                  GIVE BACK
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-tight">
-                MENTOR A STUDENT
-              </h2>
+              <TitleSubtitle
+                kicker="GIVE BACK"
+                withGoldLine
+                theme="dark"
+                uppercase
+                size="xl"
+                title="MENTOR A STUDENT"
+                maxWidth="none"
+                kickerClassName="!text-[#FFE4B5]"
+              />
               <p className="mt-5 text-sm sm:text-base leading-relaxed text-white/90 font-normal">
                 You know what it takes. As an Alfa BK mentor, you give current students access to honest
                 career guidance, industry insight, and real connections — exactly the kind of support that
@@ -299,7 +286,7 @@ export default function AlumniContent() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80')",
+                      "url('/0c2239dd77e20bfac14116b810004a66b2b082b7.jpg')",
                   }}
                 />
               </div>
@@ -312,17 +299,12 @@ export default function AlumniContent() {
       <section className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="h-[2px] w-6 bg-[#D5A754]" />
-                <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                  EVENTS
-                </span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-                COMING TOGETHER
-              </h2>
-            </div>
+            <TitleSubtitle
+              kicker="EVENTS"
+              withGoldLine
+              uppercase
+              title="COMING TOGETHER"
+            />
             <Link
               href="/news-events"
               className="inline-flex items-center justify-center border border-[#0B1E36]/30 text-[#0B1E36] hover:bg-black/5 font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition self-start sm:self-auto"
@@ -374,22 +356,16 @@ export default function AlumniContent() {
       {/* 7. SUPPORT ALFA BK */}
       <section className="py-20 lg:py-24 bg-[#113565] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                SUPPORT ALFA BK
-              </span>
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase leading-tight">
-              GIVE BACK. SHAPE WHAT COMES NEXT.
-            </h2>
-            <p className="mt-3 text-sm text-slate-300 font-normal">
-              From establishing scholarships to funding research — alumni support directly shapes the
-              experience of the next generation of Alfa BK students.
-            </p>
-          </div>
+          <TitleSubtitle
+            align="center"
+            kicker="SUPPORT ALFA BK"
+            withGoldLine
+            theme="dark"
+            uppercase
+            title="GIVE BACK. SHAPE WHAT COMES NEXT."
+            subtitle="From establishing scholarships to funding research — alumni support directly shapes the experience of the next generation of Alfa BK students."
+            className="mb-14"
+          />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {supportWays.map((way) => (
@@ -428,22 +404,15 @@ export default function AlumniContent() {
       {/* 8. BECOME A MEMBER (APPLICATION FORM) */}
       <section id="register" className="py-20 lg:py-24 bg-[#F6F5F0]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-              <span className="text-xs font-bold tracking-widest text-[#D5A754] uppercase">
-                BECOME A MEMBER
-              </span>
-              <span className="h-[2px] w-6 bg-[#D5A754]" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
-              ALUMNI ASSOCIATION APPLICATION
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 font-normal">
-              Fill in the form below. Our Alumni Office will review your application and send confirmation
-              to your email within 3 working days.
-            </p>
-          </div>
+          <TitleSubtitle
+            align="center"
+            kicker="BECOME A MEMBER"
+            withGoldLine
+            uppercase
+            title="ALUMNI ASSOCIATION APPLICATION"
+            subtitle="Fill in the form below. Our Alumni Office will review your application and send confirmation to your email within 3 working days."
+            className="mb-12"
+          />
 
           <div className="max-w-3xl mx-auto rounded-2xl bg-white border border-slate-200/80 shadow-md p-7 sm:p-10">
             {submitted ? (
@@ -469,70 +438,58 @@ export default function AlumniContent() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-[11px] font-bold tracking-wider text-slate-600 uppercase mb-2">
-                      FIRST NAME *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="First name"
-                      value={formData.firstName}
-                      onChange={(e) =>
-                        setFormData({ ...formData, firstName: e.target.value })
-                      }
-                      className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:border-[#113565] focus:outline-none focus:ring-1 focus:ring-[#113565]"
-                    />
-                  </div>
+                  <Input
+                    label="FIRST NAME *"
+                    type="text"
+                    required
+                    placeholder="First name"
+                    value={formData.firstName}
+                    onChange={(e) =>
+                      setFormData({ ...formData, firstName: e.target.value })
+                    }
+                    className="py-3 text-sm"
+                    labelClassName="text-[11px] font-bold tracking-wider text-slate-600 mb-2"
+                  />
 
-                  <div>
-                    <label className="block text-[11px] font-bold tracking-wider text-slate-600 uppercase mb-2">
-                      LAST NAME *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Last name"
-                      value={formData.lastName}
-                      onChange={(e) =>
-                        setFormData({ ...formData, lastName: e.target.value })
-                      }
-                      className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:border-[#113565] focus:outline-none focus:ring-1 focus:ring-[#113565]"
-                    />
-                  </div>
+                  <Input
+                    label="LAST NAME *"
+                    type="text"
+                    required
+                    placeholder="Last name"
+                    value={formData.lastName}
+                    onChange={(e) =>
+                      setFormData({ ...formData, lastName: e.target.value })
+                    }
+                    className="py-3 text-sm"
+                    labelClassName="text-[11px] font-bold tracking-wider text-slate-600 mb-2"
+                  />
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-[11px] font-bold tracking-wider text-slate-600 uppercase mb-2">
-                      EMAIL *
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder="you@example.com"
-                      value={formData.email}
-                      onChange={(e) =>
-                        setFormData({ ...formData, email: e.target.value })
-                      }
-                      className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:border-[#113565] focus:outline-none focus:ring-1 focus:ring-[#113565]"
-                    />
-                  </div>
+                  <Input
+                    label="EMAIL *"
+                    type="email"
+                    required
+                    placeholder="you@example.com"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
+                    className="py-3 text-sm"
+                    labelClassName="text-[11px] font-bold tracking-wider text-slate-600 mb-2"
+                  />
 
-                  <div>
-                    <label className="block text-[11px] font-bold tracking-wider text-slate-600 uppercase mb-2">
-                      PHONE
-                    </label>
-                    <input
-                      type="tel"
-                      placeholder="+381 ..."
-                      value={formData.phone}
-                      onChange={(e) =>
-                        setFormData({ ...formData, phone: e.target.value })
-                      }
-                      className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:border-[#113565] focus:outline-none focus:ring-1 focus:ring-[#113565]"
-                    />
-                  </div>
+                  <Input
+                    label="PHONE"
+                    type="tel"
+                    placeholder="+381 ..."
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
+                    className="py-3 text-sm"
+                    labelClassName="text-[11px] font-bold tracking-wider text-slate-600 mb-2"
+                  />
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -575,20 +532,17 @@ export default function AlumniContent() {
                   </div>
                 </div>
 
-                <div>
-                  <label className="block text-[11px] font-bold tracking-wider text-slate-600 uppercase mb-2">
-                    CURRENT OCCUPATION
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Job title and employer"
-                    value={formData.occupation}
-                    onChange={(e) =>
-                      setFormData({ ...formData, occupation: e.target.value })
-                    }
-                    className="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:border-[#113565] focus:outline-none focus:ring-1 focus:ring-[#113565]"
-                  />
-                </div>
+                <Input
+                  label="CURRENT OCCUPATION"
+                  type="text"
+                  placeholder="Job title and employer"
+                  value={formData.occupation}
+                  onChange={(e) =>
+                    setFormData({ ...formData, occupation: e.target.value })
+                  }
+                  className="py-3 text-sm"
+                  labelClassName="text-[11px] font-bold tracking-wider text-slate-600 mb-2"
+                />
 
                 <div className="flex items-center gap-3 pt-1">
                   <input

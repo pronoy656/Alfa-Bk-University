@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { CheckCircle2, Clock, Calendar, FileQuestion } from "lucide-react";
 import { TeacherQuiz } from "@/components/dashboard/types";
-import { DashboardModal, DashboardButton } from "@/components/shared";
+import { DashboardModal, DashboardButton, DashboardInput } from "@/components/shared";
 
 interface CreateQuizModalProps {
   isOpen: boolean;
@@ -106,19 +106,15 @@ export default function CreateQuizModal({
               </select>
             </div>
 
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                Quiz Title <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="text"
-                required
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                placeholder="e.g. Quiz 03: Transaction ACID Guarantees"
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
-              />
-            </div>
+            <DashboardInput
+              label={<>Quiz Title <span className="text-red-500">*</span></>}
+              type="text"
+              required
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder="e.g. Quiz 03: Transaction ACID Guarantees"
+              labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
+            />
           </div>
 
           {/* Row 2: Format & Question Count */}
@@ -138,33 +134,25 @@ export default function CreateQuizModal({
               </select>
             </div>
 
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                Questions Count
-              </label>
-              <input
-                type="number"
-                min="5"
-                max="50"
-                value={totalQuestions}
-                onChange={(e) => setTotalQuestions(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
-              />
-            </div>
+            <DashboardInput
+              label="Questions Count"
+              type="number"
+              min="5"
+              max="50"
+              value={totalQuestions}
+              onChange={(e) => setTotalQuestions(e.target.value)}
+              labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
+            />
 
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                Total Marks
-              </label>
-              <input
-                type="number"
-                min="5"
-                max="100"
-                value={totalMarks}
-                onChange={(e) => setTotalMarks(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
-              />
-            </div>
+            <DashboardInput
+              label="Total Marks"
+              type="number"
+              min="5"
+              max="100"
+              value={totalMarks}
+              onChange={(e) => setTotalMarks(e.target.value)}
+              labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
+            />
           </div>
 
           {/* Row 3: Duration & Scheduled Date */}
@@ -187,19 +175,19 @@ export default function CreateQuizModal({
               </select>
             </div>
 
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5 flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5 text-[#C69234]" />
-                <span>Quiz Open Date & Time</span>
-              </label>
-              <input
-                type="datetime-local"
-                required
-                value={date}
-                onChange={(e) => setDate(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs text-slate-800 focus:border-[#C69234] focus:ring-1 focus:ring-[#C69234] focus:outline-hidden"
-              />
-            </div>
+            <DashboardInput
+              label={
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="w-3.5 h-3.5 text-[#C69234]" />
+                  <span>Quiz Open Date & Time</span>
+                </span>
+              }
+              type="datetime-local"
+              required
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              labelClassName="text-xs font-bold text-slate-700 mb-1.5 tracking-normal normal-case"
+            />
           </div>
 
           {/* Instructions */}
