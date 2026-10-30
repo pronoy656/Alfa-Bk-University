@@ -116,7 +116,7 @@ export default function ProfessorsDirectory() {
             <span className="text-xs font-bold tracking-[0.2em] text-[#E5A83B] uppercase">
               FACULTY
             </span>
-            <h1 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="mt-3 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px]">
               Professors & Teaching Assistants
             </h1>
             <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-lg">

@@ -17,6 +17,7 @@ export interface PageHeroProps {
   description?: React.ReactNode;
   bgImage?: string;
   overlayClass?: string;
+  overlayStyle?: React.CSSProperties;
   backLink?: { label: string; href: string };
   badges?: React.ReactNode;
   actions?: React.ReactNode;
@@ -25,6 +26,7 @@ export interface PageHeroProps {
   decorations?: boolean;
   align?: "left" | "center";
   className?: string;
+  style?: React.CSSProperties;
   children?: React.ReactNode;
 }
 
@@ -36,6 +38,7 @@ export default function PageHero({
   description,
   bgImage,
   overlayClass = "bg-gradient-to-r from-[#0B1E36]/85 via-[#0B1E36]/65 to-[#0B1E36]/40",
+  overlayStyle,
   backLink,
   badges,
   actions,
@@ -44,6 +47,7 @@ export default function PageHero({
   decorations = false,
   align = "left",
   className = "",
+  style,
   children,
 }: PageHeroProps) {
   const resolvedKicker = kicker || badge;
@@ -53,6 +57,7 @@ export default function PageHero({
   return (
     <section
       className={`relative overflow-hidden bg-[#0B1E36] text-white ${className}`}
+      style={style}
     >
       {/* Background Graphic Image Overlay */}
       {bgImage && (
@@ -62,8 +67,11 @@ export default function PageHero({
         />
       )}
 
-      {/* Navy gradient overlay */}
-      <div className={`absolute inset-0 ${overlayClass}`} />
+      {/* Gradient overlay */}
+      <div
+        className={`absolute inset-0 ${overlayStyle ? "" : overlayClass}`}
+        style={overlayStyle}
+      />
 
       {/* Optional decorative orbital SVG rings & glows */}
       {decorations && (
@@ -136,7 +144,7 @@ export default function PageHero({
               )
             )}
 
-            <h1 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl leading-[1.14]">
+            <h1 className="mt-3 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px] text-white">
               {title}
             </h1>
 

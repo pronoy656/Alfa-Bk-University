@@ -23,6 +23,7 @@ export default function FacultyPageTemplate({
         subtitle={faculty.subtitle}
         bgImage={faculty.bgImage}
         badges={faculty.badges}
+        facultySlug={faculty.slug}
       />
 
       {/* 2. KEY INFO BAR (WHY STUDY HERE, WHAT WILL I LEARN, WHAT CAN I BECOME, HOW DO I APPLY) */}

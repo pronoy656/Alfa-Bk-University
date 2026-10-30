@@ -321,7 +321,7 @@ export default function StudentParliamentPage() {
 
             {/* Headline */}
             <h1
-              className={`${syncopate.className} text-3xl sm:text-5xl lg:text-[54px] font-bold uppercase tracking-[0%] leading-[105%]`}
+              className="hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight uppercase tracking-[0px]"
             >
               <span className="block text-white">YOUR VOICE.</span>
               <span className="block text-[#D5A754]">YOUR UNIVERSITY.</span>

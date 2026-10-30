@@ -92,7 +92,8 @@
       "duration": "3 years • 180 ECTS",
       "badge": "PhD",
       "href": "/programs/doctoral-economy-business"
-    }
+    },
+    "color": "#998472"
   },
   "foreign-languages": {
     "slug": "foreign-languages",
@@ -148,13 +149,14 @@
       "badge": "MSc",
       "href": "/programs/master-english-philology"
     },
-    "phdProgram": null
+    "phdProgram": null,
+    "color": "#DF5C55"
   },
   "management-sports": {
     "slug": "management-sports",
     "title": "Faculty of Management in Sports",
     "subtitle": "Leading academic institution for sports leadership, club administration, athletic marketing, and recreation management.",
-    "bgImage": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=2000&q=80",
+    "bgImage": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=2000&q=80",
     "badges": {
       "programCount": "4 programs",
       "hasBSc": true,
@@ -210,13 +212,14 @@
       "duration": "3 years • 180 ECTS",
       "badge": "PhD",
       "href": "/programs/doctoral-sports-management"
-    }
+    },
+    "color": "#708090"
   },
   "information-technologies": {
     "slug": "information-technologies",
     "title": "Faculty of Information Technologies",
     "subtitle": "Software engineering, artificial intelligence, cybersecurity, and cloud computing for next-generation tech leaders.",
-    "bgImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=80",
+    "bgImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=2000&q=80",
     "badges": {
       "programCount": "5 programs",
       "hasBSc": true,
@@ -283,7 +286,8 @@
       "duration": "3 years • 180 ECTS",
       "badge": "PhD",
       "href": "/programs/doctoral-computer-science"
-    }
+    },
+    "color": "#257DD4"
   },
   "mathematics-computer-science": {
     "slug": "mathematics-computer-science",
@@ -345,7 +349,8 @@
       "duration": "3 years • 180 ECTS",
       "badge": "PhD",
       "href": "/programs/doctoral-mathematics"
-    }
+    },
+    "color": "#6F52B2"
   },
   "psychology": {
     "slug": "psychology",
@@ -407,6 +412,7 @@
       "duration": "3 years • 180 ECTS",
       "badge": "PhD",
       "href": "/programs/doctoral-psychology"
-    }
+    },
+    "color": "#E11D48"
   }
 }

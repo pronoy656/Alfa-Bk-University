@@ -56,6 +56,7 @@ export interface FacultyDetail {
   title: string;
   subtitle: string;
   bgImage: string;
+  color?: string;
   badges: FacultyBadges;
   about: string;
   whyStudyHere: string[];

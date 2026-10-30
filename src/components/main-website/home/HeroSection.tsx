@@ -29,7 +29,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl">
             {/* Tag Badge */}
             <div className="hero-animate-fade-up hero-delay-100 mb-6 inline-flex items-center gap-2 rounded-full border border-[#D5A754]/40 bg-[#0B1E36]/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#D5A754]">
               <span className="h-2 w-2 rounded-full bg-[#D5A754] animate-pulse" />
@@ -38,9 +38,9 @@ export default function HeroSection() {
             </div>
 
             {/* Main Headline with Silky Staggered Entrance & Luminous Gold Sheen */}
-            <h1 className="hero-animate-fade-up hero-delay-200 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.18]">
-              <span className="block text-white">Inspiring Knowledge,</span>
-              <span className="block mt-1 text-gold-animated">
+            <h1 className="hero-animate-fade-up hero-delay-200 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px]">
+              <span className="block text-white sm:whitespace-nowrap">Inspiring Knowledge,</span>
+              <span className="block mt-1 text-gold-animated sm:whitespace-nowrap">
                 Shaping the Future
               </span>
             </h1>

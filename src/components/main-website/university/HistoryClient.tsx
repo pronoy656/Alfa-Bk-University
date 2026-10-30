@@ -41,11 +41,11 @@ export default function HistoryClient() {
           </div>
 
           {/* Main Title: our HISTORY. */}
-          <h1 className="mt-4 flex flex-wrap items-baseline justify-center gap-2 sm:gap-3 text-4xl sm:text-5xl lg:text-6xl tracking-tight">
+          <h1 className="mt-4 flex flex-wrap items-baseline justify-center gap-2 sm:gap-3 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px]">
             <span className="font-normal lowercase text-white tracking-normal font-serif italic sm:not-italic sm:font-bold">
               our
             </span>
-            <span className="font-black uppercase tracking-wider text-[#D5A754]">
+            <span className="font-bold uppercase tracking-[0px] text-[#D5A754]">
               HISTORY<span className="text-[#C69234]">.</span>
             </span>
           </h1>

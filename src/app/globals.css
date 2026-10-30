@@ -9,6 +9,29 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.hero-title-syncopate {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0px;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+@media (min-width: 640px) {
+  .hero-title-syncopate {
+    font-size: 38px;
+    line-height: 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title-syncopate {
+    font-size: 52px;
+    line-height: 75px;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

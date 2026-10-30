@@ -193,7 +193,7 @@ export default function CareerIndustryPage() {
             </p>
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-black uppercase tracking-tight leading-[1.1] text-white">
+            <h1 className="hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight uppercase tracking-[0px] text-white">
               TURN WHAT YOU LEARN
               <br />
               INTO WHAT YOU DO.

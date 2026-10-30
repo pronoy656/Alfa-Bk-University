@@ -34,7 +34,7 @@ export default function PageShell({
           <div className="inline-block rounded-full bg-blue-50 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700 mb-4">
             {category}
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-4">
+          <h1 className="hero-title-syncopate font-syncopate font-bold text-2xl sm:text-3xl lg:text-[42px] lg:leading-[58px] tracking-[0px] text-slate-900 mb-4">
             {title}
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">

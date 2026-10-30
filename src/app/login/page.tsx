@@ -138,7 +138,7 @@ function AuthContent() {
 
         {/* Center / Hero Highlights */}
         <div className="relative z-10 my-auto py-10 md:py-16 max-w-lg">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
+          <h1 className="hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px] text-white">
             Learn without <span className="text-[#BE9F5A]">limits.</span>
           </h1>
 
