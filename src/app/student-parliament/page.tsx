@@ -27,6 +27,7 @@ import {
   FileText,
   Lightbulb,
 } from "lucide-react";
+import { HeroTitle, SectionHeading, Subtitle } from "@/components/shared";
 
 const syncopate = { className: "font-syncopate" };
 const montserrat = { className: "font-montserrat" };
@@ -320,21 +321,19 @@ export default function StudentParliamentPage() {
             </div>
 
             {/* Headline */}
-            <h1
-              className="hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight uppercase tracking-[0px]"
-            >
+            <HeroTitle className="uppercase">
               <span className="block text-white">YOUR VOICE.</span>
               <span className="block text-[#D5A754]">YOUR UNIVERSITY.</span>
-            </h1>
+            </HeroTitle>
 
             {/* Subtitle / Description */}
-            <p className={`${montserrat.className} mt-6 text-sm sm:text-[16px] text-slate-200/95 leading-[150%] tracking-[0%] max-w-2xl font-normal`}>
+            <Subtitle className="mt-6 text-slate-200/95 max-w-2xl">
               Welcome to the official digital hub of the Student Parliament at
               Alfa BK University. We stand at the intersection of student
               ambition and university leadership — advocating for your academic
               rights, supporting club initiatives, and building an energetic
               community.
-            </p>
+            </Subtitle>
 
             {/* Action Buttons */}
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -370,13 +369,11 @@ export default function StudentParliamentPage() {
                   ABOUT US
                 </span>
               </div>
-              <h2
-                className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-              >
+              <SectionHeading className="uppercase text-[#0B1E36]">
                 ADVOCATING, ORGANIZING, AND
                 <br />
                 REPRESENTING SINCE DAY ONE
-              </h2>
+              </SectionHeading>
             </div>
 
             {/* Right Contact Info */}
@@ -441,14 +438,12 @@ export default function StudentParliamentPage() {
                   OUR TEAM
                 </span>
               </div>
-              <h2
-                className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-              >
+              <SectionHeading className="uppercase text-[#0B1E36]">
                 MEET YOUR ELECTED REPRESENTATIVES
-              </h2>
-              <p className={`${montserrat.className} mt-2 text-sm sm:text-[16px] text-slate-600 leading-[150%] tracking-[0%] font-normal`}>
+              </SectionHeading>
+              <Subtitle className="mt-2 text-slate-600">
                 Elected students working hard to voice your concerns, support ideas, and create campus life
-              </p>
+              </Subtitle>
             </div>
             <div className={`${montserrat.className} border border-slate-200/90 bg-white rounded-lg px-4 py-2 text-xs font-semibold text-slate-600 shadow-2xs self-start sm:self-auto`}>
               Inquiries: <a href="mailto:parlament@alfa.edu.rs" className="text-[#0B1E36] font-bold hover:underline">parlament@alfa.edu.rs</a>
@@ -550,14 +545,12 @@ export default function StudentParliamentPage() {
                 BROADCAST ROOM
               </span>
             </div>
-            <h2
-              className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-            >
+            <SectionHeading className="uppercase text-[#0B1E36]">
               LIVE ANNOUNCEMENTS & UPDATES
-            </h2>
-            <p className={`${montserrat.className} mt-2 text-sm sm:text-[16px] text-slate-600 leading-[150%] tracking-[0%] font-normal`}>
+            </SectionHeading>
+            <Subtitle className="mt-2 text-slate-600">
               Stay informed on direct initiatives, scholarship deadlines, meeting outcomes, and university news
-            </p>
+            </Subtitle>
           </div>
 
           {/* Urgent Banner */}
@@ -633,14 +626,12 @@ export default function StudentParliamentPage() {
                 TRANSPARENCY ARCHIVE
               </span>
             </div>
-            <h2
-              className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-            >
+            <SectionHeading className="uppercase text-[#0B1E36]">
               PARLIAMENT MEETINGS & VOTING RECORDS
-            </h2>
-            <p className={`${montserrat.className} mt-2 text-sm sm:text-[16px] text-slate-600 leading-[150%] tracking-[0%] font-normal`}>
+            </SectionHeading>
+            <Subtitle className="mt-2 text-slate-600">
               We believe in total transparency. Search past session logs, read agendas, and download PDF transcripts of decisions.
-            </p>
+            </Subtitle>
           </div>
 
           {/* Search & Filter Bar */}
@@ -739,14 +730,12 @@ export default function StudentParliamentPage() {
                 CAMPUS CULTURE
               </span>
             </div>
-            <h2
-              className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-            >
+            <SectionHeading className="uppercase text-[#0B1E36]">
               JOIN A STUDENT CLUB
-            </h2>
-            <p className={`${montserrat.className} mt-2 text-sm sm:text-[16px] text-slate-600 leading-[150%] tracking-[0%] font-normal`}>
+            </SectionHeading>
+            <Subtitle className="mt-2 text-slate-600">
               Pursue your passions, gain practical skills, and build lifelong friendships beyond class boundaries.
-            </p>
+            </Subtitle>
           </div>
 
           {/* 6 Clubs Grid */}
@@ -836,14 +825,12 @@ export default function StudentParliamentPage() {
                 VOICE ROOM
               </span>
             </div>
-            <h2
-              className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-            >
+            <SectionHeading className="uppercase text-[#0B1E36]">
               YOUR VOICE MATTERS
-            </h2>
-            <p className={`${montserrat.className} mt-2 text-sm sm:text-[16px] text-slate-600 leading-[150%] tracking-[0%] max-w-4xl`}>
+            </SectionHeading>
+            <Subtitle className="mt-2 text-slate-600 max-w-4xl">
               Have an issue to report, a course schedule suggestion, or an exciting project idea? Tell us directly. We route every submission directly to the respective representatives.
-            </p>
+            </Subtitle>
           </div>
 
           {/* Form Card */}
@@ -988,14 +975,12 @@ export default function StudentParliamentPage() {
                 STUDENT VOICE
               </span>
             </div>
-            <h2
-              className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-            >
+            <SectionHeading className="uppercase text-[#0B1E36]">
               STUDENT PARLIAMENT ELECTIONS
-            </h2>
-            <p className={`${montserrat.className} mt-2 text-sm sm:text-[16px] text-slate-600 leading-[150%] tracking-[0%] max-w-4xl`}>
+            </SectionHeading>
+            <Subtitle className="mt-2 text-slate-600 max-w-4xl">
               Elections are held annually every October. Every student has the right to vote and the right to stand as a candidate.
-            </p>
+            </Subtitle>
           </div>
 
           {/* Split: Process Steps (Left) & Active Status (Right) */}
@@ -1101,14 +1086,12 @@ export default function StudentParliamentPage() {
                 OUR PORTFOLIO
               </span>
             </div>
-            <h2
-              className={`${syncopate.className} text-xl sm:text-[28px] lg:text-[32px] font-bold uppercase text-[#0B1E36] tracking-[0%] leading-[100%]`}
-            >
+            <SectionHeading className="uppercase text-[#0B1E36]">
               ACTIVITIES & PROJECTS
-            </h2>
-            <p className={`${montserrat.className} mt-2 text-sm sm:text-[16px] text-slate-600 leading-[150%] tracking-[0%] max-w-4xl`}>
+            </SectionHeading>
+            <Subtitle className="mt-2 text-slate-600 max-w-4xl">
               Take a look at standard student life events organized and executed by the Parliament team.
-            </p>
+            </Subtitle>
           </div>
 
           {/* 6 Activities Grid */}

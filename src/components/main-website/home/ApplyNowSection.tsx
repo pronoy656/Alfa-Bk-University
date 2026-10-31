@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
-import { Input } from "@/components/shared";
+import { Input, SectionHeading, Subtitle } from "@/components/shared";
 
 export default function ApplyNowSection() {
   const [formData, setFormData] = useState({
@@ -44,12 +44,12 @@ export default function ApplyNowSection() {
             <p className="text-xs font-bold uppercase tracking-widest text-[#D5A754]">
               ENROLMENT 2026/2027
             </p>
-            <h2 className="mt-2 text-4xl sm:text-5xl font-black text-white tracking-tight">
+            <SectionHeading className="mt-2 text-white">
               Apply Now
-            </h2>
-            <p className="mt-5 text-base text-slate-300 leading-relaxed">
+            </SectionHeading>
+            <Subtitle className="mt-5 text-slate-300">
               Choose your faculty and program, fill in your basic details, and our student service team will contact you within 24 hours.
-            </p>
+            </Subtitle>
 
             {/* Checklist */}
             <div className="mt-8 space-y-4">

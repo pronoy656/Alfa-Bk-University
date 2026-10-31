@@ -15,7 +15,7 @@ import {
   Scale,
   ShieldCheck,
 } from "lucide-react";
-import { PageHero, TitleSubtitle } from "@/components/shared";
+import { PageHero, TitleSubtitle, SectionHeading, Subtitle } from "@/components/shared";
 import {
   hero,
   stats,
@@ -452,14 +452,14 @@ export default function InstituteKaricContent() {
             {content.cta.motto}
           </p>
 
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-tight text-white">
+          <SectionHeading className="uppercase text-white">
             {content.cta.titlePrefix} <br />
             <span className="text-[#D5A754]">{content.cta.titleHighlight}</span>
-          </h2>
+          </SectionHeading>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
+          <Subtitle className="mt-4 text-slate-300 max-w-2xl">
             {content.cta.description}
-          </p>
+          </Subtitle>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link

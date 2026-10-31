@@ -9,6 +9,7 @@ import {
   LucideIcon,
 } from "lucide-react";
 import { homeData } from "@/data";
+import { SectionHeading } from "@/components/shared";
 
 const iconMap: Record<string, LucideIcon> = {
   BriefcaseBusiness,
@@ -26,9 +27,9 @@ export default function WhyChooseUsSection() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
             Why choose us
           </p>
-          <h2 className="mt-4 text-3xl font-bold text-slate-900">
+          <SectionHeading className="mt-4 text-slate-900">
             Future-ready education with real impact
-          </h2>
+          </SectionHeading>
           <div className="mt-8 space-y-5">
             {reasons.map(({ title, text, icon }) => {
               const Icon = iconMap[icon] || ShieldCheck;
@@ -56,9 +57,9 @@ export default function WhyChooseUsSection() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
                 Academic focus
               </p>
-              <h2 className="mt-2 text-3xl font-bold text-slate-900">
+              <SectionHeading className="mt-2 text-slate-900">
                 Education built for success
-              </h2>
+              </SectionHeading>
             </div>
             <div className="hidden rounded-full border border-blue-200 bg-white px-3 py-2 text-sm font-semibold text-blue-700 sm:block">
               2026/2027 intake

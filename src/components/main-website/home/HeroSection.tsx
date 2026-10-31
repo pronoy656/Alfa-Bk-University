@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Search, ArrowRight, Sparkles } from "lucide-react";
 import { homeData } from "@/data";
-import { Input } from "@/components/shared";
+import { Input, HeroTitle, Subtitle } from "@/components/shared";
 
 export default function HeroSection() {
   const router = useRouter();
@@ -38,17 +38,17 @@ export default function HeroSection() {
             </div>
 
             {/* Main Headline with Silky Staggered Entrance & Luminous Gold Sheen */}
-            <h1 className="hero-animate-fade-up hero-delay-200 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px]">
+            <HeroTitle className="hero-animate-fade-up hero-delay-200">
               <span className="block text-white sm:whitespace-nowrap">Inspiring Knowledge,</span>
               <span className="block mt-1 text-gold-animated sm:whitespace-nowrap">
                 Shaping the Future
               </span>
-            </h1>
+            </HeroTitle>
 
             {/* Subtitle */}
-            <p className="hero-animate-fade-up hero-delay-350 mt-6 text-base sm:text-lg leading-relaxed text-slate-300 max-w-2xl">
+            <Subtitle className="hero-animate-fade-up hero-delay-350 mt-6 text-slate-300 max-w-2xl">
               Alfa BK University is a modern international university committed to academic excellence, innovation, research, entrepreneurship, technology, and global collaboration.
-            </p>
+            </Subtitle>
 
             {/* Search Bar */}
             <form

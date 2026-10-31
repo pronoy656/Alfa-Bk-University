@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { HeroTitle, SectionHeading, Subtitle } from "@/components/shared";
 
 export default function CareerIndustryPage() {
   const [activeOutcomeTab, setActiveOutcomeTab] = useState<
@@ -193,17 +194,17 @@ export default function CareerIndustryPage() {
             </p>
 
             {/* Headline */}
-            <h1 className="hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight uppercase tracking-[0px] text-white">
+            <HeroTitle className="uppercase text-white">
               TURN WHAT YOU LEARN
               <br />
               INTO WHAT YOU DO.
-            </h1>
+            </HeroTitle>
 
             {/* Subtitle */}
-            <p className="mt-6 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
+            <Subtitle className="mt-6 text-slate-300 max-w-xl">
               Explore possible directions, build practical experience and meet the people
               who can help you move from education to opportunity.
-            </p>
+            </Subtitle>
 
             {/* Action Buttons */}
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -234,9 +235,9 @@ export default function CareerIndustryPage() {
           <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
             EXPLORE POSSIBLE OUTCOMES
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0B1E36] tracking-tight uppercase leading-tight mt-2">
+          <SectionHeading className="text-[#0B1E36] uppercase mt-2">
             WHAT CAN I DO WITH THIS EDUCATION?
-          </h2>
+          </SectionHeading>
 
           {/* Filter Pills */}
           <div className="flex flex-wrap items-center gap-3 mt-7">
@@ -311,13 +312,13 @@ export default function CareerIndustryPage() {
           <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
             ALFA BK CAREER OFFICE
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight uppercase leading-tight mt-2">
+          <SectionHeading className="text-white uppercase mt-2">
             FROM EDUCATION TO OPPORTUNITY.
-          </h2>
-          <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
+          </SectionHeading>
+          <Subtitle className="mt-3 text-slate-300 max-w-3xl">
             A practical point of contact for students and alumni preparing for work,
             further study or a new direction. Services are tailored to your next decision.
-          </p>
+          </Subtitle>
 
           <Link
             href="/university/contact"
@@ -355,14 +356,14 @@ export default function CareerIndustryPage() {
           <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
             INDUSTRY CONNECTION
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0B1E36] tracking-tight uppercase leading-tight mt-2">
+          <SectionHeading className="text-[#0B1E36] uppercase mt-2">
             MEET YOUR FUTURE EMPLOYERS
-          </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-600 max-w-3xl leading-relaxed">
+          </SectionHeading>
+          <Subtitle className="mt-2 text-slate-600 max-w-3xl">
             Not a logo wall: a working relationship between education and industry, built
             around useful encounters and real briefs. Participating organisations and
             opportunities remain provisional until confirmed.
-          </p>
+          </Subtitle>
 
           {/* 6 Formats Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-8">
@@ -419,19 +420,19 @@ export default function CareerIndustryPage() {
               <p className="text-xs font-bold uppercase tracking-wider text-[#FCD34D]">
                 HANDS-ON LEARNING
               </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-black uppercase tracking-tight leading-[1.1] text-white mt-2">
+              <SectionHeading className="uppercase text-white mt-2">
                 REAL EXPERIENCE.
                 <br />
                 BEFORE YOU
                 <br />
                 GRADUATE.
-              </h2>
-              <p className="mt-5 text-xs sm:text-sm text-white/90 leading-relaxed max-w-xl">
+              </SectionHeading>
+              <Subtitle className="mt-5 text-white/90 max-w-xl">
                 Students work on actual events, club operations, and sport marketing
                 campaigns. Supervised internships, studio briefs, and collaborative industry
                 projects connect theory to the profession from day one. Availability depends
                 on faculty and confirmed partners.
-              </p>
+              </Subtitle>
 
               <div className="mt-8">
                 <Link
@@ -456,9 +457,9 @@ export default function CareerIndustryPage() {
           <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
             ALUMNI STORIES
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight uppercase leading-tight mt-2">
+          <SectionHeading className="text-white uppercase mt-2">
             WHERE ARE THEY NOW?
-          </h2>
+          </SectionHeading>
 
           {/* 3 Alumni Profile Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
@@ -547,13 +548,13 @@ export default function CareerIndustryPage() {
             UVEK PRVI - ALWAYS FIRST
           </p>
 
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-tight drop-shadow-md">
+          <SectionHeading className="text-white uppercase drop-shadow-md">
             YOUR FUTURE STARTS HERE.
-          </h2>
+          </SectionHeading>
 
-          <p className="mt-5 text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+          <Subtitle className="mt-5 text-slate-300 max-w-2xl">
             Find a programme, talk to admissions or plan your first career conversation.
-          </p>
+          </Subtitle>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
             <Link

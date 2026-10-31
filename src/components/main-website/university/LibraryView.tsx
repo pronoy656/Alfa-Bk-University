@@ -10,7 +10,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { newsEventsData } from "@/data";
-import { PageHero, Input } from "@/components/shared";
+import { PageHero, Input, SectionHeading, Subtitle } from "@/components/shared";
 
 const FEATURE_ICONS: Record<string, React.ReactNode> = {
   BookOpen: <BookOpen className="h-5 w-5 text-[#D5A754]" />,
@@ -129,12 +129,12 @@ export default function LibraryView() {
               <span className="text-xs font-bold text-[#C69234] uppercase tracking-wider">
                 E-RESOURCES & OPEN ACCESS
               </span>
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+              <SectionHeading className="text-slate-900 mt-1">
                 Access Academic Research Databases
-              </h2>
-              <p className="text-xs sm:text-sm text-slate-500 mt-1">
+              </SectionHeading>
+              <Subtitle className="text-slate-500 mt-1">
                 Log in with your Alfa BK University student or faculty credentials to access peer-reviewed publications.
-              </p>
+              </Subtitle>
             </div>
             <a
               href="/e-learning"

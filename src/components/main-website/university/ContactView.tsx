@@ -15,7 +15,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { universityData, facultiesData } from "@/data";
-import { PageHero, UniversityGradient, Input } from "@/components/shared";
+import { PageHero, UniversityGradient, Input, SectionHeading, Subtitle } from "@/components/shared";
 
 export default function ContactView() {
   const { contact } = universityData;
@@ -47,12 +47,12 @@ export default function ContactView() {
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center sm:text-left">
-            <h2 className="text-2xl font-black text-slate-900 sm:text-3xl">
+            <SectionHeading className="text-slate-900">
               Key University Offices
-            </h2>
-            <p className="mt-2 text-xs text-slate-500 sm:text-sm">
+            </SectionHeading>
+            <Subtitle className="mt-2 text-slate-500">
               Reach out directly to the dedicated administrative unit responsible for your inquiry.
-            </p>
+            </Subtitle>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -108,12 +108,12 @@ export default function ContactView() {
               <span className="text-xs font-bold tracking-wider text-blue-600 uppercase">
                 SEND A MESSAGE
               </span>
-              <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
+              <SectionHeading className="mt-2 text-slate-900">
                 Get in Touch
-              </h2>
-              <p className="mt-2 text-xs text-slate-500 sm:text-sm">
+              </SectionHeading>
+              <Subtitle className="mt-2 text-slate-500">
                 Our support team typically responds within one business day.
-              </p>
+              </Subtitle>
 
               {submitted ? (
                 <div className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50 p-8 text-center text-emerald-900 shadow-sm">
@@ -220,9 +220,9 @@ export default function ContactView() {
               <span className="text-xs font-bold tracking-wider text-[#D5A754] uppercase">
                 LOCATION & VISITS
               </span>
-              <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
+              <SectionHeading className="mt-2 text-slate-900">
                 Main Campus
-              </h2>
+              </SectionHeading>
 
               <div className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm space-y-5">
                 <div className="flex items-start gap-4">
@@ -294,9 +294,9 @@ export default function ContactView() {
             <span className="text-xs font-bold tracking-wider text-[#D5A754] uppercase">
               FACULTIES
             </span>
-            <h2 className="mt-1 text-2xl font-black text-slate-900 sm:text-3xl">
+            <SectionHeading className="mt-1 text-slate-900">
               Faculty Contact Directory
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

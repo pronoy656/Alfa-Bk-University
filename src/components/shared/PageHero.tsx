@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
+import { HeroTitle, Subtitle } from "./Typography";
 
 export interface PageHeroStat {
   value: string | number;
@@ -144,18 +145,19 @@ export default function PageHero({
               )
             )}
 
-            <h1 className="mt-3 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px] text-white">
+            <HeroTitle className="mt-3 text-white">
               {title}
-            </h1>
+            </HeroTitle>
 
             {resolvedSubtitle && (
-              <div
-                className={`mt-4 text-sm sm:text-base leading-relaxed text-slate-300 ${
+              <Subtitle
+                as="div"
+                className={`mt-4 text-slate-300 ${
                   isCenter ? "mx-auto max-w-2xl" : "max-w-2xl"
                 }`}
               >
                 {resolvedSubtitle}
-              </div>
+              </Subtitle>
             )}
 
             {/* Badges Slot */}

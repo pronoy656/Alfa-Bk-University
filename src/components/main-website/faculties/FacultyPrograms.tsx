@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { SectionHeading } from "@/components/shared";
 import {
   ArrowRight,
   Layers,
@@ -65,9 +66,9 @@ export default function FacultyPrograms({
           <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
             ACCREDITED PROGRAMMES
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0B1E36] tracking-tight uppercase leading-tight mt-2">
+          <SectionHeading className="text-[#0B1E36] uppercase mt-2">
             WHAT WILL YOU STUDY?
-          </h2>
+          </SectionHeading>
           <p className="mt-3 text-xs sm:text-sm text-slate-600">
             {programCount} accredited programmes - BSc, MSc and PhD. Click any card to view full details, semester structure and documents.{" "}
             <span className="text-[#B91C1C] font-medium">

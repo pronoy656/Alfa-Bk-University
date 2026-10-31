@@ -19,7 +19,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { programsData, getProgramBySlug } from "@/data";
-import { PageHero } from "@/components/shared";
+import { PageHero, SectionHeading, Subtitle } from "@/components/shared";
 
 export default function ProgramDetailPage() {
   const params = useParams();
@@ -288,18 +288,18 @@ export default function ProgramDetailPage() {
               {/* Left Column: Overview & Lecturers */}
               <div className="lg:col-span-8 space-y-10">
                 <div>
-                  <h2 className="text-base font-bold text-slate-900">
+                  <SectionHeading className="text-slate-900">
                     Program Overview
-                  </h2>
-                  <p className="mt-3 text-xs sm:text-sm leading-relaxed text-slate-600">
+                  </SectionHeading>
+                  <Subtitle className="mt-3 text-slate-600">
                     {program.overview}
-                  </p>
+                  </Subtitle>
                 </div>
 
                 <div>
-                  <h2 className="text-base font-bold text-slate-900 mb-5">
+                  <SectionHeading className="text-slate-900 mb-5">
                     Lecturers
-                  </h2>
+                  </SectionHeading>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     {lecturers.map((lect, idx) => (
                       <div
@@ -413,12 +413,12 @@ export default function ProgramDetailPage() {
           {activeTab === "study-structure" && (
             <div className="max-w-4xl space-y-10">
               <div>
-                <h2 className="text-2xl font-black text-slate-900">
+                <SectionHeading className="text-slate-900">
                   Study Structure
-                </h2>
-                <p className="mt-1 text-xs text-slate-500">
+                </SectionHeading>
+                <Subtitle className="mt-1 text-slate-500">
                   3 years • 6 semesters • 180 ECTS total
-                </p>
+                </Subtitle>
               </div>
 
               <div className="space-y-10">
@@ -481,12 +481,12 @@ export default function ProgramDetailPage() {
           {activeTab === "documents" && (
             <div className="max-w-4xl space-y-6">
               <div>
-                <h2 className="text-xl font-bold text-slate-900">
+                <SectionHeading className="text-slate-900">
                   Program Documents
-                </h2>
-                <p className="mt-1 text-xs text-slate-500">
+                </SectionHeading>
+                <Subtitle className="mt-1 text-slate-500">
                   The following documents are legally required to be publicly available for every accredited program in Serbia.
-                </p>
+                </Subtitle>
               </div>
 
               <div className="space-y-3 pt-2">
@@ -532,12 +532,12 @@ export default function ProgramDetailPage() {
           {activeTab === "career-opportunities" && (
             <div className="max-w-4xl space-y-6">
               <div>
-                <h2 className="text-xl font-bold text-slate-900">
+                <SectionHeading className="text-slate-900">
                   Career Opportunities
-                </h2>
-                <p className="mt-1 text-xs text-slate-500">
+                </SectionHeading>
+                <Subtitle className="mt-1 text-slate-500">
                   Graduates of this program work across a range of roles in Serbia, the region, and internationally.
-                </p>
+                </Subtitle>
               </div>
 
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 pt-2">

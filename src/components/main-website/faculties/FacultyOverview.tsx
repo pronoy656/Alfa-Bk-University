@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Check, Mail, Phone, MapPin } from "lucide-react";
 import { FacultyContact } from "@/data";
+import { SectionHeading } from "@/components/shared";
 
 interface FacultyOverviewProps {
   about: string;
@@ -37,9 +38,9 @@ export default function FacultyOverview({
             <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
               ABOUT THE FACULTY
             </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0B1E36] tracking-tight uppercase leading-tight mt-2">
+            <SectionHeading className="text-[#0B1E36] uppercase mt-2">
               {resolvedHeadline}
-            </h2>
+            </SectionHeading>
 
             {/* About Paragraph */}
             <p className="mt-5 text-xs sm:text-sm leading-relaxed text-slate-600">

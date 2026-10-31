@@ -15,7 +15,7 @@ import {
   User,
   ShieldCheck,
 } from "lucide-react";
-import { Input } from "@/components/shared";
+import { Input, HeroTitle, SectionHeading, Subtitle } from "@/components/shared";
 
 function AuthContent() {
   const router = useRouter();
@@ -138,14 +138,14 @@ function AuthContent() {
 
         {/* Center / Hero Highlights */}
         <div className="relative z-10 my-auto py-10 md:py-16 max-w-lg">
-          <h1 className="hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px] text-white">
+          <HeroTitle className="text-white">
             Learn without <span className="text-[#BE9F5A]">limits.</span>
-          </h1>
+          </HeroTitle>
 
-          <p className="text-slate-200 text-sm sm:text-base lg:text-lg mt-5 font-normal leading-relaxed">
+          <Subtitle className="text-slate-200 mt-5">
             Welcome to Alfa BK University&apos;s unified academic campus. Access your
             courses, lectures, assignments, and examination registers in one seamless portal.
-          </p>
+          </Subtitle>
 
           <div className="mt-8 pt-6 border-t border-white/15 flex items-center gap-6 text-slate-300 text-xs sm:text-sm">
             <div>
@@ -189,12 +189,12 @@ function AuthContent() {
             <>
               {/* Header */}
               <div className="mb-6 sm:mb-8">
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B1E36] tracking-tight">
+                <SectionHeading className="text-[#0B1E36]">
                   Welcome back
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1 font-medium">
+                </SectionHeading>
+                <Subtitle className="text-slate-500 mt-1">
                   Sign in to continue to your student or faculty dashboard.
-                </p>
+                </Subtitle>
               </div>
 
               {/* Login Form */}
@@ -343,12 +343,12 @@ function AuthContent() {
             <>
               {/* Header */}
               <div className="mb-6 sm:mb-8">
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B1E36] tracking-tight">
+                <SectionHeading className="text-[#0B1E36]">
                   Create an account
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1 font-medium">
+                </SectionHeading>
+                <Subtitle className="text-slate-500 mt-1">
                   Register for academic portal access or admissions enrollment.
-                </p>
+                </Subtitle>
               </div>
 
               {regSuccess ? (

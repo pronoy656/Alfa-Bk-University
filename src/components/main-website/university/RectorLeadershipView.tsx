@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
-import { PageHero } from "@/components/shared";
+import { PageHero, SectionHeading, Subtitle } from "@/components/shared";
 import {
   rector,
   proRectors,
@@ -37,9 +37,9 @@ export default function RectorLeadershipView() {
                 RECTOR
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
+            <SectionHeading className="uppercase text-[#0B1E36]">
               UNIVERSITY LEADERSHIP
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -107,13 +107,13 @@ export default function RectorLeadershipView() {
                 PRO-RECTORS
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
+            <SectionHeading className="uppercase text-[#0B1E36]">
               EXECUTIVE ACADEMIC TEAM
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 max-w-2xl font-normal">
+            </SectionHeading>
+            <Subtitle className="mt-3 text-slate-600 max-w-2xl">
               Three Pro-Rectors lead the day-to-day academic, research and
               international operations of the university.
-            </p>
+            </Subtitle>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -159,13 +159,13 @@ export default function RectorLeadershipView() {
                 DEANS
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+            <SectionHeading className="uppercase text-white">
               FACULTY DEANS
-            </h2>
-            <p className="mt-3 text-sm text-slate-300 max-w-2xl font-normal">
+            </SectionHeading>
+            <Subtitle className="mt-3 text-slate-300 max-w-2xl">
               Each faculty is led by a dean responsible for academic programmes,
               faculty hiring and student outcomes.
-            </p>
+            </Subtitle>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -209,9 +209,9 @@ export default function RectorLeadershipView() {
                 ADMINISTRATION
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1E36] tracking-tight uppercase">
+            <SectionHeading className="uppercase text-[#0B1E36]">
               SENIOR ADMINISTRATION
-            </h2>
+            </SectionHeading>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -261,17 +261,17 @@ export default function RectorLeadershipView() {
                 </span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase leading-tight">
+              <SectionHeading className="uppercase text-white">
                 EDUCATION THAT<br />
                 TRANSFORMS LIVES.
-              </h2>
+              </SectionHeading>
 
-              <p className="mt-5 text-sm sm:text-base leading-relaxed text-white/90 font-normal max-w-xl">
+              <Subtitle className="mt-5 text-white/90 max-w-xl">
                 Under the leadership of our Rector and faculty, Alfa BK University is
                 committed to delivering world-class education, research, and creative
                 practice - empowering students to become innovative leaders,
                 entrepreneurs and responsible global citizens.
-              </p>
+              </Subtitle>
 
               <div className="mt-8">
                 <Link
@@ -313,14 +313,14 @@ export default function RectorLeadershipView() {
             — UVEK PRVI - ALWAYS FIRST —
           </p>
 
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-tight text-white">
+          <SectionHeading className="uppercase text-white">
             YOUR FUTURE STARTS HERE.
-          </h2>
+          </SectionHeading>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-300 max-w-xl font-normal leading-relaxed">
+          <Subtitle className="mt-4 text-slate-300 max-w-xl">
             Find a programme, speak to admissions or explore how our leadership team
             can help you take the next step.
-          </p>
+          </Subtitle>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link

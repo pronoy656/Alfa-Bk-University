@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
+import { SectionHeading } from "@/components/shared";
 
 export default function NewsSection() {
   const news = [
@@ -28,9 +29,9 @@ export default function NewsSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
               Latest updates
             </p>
-            <h2 className="mt-2 text-3xl font-bold text-slate-900">
+            <SectionHeading className="mt-2 text-slate-900">
               News and events
-            </h2>
+            </SectionHeading>
           </div>
           <Link
             href="/news-events"

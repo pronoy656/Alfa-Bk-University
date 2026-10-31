@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { ChevronDown, ArrowRight } from "lucide-react";
+import { HeroTitle, SectionHeading, Subtitle } from "@/components/shared";
 
 export default function HistoryClient() {
   const scrollToChapterOne = () => {
@@ -41,14 +42,14 @@ export default function HistoryClient() {
           </div>
 
           {/* Main Title: our HISTORY. */}
-          <h1 className="mt-4 flex flex-wrap items-baseline justify-center gap-2 sm:gap-3 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px]">
+          <HeroTitle className="mt-4 flex flex-wrap items-baseline justify-center gap-2 sm:gap-3">
             <span className="font-normal lowercase text-white tracking-normal font-serif italic sm:not-italic sm:font-bold">
               our
             </span>
-            <span className="font-bold uppercase tracking-[0px] text-[#D5A754]">
+            <span className="font-bold uppercase tracking-[0%] text-[#D5A754]">
               HISTORY<span className="text-[#C69234]">.</span>
             </span>
-          </h1>
+          </HeroTitle>
 
           {/* Subtitle row: TRADITION • TRANSFORMATION • FUTURE */}
           <div className="mt-3 flex flex-wrap items-center justify-center gap-2.5 text-[11px] sm:text-xs font-bold tracking-[0.22em] text-[#D5A754] uppercase">
@@ -60,10 +61,10 @@ export default function HistoryClient() {
           </div>
 
           {/* Lead Paragraph */}
-          <p className="mt-4 mx-auto max-w-2xl text-xs sm:text-sm lg:text-base leading-relaxed text-slate-300 font-light">
+          <Subtitle className="mt-4 mx-auto max-w-2xl text-slate-300">
             From a bold founding vision in 1993 to one of Serbia&apos;s leading private universities &mdash; three
             decades of academic excellence, growth, and innovation.
-          </p>
+          </Subtitle>
 
           {/* Scroll indicator */}
           <div className="mt-6 sm:mt-8">
@@ -133,9 +134,9 @@ export default function HistoryClient() {
                     FOUNDING
                   </span>
                 </div>
-                <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E36] leading-tight tracking-tight">
+                <SectionHeading className="mt-3 text-[#0B1E36]">
                   Foundation of Braća Karić University
-                </h2>
+                </SectionHeading>
                 <p className="mt-2 text-xs sm:text-sm font-semibold text-slate-400 uppercase tracking-wider">
                   Belgrade, 1993
                 </p>
@@ -186,9 +187,9 @@ export default function HistoryClient() {
                 </span>
               </div>
 
-              <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight tracking-tight">
+              <SectionHeading className="mt-3 text-white">
                 First Graduating Class
-              </h2>
+              </SectionHeading>
 
               <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-300 font-light">
                 The university welcomed its first class of graduates, primarily from the Faculty of Economics.
@@ -216,9 +217,9 @@ export default function HistoryClient() {
                   2000
                 </div>
 
-                <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E36] leading-tight tracking-tight">
+                <SectionHeading className="mt-3 text-[#0B1E36]">
                   Expansion of Faculties
-                </h2>
+                </SectionHeading>
               </div>
 
               {/* Right Column: Narrative + Wide Rounded Photo */}
@@ -292,9 +293,9 @@ export default function HistoryClient() {
                     REFORM
                   </span>
                 </div>
-                <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E36] leading-tight tracking-tight">
+                <SectionHeading className="mt-3 text-[#0B1E36]">
                   Bologna Process Integration
-                </h2>
+                </SectionHeading>
                 <p className="mt-2 text-xs sm:text-sm font-semibold text-slate-400 uppercase tracking-wider">
                   European Standards, 2006
                 </p>
@@ -341,9 +342,9 @@ export default function HistoryClient() {
                 </span>
               </div>
 
-              <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight tracking-tight">
+              <SectionHeading className="mt-3 text-white">
                 National Accreditation
-              </h2>
+              </SectionHeading>
 
               <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-300 font-light">
                 Following the adoption of the Law on Higher Education in Serbia, Alfa BK completed the national
@@ -370,9 +371,9 @@ export default function HistoryClient() {
                 <div className="mt-2 text-6xl sm:text-7xl lg:text-8xl font-black text-slate-200/90 tracking-tighter select-none font-sans leading-none">
                   2014
                 </div>
-                <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E36] leading-tight tracking-tight">
+                <SectionHeading className="mt-3 text-[#0B1E36]">
                   Erasmus+ Partnership
-                </h2>
+                </SectionHeading>
               </div>
 
               <div className="lg:col-span-7">
@@ -403,9 +404,9 @@ export default function HistoryClient() {
                 <div className="mt-2 text-6xl sm:text-7xl lg:text-8xl font-black text-slate-200/90 tracking-tighter select-none font-sans leading-none">
                   2018
                 </div>
-                <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E36] leading-tight tracking-tight">
+                <SectionHeading className="mt-3 text-[#0B1E36]">
                   Faculty of Information Technologies
-                </h2>
+                </SectionHeading>
               </div>
 
               <div className="lg:col-span-7">
@@ -476,9 +477,9 @@ export default function HistoryClient() {
                     TECHNOLOGY
                   </span>
                 </div>
-                <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E36] leading-tight tracking-tight">
+                <SectionHeading className="mt-3 text-[#0B1E36]">
                   Digital Transformation
-                </h2>
+                </SectionHeading>
                 <p className="mt-2 text-xs sm:text-sm font-semibold text-slate-400 uppercase tracking-wider">
                   Hybrid Learning, 2020
                 </p>
@@ -526,9 +527,9 @@ export default function HistoryClient() {
               </div>
 
               {/* Heading: 30+ Years of Excellence */}
-              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+              <SectionHeading className="mt-4 text-white">
                 30+ Years of Excellence
-              </h2>
+              </SectionHeading>
 
               {/* Description paragraph */}
               <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-200/90 font-light max-w-2xl">
@@ -594,9 +595,9 @@ export default function HistoryClient() {
             BECOME PART OF OUR STORY
           </div>
 
-          <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+          <SectionHeading className="mt-6 text-white">
             Join Three Decades of Academic Tradition
-          </h2>
+          </SectionHeading>
 
           <p className="mt-4 text-base sm:text-lg text-slate-300 font-light leading-relaxed">
             Take the first step toward an internationally recognized degree, accredited curricula, and hands-on

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { SectionHeading, Subtitle } from "@/components/shared";
 
 interface FacultyCtaBannerProps {
   facultyName?: string;
@@ -57,14 +58,14 @@ export default function FacultyCtaBanner({
         </p>
 
         {/* Big Bold Headline */}
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-tight drop-shadow-md">
+        <SectionHeading className="text-white uppercase drop-shadow-md">
           {resolvedHeadline}
-        </h2>
+        </SectionHeading>
 
         {/* Subtitle */}
-        <p className="mt-5 text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+        <Subtitle className="mt-5 text-slate-300 max-w-2xl">
           {resolvedSubtitle}
-        </p>
+        </Subtitle>
 
         {/* 3 Buttons */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">

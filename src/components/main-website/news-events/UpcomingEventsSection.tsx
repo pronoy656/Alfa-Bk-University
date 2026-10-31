@@ -4,6 +4,7 @@ import React from "react";
 import { Clock, MapPin, ArrowRight } from "lucide-react";
 import { newsEventsData } from "@/data";
 import { UpcomingEvent } from "./types";
+import { SectionHeading } from "@/components/shared";
 
 interface UpcomingEventsSectionProps {
   onRegisterEvent?: (event: UpcomingEvent) => void;
@@ -24,9 +25,9 @@ export default function UpcomingEventsSection({
       <div className="flex items-center justify-between pb-4">
         <div className="flex items-center gap-2.5">
           <span className="h-5 w-1.5 rounded-full bg-[#D5A754]" />
-          <h2 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
+          <SectionHeading className="text-slate-900">
             Upcoming Events
-          </h2>
+          </SectionHeading>
         </div>
         <button
           type="button"

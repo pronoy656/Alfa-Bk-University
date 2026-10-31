@@ -25,7 +25,7 @@ export default function AppLayout({
   return (
     <>
       <Navbar />
-      <div className="flex-1">{children}</div>
+      <div className="main-website-content flex-1">{children}</div>
       <Footer />
     </>
   );

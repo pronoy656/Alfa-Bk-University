@@ -12,7 +12,7 @@ import {
   Building2,
   Users,
 } from "lucide-react";
-import { PageHero } from "@/components/shared";
+import { PageHero, SectionHeading, Subtitle } from "@/components/shared";
 import {
   historyTimeline,
   institutionalPartners,
@@ -38,9 +38,9 @@ export default function AboutView() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
             {/* Left: Mission & Vision Cards */}
             <div className="space-y-6 lg:col-span-6">
-              <h2 className="text-3xl font-extrabold text-[#0B1E36]">
+              <SectionHeading className="text-[#0B1E36]">
                 Mission & Vision
-              </h2>
+              </SectionHeading>
 
               {/* Our Mission Card with Gold Border */}
               <div className="rounded-2xl border-2 border-[#E8C26E] bg-white p-7 shadow-sm transition hover:shadow-md">
@@ -92,9 +92,9 @@ export default function AboutView() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
             {/* Left Column: Our History Timeline */}
             <div className="lg:col-span-6">
-              <h2 className="text-2xl font-extrabold text-[#0B1E36]">
+              <SectionHeading className="text-[#0B1E36]">
                 Our History
-              </h2>
+              </SectionHeading>
 
               <div className="mt-8 space-y-4">
                 {historyTimeline.map((item) => (
@@ -125,9 +125,9 @@ export default function AboutView() {
               <span className="text-xs font-bold tracking-[0.2em] text-[#C4983D] uppercase">
                 STRATEGIC PARTNERSHIPS
               </span>
-              <h2 className="mt-1 text-2xl font-extrabold text-[#0B1E36]">
+              <SectionHeading className="mt-1 text-[#0B1E36]">
                 Institutional Partnerships
-              </h2>
+              </SectionHeading>
 
               <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {institutionalPartners.map((partner) => (
@@ -174,9 +174,9 @@ export default function AboutView() {
       {/* 4. LEADERSHIP & BOARD OF TRUSTEES */}
       <section className="bg-white py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-extrabold text-[#0B1E36]">
+          <SectionHeading className="text-[#0B1E36]">
             Leadership & Board of Trustees
-          </h2>
+          </SectionHeading>
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {leadershipCards.map((card) => (
@@ -206,13 +206,13 @@ export default function AboutView() {
       {/* 5. INTERNATIONAL PARTNERSHIPS */}
       <section className="border-t border-slate-100 bg-white py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-extrabold text-[#0B1E36]">
+          <SectionHeading className="text-[#0B1E36]">
             International Partnerships
-          </h2>
-          <p className="mt-2 text-sm text-slate-600">
+          </SectionHeading>
+          <Subtitle className="mt-2 text-slate-600">
             60 partner universities across 4 continents provide exchange
             semesters, dual degrees, and joint research programs.
-          </p>
+          </Subtitle>
 
           <div className="mt-6 flex flex-wrap gap-2.5">
             {partnerUniversities.map((uni) => (
@@ -230,9 +230,9 @@ export default function AboutView() {
       {/* 6. BUSINESS COOPERATION */}
       <section className="border-t border-slate-100 bg-white py-12 lg:pb-24 lg:pt-14">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-extrabold text-[#0B1E36]">
+          <SectionHeading className="text-[#0B1E36]">
             Business Cooperation
-          </h2>
+          </SectionHeading>
 
           <div className="mt-6 flex flex-wrap gap-2.5">
             {businessPartners.map((item) => (

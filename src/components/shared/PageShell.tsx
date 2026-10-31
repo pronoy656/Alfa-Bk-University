@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft, ChevronRight, Home } from "lucide-react";
+import { HeroTitle, Subtitle } from "./Typography";
 
 interface PageShellProps {
   title: string;
@@ -34,12 +35,12 @@ export default function PageShell({
           <div className="inline-block rounded-full bg-blue-50 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700 mb-4">
             {category}
           </div>
-          <h1 className="hero-title-syncopate font-syncopate font-bold text-2xl sm:text-3xl lg:text-[42px] lg:leading-[58px] tracking-[0px] text-slate-900 mb-4">
+          <HeroTitle className="text-slate-900 mb-4">
             {title}
-          </h1>
-          <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
+          </HeroTitle>
+          <Subtitle className="text-slate-600 max-w-2xl">
             {description}
-          </p>
+          </Subtitle>
 
           <div className="mt-8 border-t border-slate-100 pt-8">
             <div className="rounded-xl bg-slate-50 border border-dashed border-slate-300 p-6">

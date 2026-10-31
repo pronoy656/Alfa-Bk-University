@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import { professorsData, ProfessorItem } from "@/data";
 import UniversityGradient from "@/components/shared/UniversityGradient";
-import { Input } from "@/components/shared";
+import { Input, HeroTitle, SectionHeading, Subtitle } from "@/components/shared";
 
 const iconMap: Record<string, LucideIcon> = {
   TrendingUp,
@@ -116,13 +116,13 @@ export default function ProfessorsDirectory() {
             <span className="text-xs font-bold tracking-[0.2em] text-[#E5A83B] uppercase">
               FACULTY
             </span>
-            <h1 className="mt-3 hero-title-syncopate font-syncopate font-bold text-3xl sm:text-4xl lg:text-[52px] lg:leading-[75px] leading-tight tracking-[0px]">
+            <HeroTitle className="mt-3">
               Professors & Teaching Assistants
-            </h1>
-            <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-lg">
+            </HeroTitle>
+            <Subtitle className="mt-4 text-slate-300">
               Meet the experienced educators and research experts who inspire,
               mentor and guide our students toward a brighter future.
-            </p>
+            </Subtitle>
           </div>
         </div>
       </section>
@@ -240,9 +240,9 @@ export default function ProfessorsDirectory() {
                 <span className="text-xs font-bold tracking-wider text-blue-600 uppercase">
                   PROFESSOR SPOTLIGHT
                 </span>
-                <h2 className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">
+                <SectionHeading className="mt-2 text-slate-900">
                   {spotlight.name}
-                </h2>
+                </SectionHeading>
                 <p className="mt-1 text-sm font-semibold text-slate-600">
                   {spotlight.role}
                 </p>

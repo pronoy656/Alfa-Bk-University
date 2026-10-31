@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SectionHeading, Subtitle } from "@/components/shared";
 
 export default function CtaSection() {
   return (
@@ -27,15 +28,15 @@ export default function CtaSection() {
         </div>
 
         {/* Big Headline */}
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-tight drop-shadow-md">
+        <SectionHeading className="uppercase drop-shadow-md">
           <span className="text-white">YOUR FUTURE </span>
           <span className="text-[#BE9F5A]">STARTS HERE.</span>
-        </h2>
+        </SectionHeading>
 
         {/* Subtitle */}
-        <p className="mt-5 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+        <Subtitle className="mt-5 text-slate-300 max-w-2xl">
           Join a community of thinkers, creators, and future leaders. Applications open for 2025/26.
-        </p>
+        </Subtitle>
 
         {/* 2 Buttons */}
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { SectionHeading } from "@/components/shared";
 
 export interface CareerItem {
   number: string;
@@ -71,9 +72,9 @@ export default function FacultyCareersSection({
             <p className="text-xs font-bold uppercase tracking-wider text-[#D5A754]">
               {kicker}
             </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white uppercase mt-2">
+            <SectionHeading className="text-white uppercase mt-2">
               {title}
-            </h2>
+            </SectionHeading>
           </div>
 
           <div>

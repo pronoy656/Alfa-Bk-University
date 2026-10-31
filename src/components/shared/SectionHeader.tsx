@@ -1,4 +1,5 @@
 import React from "react";
+import { SectionHeading, Subtitle } from "./Typography";
 
 export interface SectionHeaderProps {
   badge?: React.ReactNode;
@@ -96,24 +97,22 @@ export default function SectionHeader({
         </div>
       )}
 
-      <h2
-        className={`font-extrabold tracking-tight leading-tight ${
-          titleSizes[size]
-        } ${uppercase ? "uppercase" : ""} ${
+      <SectionHeading
+        className={`${uppercase ? "uppercase" : ""} ${
           isDark ? "text-white" : "text-[#0B1E36]"
         } ${titleClassName}`}
       >
         {title}
-      </h2>
+      </SectionHeading>
 
       {resolvedSubtitle && (
-        <p
-          className={`mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed font-normal ${
+        <Subtitle
+          className={`mt-3 sm:mt-4 ${
             isDark ? "text-slate-300" : "text-slate-600"
           } ${subtitleClassName}`}
         >
           {resolvedSubtitle}
-        </p>
+        </Subtitle>
       )}
 
       {children}

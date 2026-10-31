@@ -40,6 +40,15 @@ export type {
   TitleSubtitleProps,
 } from "./SectionHeader";
 
+// Reusable Typography System (Brand Design Specs)
+export {
+  default as Typography,
+  HeroTitle,
+  SectionHeading,
+  Subtitle,
+} from "./Typography";
+export type { TypographyProps, TypographyVariant } from "./Typography";
+
 export { default as StatCard } from "./StatCard";
 export type { StatCardProps } from "./StatCard";
 

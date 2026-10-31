@@ -1,6 +1,7 @@
 "use client";
 
 import { Play } from "lucide-react";
+import { SectionHeading } from "@/components/shared";
 
 export default function UniversityFilmSection() {
   return (
@@ -35,9 +36,9 @@ export default function UniversityFilmSection() {
         </button>
 
         {/* Big Bold Headline */}
-        <h2 className="mt-8 text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-wider uppercase drop-shadow-md">
+        <SectionHeading className="mt-8 text-white uppercase drop-shadow-md">
           THIS IS ALFA BK
-        </h2>
+        </SectionHeading>
       </div>
     </section>
   );
